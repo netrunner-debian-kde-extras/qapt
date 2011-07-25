@@ -1,8 +1,8 @@
 Source: qapt
 Section: kde
 Priority: optional
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-XSBC-Original-Maintainer: Jonathan Thomas <echidnaman@kubuntu.org>
+Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
+Uploaders: José Manuel Santamaría Lema <panfaust@gmail.com>
 Build-Depends: debhelper (>= 8.0.0~), pkg-kde-tools (>= 0.5.0), cmake, pkg-config,
  kdelibs5-dev, libapt-pkg-dev (>= 0.8.0), libxapian-dev, libpolkit-qt-1-dev,
  libqtgstreamer-dev, libdebconf-kde-dev
