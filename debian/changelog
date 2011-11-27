@@ -10,5 +10,6 @@ qapt (1.2.2-1) UNRELEASED; urgency=low
     - Bumped B-D on debhelper for automatic environmet variables.
   * debian/source.lintian-overrides: Added (temp. only).
   * debian/source/{local-,}options: Added.
+  * debian/copyright: Added myself.
 
  -- Kai Wasserbäch <curan@debian.org>  Sun, 27 Nov 2011 13:56:01 +0100

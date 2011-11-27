@@ -29,6 +29,7 @@ License: GPL-2 or GPL-3
 
 Files: debian/*
 Copyright: 2010, Jonathan Thomas <echidnaman@kubuntu.org>
+Copyright: 2011, Kai Wasserbäch <curan@debian.org>
 License: GPL-3
  On Debian systems the full text of the GNU General Public License can be found
  in the `/usr/share/common-licenses/GPL-3' file.
