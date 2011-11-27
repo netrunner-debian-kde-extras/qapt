@@ -5,5 +5,9 @@ qapt (1.2.2-1) UNRELEASED; urgency=low
 
   [ Kai Wasserbäch ]
   * debian/watch: Added.
+  * debian/control:
+    - Added myself to Uploaders.
+    - Bumped B-D on debhelper for automatic environmet variables.
+  * debian/source.lintian-overrides: Added (temp. only).
 
  -- Kai Wasserbäch <curan@debian.org>  Sun, 27 Nov 2011 13:56:01 +0100

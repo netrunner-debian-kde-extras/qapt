@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 
 %:
-	dh $@  --with kde --parallel
+	dh $@ --with kde --parallel
 
 override_dh_install:
 	dh_install --fail-missing
