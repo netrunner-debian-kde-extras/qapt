@@ -1,0 +1,4 @@
+version=3
+
+opts=pasv \
+  ftp://ftp.kde.org/pub/kde/stable/libqapt/([\d\.]+)/src/libqapt-([\d\.]+)\.tar\.bz2

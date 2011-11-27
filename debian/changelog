@@ -1,5 +1,9 @@
-qapt (1.1.90-1) UNRELEASED; urgency=low
+qapt (1.2.2-1) UNRELEASED; urgency=low
 
+  [ José Manuel Santamaría Lema ]
   * Initial release (Closes: #635380)
 
- -- José Manuel Santamaría Lema <panfaust@gmail.com>  Mon, 25 Jul 2011 18:49:25 +0200
+  [ Kai Wasserbäch ]
+  * debian/watch: Added.
+
+ -- Kai Wasserbäch <curan@debian.org>  Sun, 27 Nov 2011 13:56:01 +0100
