@@ -11,5 +11,6 @@ qapt (1.2.2-1) UNRELEASED; urgency=low
   * debian/source.lintian-overrides: Added (temp. only).
   * debian/source/{local-,}options: Added.
   * debian/copyright: Added myself.
+  * debian/patches/Fix-FTBFS-due-to-symbol-collision.patch: Added.
 
  -- Kai Wasserbäch <curan@debian.org>  Sun, 27 Nov 2011 13:56:01 +0100
