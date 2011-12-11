@@ -137,6 +137,7 @@ libqapt.so.1 libqapt1 #MINVER#
  _ZNK4QApt7Backend12originLabelsEv@Base 0.3.0
  _ZNK4QApt7Backend12packageCountERK6QFlagsINS_7Package5StateEE@Base 0.3.0
  _ZNK4QApt7Backend12packageCountEv@Base 0.3.0
+ _ZNK4QApt7Backend13architecturesEv@Base 1.2.2
  _ZNK4QApt7Backend13toRemoveCountEv@Base 1.0.60
  _ZNK4QApt7Backend14installedCountEv@Base 1.0.60
  _ZNK4QApt7Backend14markedPackagesEv@Base 0.3.0
@@ -151,6 +152,8 @@ libqapt.so.1 libqapt1 #MINVER#
  _ZNK4QApt7Backend17availablePackagesEv@Base 0.3.0
  _ZNK4QApt7Backend17currentCacheStateEv@Base 0.3.0
  _ZNK4QApt7Backend17packageSourceListEv@Base 0.3.0
+ _ZNK4QApt7Backend18isMultiArchEnabledEv@Base 1.2.2
+ _ZNK4QApt7Backend18nativeArchitectureEv@Base 1.2.2
  _ZNK4QApt7Backend19upgradeablePackagesEv@Base 0.3.0
  _ZNK4QApt7Backend22xapianIndexNeedsUpdateEv@Base 0.3.0
  _ZNK4QApt7Backend25saveInstalledPackagesListERK7QString@Base 1.0.60
@@ -200,6 +203,7 @@ libqapt.so.1 libqapt1 #MINVER#
  _ZNK4QApt7Package10wouldBreakEv@Base 0.3.0
  _ZNK4QApt7Package11isInstalledEv@Base 0.3.0
  _ZNK4QApt7Package11isSupportedEv@Base 0.3.0
+ _ZNK4QApt7Package12architectureEv@Base 1.2.2
  _ZNK4QApt7Package12brokenReasonEv@Base 0.3.0
  _ZNK4QApt7Package12changelogUrlEv@Base 0.3.0
  _ZNK4QApt7Package12controlFieldERK13QLatin1String@Base 1.0.95
@@ -208,6 +212,7 @@ libqapt.so.1 libqapt1 #MINVER#
  _ZNK4QApt7Package12enhancesListEv@Base 1.0.90
  _ZNK4QApt7Package12providesListEv@Base 0.3.0
  _ZNK4QApt7Package12suggestsListEv@Base 1.0.90
+ _ZNK4QApt7Package13isForeignArchEv@Base 1.2.2
  _ZNK4QApt7Package13latin1SectionEv@Base 1.0.60
  _ZNK4QApt7Package13screenshotUrlENS_14ScreenshotTypeE@Base 0.3.0
  _ZNK4QApt7Package13sourcePackageEv@Base 0.3.0
@@ -224,6 +229,7 @@ libqapt.so.1 libqapt1 #MINVER#
  _ZNK4QApt7Package16shortDescriptionEv@Base 0.3.0
  _ZNK4QApt7Package17availableVersionsEv@Base 0.3.0
  _ZNK4QApt7Package18installedFilesListEv@Base 0.3.0
+ _ZNK4QApt7Package18isMultiArchEnabledEv@Base 1.2.2
  _ZNK4QApt7Package20currentInstalledSizeEv@Base 0.3.0
  _ZNK4QApt7Package22availableInstalledSizeEv@Base 0.3.0
  _ZNK4QApt7Package2idEv@Base 0.3.0
@@ -244,6 +250,8 @@ libqapt.so.1 libqapt1 #MINVER#
  _ZNK4QApt7Package9conflictsEv@Base 1.1.65
  _ZNK4QApt7Package9isTrustedEv@Base 0.3.0
  _ZNK4QApt7Package9obsoletesEv@Base 1.1.65
+ _ZNSt6vectorISsSaISsEED1Ev@Base 1.2.2
+ _ZNSt6vectorISsSaISsEED2Ev@Base 1.2.2
  (optional=templinst)_ZSt6__findIN9__gnu_cxx17__normal_iteratorIPP12pkgIndexFileSt6vectorIS3_SaIS3_EEEES3_ET_S9_S9_RKT0_St26random_access_iterator_tag@Base 1.1.0
  _ZTIN4QApt5CacheE@Base 0.3.0
  _ZTIN4QApt6ConfigE@Base 1.0.60
