@@ -17,6 +17,8 @@ Build-Depends: debhelper (>= 8.9.4),
  libdebconf-kde-dev
 Standards-Version: 3.9.2
 Homepage: https://projects.kde.org/projects/extragear/sysadmin/libqapt/
+Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-extras/qapt.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-extras/qapt.git;a=summary
 
 Package: libqapt1
 Architecture: any
