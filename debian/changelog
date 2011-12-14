@@ -8,6 +8,7 @@ qapt (1.2.2-1) UNRELEASED; urgency=low
   * debian/control:
     - Added myself to Uploaders.
     - Bumped B-D on debhelper for automatic environmet variables.
+    - Allow José direct uploads (DM-Upload-Allowed).
   * debian/source.lintian-overrides: Added (temp. only).
   * debian/source/{local-,}options: Added.
   * debian/copyright: Added myself.
