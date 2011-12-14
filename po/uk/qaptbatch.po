@@ -1,0 +1,409 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Yuri Chornoivan <yurchor@ukr.net>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2011-08-12 03:22+0200\n"
+"PO-Revision-Date: 2010-10-23 09:25+0300\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <translation@linux.org.ua>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Lokalize 1.1\n"
+
+#: utils/qapt-batch/detailswidget.cpp:44
+msgctxt "@label Remaining time"
+msgid "Remaining Time:"
+msgstr "Час до завершення:"
+
+#: utils/qapt-batch/detailswidget.cpp:48
+msgctxt "@label Download Rate"
+msgid "Speed:"
+msgstr "Швидкість:"
+
+#: utils/qapt-batch/qaptbatch.cpp:70
+msgctxt "@label"
+msgid "Waiting for authorization"
+msgstr "Очікування на уповноваження"
+
+#: utils/qapt-batch/qaptbatch.cpp:141
+msgctxt "@label"
+msgid ""
+"The package system could not be initialized, your configuration may be "
+"broken."
+msgstr ""
+"Не вдалося ініціалізувати систему керування пакунками, ймовірно, ваші "
+"налаштування є помилковими."
+
+#: utils/qapt-batch/qaptbatch.cpp:143
+msgctxt "@title:window"
+msgid "Initialization error"
+msgstr "Помилка ініціалізації"
+
+#: utils/qapt-batch/qaptbatch.cpp:151
+msgctxt "@label"
+msgid ""
+"Another application seems to be using the package system at this time. You "
+"must close all other package managers before you will be able to install or "
+"remove any packages."
+msgstr ""
+"Зараз з системою керування пакунками працює стороння програма. Вам слід "
+"завершити роботу всіх сторонніх програм, перш ніж ви зможете встановлювати, "
+"вилучати будь-які пакунки."
+
+#: utils/qapt-batch/qaptbatch.cpp:155
+msgctxt "@title:window"
+msgid "Unable to obtain package system lock"
+msgstr "Не вдалося заблокувати систему керування пакунками"
+
+#: utils/qapt-batch/qaptbatch.cpp:161
+#, kde-format
+msgctxt "@label"
+msgid ""
+"You do not have enough disk space in the directory at %1 to continue with "
+"this operation."
+msgstr "У каталозі %1 недостатньо місця для виконання цієї дії."
+
+#: utils/qapt-batch/qaptbatch.cpp:163
+msgctxt "@title:window"
+msgid "Low disk space"
+msgstr "Замало місця на диску"
+
+#: utils/qapt-batch/qaptbatch.cpp:168
+msgctxt "@label"
+msgid "Could not download packages"
+msgstr "Не вдалося завантажити пакунки"
+
+#: utils/qapt-batch/qaptbatch.cpp:169
+msgctxt "@title:window"
+msgid "Download failed"
+msgstr "Спроба звантаження зазнала невдачі"
+
+#: utils/qapt-batch/qaptbatch.cpp:177
+msgctxt "@label"
+msgid ""
+"This operation cannot continue since proper authorization was not provided"
+msgstr "Виконання цієї дії без належного уповноваження неможливе"
+
+#: utils/qapt-batch/qaptbatch.cpp:179
+msgctxt "@title:window"
+msgid "Authentication error"
+msgstr "Помилка розпізнавання"
+
+#: utils/qapt-batch/qaptbatch.cpp:183 utils/qapt-batch/qaptbatch.cpp:424
+msgctxt "@label"
+msgid ""
+"It appears that the QApt worker has either crashed or disappeared. Please "
+"report a bug to the QApt maintainers"
+msgstr ""
+"Здається, базова програма QApt аварійно завершила роботу або зникла зі "
+"списку процесів. Будь ласка, повідомте про цю помилку супровідникам QApt."
+
+#: utils/qapt-batch/qaptbatch.cpp:185 utils/qapt-batch/qaptbatch.cpp:426
+msgctxt "@title:window"
+msgid "Unexpected Error"
+msgstr "Неочікувана помилка"
+
+#: utils/qapt-batch/qaptbatch.cpp:193
+msgctxt "@label"
+msgid ""
+"The following package has not been verified by its author. Downloading "
+"untrusted packages has been disallowed by your current configuration."
+msgid_plural ""
+"The following packages have not been verified by their authors. Downloading "
+"untrusted packages has been disallowed by your current configuration."
+msgstr[0] ""
+"Пакунки з наведеного нижче списку не було підписано автором. Звантаження "
+"таких ненадійних пакунків заборонено поточними налаштуваннями."
+msgstr[1] ""
+"Пакунки з наведеного нижче списку не було підписано автором. Звантаження "
+"таких ненадійних пакунків заборонено поточними налаштуваннями."
+msgstr[2] ""
+"Пакунки з наведеного нижче списку не було підписано автором. Звантаження "
+"таких ненадійних пакунків заборонено поточними налаштуваннями."
+msgstr[3] ""
+"Пакунок з вказаною нижче назвою не було підписано автором. Звантаження таких "
+"ненадійних пакунків заборонено поточними налаштуваннями."
+
+#: utils/qapt-batch/qaptbatch.cpp:202
+msgctxt "@title:window"
+msgid "Untrusted Packages"
+msgstr "Ненадійні пакунки"
+
+#: utils/qapt-batch/qaptbatch.cpp:210
+#, kde-format
+msgctxt "@label"
+msgid ""
+"The package \"%1\" has not been found among your software sources. "
+"Therefore, it cannot be installed. "
+msgstr ""
+"У списках ваших джерел програмного забезпечення не знайдено пакунка «%1». "
+"Отже його не вдасться встановити. "
+
+#: utils/qapt-batch/qaptbatch.cpp:213
+msgctxt "@title:window"
+msgid "Package Not Found"
+msgstr "Пакунок не знайдено"
+
+#: utils/qapt-batch/qaptbatch.cpp:231
+msgctxt "@label"
+msgid "The size of the downloaded items did not equal the expected size."
+msgstr "Розмір звантажених об’єктів не збігається з очікуваним."
+
+#: utils/qapt-batch/qaptbatch.cpp:233
+msgctxt "@title:window"
+msgid "Size Mismatch"
+msgstr "Невідповідність розмірів"
+
+#: utils/qapt-batch/qaptbatch.cpp:259
+msgctxt "@title:window"
+msgid "Media Change Required"
+msgstr "Потрібна зміна носія"
+
+#: utils/qapt-batch/qaptbatch.cpp:260
+#, kde-format
+msgctxt "@label"
+msgid "Please insert %1 into <filename>%2</filename>"
+msgstr "Будь ласка, вставте %1 до <filename>%2</filename>"
+
+#: utils/qapt-batch/qaptbatch.cpp:269
+msgctxt "@title:window"
+msgid "Warning - Unverified Software"
+msgstr "Попередження: непідписане програмне забезпечення"
+
+#: utils/qapt-batch/qaptbatch.cpp:271
+msgctxt "@label"
+msgid ""
+"The following piece of software cannot be verified. <warning>Installing "
+"unverified software represents a security risk, as the presence of "
+"unverifiable software can be a sign of tampering.</warning> Do you wish to "
+"continue?"
+msgid_plural ""
+"The following pieces of software cannot be authenticated. "
+"<warning>Installing unverified software represents a security risk, as the "
+"presence of unverifiable software can be a sign of tampering.</warning> Do "
+"you wish to continue?"
+msgstr[0] ""
+"Не вдалося перевірити достовірність програмного забезпечення з наведеного "
+"нижче списку. <warning>Встановлення неперевіреного програмного забезпечення "
+"може зашкодити захисту вашої системи, оскільки таке програмне забезпечення "
+"могло бути підроблено зловмисниками.</warning> Бажаєте продовжити "
+"встановлення цього програмного забезпечення?"
+msgstr[1] ""
+"Не вдалося перевірити достовірність програмного забезпечення з наведеного "
+"нижче списку. <warning>Встановлення неперевіреного програмного забезпечення "
+"може зашкодити захисту вашої системи, оскільки таке програмне забезпечення "
+"могло бути підроблено зловмисниками.</warning> Бажаєте продовжити "
+"встановлення цього програмного забезпечення?"
+msgstr[2] ""
+"Не вдалося перевірити достовірність програмного забезпечення з наведеного "
+"нижче списку. <warning>Встановлення неперевіреного програмного забезпечення "
+"може зашкодити захисту вашої системи, оскільки таке програмне забезпечення "
+"могло бути підроблено зловмисниками.</warning> Бажаєте продовжити "
+"встановлення цього програмного забезпечення?"
+msgstr[3] ""
+"Не вдалося перевірити достовірність програмного забезпечення з наведеного "
+"нижче списку. <warning>Встановлення неперевіреного програмного забезпечення "
+"може зашкодити захисту вашої системи, оскільки таке програмне забезпечення "
+"могло бути підроблено зловмисниками.</warning> Бажаєте продовжити "
+"встановлення цього програмного забезпечення?"
+
+#: utils/qapt-batch/qaptbatch.cpp:316
+msgctxt "@title:window"
+msgid "Refreshing Package Information"
+msgstr "Оновлення відомостей щодо пакунків"
+
+#: utils/qapt-batch/qaptbatch.cpp:317
+msgctxt "@info:status"
+msgid "Checking for new, removed or upgradeable packages"
+msgstr "Пошук нових, вилучених або придатних до оновлення пакунків"
+
+#: utils/qapt-batch/qaptbatch.cpp:323
+msgctxt "@title:window"
+msgid "Refresh Complete"
+msgstr "Оновлення списку завершено"
+
+#: utils/qapt-batch/qaptbatch.cpp:332
+msgctxt "@info:status"
+msgid "Refresh completed with errors"
+msgstr "Оновлення списку завершених з помилками дій"
+
+#: utils/qapt-batch/qaptbatch.cpp:334
+msgctxt "@label"
+msgid "Package information successfully refreshed"
+msgstr "Відомості щодо пакунків успішно оновлено"
+
+#: utils/qapt-batch/qaptbatch.cpp:344
+msgctxt "@title:window"
+msgid "Downloading"
+msgstr "Звантаження"
+
+#: utils/qapt-batch/qaptbatch.cpp:346
+msgctxt "@info:status"
+msgid "Downloading package file"
+msgid_plural "Downloading package files"
+msgstr[0] "Звантаження файлів пакунків"
+msgstr[1] "Звантаження файлів пакунків"
+msgstr[2] "Звантаження файлів пакунків"
+msgstr[3] "Звантаження файла пакунка"
+
+#: utils/qapt-batch/qaptbatch.cpp:358
+msgctxt "@title:window"
+msgid "Installing Packages"
+msgstr "Встановлення пакунків"
+
+#: utils/qapt-batch/qaptbatch.cpp:372
+msgctxt "@title:window"
+msgid "Installation Complete"
+msgstr "Встановлення завершено"
+
+#: utils/qapt-batch/qaptbatch.cpp:376
+msgctxt "@label"
+msgid "Package installation finished with errors."
+msgstr "Спроба встановлення пакунка була невдалою через помилки."
+
+#: utils/qapt-batch/qaptbatch.cpp:379
+msgctxt "@label"
+msgid "Package successfully installed"
+msgid_plural "Packages successfully installed"
+msgstr[0] "Пакунки успішно встановлено"
+msgstr[1] "Пакунки успішно встановлено"
+msgstr[2] "Пакунки успішно встановлено"
+msgstr[3] "Пакунок успішно встановлено"
+
+#: utils/qapt-batch/qaptbatch.cpp:383
+msgctxt "@title:window"
+msgid "Removal Complete"
+msgstr "Вилучення завершено"
+
+#: utils/qapt-batch/qaptbatch.cpp:387
+msgctxt "@label"
+msgid "Package removal finished with errors."
+msgstr "Спроба вилучення пакунка була невдалою через помилки."
+
+#: utils/qapt-batch/qaptbatch.cpp:390
+msgctxt "@label"
+msgid "Package successfully uninstalled"
+msgid_plural "Packages successfully uninstalled"
+msgstr[0] "Пакунки успішно вилучено"
+msgstr[1] "Пакунки успішно вилучено"
+msgstr[2] "Пакунки успішно вилучено"
+msgstr[3] "Пакунок успішно вилучено"
+
+#: utils/qapt-batch/qaptbatch.cpp:441
+msgctxt "@info:progress Remaining time"
+msgid "Unknown"
+msgstr "Невідомий"
+
+#: utils/qapt-batch/qaptbatch.cpp:446
+msgctxt "@info:progress Download rate"
+msgid "Unknown"
+msgstr "Невідома"
+
+#: utils/qapt-batch/qaptbatch.cpp:449
+#, kde-format
+msgctxt "@info:progress Download rate"
+msgid "%1/s"
+msgstr "%1/с"
+
+#: utils/qapt-batch/qaptbatch.cpp:472
+msgctxt "@label"
+msgid "Unable to download the following packages:"
+msgstr "Не вдалося звантажити такі пакунки:"
+
+#: utils/qapt-batch/qaptbatch.cpp:477
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Failed to download %1\n"
+"%2\n"
+"\n"
+msgstr ""
+"Не вдалося звантажити %1\n"
+"%2\n"
+"\n"
+
+#: utils/qapt-batch/qaptbatch.cpp:480
+msgctxt "@title:window"
+msgid "Some Packages Could not be Downloaded"
+msgstr "Деякі з пакунків звантажити не вдалося"
+
+#: utils/qapt-batch/qaptbatch.cpp:487
+msgctxt "@label"
+msgid "An error occurred while applying changes:"
+msgid_plural "The following errors occurred while applying changes:"
+msgstr[0] "Під час внесення змін сталися помилки."
+msgstr[1] "Під час внесення змін сталися такі помилки:"
+msgstr[2] "Під час внесення змін сталися такі помилки:"
+msgstr[3] "Під час внесення змін сталася помилка:"
+
+#: utils/qapt-batch/qaptbatch.cpp:491
+#, kde-format
+msgctxt "@label Shows which package failed"
+msgid "Package: %1"
+msgstr "Пакунок: %1"
+
+#: utils/qapt-batch/qaptbatch.cpp:492
+#, kde-format
+msgctxt "@label Shows the error"
+msgid "Error: %1"
+msgstr "Помилка: %1"
+
+#: utils/qapt-batch/qaptbatch.cpp:496
+msgctxt "@title:window"
+msgid "Commit error"
+msgstr "Помилка надсилання даних"
+
+#: utils/qapt-batch/main.cpp:28
+msgctxt "@info"
+msgid "A batch installer using QApt"
+msgstr "Інструмент пакетного встановлення за допомогою QApt"
+
+#: utils/qapt-batch/main.cpp:34
+msgctxt "@title"
+msgid "QApt Batch Installer"
+msgstr "Інструмент пакетного встановлення QApt"
+
+#: utils/qapt-batch/main.cpp:35
+msgctxt "@info:credit"
+msgid "(C) 2010 Jonathan Thomas"
+msgstr "© Jonathan Thomas, 2010"
+
+#: utils/qapt-batch/main.cpp:36
+msgctxt "@info:credit"
+msgid "Jonathan Thomas"
+msgstr "Jonathan Thomas"
+
+#: utils/qapt-batch/main.cpp:41
+msgctxt "@info:shell"
+msgid "Attaches the window to an X app specified by winid"
+msgstr ""
+"Долучає вікно до програми з графічним інтерфейсом, вказаної за допомогою "
+"winid"
+
+#: utils/qapt-batch/main.cpp:42
+msgctxt "@info:shell"
+msgid "Install a package"
+msgstr "Встановити пакунок"
+
+#: utils/qapt-batch/main.cpp:43
+msgctxt "@info:shell"
+msgid "Remove a package"
+msgstr "Вилучити пакунок"
+
+#: utils/qapt-batch/main.cpp:44
+msgctxt "@info:shell"
+msgid "Update the package cache"
+msgstr "Оновити кеш пакунків"
+
+#: utils/qapt-batch/main.cpp:45
+msgctxt "@info:shell"
+msgid "Packages to be operated upon"
+msgstr "Пакунки, над якими буде виконано дії"

@@ -1,0 +1,371 @@
+# el translation of qapt-gst-helper.po
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+#
+# Stelios <sstavra@gmail.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: qapt-gst-helper\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2011-08-12 03:22+0200\n"
+"PO-Revision-Date: 2011-07-24 14:42+0300\n"
+"Last-Translator: Stelios <sstavra@gmail.com>\n"
+"Language-Team: Greek <kde-i18n-el@kde.org>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.2\n"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:82
+msgctxt "@info Error message"
+msgid "No valid plugin info was provided, so no plugins could be found."
+msgstr ""
+"Δεν παρέχεται πληροφόρηση για έγκυρα πρόσθετα, έτσι δεν βρέθηκαν πρόσθετα."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:85
+msgctxt "@title:window"
+msgid "Couldn't Find Plugins"
+msgstr "Αδυναμία εύρεσης πρόσθετων"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:91
+msgctxt "@info:progress"
+msgid "Looking for plugins"
+msgstr "Αναζήτηση για πρόσθετα"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:129
+#, kde-format
+msgid ""
+"The following plugin is required: <ul><li>%2</li></ul>Do you want to search "
+"for this now?"
+msgid_plural ""
+"The following plugins are required: <ul><li>%2</li></ul>Do you want to "
+"search for these now?"
+msgstr[0] ""
+"Το ακόλουθο πρόσθετο απαιτείται: <ul><li>%2</li></ul>Θέλετε να κάνετε "
+"αναζήτηση για αυτό τώρα;"
+msgstr[1] ""
+"Τα ακόλουθα πρόσθετα απαιτούνται: <ul><li>%2</li></ul>Θέλετε να κάνετε "
+"αναζήτηση για αυτά τώρα;"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:142
+msgctxt "A program for which we have no name"
+msgid "A program"
+msgstr "Ένα πρόγραμμα"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:151
+#, kde-format
+msgid "%2 requires an additional plugin to encode this file"
+msgid_plural "%2 requires additional plugins to encode this file"
+msgstr[0] ""
+"Το %2 απαιτεί ένα επιπλέον πρόσθετο για την κωδικοποίηση αυτού του αρχείου"
+msgstr[1] ""
+"Το %2 απαιτεί επιπλέον πρόσθετα για την κωδικοποίηση αυτού του αρχείου"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:157
+#, kde-format
+msgid "%2 requires an additional plugin to decode this file"
+msgid_plural "%2 requires additional plugins to decode this file"
+msgstr[0] ""
+"Το %2 απαιτεί ένα επιπλέον πρόσθετο για την αποκωδικοποίηση αυτού του αρχείου"
+msgstr[1] ""
+"Το %2 απαιτεί επιπλέον πρόσθετα για την αποκωδικοποίηση αυτού του αρχείου"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:169
+msgctxt "Search for packages"
+msgid "Search"
+msgstr "Αναζήτηση"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:192
+msgid "Confirm Changes"
+msgstr "Επιβεβαίωση αλλαγών"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:193
+msgid "Install the following package?"
+msgid_plural "Install the following packages?"
+msgstr[0] "Να εγκατασταθεί το ακόλουθο πακέτο;"
+msgstr[1] "Να εγκατασταθούν τα ακόλουθα πακέτα;"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:198
+msgctxt "Install packages"
+msgid "Install"
+msgstr "Εγκατάσταση"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:222
+msgctxt "@label"
+msgid ""
+"The package system could not be initialized, your configuration may be "
+"broken."
+msgstr ""
+"Αδυναμία αρχικοποίησης του συστήματος πακέτων, η διαμόρφωσή σας ίσως είναι "
+"κατεστραμμένη."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:224
+msgctxt "@title:window"
+msgid "Initialization error"
+msgstr "Σφάλμα αρχικοποίησης"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:233
+msgctxt "@label"
+msgid ""
+"Another application seems to be using the package system at this time. You "
+"must close all other package managers before you will be able to install or "
+"remove any packages."
+msgstr ""
+"Μια άλλη εφαρμογή φαίνεται ότι χρησιμοποιεί το σύστημα πακέτων τώρα. Πρέπει "
+"να κλείσετε όλους τους άλλους διαχειριστές πακέτων για να έχετε τη "
+"δυνατότητα να εγκαταστήσετε ή να αφαιρέσετε πακέτα."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:237
+msgctxt "@title:window"
+msgid "Unable to obtain package system lock"
+msgstr "Αδυναμία ανάκτησης κλειδώματος του συστήματος πακέτων"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:243
+#, kde-format
+msgctxt "@label"
+msgid ""
+"You do not have enough disk space in the directory at %1 to continue with "
+"this operation."
+msgstr ""
+"Δεν έχετε επαρκή χώρο στο δίσκο στον κατάλογο %1 για να συνεχίσετε με αυτήν "
+"τη λειτουργία."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:245
+msgctxt "@title:window"
+msgid "Low disk space"
+msgstr "Ανεπαρκής χώρος στο δίσκο"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:250
+msgctxt "@label"
+msgid "Could not download packages"
+msgstr "Αδυναμία λήψης πακέτων"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:251
+msgctxt "@title:window"
+msgid "Download failed"
+msgstr "Η λήψη απέτυχε"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:259
+msgctxt "@label"
+msgid ""
+"This operation cannot continue since proper authorization was not provided"
+msgstr ""
+"Η λειτουργία αυτή δεν μπορεί να συνεχιστεί επειδή δεν έχει δοθεί η κατάλληλη "
+"εξουσιοδότηση"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:261
+msgctxt "@title:window"
+msgid "Authentication error"
+msgstr "Σφάλμα ταυτοποίησης"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:265
+msgctxt "@label"
+msgid ""
+"It appears that the QApt worker has either crashed or disappeared. Please "
+"report a bug to the QApt maintainers"
+msgstr ""
+"Φαίνεται ότι το πρόγραμμα QApt έχει καταστραφεί ή εξαφανιστεί. Αναφέρετε το "
+"σφάλμα στους συντηρητές του QApt"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:267
+msgctxt "@title:window"
+msgid "Unexpected Error"
+msgstr "Απροσδόκητο σφάλμα"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:275
+msgctxt "@label"
+msgid ""
+"The following package has not been verified by its author. Downloading "
+"untrusted packages has been disallowed by your current configuration."
+msgid_plural ""
+"The following packages have not been verified by their authors. Downloading "
+"untrusted packages has been disallowed by your current configuration."
+msgstr[0] ""
+"Το ακόλουθο πακέτο δεν έχει επιβεβαιωθεί από το συγγραφέα του. Η λήψη μη-"
+"έμπιστων πακέτων έχει απαγορευτεί από την τρέχουσα διαμόρφωση."
+msgstr[1] ""
+"Τα ακόλουθα πακέτα δεν έχουν επιβεβαιωθεί από τους συγγραφείς τους. Η λήψη "
+"μη-έμπιστων πακέτων έχει απαγορευτεί από την τρέχουσα διαμόρφωση."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:284
+msgctxt "@title:window"
+msgid "Untrusted Packages"
+msgstr "Μη-έμπιστα πακέτα"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:292
+#, kde-format
+msgctxt "@label"
+msgid ""
+"The package \"%1\" has not been found among your software sources. "
+"Therefore, it cannot be installed. "
+msgstr ""
+"Το πακέτο «%1» δεν βρέθηκε ανάμεσα στις πηγές λογισμικού. Συνεπώς, δεν είναι "
+"δυνατό να εγκατασταθεί. "
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:295
+msgctxt "@title:window"
+msgid "Package Not Found"
+msgstr "Το πακέτο δεν βρέθηκε"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:316
+msgctxt "@label"
+msgid "The size of the downloaded items did not equal the expected size."
+msgstr "Το μέγεθος των ληφθέντων αντικειμένων δεν ήταν ίσο με το αναμενόμενο."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:318
+msgctxt "@title:window"
+msgid "Size Mismatch"
+msgstr "Διαφορά μεγέθους"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:342
+msgctxt "@title:window"
+msgid "Media Change Required"
+msgstr "Απαιτείται αλλαγή μέσου"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:343
+#, kde-format
+msgctxt "@label"
+msgid "Please insert %1 into <filename>%2</filename>"
+msgstr "Παρακαλώ τοποθετήστε το %1 στο <filename>%2</filename>"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:352
+msgctxt "@title:window"
+msgid "Warning - Unverified Software"
+msgstr "Προειδοποίηση - Ανεπιβεβαίωτο λογισμικό"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:354
+msgctxt "@label"
+msgid ""
+"The following piece of software cannot be verified. <warning>Installing "
+"unverified software represents a security risk, as the presence of "
+"unverifiable software can be a sign of tampering.</warning> Do you wish to "
+"continue?"
+msgid_plural ""
+"The following pieces of software cannot be authenticated. "
+"<warning>Installing unverified software represents a security risk, as the "
+"presence of unverifiable software can be a sign of tampering.</warning> Do "
+"you wish to continue?"
+msgstr[0] ""
+"Το ακόλουθο τμήμα λογισμικού δεν μπορεί να επιβεβαιωθεί. <warning>Η "
+"εγκατάσταση ανεπιβεβαίωτου λογισμικού ισοδυναμεί με κίνδυνο ασφαλείας, καθώς "
+"η παρουσία ανεπιβεβαίωτου λογισμικού ίσως είναι ένδειξη παραποίησης.</"
+"warning> Θέλετε να συνεχίσετε;"
+msgstr[1] ""
+"Τα ακόλουθα τμήματα λογισμικού δεν είναι δυνατό να ταυτοποιηθούν. <warning>Η "
+"εγκατάσταση ανεπιβεβαίωτου λογισμικού ισοδυναμεί με κίνδυνο ασφαλείας, καθώς "
+"η παρουσία ανεπιβεβαίωτου λογισμικού ίσως είναι ένδειξη παραποίησης.</"
+"warning> Θέλετε να συνεχίσετε;"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:395
+msgctxt "@title:window"
+msgid "Downloading"
+msgstr "Λήψη"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:396
+msgctxt "@info:status"
+msgid "Downloading codecs"
+msgstr "Λήψη τύπων συμπίεσης"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:403
+msgctxt "@title:window"
+msgid "Installing Codecs"
+msgstr "Εγκατάσταση τύπων συμπίεσης"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:415
+msgctxt "@title:window"
+msgid "Installation Complete"
+msgstr "Η εγκατάσταση ολοκληρώθηκε"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:419
+msgctxt "@label"
+msgid "Package installation finished with errors."
+msgstr "Η εγκατάσταση του πακέτου ολοκληρώθηκε με σφάλματα."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:422
+msgctxt "@label"
+msgid "Codecs successfully installed"
+msgstr "Οι τύποι συμπίεσης εγκαταστάθηκαν επιτυχώς"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:436
+msgctxt "@label"
+msgid "Unable to download the following packages:"
+msgstr "Αδυναμία λήψης των ακόλουθων πακέτων:"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:441
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Failed to download %1\n"
+"%2\n"
+"\n"
+msgstr ""
+"Αποτυχία λήψης %1\n"
+"%2\n"
+"\n"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:444
+msgctxt "@title:window"
+msgid "Some Packages Could not be Downloaded"
+msgstr "Δεν ήταν δυνατή η λήψη ορισμένων πακέτων"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:451
+msgctxt "@label"
+msgid "An error occurred while applying changes:"
+msgid_plural "The following errors occurred while applying changes:"
+msgstr[0] "Παρουσιάστηκε σφάλμα κατά την εφαρμογή αλλαγών:"
+msgstr[1] "Τα ακόλουθα σφάλματα παρουσιάστηκαν κατά την εφαρμογή αλλαγών:"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:455
+#, kde-format
+msgctxt "@label Shows which package failed"
+msgid "Package: %1"
+msgstr "Πακέτο: %1"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:456
+#, kde-format
+msgctxt "@label Shows the error"
+msgid "Error: %1"
+msgstr "Σφάλμα: %1"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:460
+msgctxt "@title:window"
+msgid "Commit error"
+msgstr "Σφάλμα αποστολής"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:510
+msgctxt "@label Progress bar label when waiting to start"
+msgid "Waiting"
+msgstr "Αναμονή"
+
+#: utils/qapt-gst-helper/main.cpp:31
+msgctxt "@info"
+msgid "A GStreamer codec installer using QApt"
+msgstr "Ένα πρόγραμμα τύπου συμπίεσης GStreamer με χρήση QApt"
+
+#: utils/qapt-gst-helper/main.cpp:37
+msgctxt "@title"
+msgid "QApt Codec Searcher"
+msgstr "Πρόγραμμα αναζήτησης τύπου συμπίεσης QApt"
+
+#: utils/qapt-gst-helper/main.cpp:38
+msgctxt "@info:credit"
+msgid "(C) 2011 Jonathan Thomas"
+msgstr "(C) 2011 Jonathan Thomas"
+
+#: utils/qapt-gst-helper/main.cpp:39
+msgctxt "@info:credit"
+msgid "Jonathan Thomas"
+msgstr "Jonathan Thomas"
+
+#: utils/qapt-gst-helper/main.cpp:44
+msgctxt "@info:shell"
+msgid "Attaches the window to an X app specified by winid"
+msgstr "Προσαρτά το παράθυρο σε μια εφαρμογή X που ορίζεται από το winid"
+
+#: utils/qapt-gst-helper/main.cpp:45
+msgctxt "@info:shell"
+msgid "GStreamer install info"
+msgstr "Πληροφορίες εγκατάστασης GStreamer"
