@@ -1,0 +1,5 @@
+[D-BUS Service]
+Name=org.kubuntu.qaptworker
+Exec=/usr/bin/qaptworker
+User=root
+

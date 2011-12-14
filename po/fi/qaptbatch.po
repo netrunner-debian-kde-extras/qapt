@@ -1,0 +1,371 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Tommi Nieminen <translator@legisign.org>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2011-08-12 03:22+0200\n"
+"PO-Revision-Date: 2011-03-03 00:23+0200\n"
+"Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
+"Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 1.2\n"
+
+#: utils/qapt-batch/detailswidget.cpp:44
+msgctxt "@label Remaining time"
+msgid "Remaining Time:"
+msgstr "Jäljellä oleva aika:"
+
+#: utils/qapt-batch/detailswidget.cpp:48
+msgctxt "@label Download Rate"
+msgid "Speed:"
+msgstr "Nopeus:"
+
+#: utils/qapt-batch/qaptbatch.cpp:70
+msgctxt "@label"
+msgid "Waiting for authorization"
+msgstr "Odotetaan tunnistautumista"
+
+#: utils/qapt-batch/qaptbatch.cpp:141
+msgctxt "@label"
+msgid ""
+"The package system could not be initialized, your configuration may be "
+"broken."
+msgstr "Paketinhallintaa ei voitu alustaa: asetuksesi voivat olla rikki."
+
+#: utils/qapt-batch/qaptbatch.cpp:143
+msgctxt "@title:window"
+msgid "Initialization error"
+msgstr "Alustusvirhe"
+
+#: utils/qapt-batch/qaptbatch.cpp:151
+msgctxt "@label"
+msgid ""
+"Another application seems to be using the package system at this time. You "
+"must close all other package managers before you will be able to install or "
+"remove any packages."
+msgstr ""
+"Toinen sovellus vaikuttaa käyttävän paketinhallintaa nyt. Sulje kaikki muut "
+"paketinhallintaohjelmat ennen kuin yrität asentaa tai poistaa paketteja."
+
+#: utils/qapt-batch/qaptbatch.cpp:155
+msgctxt "@title:window"
+msgid "Unable to obtain package system lock"
+msgstr "Paketinhallintajärjestelmää ei saada lukituksi"
+
+#: utils/qapt-batch/qaptbatch.cpp:161
+#, kde-format
+msgctxt "@label"
+msgid ""
+"You do not have enough disk space in the directory at %1 to continue with "
+"this operation."
+msgstr "Kansiossa %1 ei ole tarpeeksi levytilaa, jotta toimintoa voisi jatkaa."
+
+#: utils/qapt-batch/qaptbatch.cpp:163
+msgctxt "@title:window"
+msgid "Low disk space"
+msgstr "Levytila vähissä"
+
+#: utils/qapt-batch/qaptbatch.cpp:168
+msgctxt "@label"
+msgid "Could not download packages"
+msgstr "Paketteja ei voi ladata"
+
+#: utils/qapt-batch/qaptbatch.cpp:169
+msgctxt "@title:window"
+msgid "Download failed"
+msgstr "Lataus epäonnistui"
+
+#: utils/qapt-batch/qaptbatch.cpp:177
+msgctxt "@label"
+msgid ""
+"This operation cannot continue since proper authorization was not provided"
+msgstr "Toimintoa ei voi jatkaa, koska oikeaa tunnistautumista ei tarjottu"
+
+#: utils/qapt-batch/qaptbatch.cpp:179
+msgctxt "@title:window"
+msgid "Authentication error"
+msgstr "Tunnistautumisvirhe"
+
+#: utils/qapt-batch/qaptbatch.cpp:183 utils/qapt-batch/qaptbatch.cpp:424
+msgctxt "@label"
+msgid ""
+"It appears that the QApt worker has either crashed or disappeared. Please "
+"report a bug to the QApt maintainers"
+msgstr ""
+"Vaikuttaa siltä, että QApt-osa on joko kaatunut tai kadonnut. Ilmoita "
+"ohjelmavirheestä QAptin ylläpitäjille"
+
+#: utils/qapt-batch/qaptbatch.cpp:185 utils/qapt-batch/qaptbatch.cpp:426
+msgctxt "@title:window"
+msgid "Unexpected Error"
+msgstr "Odottamaton virhe"
+
+#: utils/qapt-batch/qaptbatch.cpp:193
+msgctxt "@label"
+msgid ""
+"The following package has not been verified by its author. Downloading "
+"untrusted packages has been disallowed by your current configuration."
+msgid_plural ""
+"The following packages have not been verified by their authors. Downloading "
+"untrusted packages has been disallowed by your current configuration."
+msgstr[0] ""
+"Tekijä ei ole tarkistanut seuraavaa pakettia. Asetuksesi estävät lataamasta "
+"ei-luotettuja paketteja."
+msgstr[1] ""
+"Tekijä ei ole tarkistanut seuraavia paketteja. Asetuksesi estävät lataamasta "
+"ei-luotettuja paketteja."
+
+#: utils/qapt-batch/qaptbatch.cpp:202
+msgctxt "@title:window"
+msgid "Untrusted Packages"
+msgstr "Ei-luotettuja paketteja"
+
+#: utils/qapt-batch/qaptbatch.cpp:210
+#, kde-format
+msgctxt "@label"
+msgid ""
+"The package \"%1\" has not been found among your software sources. "
+"Therefore, it cannot be installed. "
+msgstr "Pakettia ”%1” ei löydy ohjelmalähteistäsi, joten sitä ei asennettu. "
+
+#: utils/qapt-batch/qaptbatch.cpp:213
+msgctxt "@title:window"
+msgid "Package Not Found"
+msgstr "Pakettia ei löytynyt"
+
+#: utils/qapt-batch/qaptbatch.cpp:231
+msgctxt "@label"
+msgid "The size of the downloaded items did not equal the expected size."
+msgstr "Ladattujen osien koko ei täsmää odotettuun."
+
+#: utils/qapt-batch/qaptbatch.cpp:233
+msgctxt "@title:window"
+msgid "Size Mismatch"
+msgstr "Koot eivät täsmää"
+
+#: utils/qapt-batch/qaptbatch.cpp:259
+msgctxt "@title:window"
+msgid "Media Change Required"
+msgstr "Tietovälineen vaihto tarpeen"
+
+#: utils/qapt-batch/qaptbatch.cpp:260
+#, kde-format
+msgctxt "@label"
+msgid "Please insert %1 into <filename>%2</filename>"
+msgstr "Anna %1 asemaan <filename>%2</filename>"
+
+#: utils/qapt-batch/qaptbatch.cpp:269
+msgctxt "@title:window"
+msgid "Warning - Unverified Software"
+msgstr "Varoitus – Varmistamattomia ohjelmia"
+
+#: utils/qapt-batch/qaptbatch.cpp:271
+msgctxt "@label"
+msgid ""
+"The following piece of software cannot be verified. <warning>Installing "
+"unverified software represents a security risk, as the presence of "
+"unverifiable software can be a sign of tampering.</warning> Do you wish to "
+"continue?"
+msgid_plural ""
+"The following pieces of software cannot be authenticated. "
+"<warning>Installing unverified software represents a security risk, as the "
+"presence of unverifiable software can be a sign of tampering.</warning> Do "
+"you wish to continue?"
+msgstr[0] ""
+"Seuraavaa ohjelmaa ei voida varmistaa. <warning>Varmistamattoman ohjelman "
+"asentaminen on turvallisuusriski, koska varmistamattomuus on usein merkki "
+"väärentämisestä.</warning> Haluatko jatkaa?"
+msgstr[1] ""
+"Seuraavia ohjelmia ei voida varmistaa. <warning>Varmistamattomien ohjelmien "
+"asentaminen on turvallisuusriski, koska varmistamattomuus on usein merkki "
+"väärentämisestä.</warning> Haluatko jatkaa?"
+
+#: utils/qapt-batch/qaptbatch.cpp:316
+msgctxt "@title:window"
+msgid "Refreshing Package Information"
+msgstr "Virkistetään pakettitietoja"
+
+#: utils/qapt-batch/qaptbatch.cpp:317
+msgctxt "@info:status"
+msgid "Checking for new, removed or upgradeable packages"
+msgstr "Etsitään uusia, poistettuja tai päivitettävissä olevia paketteja"
+
+#: utils/qapt-batch/qaptbatch.cpp:323
+msgctxt "@title:window"
+msgid "Refresh Complete"
+msgstr "Virkistys valmis"
+
+#: utils/qapt-batch/qaptbatch.cpp:332
+msgctxt "@info:status"
+msgid "Refresh completed with errors"
+msgstr "Virkistys päättyi virheisiin"
+
+#: utils/qapt-batch/qaptbatch.cpp:334
+msgctxt "@label"
+msgid "Package information successfully refreshed"
+msgstr "Pakettitieto onnistuttiin virkistämään"
+
+#: utils/qapt-batch/qaptbatch.cpp:344
+msgctxt "@title:window"
+msgid "Downloading"
+msgstr "Ladataan"
+
+#: utils/qapt-batch/qaptbatch.cpp:346
+msgctxt "@info:status"
+msgid "Downloading package file"
+msgid_plural "Downloading package files"
+msgstr[0] "Ladataan pakettitiedostoa"
+msgstr[1] "Ladataan pakettitiedostoja"
+
+#: utils/qapt-batch/qaptbatch.cpp:358
+msgctxt "@title:window"
+msgid "Installing Packages"
+msgstr "Asennetaan paketteja"
+
+#: utils/qapt-batch/qaptbatch.cpp:372
+msgctxt "@title:window"
+msgid "Installation Complete"
+msgstr "Asennus valmis"
+
+#: utils/qapt-batch/qaptbatch.cpp:376
+msgctxt "@label"
+msgid "Package installation finished with errors."
+msgstr "Paketin asennus päättyi virheisiin."
+
+#: utils/qapt-batch/qaptbatch.cpp:379
+msgctxt "@label"
+msgid "Package successfully installed"
+msgid_plural "Packages successfully installed"
+msgstr[0] "Paketti asennettiin onnistuneesti"
+msgstr[1] "Paketit asennettiin onnistuneesti"
+
+#: utils/qapt-batch/qaptbatch.cpp:383
+msgctxt "@title:window"
+msgid "Removal Complete"
+msgstr "Poisto valmis"
+
+#: utils/qapt-batch/qaptbatch.cpp:387
+msgctxt "@label"
+msgid "Package removal finished with errors."
+msgstr "Paketin poisto päättyi virheisiin."
+
+#: utils/qapt-batch/qaptbatch.cpp:390
+msgctxt "@label"
+msgid "Package successfully uninstalled"
+msgid_plural "Packages successfully uninstalled"
+msgstr[0] "Paketti poistettiin onnistuneesti"
+msgstr[1] "Paketit poistettiin onnistuneesti"
+
+#: utils/qapt-batch/qaptbatch.cpp:441
+msgctxt "@info:progress Remaining time"
+msgid "Unknown"
+msgstr "Tuntematon"
+
+#: utils/qapt-batch/qaptbatch.cpp:446
+msgctxt "@info:progress Download rate"
+msgid "Unknown"
+msgstr "Tuntematon"
+
+#: utils/qapt-batch/qaptbatch.cpp:449
+#, kde-format
+msgctxt "@info:progress Download rate"
+msgid "%1/s"
+msgstr "%1/s"
+
+#: utils/qapt-batch/qaptbatch.cpp:472
+msgctxt "@label"
+msgid "Unable to download the following packages:"
+msgstr "Seuraavia paketteja ei voitu ladata:"
+
+#: utils/qapt-batch/qaptbatch.cpp:477
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Failed to download %1\n"
+"%2\n"
+"\n"
+msgstr ""
+"Ei onnistuttu lataamaan %1\n"
+"%2\n"
+"\n"
+
+#: utils/qapt-batch/qaptbatch.cpp:480
+msgctxt "@title:window"
+msgid "Some Packages Could not be Downloaded"
+msgstr "Joitakin paketteja ei voitu ladata"
+
+#: utils/qapt-batch/qaptbatch.cpp:487
+msgctxt "@label"
+msgid "An error occurred while applying changes:"
+msgid_plural "The following errors occurred while applying changes:"
+msgstr[0] "Sattui virhe toteutettaessa muutoksia:"
+msgstr[1] "Sattui virheitä toteutettaessa muutoksia:"
+
+#: utils/qapt-batch/qaptbatch.cpp:491
+#, kde-format
+msgctxt "@label Shows which package failed"
+msgid "Package: %1"
+msgstr "Paketti: %1"
+
+#: utils/qapt-batch/qaptbatch.cpp:492
+#, kde-format
+msgctxt "@label Shows the error"
+msgid "Error: %1"
+msgstr "Virhe: %1"
+
+#: utils/qapt-batch/qaptbatch.cpp:496
+msgctxt "@title:window"
+msgid "Commit error"
+msgstr "Toteutusvirhe"
+
+#: utils/qapt-batch/main.cpp:28
+msgctxt "@info"
+msgid "A batch installer using QApt"
+msgstr "QAptia käyttävä eräajoasentaja"
+
+#: utils/qapt-batch/main.cpp:34
+msgctxt "@title"
+msgid "QApt Batch Installer"
+msgstr "QApt-eräajoasentaja"
+
+#: utils/qapt-batch/main.cpp:35
+msgctxt "@info:credit"
+msgid "(C) 2010 Jonathan Thomas"
+msgstr "(C) 2010 Jonathan Thomas"
+
+#: utils/qapt-batch/main.cpp:36
+msgctxt "@info:credit"
+msgid "Jonathan Thomas"
+msgstr "Jonathan Thomas"
+
+#: utils/qapt-batch/main.cpp:41
+msgctxt "@info:shell"
+msgid "Attaches the window to an X app specified by winid"
+msgstr "Liittää ikkunan ikkunatunnisteen määrittämään X-sovellukseen"
+
+#: utils/qapt-batch/main.cpp:42
+msgctxt "@info:shell"
+msgid "Install a package"
+msgstr "Asenna paketti"
+
+#: utils/qapt-batch/main.cpp:43
+msgctxt "@info:shell"
+msgid "Remove a package"
+msgstr "Poista paketti"
+
+#: utils/qapt-batch/main.cpp:44
+msgctxt "@info:shell"
+msgid "Update the package cache"
+msgstr "Virkistä pakettivälimuisti"
+
+#: utils/qapt-batch/main.cpp:45
+msgctxt "@info:shell"
+msgid "Packages to be operated upon"
+msgstr ""

@@ -1,0 +1,36 @@
+# Translation of plasma-runner-installer.po into Serbian.
+# Далибор Ђурић <dalibor.djuric@mozilla-srbija.org>, 2011.
+# Dalibor Djuric <daliborddjuric@gmail.com>, 2011.
+# Chusslove Illich <caslav.ilic@gmx.net>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-runner-installer\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2011-08-02 05:06+0200\n"
+"PO-Revision-Date: 2011-05-26 12:18+0200\n"
+"Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
+"Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
+"Language: sr@ijekavianlatin\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+"X-Environment: kde\n"
+"X-Generator: Lokalize 1.1\n"
+
+#: utils/plasma-runner-installer/installerrunner.cpp:41
+msgid "Suggests the installation of applications if :q: is not found"
+msgstr "Predlaže instaliranje programa ako :q: nije pronađen."
+
+#: utils/plasma-runner-installer/installerrunner.cpp:113
+#, kde-format
+msgid "Install %1"
+msgstr "Instaliraj %1"
+
+#: utils/plasma-runner-installer/installerrunner.cpp:116
+#, kde-format
+msgid "The \"%1\" package contains %2"
+msgstr "Paket „%1“ sadrži %2"

@@ -1,0 +1,360 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# Vít Pelčák <vit@pelcak.org>, 2010, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2011-08-12 03:22+0200\n"
+"PO-Revision-Date: 2011-10-13 12:43+0200\n"
+"Last-Translator: Vít Pelčák <vit@pelcak.org>\n"
+"Language-Team: Czech <kde-i18n-doc@kde.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Lokalize 1.2\n"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:82
+msgctxt "@info Error message"
+msgid "No valid plugin info was provided, so no plugins could be found."
+msgstr ""
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:85
+msgctxt "@title:window"
+msgid "Couldn't Find Plugins"
+msgstr "Moduly nelze nalézt"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:91
+msgctxt "@info:progress"
+msgid "Looking for plugins"
+msgstr "Vyhledávám moduly"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:129
+#, kde-format
+msgid ""
+"The following plugin is required: <ul><li>%2</li></ul>Do you want to search "
+"for this now?"
+msgid_plural ""
+"The following plugins are required: <ul><li>%2</li></ul>Do you want to "
+"search for these now?"
+msgstr[0] ""
+"Je požadován následující modul: <ul><li>%2</li></ul>Přejete si jej nyní "
+"vyhledat?"
+msgstr[1] ""
+"Jsou požadovány následující moduly: <ul><li>%2</li></ul>Přejete si je nyní "
+"vyhledat?"
+msgstr[2] ""
+"Jsou požadovány následující moduly: <ul><li>%2</li></ul>Přejete si je nyní "
+"vyhledat?"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:142
+msgctxt "A program for which we have no name"
+msgid "A program"
+msgstr "Program"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:151
+#, kde-format
+msgid "%2 requires an additional plugin to encode this file"
+msgid_plural "%2 requires additional plugins to encode this file"
+msgstr[0] ""
+msgstr[1] ""
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:157
+#, kde-format
+msgid "%2 requires an additional plugin to decode this file"
+msgid_plural "%2 requires additional plugins to decode this file"
+msgstr[0] ""
+msgstr[1] ""
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:169
+msgctxt "Search for packages"
+msgid "Search"
+msgstr "Hledat"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:192
+msgid "Confirm Changes"
+msgstr "Potvrdit změny"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:193
+msgid "Install the following package?"
+msgid_plural "Install the following packages?"
+msgstr[0] "Nainstalovat následující balíček?"
+msgstr[1] "Nainstalovat následující balíčky?"
+msgstr[2] "Nainstalovat následující balíčky?"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:198
+msgctxt "Install packages"
+msgid "Install"
+msgstr "Instalovat"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:222
+msgctxt "@label"
+msgid ""
+"The package system could not be initialized, your configuration may be "
+"broken."
+msgstr ""
+"Systém pro práci s balíčky nemohl být spuštěn. Možná má vadné nastavení."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:224
+msgctxt "@title:window"
+msgid "Initialization error"
+msgstr "Chyba inicializace"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:233
+msgctxt "@label"
+msgid ""
+"Another application seems to be using the package system at this time. You "
+"must close all other package managers before you will be able to install or "
+"remove any packages."
+msgstr ""
+"Jiná aplikace právě používá balíčkovací systém. Musíte zavřít všechny "
+"ostatní správce balíčků před započetím manipulací s balíčky."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:237
+msgctxt "@title:window"
+msgid "Unable to obtain package system lock"
+msgstr "Nelze získat zámek balíčkovacího systému"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:243
+#, kde-format
+msgctxt "@label"
+msgid ""
+"You do not have enough disk space in the directory at %1 to continue with "
+"this operation."
+msgstr ""
+"Pro pokračování této operace nemáte dostatek volného místa v adresáři %1."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:245
+msgctxt "@title:window"
+msgid "Low disk space"
+msgstr "Málo místa na disku"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:250
+msgctxt "@label"
+msgid "Could not download packages"
+msgstr "Nepovedlo se stáhnout balíčky"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:251
+msgctxt "@title:window"
+msgid "Download failed"
+msgstr "Stažení bylo neúspěšné"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:259
+msgctxt "@label"
+msgid ""
+"This operation cannot continue since proper authorization was not provided"
+msgstr ""
+"Tato operace nemůže pokračovat protože nebylo provedeno udělení oprávnění"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:261
+msgctxt "@title:window"
+msgid "Authentication error"
+msgstr "Chyba ověření"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:265
+msgctxt "@label"
+msgid ""
+"It appears that the QApt worker has either crashed or disappeared. Please "
+"report a bug to the QApt maintainers"
+msgstr ""
+"Zdá se, že QApt zmizel nebo spadl. Pošlete, prosím, chybové hlášení správcům "
+"QApt"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:267
+msgctxt "@title:window"
+msgid "Unexpected Error"
+msgstr "Neočekávaná chyba"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:275
+msgctxt "@label"
+msgid ""
+"The following package has not been verified by its author. Downloading "
+"untrusted packages has been disallowed by your current configuration."
+msgid_plural ""
+"The following packages have not been verified by their authors. Downloading "
+"untrusted packages has been disallowed by your current configuration."
+msgstr[0] ""
+"Následující balíček nebyl autorem podepsán. Stahování nedůvěryhodných "
+"balíčků není ve vašem nastavení povolené."
+msgstr[1] ""
+"Následující balíčky nebyly autorem podepsány. Stahování nedůvěryhodných "
+"balíčků není ve vašem nastavení povolené."
+msgstr[2] ""
+"Následující balíčky nebyly autorem podepsány. Stahování nedůvěryhodných "
+"balíčků není ve vašem nastavení povolené."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:284
+msgctxt "@title:window"
+msgid "Untrusted Packages"
+msgstr "Nedůvěryhodné balíčky"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:292
+#, kde-format
+msgctxt "@label"
+msgid ""
+"The package \"%1\" has not been found among your software sources. "
+"Therefore, it cannot be installed. "
+msgstr ""
+"Balíček \"%1\" nebyl ve zdrojích softwaru nalezen. Tudíž nemůže být "
+"nainstalován. "
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:295
+msgctxt "@title:window"
+msgid "Package Not Found"
+msgstr "Balíček nebyl nalezen"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:316
+msgctxt "@label"
+msgid "The size of the downloaded items did not equal the expected size."
+msgstr "Velikost stahovaných položek neodpovídala očekávané velikosti."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:318
+msgctxt "@title:window"
+msgid "Size Mismatch"
+msgstr "Neodpovídající velikost"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:342
+msgctxt "@title:window"
+msgid "Media Change Required"
+msgstr "Je vyžadována změna média"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:343
+#, kde-format
+msgctxt "@label"
+msgid "Please insert %1 into <filename>%2</filename>"
+msgstr "Prosím vložte %1 do <filename>%2</filename>"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:352
+msgctxt "@title:window"
+msgid "Warning - Unverified Software"
+msgstr "Varování - Neověřený software"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:354
+msgctxt "@label"
+msgid ""
+"The following piece of software cannot be verified. <warning>Installing "
+"unverified software represents a security risk, as the presence of "
+"unverifiable software can be a sign of tampering.</warning> Do you wish to "
+"continue?"
+msgid_plural ""
+"The following pieces of software cannot be authenticated. "
+"<warning>Installing unverified software represents a security risk, as the "
+"presence of unverifiable software can be a sign of tampering.</warning> Do "
+"you wish to continue?"
+msgstr[0] ""
+msgstr[1] ""
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:395
+msgctxt "@title:window"
+msgid "Downloading"
+msgstr "Stahuji"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:396
+msgctxt "@info:status"
+msgid "Downloading codecs"
+msgstr "Stahují se kodeky"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:403
+msgctxt "@title:window"
+msgid "Installing Codecs"
+msgstr "Instalují se kodeky"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:415
+msgctxt "@title:window"
+msgid "Installation Complete"
+msgstr "Instalace dokončena"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:419
+msgctxt "@label"
+msgid "Package installation finished with errors."
+msgstr "Instalace balíčku selhala s chybami."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:422
+msgctxt "@label"
+msgid "Codecs successfully installed"
+msgstr "Kodeky byly úspěšně nainstalovány"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:436
+msgctxt "@label"
+msgid "Unable to download the following packages:"
+msgstr "Nepovedlo se stáhnout následující balíčky:"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:441
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Failed to download %1\n"
+"%2\n"
+"\n"
+msgstr ""
+"Chyba při stahování souboru %1\n"
+"%2\n"
+"\n"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:444
+msgctxt "@title:window"
+msgid "Some Packages Could not be Downloaded"
+msgstr "Některé balíčky nebylo možno stáhnout"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:451
+msgctxt "@label"
+msgid "An error occurred while applying changes:"
+msgid_plural "The following errors occurred while applying changes:"
+msgstr[0] "Při provádění změn došlo k chybě:"
+msgstr[1] "Při provádění změn došlo k následujícím chybám:"
+msgstr[2] "Při provádění změn došlo k následujícím chybám:"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:455
+#, kde-format
+msgctxt "@label Shows which package failed"
+msgid "Package: %1"
+msgstr "Balíček: %1"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:456
+#, kde-format
+msgctxt "@label Shows the error"
+msgid "Error: %1"
+msgstr "Chyba: %1"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:460
+msgctxt "@title:window"
+msgid "Commit error"
+msgstr ""
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:510
+msgctxt "@label Progress bar label when waiting to start"
+msgid "Waiting"
+msgstr "Čekám"
+
+#: utils/qapt-gst-helper/main.cpp:31
+msgctxt "@info"
+msgid "A GStreamer codec installer using QApt"
+msgstr "Instalátor kodeku GStreamer používající QApt"
+
+#: utils/qapt-gst-helper/main.cpp:37
+msgctxt "@title"
+msgid "QApt Codec Searcher"
+msgstr "Vyhledávač kodeků pro QApt"
+
+#: utils/qapt-gst-helper/main.cpp:38
+msgctxt "@info:credit"
+msgid "(C) 2011 Jonathan Thomas"
+msgstr "(C) 2011 Jonathan Thomas"
+
+#: utils/qapt-gst-helper/main.cpp:39
+msgctxt "@info:credit"
+msgid "Jonathan Thomas"
+msgstr "Jonathan Thomas"
+
+#: utils/qapt-gst-helper/main.cpp:44
+msgctxt "@info:shell"
+msgid "Attaches the window to an X app specified by winid"
+msgstr ""
+
+#: utils/qapt-gst-helper/main.cpp:45
+msgctxt "@info:shell"
+msgid "GStreamer install info"
+msgstr ""
