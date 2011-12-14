@@ -1,4 +1,4 @@
-qapt (1.2.2-1) UNRELEASED; urgency=low
+qapt (1.2.2-1) experimental; urgency=low
 
   [ José Manuel Santamaría Lema ]
   * Initial release (Closes: #635380)
@@ -14,4 +14,4 @@ qapt (1.2.2-1) UNRELEASED; urgency=low
   * debian/copyright: Added myself.
   * debian/patches/Fix-FTBFS-due-to-symbol-collision.patch: Added.
 
- -- Kai Wasserbäch <curan@debian.org>  Sun, 27 Nov 2011 13:56:01 +0100
+ -- Kai Wasserbäch <curan@debian.org>  Wed, 14 Dec 2011 15:49:14 +0100
