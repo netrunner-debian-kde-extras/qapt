@@ -5,3 +5,5 @@
 
 override_dh_install:
 	dh_install --fail-missing
+
+.PHONY: override_dh_install
