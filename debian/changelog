@@ -7,6 +7,9 @@ qapt (1.2.2-2) UNRELEASED; urgency=low
     - Remove override for dh_strip, not needed.
     - Added .PHONY line.
 
+  [ Pino Toscano ]
+  * Drop patch Fix-spelling-errors.patch, which breaks translations.
+
  -- Kai Wasserbäch <curan@debian.org>  Wed, 14 Dec 2011 18:56:08 +0100
 
 qapt (1.2.2-1) experimental; urgency=low
