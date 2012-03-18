@@ -1,7 +1,7 @@
 qapt (1.3.0-1) UNRELEASED; urgency=low
 
   [ Kai Wasserbäch ]
-  * New upstream release (release to unstable).
+  * New upstream release (release to unstable (Closes: #662926)).
   * debian/gbp.conf: Added to ensure pristine-tar usage and signed tags.
   * debian/watch: use git-import-orig.
   * debian/control:
