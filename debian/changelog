@@ -1,4 +1,4 @@
-qapt (1.3.0-1) UNRELEASED; urgency=low
+qapt (1.3.0-1) unstable; urgency=low
 
   [ Kai Wasserbäch ]
   * New upstream release (release to unstable (Closes: #662926)).
@@ -21,7 +21,7 @@ qapt (1.3.0-1) UNRELEASED; urgency=low
   [ Pino Toscano ]
   * Drop patch Fix-spelling-errors.patch, which breaks translations.
 
- -- Kai Wasserbäch <curan@debian.org>  Sun, 18 Mar 2012 19:18:59 +0100
+ -- Kai Wasserbäch <curan@debian.org>  Sun, 18 Mar 2012 20:19:33 +0100
 
 qapt (1.2.2-1) experimental; urgency=low
 
