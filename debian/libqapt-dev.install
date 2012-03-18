@@ -1,5 +1,6 @@
 usr/include/LibQApt/Backend
 usr/include/LibQApt/Cache
+usr/include/LibQApt/Changelog
 usr/include/LibQApt/Config
 usr/include/LibQApt/DebFile
 usr/include/LibQApt/DependencyInfo
@@ -8,6 +9,7 @@ usr/include/LibQApt/History
 usr/include/LibQApt/Package
 usr/include/libqapt/backend.h
 usr/include/libqapt/cache.h
+usr/include/libqapt/changelog.h
 usr/include/libqapt/config.h
 usr/include/libqapt/debfile.h
 usr/include/libqapt/dependencyinfo.h

@@ -15,6 +15,7 @@ qapt (1.3.0-1) UNRELEASED; urgency=low
     upstream.
   * debian/TODO: Added, mentioning multi-arch progress.
   * debian/source.lintian-overrides: Deleted, no longer needed.
+  * debian/libqapt-dev.install: Added new changelog.h and its wrapper.
 
   [ Pino Toscano ]
   * Drop patch Fix-spelling-errors.patch, which breaks translations.
