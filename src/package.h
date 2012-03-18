@@ -70,6 +70,7 @@ public:
    /**
     * Default destructor
     */
+    // TODO QApt2: Nope
     virtual ~Package();
 
    /**
@@ -251,6 +252,17 @@ public:
     * \return The origin of the package
     */
     QString origin() const;
+
+   /**
+    * Returns a list of archives that the candidate version of the package is
+    * available from.
+    * (E.g. oneiric, oneiric-updates, sid, etc)
+    *
+    * @return The origin of the package
+    *
+    * @since 1.3
+    */
+    QStringList archives() const;
 
    /**
     * Returns the archive component of the package. (E.g. main, restricted,
@@ -601,6 +613,12 @@ public:
 private:
     PackagePrivate *const d;
 };
+
+/**
+ * Defines the StateChanges type, which is a QHash of Package States
+ * and QLists of packages which have those states.
+ */
+typedef QHash<Package::State, PackageList> StateChanges;
 
 }
 

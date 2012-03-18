@@ -40,6 +40,7 @@
 #include <apt-pkg/tagfile.h>
 
 // Xapian includes
+#undef slots
 #include <xapian.h>
 
 // QApt includes
@@ -59,6 +60,9 @@ public:
         , records(0)
         , maxStackSize(20)
         , config(0)
+        , xapianDatabase(0)
+        , xapianIndexExists(false)
+        , compressEvents(false)
     {
     }
     ~BackendPrivate()
@@ -66,6 +70,7 @@ public:
         delete cache;
         delete records;
         delete config;
+        delete xapianDatabase;
     }
     // Caches
     // The canonical list of all unique, non-virutal package objects
@@ -93,7 +98,7 @@ public:
 
     // Xapian
     time_t xapianTimeStamp;
-    Xapian::Database xapianDatabase;
+    Xapian::Database *xapianDatabase;
     bool xapianIndexExists;
 
     // DBus
@@ -103,6 +108,10 @@ public:
     Config *config;
     bool isMultiArch;
     QString nativeArch;
+
+    // Event compression
+    bool compressEvents;
+    pkgDepCache::ActionGroup *actionGroup;
 
     bool writeSelectionFile(const QString &file, const QString &path) const;
     void setWorkerLocale();
@@ -129,7 +138,7 @@ void BackendPrivate::setWorkerLocale()
 
 void BackendPrivate::setWorkerProxy()
 {
-    worker->setProxy(QLatin1String(getenv("http_proxy")));
+    worker->setProxy(QLatin1String(qgetenv("http_proxy")));
 }
 
 Backend::Backend()
@@ -141,8 +150,8 @@ Backend::Backend()
                                                   QLatin1String("/"), QDBusConnection::systemBus(),
                                                   this);
 
-    connect(d->worker, SIGNAL(errorOccurred(int, const QVariantMap&)),
-            this, SLOT(emitErrorOccurred(int, const QVariantMap&)));
+    connect(d->worker, SIGNAL(errorOccurred(int,QVariantMap)),
+            this, SLOT(emitErrorOccurred(int,QVariantMap)));
     connect(d->worker, SIGNAL(workerStarted()), this, SLOT(workerStarted()));
     connect(d->worker, SIGNAL(workerEvent(int)), this, SLOT(emitWorkerEvent(int)));
     connect(d->worker, SIGNAL(workerFinished(bool)), this, SLOT(workerFinished(bool)));
@@ -258,19 +267,17 @@ void Backend::reloadCache()
 
     Q_FOREACH (const QString &pinName, pinFiles) {
         QString pinPath;
-
-        // Handle absolute paths
+        // Make all paths absolute
         if (!pinName.startsWith(QLatin1Char('/'))) {
             pinPath = dir % pinName;
         } else {
             pinPath = pinName;
         }
-        QFile pinFile(pinPath);
 
-        if (!pinFile.open(QIODevice::ReadOnly | QIODevice::Text)) {
-            continue;
-        }
-        FileFd Fd(pinFile.handle(), FileFd::ReadOnly);
+        if (!QFile::exists(pinPath))
+                continue;
+
+        FileFd Fd(pinPath.toUtf8().data(), FileFd::ReadOnly);
 
         pkgTagFile tagFile(&Fd);
         if (_error->PendingError()) {
@@ -504,7 +511,7 @@ PackageList Backend::search(const QString &searchString) const
 {
     Q_D(const Backend);
 
-    if (d->xapianTimeStamp == 0) {
+    if (d->xapianTimeStamp == 0 || !d->xapianDatabase) {
         return QApt::PackageList();
     }
 
@@ -514,10 +521,10 @@ PackageList Backend::search(const QString &searchString) const
 
     // Doesn't follow style guidelines to ease merging with synaptic
     try {
-        int maxItems = d->xapianDatabase.get_doccount();
-        Xapian::Enquire enquire(d->xapianDatabase);
+        int maxItems = d->xapianDatabase->get_doccount();
+        Xapian::Enquire enquire(*(d->xapianDatabase));
         Xapian::QueryParser parser;
-        parser.set_database(d->xapianDatabase);
+        parser.set_database(*(d->xapianDatabase));
         parser.add_prefix("name","XP");
         parser.add_prefix("section","XS");
         // default op is AND to narrow down the resultset
@@ -582,8 +589,12 @@ PackageList Backend::search(const QString &searchString) const
          searchResult.append(pkg);
          }
     } catch (const Xapian::Error & error) {
+        qDebug() << "Search error" << QString::fromStdString(error.get_msg());
         return QApt::PackageList();
     }
+
+    if (searchResult.isEmpty())
+        qDebug() << "Search seemed to go ok, but came up empty";
 
     return searchResult;
 }
@@ -609,10 +620,9 @@ QStringList Backend::architectures() const
     std::vector<std::string> archs = APT::Configuration::getArchitectures(false);
 
     QStringList archList;
-    for (std::vector<std::string>::const_iterator a = archs.begin();
-         a != archs.end(); ++a)
+    for (std::string &arch : archs)
     {
-         archList.append(QString::fromStdString(*a));
+         archList.append(QString::fromStdString(arch));
     }
 
 
@@ -647,6 +657,17 @@ bool Backend::isBroken() const
     return false;
 }
 
+QDateTime Backend::timeCacheLastUpdated() const
+{
+    QDateTime sinceUpdate;
+
+    QFileInfo updateStamp("/var/lib/apt/periodic/update-success-stamp");
+    if (!updateStamp.exists())
+        return sinceUpdate;
+
+    return updateStamp.lastModified();
+}
+
 bool Backend::xapianIndexNeedsUpdate() const
 {
     Q_D(const Backend);
@@ -671,14 +692,16 @@ bool Backend::openXapianIndex()
     QFileInfo timeStamp(QLatin1String("/var/lib/apt-xapian-index/update-timestamp"));
     d->xapianTimeStamp = timeStamp.lastModified().toTime_t();
 
+    if(d->xapianDatabase) {
+        delete d->xapianDatabase;
+        d->xapianDatabase = 0;
+    }
     try {
-        d->xapianDatabase.add_database(Xapian::Database("/var/lib/apt-xapian-index/index"));
+        d->xapianDatabase = new Xapian::Database("/var/lib/apt-xapian-index/index");
     } catch (Xapian::DatabaseOpeningError) {
         d->xapianIndexExists = false;
         return false;
     };
-
-    d->xapianIndexExists = true;
 
     return true;
 }
@@ -702,6 +725,60 @@ CacheState Backend::currentCacheState() const
     }
 
     return state;
+}
+
+QHash<Package::State, PackageList> Backend::stateChanges(CacheState oldState, PackageList excluded) const
+{
+    Q_D(const Backend);
+
+    QHash<Package::State, PackageList> changes;
+
+    for (int i = 0; i < d->packages.size(); ++i) {
+        Package *pkg = d->packages.at(i);
+        int flags = pkg->state();
+
+        if (oldState.at(i) != flags) {
+            // These flags will never be set together.
+            int status = flags & (Package::Held |
+                                  Package::NewInstall |
+                                  Package::ToReInstall |
+                                  Package::ToUpgrade |
+                                  Package::ToDowngrade |
+                                  Package::ToRemove);
+
+            if (excluded.contains(pkg))
+                continue;
+
+            PackageList list;
+            if (status & Package::ToUpgrade) {
+                list = changes.value(Package::ToUpgrade);
+                list.append(pkg);
+                changes[Package::ToUpgrade]= list;
+            } else if (status & Package::NewInstall) {
+                list = changes.value(Package::NewInstall);
+                list.append(pkg);
+                changes[Package::NewInstall]= list;
+            } else if (status & Package::ToReInstall) {
+                list = changes.value(Package::ToReInstall);
+                list.append(pkg);
+                changes[Package::ToReInstall]= list;
+            } else if (status & Package::ToDowngrade) {
+                list = changes.value(Package::ToDowngrade);
+                list.append(pkg);
+                changes[Package::ToDowngrade]= list;
+            } else if (status & Package::ToRemove) {
+                list = changes.value(Package::ToRemove);
+                list.append(pkg);
+                changes[Package::ToRemove]= list;
+            } else if (status & Package::ToKeep) {
+                list = changes.value(Package::ToKeep);
+                list.append(pkg);
+                changes[Package::ToKeep]= list;
+            }
+        }
+    }
+
+    return changes;
 }
 
 WorkerEvent Backend::workerState() const
@@ -772,6 +849,13 @@ bool Backend::isRedoStackEmpty() const
     Q_D(const Backend);
 
     return d->redoStack.isEmpty();
+}
+
+bool Backend::areEventsCompressed() const
+{
+    Q_D(const Backend);
+
+    return d->compressEvents;
 }
 
 void Backend::undo()
@@ -849,6 +933,82 @@ void Backend::markPackageForRemoval(const QString &name)
 {
     Package *pkg = package(name);
     pkg->setRemove();
+}
+
+void Backend::markPackages(const QApt::PackageList &packages, QApt::Package::State action)
+{
+    Q_D(Backend);
+
+    if (packages.isEmpty()) {
+        return;
+    }
+
+    pkgDepCache *deps = d->cache->depCache();
+    setCompressEvents(true);
+
+    foreach (Package *package, packages) {
+        pkgCache::PkgIterator *iter = package->packageIterator();
+        switch (action) {
+        case Package::ToInstall: {
+            int state = package->state();
+            // Mark for install if not already installed, or if upgradeable
+            if (!(state & Package::Installed) || (state & Package::Upgradeable)) {
+                package->setInstall();
+            }
+            break;
+        }
+        case Package::ToRemove:
+            if (package->isInstalled()) {
+                package->setRemove();
+            }
+            break;
+        case Package::ToUpgrade: {
+            bool fromUser = !(package->state() & Package::IsAuto);
+            deps->MarkInstall(*iter, true, 0, fromUser);
+            break;
+        }
+        case Package::ToReInstall: {
+            int state = package->state();
+
+            if(state & Package::Installed
+               && !(state & Package::NotDownloadable)
+               && !(state & Package::Upgradeable)) {
+                package->setReInstall();
+            }
+            break;
+        }
+        case Package::ToKeep:
+            package->setKeep();
+            break;
+        case Package::ToPurge: {
+            int state = package->state();
+
+            if ((state & Package::Installed) || (state & Package::ResidualConfig)) {
+                package->setPurge();
+            }
+            break;
+        }
+        default:
+            break;
+        }
+    }
+
+    setCompressEvents(false);
+    emit packageChanged();
+}
+
+void Backend::setCompressEvents(bool enabled)
+{
+    Q_D(Backend);
+
+    if (enabled) {
+        d->actionGroup = new pkgDepCache::ActionGroup(*d->cache->depCache());
+        d->compressEvents = true;
+    } else {
+        delete d->actionGroup;
+        d->actionGroup = 0;
+        d->compressEvents = false;
+    }
 }
 
 void Backend::commitChanges()
@@ -1060,8 +1220,8 @@ bool Backend::loadSelections(const QString &path)
     pkgProblemResolver Fix(&cache);
 
     pkgCache::PkgIterator pkgIter;
-    QHash<QByteArray, int>::const_iterator mapIter = actionMap.begin();
-    while (mapIter != actionMap.end()) {
+    auto mapIter = actionMap.constBegin();
+    while (mapIter != actionMap.constEnd()) {
         pkgIter = d->cache->depCache()->FindPkg(mapIter.key().constData());
         if (pkgIter.end()) {
             return false;
@@ -1149,7 +1309,9 @@ bool Backend::setPackagePinned(Package *package, bool pin)
             } else {
                 pinPath = pinName;
             }
-            QFile pinFile(pinPath);
+
+            if (!QFile::exists(pinPath))
+                continue;
 
             // Open to get a file name
             QTemporaryFile tempFile;
@@ -1164,10 +1326,7 @@ bool Backend::setPackagePinned(Package *package, bool pin)
                 return false;
             }
 
-            if (!pinFile.open(QIODevice::ReadOnly | QIODevice::Text)) {
-                continue;
-            }
-            FileFd Fd(pinFile.handle(), FileFd::ReadOnly);
+            FileFd Fd(pinPath.toUtf8().data(), FileFd::ReadOnly);
 
             pkgTagFile tagFile(&Fd);
             if (_error->PendingError()) {
@@ -1257,22 +1416,22 @@ void Backend::workerStarted()
     Q_D(Backend);
 
     connect(d->watcher, SIGNAL(serviceOwnerChanged(QString,QString,QString)),
-            this, SLOT(serviceOwnerChanged(QString, QString, QString)));
+            this, SLOT(serviceOwnerChanged(QString,QString,QString)));
 
-    connect(d->worker, SIGNAL(downloadProgress(int, int, int)),
-            this, SIGNAL(downloadProgress(int, int, int)));
-    connect(d->worker, SIGNAL(packageDownloadProgress(const QString&, int, const QString&, double, int)),
-            this, SIGNAL(packageDownloadProgress(const QString&, int, const QString&, double, int)));
-    connect(d->worker, SIGNAL(downloadMessage(int, const QString&)),
-            this, SIGNAL(downloadMessage(int, const QString&)));
-    connect(d->worker, SIGNAL(commitProgress(const QString&, int)),
-            this, SIGNAL(commitProgress(const QString&, int)));
-    connect(d->worker, SIGNAL(debInstallMessage(const QString&)),
-            this, SIGNAL(debInstallMessage(const QString&)));
-    connect(d->worker, SIGNAL(questionOccurred(int, const QVariantMap&)),
-            this, SLOT(emitWorkerQuestionOccurred(int, const QVariantMap&)));
-    connect(d->worker, SIGNAL(warningOccurred(int, const QVariantMap&)),
-            this, SLOT(emitWarningOccurred(int, const QVariantMap&)));
+    connect(d->worker, SIGNAL(downloadProgress(int,int,int)),
+            this, SIGNAL(downloadProgress(int,int,int)));
+    connect(d->worker, SIGNAL(packageDownloadProgress(QString,int,QString,double,int)),
+            this, SIGNAL(packageDownloadProgress(QString,int,QString,double,int)));
+    connect(d->worker, SIGNAL(downloadMessage(int,QString)),
+            this, SIGNAL(downloadMessage(int,QString)));
+    connect(d->worker, SIGNAL(commitProgress(QString,int)),
+            this, SIGNAL(commitProgress(QString,int)));
+    connect(d->worker, SIGNAL(debInstallMessage(QString)),
+            this, SIGNAL(debInstallMessage(QString)));
+    connect(d->worker, SIGNAL(questionOccurred(int,QVariantMap)),
+            this, SLOT(emitWorkerQuestionOccurred(int,QVariantMap)));
+    connect(d->worker, SIGNAL(warningOccurred(int,QVariantMap)),
+            this, SLOT(emitWarningOccurred(int,QVariantMap)));
 }
 
 void Backend::workerFinished(bool result)
@@ -1284,22 +1443,22 @@ void Backend::workerFinished(bool result)
     d->state = InvalidEvent;
 
     disconnect(d->watcher, SIGNAL(serviceOwnerChanged(QString,QString,QString)),
-               this, SLOT(serviceOwnerChanged(QString, QString, QString)));
+               this, SLOT(serviceOwnerChanged(QString,QString,QString)));
 
-    disconnect(d->worker, SIGNAL(downloadProgress(int, int, int)),
-               this, SIGNAL(downloadProgress(int, int, int)));
-    disconnect(d->worker, SIGNAL(packageDownloadProgress(const QString&, int, const QString&, double, int)),
-               this, SIGNAL(packageDownloadProgress(const QString&, int, const QString&, double, int)));
-    disconnect(d->worker, SIGNAL(downloadMessage(int, const QString&)),
-               this, SIGNAL(downloadMessage(int, const QString&)));
-    disconnect(d->worker, SIGNAL(commitProgress(const QString&, int)),
-               this, SIGNAL(commitProgress(const QString&, int)));
-    disconnect(d->worker, SIGNAL(debInstallMessage(const QString&)),
-               this, SIGNAL(debInstallMessage(const QString&)));
-    disconnect(d->worker, SIGNAL(questionOccurred(int, const QVariantMap&)),
-               this, SLOT(emitWorkerQuestionOccurred(int, const QVariantMap&)));
-    disconnect(d->worker, SIGNAL(warningOccurred(int, const QVariantMap&)),
-               this, SLOT(emitWarningOccurred(int, const QVariantMap&)));
+    disconnect(d->worker, SIGNAL(downloadProgress(int,int,int)),
+               this, SIGNAL(downloadProgress(int,int,int)));
+    disconnect(d->worker, SIGNAL(packageDownloadProgress(QString,int,QString,double,int)),
+               this, SIGNAL(packageDownloadProgress(QString,int,QString,double,int)));
+    disconnect(d->worker, SIGNAL(downloadMessage(int,QString)),
+               this, SIGNAL(downloadMessage(int,QString)));
+    disconnect(d->worker, SIGNAL(commitProgress(QString,int)),
+               this, SIGNAL(commitProgress(QString,int)));
+    disconnect(d->worker, SIGNAL(debInstallMessage(QString)),
+               this, SIGNAL(debInstallMessage(QString)));
+    disconnect(d->worker, SIGNAL(questionOccurred(int,QVariantMap)),
+               this, SLOT(emitWorkerQuestionOccurred(int,QVariantMap)));
+    disconnect(d->worker, SIGNAL(warningOccurred(int,QVariantMap)),
+               this, SLOT(emitWarningOccurred(int,QVariantMap)));
 }
 
 void Backend::cancelDownload()

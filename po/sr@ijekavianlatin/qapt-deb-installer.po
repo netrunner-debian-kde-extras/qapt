@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qapt-deb-installer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-16 18:32+0200\n"
+"POT-Creation-Date: 2012-02-21 18:19+0100\n"
 "PO-Revision-Date: 2011-05-26 10:31+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -26,13 +26,13 @@ msgid "<title>Installing</title>"
 msgstr "<title>Instaliram</title>"
 
 # >> @action:button
-#: utils/qapt-deb-installer/DebInstaller.cpp:65
+#: utils/qapt-deb-installer/DebInstaller.cpp:68
 msgctxt "@label"
 msgid "Install Package"
 msgstr "Instaliraj paket"
 
 # >> @info
-#: utils/qapt-deb-installer/DebInstaller.cpp:79
+#: utils/qapt-deb-installer/DebInstaller.cpp:82
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -42,67 +42,67 @@ msgstr ""
 "Ne mogu da otvorim <filename>%1</filename>. Izgleda da nije ispravan fajl "
 "Debianovog paketa."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:87
+#: utils/qapt-deb-installer/DebInstaller.cpp:90
 #, kde-format
 msgctxt "@title:window"
 msgid "Package Installer - %1"
 msgstr "Instalater paketa — %1"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:110
+#: utils/qapt-deb-installer/DebInstaller.cpp:113
 msgctxt "@info Header label used when packages are downloading"
 msgid "<title>Downloading Dependencies</title>"
 msgstr "<title>Preuzimam zavisnosti</title>"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:125
+#: utils/qapt-deb-installer/DebInstaller.cpp:128
 msgctxt "@info Header label used when packages are installing"
 msgid "<title>Installing Dependencies</title>"
 msgstr "<title>Instaliram zavisnosti</title>"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:150
+#: utils/qapt-deb-installer/DebInstaller.cpp:153
 msgctxt "@label Message that the install is done"
 msgid "Done"
 msgstr "Gotovo"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:152
+#: utils/qapt-deb-installer/DebInstaller.cpp:155
 msgctxt "@info Header label used when the install is done"
 msgid "<title>Done</title>"
 msgstr "<title>Gotovo</title>"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:171
+#: utils/qapt-deb-installer/DebInstaller.cpp:174
 msgctxt "@label"
 msgid ""
 "The package system could not be initialized, your configuration may be "
 "broken."
 msgstr "Paketni sistem ne može da se pripremi, možda je postava iskvarena."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:173
+#: utils/qapt-deb-installer/DebInstaller.cpp:176
 msgctxt "@title:window"
 msgid "Initialization error"
 msgstr "Greška u pripremanju"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:181
+#: utils/qapt-deb-installer/DebInstaller.cpp:184
 msgctxt "@label"
 msgid "This package is incompatible with your computer."
 msgstr "Ovaj paket ne odgovara vašem računaru."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:227
+#: utils/qapt-deb-installer/DebInstaller.cpp:230
 #, kde-format
 msgctxt "@info"
 msgid "Error: Wrong architecture '%1'"
 msgstr "Greška: pogrešna arhitektura '%1'"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:243
+#: utils/qapt-deb-installer/DebInstaller.cpp:246
 #, kde-format
 msgctxt "@info Error string when installing would break an existing package"
 msgid "Error: Breaks the existing package \"%1\""
 msgstr "Greška: narušava postojeći paket „%1“"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:252
+#: utils/qapt-deb-installer/DebInstaller.cpp:255
 msgctxt "@info"
 msgid "Error: Cannot satisfy dependencies"
 msgstr "Greška: nezadovoljene zavisnosti"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:261
+#: utils/qapt-deb-installer/DebInstaller.cpp:264
 #, kde-format
 msgctxt "@label A note saying that additional packages are needed"
 msgid "Requires the installation of %1 additional package."
@@ -112,27 +112,27 @@ msgstr[1] "Zahtijeva instaliranje %1 dodatna paketa"
 msgstr[2] "Zahtijeva instaliranje %1 dodatnih paketa"
 msgstr[3] "Zahtijeva instaliranje %1 dodatnog paketa"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:265
+#: utils/qapt-deb-installer/DebInstaller.cpp:268
 msgctxt "@info"
 msgid "All dependencies are satisfied."
 msgstr "Sve zavisnosti su zadovoljene."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:284
+#: utils/qapt-deb-installer/DebInstaller.cpp:287
 msgctxt "@info"
 msgid "The same version is available in a software channel."
 msgstr "Ista verzija je dostupna preko softverskih kanala."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:285
+#: utils/qapt-deb-installer/DebInstaller.cpp:288
 msgctxt "@info"
 msgid "It is recommended to install the software from the channel instead"
 msgstr "Preporučuje se da instalirate prvenstveno preko softverskih kanala."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:287
+#: utils/qapt-deb-installer/DebInstaller.cpp:290
 msgctxt "@info"
 msgid "An older version is available in a software channel."
 msgstr "Starija verzija je dostupna preko softverskih kanala."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:288
+#: utils/qapt-deb-installer/DebInstaller.cpp:291
 msgctxt "@info"
 msgid ""
 "It is recommended to install the version from the software channel, since it "
@@ -141,12 +141,12 @@ msgstr ""
 "Preporučuje se da instalirate verziju iz softverskih kanala, pošto su one "
 "obično bolje podržane."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:291
+#: utils/qapt-deb-installer/DebInstaller.cpp:294
 msgctxt "@info"
 msgid "A newer version is available in a software channel."
 msgstr "Novija verzija je dostupna preko softverskih kanala."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:292
+#: utils/qapt-deb-installer/DebInstaller.cpp:295
 msgctxt "@info"
 msgid ""
 "It is strongly advised to install the version from the software channel, "
@@ -156,12 +156,18 @@ msgstr ""
 "one obično bolje podržane."
 
 #: utils/qapt-deb-installer/DebViewer.cpp:65
-msgctxt "@label Label preceeding the package name"
+#, fuzzy
+#| msgctxt "@label Label preceeding the package name"
+#| msgid "Package:"
+msgctxt "@label Label preceding the package name"
 msgid "Package:"
 msgstr "Paket:"
 
 #: utils/qapt-deb-installer/DebViewer.cpp:73
-msgctxt "@label Label preceeding the package status"
+#, fuzzy
+#| msgctxt "@label Label preceeding the package status"
+#| msgid "Status:"
+msgctxt "@label Label preceding the package status"
 msgid "Status:"
 msgstr "Stanje:"
 

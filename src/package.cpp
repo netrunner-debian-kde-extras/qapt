@@ -61,7 +61,7 @@ class PackagePrivate
         ~PackagePrivate()
         {
             delete packageIter;
-        };
+        }
         QApt::Backend *backend;
         pkgDepCache *depCache;
         pkgRecords *records;
@@ -486,6 +486,21 @@ QString Package::origin() const
     return QString();
 }
 
+QStringList Package::archives() const
+{
+    const pkgCache::VerIterator &Ver = (*d->depCache).GetCandidateVer(*d->packageIter);
+
+    if(!Ver.end()) {
+        QStringList archiveList;
+        for (pkgCache::VerFileIterator VF = Ver.FileList(); !VF.end(); ++VF) {
+            archiveList << QLatin1String(VF.File().Archive());
+        }
+            return archiveList;
+    }
+
+    return QStringList();
+}
+
 QString Package::component() const
 {
     pkgDepCache::StateCache &State = (*d->depCache)[*d->packageIter];
@@ -544,9 +559,14 @@ QUrl Package::changelogUrl() const
 
     Config *config = d->backend->config();
     QString server = config->readEntry(QLatin1String("Apt::Changelogs::Server"),
-                                       QLatin1String("http://changelogs.ubuntu.com/changelogs"));
+                                       QLatin1String("http://packages.debian.org/changelogs"));
 
-    url = QUrl(server % QLatin1Char('/') % path % QLatin1Literal("changelog"));
+    if(!server.contains(QLatin1String("debian"))) {
+        url = QUrl(server % QLatin1Char('/') % path % QLatin1Literal("changelog"));
+    } else {
+        // Debian servers use changelog.txt
+        url = QUrl(server % QLatin1Char('/') % path % QLatin1Literal("changelog.txt"));
+    }
 
     return url;
 }
@@ -1135,7 +1155,7 @@ bool Package::isTrusted() const
         pkgIndexFile *Index;
 
         //FIXME: Should be done in apt
-        QHash<pkgCache::PkgFileIterator, pkgIndexFile*>::const_iterator trustIter = trustCache->constBegin();
+        auto trustIter = trustCache->constBegin();
         while (trustIter != trustCache->constEnd()) {
             if (trustIter.key() == i.File()) {
                 break;
@@ -1176,8 +1196,14 @@ void Package::setAuto(bool flag)
 void Package::setKeep()
 {
     d->depCache->MarkKeep(*d->packageIter, false);
-    pkgFixBroken(*d->depCache);
-    d->backend->packageChanged(this);
+    if (d->depCache->BrokenCount() > 0) {
+        pkgProblemResolver Fix(d->depCache);
+        Fix.ResolveByKeep();
+    }
+
+    if (!d->backend->areEventsCompressed()) {
+        d->backend->packageChanged(this);
+    }
 }
 
 void Package::setInstall()
@@ -1193,13 +1219,18 @@ void Package::setInstall()
         Fix.Resolve(true);
     }
 
-    d->backend->packageChanged(this);
+    if (!d->backend->areEventsCompressed()) {
+        d->backend->packageChanged(this);
+    }
 }
 
 void Package::setReInstall()
 {
     d->depCache->SetReInstall(*d->packageIter, true);
-    d->backend->packageChanged(this);
+
+    if (!d->backend->areEventsCompressed()) {
+        d->backend->packageChanged(this);
+    }
 }
 
 
@@ -1217,7 +1248,9 @@ void Package::setRemove()
     d->depCache->SetReInstall(*d->packageIter, false);
     d->depCache->MarkDelete(*d->packageIter, false);
 
-    d->backend->packageChanged(this);
+    if (!d->backend->areEventsCompressed()) {
+        d->backend->packageChanged(this);
+    }
 }
 
 void Package::setPurge()
@@ -1234,7 +1267,9 @@ void Package::setPurge()
     d->depCache->SetReInstall(*d->packageIter, false);
     d->depCache->MarkDelete(*d->packageIter, true);
 
-    d->backend->packageChanged(this);
+    if (!d->backend->areEventsCompressed()) {
+        d->backend->packageChanged(this);
+    }
 }
 
 bool Package::setVersion(const QString &version)

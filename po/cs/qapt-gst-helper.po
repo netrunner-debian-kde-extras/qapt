@@ -1,26 +1,26 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-# Vít Pelčák <vit@pelcak.org>, 2010, 2011.
+# Vít Pelčák <vit@pelcak.org>, 2010, 2011, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2011-08-12 03:22+0200\n"
-"PO-Revision-Date: 2011-10-13 12:43+0200\n"
-"Last-Translator: Vít Pelčák <vit@pelcak.org>\n"
+"PO-Revision-Date: 2012-02-20 09:04+0100\n"
+"Last-Translator: Vit Pelcak\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 1.2\n"
+"X-Generator: Lokalize 1.4\n"
 
 #: utils/qapt-gst-helper/PluginHelper.cpp:82
 msgctxt "@info Error message"
 msgid "No valid plugin info was provided, so no plugins could be found."
-msgstr ""
+msgstr "Nebyla poskytnuta platná informace o modulu, takže ho nelze vyhledat."
 
 #: utils/qapt-gst-helper/PluginHelper.cpp:85
 msgctxt "@title:window"
@@ -66,8 +66,9 @@ msgstr[1] ""
 #, kde-format
 msgid "%2 requires an additional plugin to decode this file"
 msgid_plural "%2 requires additional plugins to decode this file"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%2 vyžaduje následující modul pro dekódování tohoto souboru"
+msgstr[1] "%2 vyžaduje následující moduly pro dekódování tohoto souboru"
+msgstr[2] "%2 vyžaduje následující moduly pro dekódování tohoto souboru"
 
 #: utils/qapt-gst-helper/PluginHelper.cpp:169
 msgctxt "Search for packages"
@@ -352,9 +353,9 @@ msgstr "Jonathan Thomas"
 #: utils/qapt-gst-helper/main.cpp:44
 msgctxt "@info:shell"
 msgid "Attaches the window to an X app specified by winid"
-msgstr ""
+msgstr "Přiřadí okno X-aplikaci určené winid"
 
 #: utils/qapt-gst-helper/main.cpp:45
 msgctxt "@info:shell"
 msgid "GStreamer install info"
-msgstr ""
+msgstr "Instalační informace GStreameru"

@@ -35,9 +35,12 @@
 namespace QApt {
 
 /**
- * HistoryItemPrivate is a class containing all private members of the History class
+ * HistoryItemPrivate is a class containing all private members of the HistoryItem class
  */
 class HistoryItemPrivate;
+
+// TODO QApt2: Rework private classes to derive from QSharedData, like the Changelog
+// Class does
 
 /**
  * The HistoryItem class represents a single entry in the APT history logs
@@ -117,7 +120,7 @@ public:
     bool isValid() const;
 
 private:
-    Q_DECLARE_PRIVATE(HistoryItem);
+    Q_DECLARE_PRIVATE(HistoryItem)
     HistoryItemPrivate *const d_ptr;
 };
 
@@ -148,12 +151,13 @@ public:
      /**
       * Default destructor
       */
+     // TODO QApt2: lolno
     virtual ~History();
 
     HistoryItemList historyItems() const;
 
 private:
-    Q_DECLARE_PRIVATE(History);
+    Q_DECLARE_PRIVATE(History)
     HistoryPrivate *const d_ptr;
 
 public Q_SLOTS:

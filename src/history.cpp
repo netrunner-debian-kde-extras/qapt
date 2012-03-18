@@ -36,7 +36,7 @@ class HistoryItemPrivate
         HistoryItemPrivate(const QString &data) : isValid(true)
         {
             parseData(data);
-        };
+        }
 
         // Data
         QDateTime startDate;
@@ -218,12 +218,12 @@ class HistoryPrivate
         HistoryPrivate(const QString &fileName) : historyFilePath(fileName)
         {
             init();
-        };
+        }
 
         ~HistoryPrivate()
         {
             qDeleteAll(historyItemList);
-        };
+        }
 
         // Data
         QString historyFilePath;

@@ -81,7 +81,7 @@ void WorkerAcquire::Done(pkgAcquire::ItemDesc &item)
    Update = true;
 
    updateStatus(item, 100, QApt::DownloadFetch);
-};
+}
 
 void WorkerAcquire::Fail(pkgAcquire::ItemDesc &item)
 {
@@ -99,7 +99,7 @@ void WorkerAcquire::Fail(pkgAcquire::ItemDesc &item)
         // an error was found (maybe 404, 403...)
         // the item that got the error and the error text
         QVariantMap args;
-        args[QLatin1String("FailedItem")] = QString::fromUtf8(item.Description.c_str());
+        args[QLatin1String("FailedItem")] = QString::fromUtf8(item.URI.c_str());
         args[QLatin1String("WarningText")] = QString::fromUtf8(item.Owner->ErrorText.c_str());
         emit fetchWarning(QApt::FetchFailedWarning, args);
     }
@@ -191,8 +191,8 @@ void WorkerAcquire::requestCancel()
 QVariantMap WorkerAcquire::askQuestion(int questionCode, const QVariantMap &args)
 {
     m_mediaBlock = new QEventLoop;
-    connect(m_worker, SIGNAL(answerReady(const QVariantMap&)),
-            this, SLOT(setAnswer(const QVariantMap&)));
+    connect(m_worker, SIGNAL(answerReady(QVariantMap)),
+            this, SLOT(setAnswer(QVariantMap)));
 
     emit workerQuestion(questionCode, args);
     m_mediaBlock->exec(); // Process blocked, waiting for answerReady signal over dbus
@@ -202,8 +202,8 @@ QVariantMap WorkerAcquire::askQuestion(int questionCode, const QVariantMap &args
 
 void WorkerAcquire::setAnswer(const QVariantMap &answer)
 {
-    disconnect(m_worker, SIGNAL(answerReady(const QVariantMap&)),
-               this, SLOT(setAnswer(const QVariantMap&)));
+    disconnect(m_worker, SIGNAL(answerReady(QVariantMap)),
+               this, SLOT(setAnswer(QVariantMap)));
     m_questionResponse = answer;
     m_mediaBlock->quit();
 }

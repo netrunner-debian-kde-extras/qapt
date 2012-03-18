@@ -76,7 +76,7 @@ msgstr[0] ""
 #: utils/qapt-gst-helper/PluginHelper.cpp:198
 msgctxt "Install packages"
 msgid "Install"
-msgstr "ئورنات"
+msgstr "ئورنىتىش"
 
 #: utils/qapt-gst-helper/PluginHelper.cpp:222
 msgctxt "@label"
