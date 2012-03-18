@@ -1,9 +1,12 @@
 qapt (1.3.0-1) UNRELEASED; urgency=low
 
+  [ Kai Wasserbäch ]
   * New upstream release (release to unstable).
   * debian/gbp.conf: Added to ensure pristine-tar usage and signed tags.
   * debian/watch: use git-import-orig.
-  * debian/control: Added Vcs-{Git,Browser} fields.
+  * debian/control:
+    - Added Vcs-{Git,Browser} fields.
+    - Bumped Standards-Version to 3.9.3.1, no further changes needed.
   * debian/rules:
     - Remove override for dh_strip, not needed.
     - Added .PHONY line.

@@ -15,7 +15,7 @@ Build-Depends: debhelper (>= 8.9.4),
  libpolkit-qt-1-dev,
  libqtgstreamer-dev,
  libdebconf-kde-dev
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3.1
 Homepage: https://projects.kde.org/projects/extragear/sysadmin/libqapt/
 Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-extras/qapt.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-extras/qapt.git;a=summary
