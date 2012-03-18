@@ -12,6 +12,7 @@ qapt (1.3.0-1) UNRELEASED; urgency=low
     - Added .PHONY line.
   * debian/patches/Fix-FTBFS-due-to-symbol-collision.patch: Deleted, merged
     upstream.
+  * debian/TODO: Added, mentioning multi-arch progress.
 
   [ Pino Toscano ]
   * Drop patch Fix-spelling-errors.patch, which breaks translations.
