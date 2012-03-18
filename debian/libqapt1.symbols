@@ -4,6 +4,13 @@ libqapt.so.1 libqapt1 #MINVER#
  _ZN4QApt11HistoryItemC2ERK7QString@Base 1.0.80
  _ZN4QApt11HistoryItemD1Ev@Base 1.0.80
  _ZN4QApt11HistoryItemD2Ev@Base 1.0.80
+ _ZN4QApt14ChangelogEntryC1ERK7QStringS3_@Base 1.3.0
+ _ZN4QApt14ChangelogEntryC1ERKS0_@Base 1.3.0
+ _ZN4QApt14ChangelogEntryC2ERK7QStringS3_@Base 1.3.0
+ _ZN4QApt14ChangelogEntryC2ERKS0_@Base 1.3.0
+ _ZN4QApt14ChangelogEntryD1Ev@Base 1.3.0
+ _ZN4QApt14ChangelogEntryD2Ev@Base 1.3.0
+ _ZN4QApt14ChangelogEntryaSERKS0_@Base 1.3.0
  _ZN4QApt14DependencyInfo12parseDependsERK7QStringNS_14DependencyTypeE@Base 1.1.65
  _ZN4QApt14DependencyInfoC1ERK7QStringS3_NS_12RelationTypeENS_14DependencyTypeE@Base 1.1.65
  _ZN4QApt14DependencyInfoC1Ev@Base 1.1.65
@@ -35,6 +42,7 @@ libqapt.so.1 libqapt1 #MINVER#
  _ZN4QApt7Backend11reloadCacheEv@Base 0.3.0
  _ZN4QApt7Backend11updateCacheEv@Base 0.3.0
  _ZN4QApt7Backend11workerEventENS_11WorkerEventE@Base 0.3.0
+ _ZN4QApt7Backend12markPackagesERK5QListIPNS_7PackageEENS2_5StateE@Base 1.3.0
  _ZN4QApt7Backend13commitChangesEv@Base 0.3.0
  _ZN4QApt7Backend13errorOccurredENS_9ErrorCodeERK4QMapI7QString8QVariantE@Base 0.3.0
  _ZN4QApt7Backend13workerStartedEv@Base 0.3.0
@@ -60,6 +68,7 @@ libqapt.so.1 libqapt1 #MINVER#
  _ZN4QApt7Backend17debInstallMessageERK7QString@Base 1.1.65
  _ZN4QApt7Backend17emitErrorOccurredEiRK4QMapI7QString8QVariantE@Base 0.3.0
  _ZN4QApt7Backend17restoreCacheStateERK5QListIiE@Base 0.3.0
+ _ZN4QApt7Backend17setCompressEventsEb@Base 1.3.0
  _ZN4QApt7Backend17updateXapianIndexEv@Base 0.3.0
  _ZN4QApt7Backend19emitWarningOccurredEiRK4QMapI7QString8QVariantE@Base 0.3.0
  _ZN4QApt7Backend19serviceOwnerChangedERK7QStringS3_S3_@Base 0.3.0
@@ -109,6 +118,13 @@ libqapt.so.1 libqapt1 #MINVER#
  _ZN4QApt7PackageD0Ev@Base 0.3.0
  _ZN4QApt7PackageD1Ev@Base 0.3.0
  _ZN4QApt7PackageD2Ev@Base 1.0.60
+ _ZN4QApt9ChangelogC1ERK7QStringS3_@Base 1.3.0
+ _ZN4QApt9ChangelogC1ERKS0_@Base 1.3.0
+ _ZN4QApt9ChangelogC2ERK7QStringS3_@Base 1.3.0
+ _ZN4QApt9ChangelogC2ERKS0_@Base 1.3.0
+ _ZN4QApt9ChangelogD1Ev@Base 1.3.0
+ _ZN4QApt9ChangelogD2Ev@Base 1.3.0
+ _ZN4QApt9ChangelogaSERKS0_@Base 1.3.0
  _ZNK4QApt11HistoryItem11errorStringEv@Base 1.0.80
  _ZNK4QApt11HistoryItem14purgedPackagesEv@Base 1.0.80
  _ZNK4QApt11HistoryItem15removedPackagesEv@Base 1.0.80
@@ -117,6 +133,10 @@ libqapt.so.1 libqapt1 #MINVER#
  _ZNK4QApt11HistoryItem18downgradedPackagesEv@Base 1.0.80
  _ZNK4QApt11HistoryItem7isValidEv@Base 1.0.80
  _ZNK4QApt11HistoryItem9startDateEv@Base 1.0.80
+ _ZNK4QApt14ChangelogEntry11descriptionEv@Base 1.3.0
+ _ZNK4QApt14ChangelogEntry13issueDateTimeEv@Base 1.3.0
+ _ZNK4QApt14ChangelogEntry7versionEv@Base 1.3.0
+ _ZNK4QApt14ChangelogEntry9entryTextEv@Base 1.3.0
  _ZNK4QApt14DependencyInfo11packageNameEv@Base 1.1.65
  _ZNK4QApt14DependencyInfo12relationTypeEv@Base 1.1.65
  _ZNK4QApt14DependencyInfo14dependencyTypeEv@Base 1.1.65
@@ -137,6 +157,7 @@ libqapt.so.1 libqapt1 #MINVER#
  _ZNK4QApt7Backend12originLabelsEv@Base 0.3.0
  _ZNK4QApt7Backend12packageCountERK6QFlagsINS_7Package5StateEE@Base 0.3.0
  _ZNK4QApt7Backend12packageCountEv@Base 0.3.0
+ _ZNK4QApt7Backend12stateChangesE5QListIiES1_IPNS_7PackageEE@Base 1.3.0
  _ZNK4QApt7Backend13architecturesEv@Base 1.2.2
  _ZNK4QApt7Backend13toRemoveCountEv@Base 1.0.60
  _ZNK4QApt7Backend14installedCountEv@Base 1.0.60
@@ -154,7 +175,9 @@ libqapt.so.1 libqapt1 #MINVER#
  _ZNK4QApt7Backend17packageSourceListEv@Base 0.3.0
  _ZNK4QApt7Backend18isMultiArchEnabledEv@Base 1.2.2
  _ZNK4QApt7Backend18nativeArchitectureEv@Base 1.2.2
+ _ZNK4QApt7Backend19areEventsCompressedEv@Base 1.3.0
  _ZNK4QApt7Backend19upgradeablePackagesEv@Base 0.3.0
+ _ZNK4QApt7Backend20timeCacheLastUpdatedEv@Base 1.3.0
  _ZNK4QApt7Backend22xapianIndexNeedsUpdateEv@Base 0.3.0
  _ZNK4QApt7Backend25saveInstalledPackagesListERK7QString@Base 1.0.60
  _ZNK4QApt7Backend5cacheEv@Base 1.0.60
@@ -241,6 +264,7 @@ libqapt.so.1 libqapt1 #MINVER#
  _ZNK4QApt7Package7dependsEv@Base 1.1.65
  _ZNK4QApt7Package7sectionEv@Base 0.3.0
  _ZNK4QApt7Package7versionEv@Base 0.3.0
+ _ZNK4QApt7Package8archivesEv@Base 1.3.0
  _ZNK4QApt7Package8enhancesEv@Base 1.1.65
  _ZNK4QApt7Package8homepageEv@Base 0.3.0
  _ZNK4QApt7Package8priorityEv@Base 0.3.0
@@ -250,6 +274,9 @@ libqapt.so.1 libqapt1 #MINVER#
  _ZNK4QApt7Package9conflictsEv@Base 1.1.65
  _ZNK4QApt7Package9isTrustedEv@Base 0.3.0
  _ZNK4QApt7Package9obsoletesEv@Base 1.1.65
+ _ZNK4QApt9Changelog15newEntriesSinceERK7QString@Base 1.3.0
+ _ZNK4QApt9Changelog4textEv@Base 1.3.0
+ _ZNK4QApt9Changelog7entriesEv@Base 1.3.0
  _ZNSt6vectorISsSaISsEED1Ev@Base 1.2.2
  _ZNSt6vectorISsSaISsEED2Ev@Base 1.2.2
  (optional=templinst)_ZSt6__findIN9__gnu_cxx17__normal_iteratorIPP12pkgIndexFileSt6vectorIS3_SaIS3_EEEES3_ET_S9_S9_RKT0_St26random_access_iterator_tag@Base 1.1.0
