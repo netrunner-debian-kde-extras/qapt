@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # André Marcelo Alvarenga <andrealvarenga@gmx.net>, 2011.
+# André Marcelo Alvarenga <alvarenga@kde.org>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: qapt-gst-helper\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2011-08-12 03:22+0200\n"
-"PO-Revision-Date: 2011-06-18 13:14-0300\n"
-"Last-Translator: André Marcelo Alvarenga <andrealvarenga@gmx.net>\n"
+"PO-Revision-Date: 2012-02-27 08:45-0300\n"
+"Last-Translator: André Marcelo Alvarenga <alvarenga@kde.org>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_br@kde.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"

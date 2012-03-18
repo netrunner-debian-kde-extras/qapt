@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2011.
+# Yuri Chornoivan <yurchor@ukr.net>, 2011, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-10-23 10:48+0200\n"
-"PO-Revision-Date: 2011-02-11 07:46+0200\n"
+"POT-Creation-Date: 2012-02-21 18:19+0100\n"
+"PO-Revision-Date: 2012-02-21 21:01+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <translation@linux.org.ua>\n"
 "Language: uk\n"
@@ -23,12 +23,12 @@ msgctxt "@info The widget's header label"
 msgid "<title>Installing</title>"
 msgstr "<title>Встановлення</title>"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:65
+#: utils/qapt-deb-installer/DebInstaller.cpp:68
 msgctxt "@label"
 msgid "Install Package"
 msgstr "Встановити пакунок"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:79
+#: utils/qapt-deb-installer/DebInstaller.cpp:82
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -38,33 +38,33 @@ msgstr ""
 "Не вдалося відкрити <filename>%1</filename>. Здається, цей файл не є "
 "коректним файлом пакунка Debian."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:87
+#: utils/qapt-deb-installer/DebInstaller.cpp:90
 #, kde-format
 msgctxt "@title:window"
 msgid "Package Installer - %1"
 msgstr "Встановленні пакетів — %1"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:110
+#: utils/qapt-deb-installer/DebInstaller.cpp:113
 msgctxt "@info Header label used when packages are downloading"
 msgid "<title>Downloading Dependencies</title>"
 msgstr "<title>Звантаження залежностей</title>"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:125
+#: utils/qapt-deb-installer/DebInstaller.cpp:128
 msgctxt "@info Header label used when packages are installing"
 msgid "<title>Installing Dependencies</title>"
 msgstr "<title>Встановлення залежностей</title>"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:150
+#: utils/qapt-deb-installer/DebInstaller.cpp:153
 msgctxt "@label Message that the install is done"
 msgid "Done"
 msgstr "Завершено"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:152
+#: utils/qapt-deb-installer/DebInstaller.cpp:155
 msgctxt "@info Header label used when the install is done"
 msgid "<title>Done</title>"
 msgstr "<title>Завершено</title>"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:171
+#: utils/qapt-deb-installer/DebInstaller.cpp:174
 msgctxt "@label"
 msgid ""
 "The package system could not be initialized, your configuration may be "
@@ -73,34 +73,34 @@ msgstr ""
 "Не вдалося ініціалізувати систему керування пакунками, ймовірно систему "
 "пакунків пошкоджено."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:173
+#: utils/qapt-deb-installer/DebInstaller.cpp:176
 msgctxt "@title:window"
 msgid "Initialization error"
 msgstr "Помилка ініціалізації"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:181
+#: utils/qapt-deb-installer/DebInstaller.cpp:184
 msgctxt "@label"
 msgid "This package is incompatible with your computer."
 msgstr "Цей пакунок несумісний з вашою системою."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:227
+#: utils/qapt-deb-installer/DebInstaller.cpp:230
 #, kde-format
 msgctxt "@info"
 msgid "Error: Wrong architecture '%1'"
 msgstr "Помилка: невідповідна апаратна архітектура «%1»"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:243
+#: utils/qapt-deb-installer/DebInstaller.cpp:246
 #, kde-format
 msgctxt "@info Error string when installing would break an existing package"
 msgid "Error: Breaks the existing package \"%1\""
 msgstr "Помилка: конфлікт з одним з поточних пакунків, «%1»"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:252
+#: utils/qapt-deb-installer/DebInstaller.cpp:255
 msgctxt "@info"
 msgid "Error: Cannot satisfy dependencies"
 msgstr "Помилка: не вдалося вдовольнити залежності"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:261
+#: utils/qapt-deb-installer/DebInstaller.cpp:264
 #, kde-format
 msgctxt "@label A note saying that additional packages are needed"
 msgid "Requires the installation of %1 additional package."
@@ -110,27 +110,27 @@ msgstr[1] "Потребує встановлення %1 додаткових п�
 msgstr[2] "Потребує встановлення %1 додаткових пакунків."
 msgstr[3] "Потребує встановлення додаткового пакунка."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:265
+#: utils/qapt-deb-installer/DebInstaller.cpp:268
 msgctxt "@info"
 msgid "All dependencies are satisfied."
 msgstr "Всі залежності встановлено."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:284
+#: utils/qapt-deb-installer/DebInstaller.cpp:287
 msgctxt "@info"
 msgid "The same version is available in a software channel."
 msgstr "У джерелі програмного забезпечення зберігається та сама версія."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:285
+#: utils/qapt-deb-installer/DebInstaller.cpp:288
 msgctxt "@info"
 msgid "It is recommended to install the software from the channel instead"
 msgstr "Рекомендуємо вам встановити версію з джерела програмного забезпечення"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:287
+#: utils/qapt-deb-installer/DebInstaller.cpp:290
 msgctxt "@info"
 msgid "An older version is available in a software channel."
 msgstr "У джерелі програмного забезпечення зберігається старіша версія."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:288
+#: utils/qapt-deb-installer/DebInstaller.cpp:291
 msgctxt "@info"
 msgid ""
 "It is recommended to install the version from the software channel, since it "
@@ -139,12 +139,12 @@ msgstr ""
 "Рекомендуємо вам встановити версію з джерела програмного забезпечення, "
 "оскільки ця версія краще підтримується розробниками."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:291
+#: utils/qapt-deb-installer/DebInstaller.cpp:294
 msgctxt "@info"
 msgid "A newer version is available in a software channel."
 msgstr "У джерелі програмного забезпечення зберігається новіша версія."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:292
+#: utils/qapt-deb-installer/DebInstaller.cpp:295
 msgctxt "@info"
 msgid ""
 "It is strongly advised to install the version from the software channel, "
@@ -153,38 +153,13 @@ msgstr ""
 "Наполегливо радимо вам встановити версію з джерела програмного забезпечення, "
 "оскільки ця версія краще підтримується розробниками."
 
-#: utils/qapt-deb-installer/main.cpp:29
-msgctxt "@info"
-msgid "A Debian package installer"
-msgstr "Програма для встановлення пакунків Debian"
-
-#: utils/qapt-deb-installer/main.cpp:35
-msgctxt "@title"
-msgid "QApt Package Installer"
-msgstr "Програма для встановлення пакунків QApt"
-
-#: utils/qapt-deb-installer/main.cpp:36
-msgctxt "@info:credit"
-msgid "(C) 2011 Jonathan Thomas"
-msgstr "© Jonathan Thomas, 2011"
-
-#: utils/qapt-deb-installer/main.cpp:37
-msgctxt "@info:credit"
-msgid "Jonathan Thomas"
-msgstr "Jonathan Thomas"
-
-#: utils/qapt-deb-installer/main.cpp:42
-msgctxt "@info:shell"
-msgid ".deb file"
-msgstr "файл .deb"
-
 #: utils/qapt-deb-installer/DebViewer.cpp:65
-msgctxt "@label Label preceeding the package name"
+msgctxt "@label Label preceding the package name"
 msgid "Package:"
 msgstr "Пакунок:"
 
 #: utils/qapt-deb-installer/DebViewer.cpp:73
-msgctxt "@label Label preceeding the package status"
+msgctxt "@label Label preceding the package status"
 msgid "Status:"
 msgstr "Стан:"
 
@@ -227,3 +202,28 @@ msgstr "Подробиці"
 msgctxt "@title:tab"
 msgid "Included Files"
 msgstr "Включені файли"
+
+#: utils/qapt-deb-installer/main.cpp:29
+msgctxt "@info"
+msgid "A Debian package installer"
+msgstr "Програма для встановлення пакунків Debian"
+
+#: utils/qapt-deb-installer/main.cpp:35
+msgctxt "@title"
+msgid "QApt Package Installer"
+msgstr "Програма для встановлення пакунків QApt"
+
+#: utils/qapt-deb-installer/main.cpp:36
+msgctxt "@info:credit"
+msgid "(C) 2011 Jonathan Thomas"
+msgstr "© Jonathan Thomas, 2011"
+
+#: utils/qapt-deb-installer/main.cpp:37
+msgctxt "@info:credit"
+msgid "Jonathan Thomas"
+msgstr "Jonathan Thomas"
+
+#: utils/qapt-deb-installer/main.cpp:42
+msgctxt "@info:shell"
+msgid ".deb file"
+msgstr "файл .deb"

@@ -3,10 +3,10 @@ project(libqapt)
 cmake_minimum_required(VERSION 2.6.0)
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules")
 
-set(qapt_VERSION 1.2.2)
+set(qapt_VERSION 1.3.0)
 
 set(qapt_lib_SOVERSION 1)
-set(qapt_lib_VERSION ${qapt_lib_SOVERSION}.2.2)
+set(qapt_lib_VERSION ${qapt_lib_SOVERSION}.3.0)
 
 configure_file(
        "${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules/cmake_uninstall.cmake.in"
@@ -35,10 +35,12 @@ endmacro(dbus_add_activation_system_service _sources)
 
 find_package(Qt4 REQUIRED)
 find_package(Automoc4 REQUIRED)
-find_package(PolkitQt-1 REQUIRED)
 find_package(Xapian REQUIRED)
 find_package(AptPkg REQUIRED)
 find_package(QtGStreamer)
+
+set(POLKITQT-1_MIN_VERSION "0.98.1")
+find_package(PolkitQt-1 REQUIRED)
 
 # Find the required Libaries
 include_directories(
@@ -108,6 +110,7 @@ MACRO(MACRO_ENSURE_VERSION_RANGE min_version found_version max_version var_ok)
 ENDMACRO(MACRO_ENSURE_VERSION_RANGE)
 
 if (CMAKE_COMPILER_IS_GNUCXX)
+   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
 
   include(CheckCXXCompilerFlag)
 
@@ -185,12 +188,12 @@ include(MacroOptionalAddSubdirectory)
 macro_optional_add_subdirectory( po )
 
     #DOC_SUBDIR
-endif (KDE4_FOUND)
 
 macro_log_feature(QTGSTREAMER_FOUND "QtGStreamer" "Qt wrapper around the GStreamer multimedia framework"
                   "http://gstreamer.freedesktop.org" FALSE "" "Used to build an optional GStreamer plugin installer")
 
 macro_display_feature_log()
+endif (KDE4_FOUND)
 
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/libqapt.pc
         DESTINATION ${CMAKE_INSTALL_PREFIX}/lib${LIB_SUFFIX}/pkgconfig

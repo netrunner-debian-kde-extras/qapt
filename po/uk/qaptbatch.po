@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-12 03:22+0200\n"
+"POT-Creation-Date: 2012-02-21 18:19+0100\n"
 "PO-Revision-Date: 2010-10-23 09:25+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <translation@linux.org.ua>\n"
@@ -27,6 +27,53 @@ msgstr "Час до завершення:"
 msgctxt "@label Download Rate"
 msgid "Speed:"
 msgstr "Швидкість:"
+
+#: utils/qapt-batch/main.cpp:28
+msgctxt "@info"
+msgid "A batch installer using QApt"
+msgstr "Інструмент пакетного встановлення за допомогою QApt"
+
+#: utils/qapt-batch/main.cpp:34
+msgctxt "@title"
+msgid "QApt Batch Installer"
+msgstr "Інструмент пакетного встановлення QApt"
+
+#: utils/qapt-batch/main.cpp:35
+msgctxt "@info:credit"
+msgid "(C) 2010 Jonathan Thomas"
+msgstr "© Jonathan Thomas, 2010"
+
+#: utils/qapt-batch/main.cpp:36
+msgctxt "@info:credit"
+msgid "Jonathan Thomas"
+msgstr "Jonathan Thomas"
+
+#: utils/qapt-batch/main.cpp:41
+msgctxt "@info:shell"
+msgid "Attaches the window to an X app specified by winid"
+msgstr ""
+"Долучає вікно до програми з графічним інтерфейсом, вказаної за допомогою "
+"winid"
+
+#: utils/qapt-batch/main.cpp:42
+msgctxt "@info:shell"
+msgid "Install a package"
+msgstr "Встановити пакунок"
+
+#: utils/qapt-batch/main.cpp:43
+msgctxt "@info:shell"
+msgid "Remove a package"
+msgstr "Вилучити пакунок"
+
+#: utils/qapt-batch/main.cpp:44
+msgctxt "@info:shell"
+msgid "Update the package cache"
+msgstr "Оновити кеш пакунків"
+
+#: utils/qapt-batch/main.cpp:45
+msgctxt "@info:shell"
+msgid "Packages to be operated upon"
+msgstr "Пакунки, над якими буде виконано дії"
 
 #: utils/qapt-batch/qaptbatch.cpp:70
 msgctxt "@label"
@@ -97,7 +144,7 @@ msgctxt "@title:window"
 msgid "Authentication error"
 msgstr "Помилка розпізнавання"
 
-#: utils/qapt-batch/qaptbatch.cpp:183 utils/qapt-batch/qaptbatch.cpp:424
+#: utils/qapt-batch/qaptbatch.cpp:183 utils/qapt-batch/qaptbatch.cpp:414
 msgctxt "@label"
 msgid ""
 "It appears that the QApt worker has either crashed or disappeared. Please "
@@ -106,7 +153,7 @@ msgstr ""
 "Здається, базова програма QApt аварійно завершила роботу або зникла зі "
 "списку процесів. Будь ласка, повідомте про цю помилку супровідникам QApt."
 
-#: utils/qapt-batch/qaptbatch.cpp:185 utils/qapt-batch/qaptbatch.cpp:426
+#: utils/qapt-batch/qaptbatch.cpp:185 utils/qapt-batch/qaptbatch.cpp:416
 msgctxt "@title:window"
 msgid "Unexpected Error"
 msgstr "Неочікувана помилка"
@@ -215,37 +262,37 @@ msgstr[3] ""
 "могло бути підроблено зловмисниками.</warning> Бажаєте продовжити "
 "встановлення цього програмного забезпечення?"
 
-#: utils/qapt-batch/qaptbatch.cpp:316
+#: utils/qapt-batch/qaptbatch.cpp:306
 msgctxt "@title:window"
 msgid "Refreshing Package Information"
 msgstr "Оновлення відомостей щодо пакунків"
 
-#: utils/qapt-batch/qaptbatch.cpp:317
+#: utils/qapt-batch/qaptbatch.cpp:307
 msgctxt "@info:status"
 msgid "Checking for new, removed or upgradeable packages"
 msgstr "Пошук нових, вилучених або придатних до оновлення пакунків"
 
-#: utils/qapt-batch/qaptbatch.cpp:323
+#: utils/qapt-batch/qaptbatch.cpp:313
 msgctxt "@title:window"
 msgid "Refresh Complete"
 msgstr "Оновлення списку завершено"
 
-#: utils/qapt-batch/qaptbatch.cpp:332
+#: utils/qapt-batch/qaptbatch.cpp:322
 msgctxt "@info:status"
 msgid "Refresh completed with errors"
 msgstr "Оновлення списку завершених з помилками дій"
 
-#: utils/qapt-batch/qaptbatch.cpp:334
+#: utils/qapt-batch/qaptbatch.cpp:324
 msgctxt "@label"
 msgid "Package information successfully refreshed"
 msgstr "Відомості щодо пакунків успішно оновлено"
 
-#: utils/qapt-batch/qaptbatch.cpp:344
+#: utils/qapt-batch/qaptbatch.cpp:334
 msgctxt "@title:window"
 msgid "Downloading"
 msgstr "Звантаження"
 
-#: utils/qapt-batch/qaptbatch.cpp:346
+#: utils/qapt-batch/qaptbatch.cpp:336
 msgctxt "@info:status"
 msgid "Downloading package file"
 msgid_plural "Downloading package files"
@@ -254,22 +301,22 @@ msgstr[1] "Звантаження файлів пакунків"
 msgstr[2] "Звантаження файлів пакунків"
 msgstr[3] "Звантаження файла пакунка"
 
-#: utils/qapt-batch/qaptbatch.cpp:358
+#: utils/qapt-batch/qaptbatch.cpp:348
 msgctxt "@title:window"
 msgid "Installing Packages"
 msgstr "Встановлення пакунків"
 
-#: utils/qapt-batch/qaptbatch.cpp:372
+#: utils/qapt-batch/qaptbatch.cpp:362
 msgctxt "@title:window"
 msgid "Installation Complete"
 msgstr "Встановлення завершено"
 
-#: utils/qapt-batch/qaptbatch.cpp:376
+#: utils/qapt-batch/qaptbatch.cpp:366
 msgctxt "@label"
 msgid "Package installation finished with errors."
 msgstr "Спроба встановлення пакунка була невдалою через помилки."
 
-#: utils/qapt-batch/qaptbatch.cpp:379
+#: utils/qapt-batch/qaptbatch.cpp:369
 msgctxt "@label"
 msgid "Package successfully installed"
 msgid_plural "Packages successfully installed"
@@ -278,17 +325,17 @@ msgstr[1] "Пакунки успішно встановлено"
 msgstr[2] "Пакунки успішно встановлено"
 msgstr[3] "Пакунок успішно встановлено"
 
-#: utils/qapt-batch/qaptbatch.cpp:383
+#: utils/qapt-batch/qaptbatch.cpp:373
 msgctxt "@title:window"
 msgid "Removal Complete"
 msgstr "Вилучення завершено"
 
-#: utils/qapt-batch/qaptbatch.cpp:387
+#: utils/qapt-batch/qaptbatch.cpp:377
 msgctxt "@label"
 msgid "Package removal finished with errors."
 msgstr "Спроба вилучення пакунка була невдалою через помилки."
 
-#: utils/qapt-batch/qaptbatch.cpp:390
+#: utils/qapt-batch/qaptbatch.cpp:380
 msgctxt "@label"
 msgid "Package successfully uninstalled"
 msgid_plural "Packages successfully uninstalled"
@@ -297,28 +344,28 @@ msgstr[1] "Пакунки успішно вилучено"
 msgstr[2] "Пакунки успішно вилучено"
 msgstr[3] "Пакунок успішно вилучено"
 
-#: utils/qapt-batch/qaptbatch.cpp:441
+#: utils/qapt-batch/qaptbatch.cpp:431
 msgctxt "@info:progress Remaining time"
 msgid "Unknown"
 msgstr "Невідомий"
 
-#: utils/qapt-batch/qaptbatch.cpp:446
+#: utils/qapt-batch/qaptbatch.cpp:436
 msgctxt "@info:progress Download rate"
 msgid "Unknown"
 msgstr "Невідома"
 
-#: utils/qapt-batch/qaptbatch.cpp:449
+#: utils/qapt-batch/qaptbatch.cpp:439
 #, kde-format
 msgctxt "@info:progress Download rate"
 msgid "%1/s"
 msgstr "%1/с"
 
-#: utils/qapt-batch/qaptbatch.cpp:472
+#: utils/qapt-batch/qaptbatch.cpp:462
 msgctxt "@label"
 msgid "Unable to download the following packages:"
 msgstr "Не вдалося звантажити такі пакунки:"
 
-#: utils/qapt-batch/qaptbatch.cpp:477
+#: utils/qapt-batch/qaptbatch.cpp:467
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -330,12 +377,12 @@ msgstr ""
 "%2\n"
 "\n"
 
-#: utils/qapt-batch/qaptbatch.cpp:480
+#: utils/qapt-batch/qaptbatch.cpp:470
 msgctxt "@title:window"
 msgid "Some Packages Could not be Downloaded"
 msgstr "Деякі з пакунків звантажити не вдалося"
 
-#: utils/qapt-batch/qaptbatch.cpp:487
+#: utils/qapt-batch/qaptbatch.cpp:477
 msgctxt "@label"
 msgid "An error occurred while applying changes:"
 msgid_plural "The following errors occurred while applying changes:"
@@ -344,66 +391,19 @@ msgstr[1] "Під час внесення змін сталися такі по�
 msgstr[2] "Під час внесення змін сталися такі помилки:"
 msgstr[3] "Під час внесення змін сталася помилка:"
 
-#: utils/qapt-batch/qaptbatch.cpp:491
+#: utils/qapt-batch/qaptbatch.cpp:481
 #, kde-format
 msgctxt "@label Shows which package failed"
 msgid "Package: %1"
 msgstr "Пакунок: %1"
 
-#: utils/qapt-batch/qaptbatch.cpp:492
+#: utils/qapt-batch/qaptbatch.cpp:482
 #, kde-format
 msgctxt "@label Shows the error"
 msgid "Error: %1"
 msgstr "Помилка: %1"
 
-#: utils/qapt-batch/qaptbatch.cpp:496
+#: utils/qapt-batch/qaptbatch.cpp:486
 msgctxt "@title:window"
 msgid "Commit error"
 msgstr "Помилка надсилання даних"
-
-#: utils/qapt-batch/main.cpp:28
-msgctxt "@info"
-msgid "A batch installer using QApt"
-msgstr "Інструмент пакетного встановлення за допомогою QApt"
-
-#: utils/qapt-batch/main.cpp:34
-msgctxt "@title"
-msgid "QApt Batch Installer"
-msgstr "Інструмент пакетного встановлення QApt"
-
-#: utils/qapt-batch/main.cpp:35
-msgctxt "@info:credit"
-msgid "(C) 2010 Jonathan Thomas"
-msgstr "© Jonathan Thomas, 2010"
-
-#: utils/qapt-batch/main.cpp:36
-msgctxt "@info:credit"
-msgid "Jonathan Thomas"
-msgstr "Jonathan Thomas"
-
-#: utils/qapt-batch/main.cpp:41
-msgctxt "@info:shell"
-msgid "Attaches the window to an X app specified by winid"
-msgstr ""
-"Долучає вікно до програми з графічним інтерфейсом, вказаної за допомогою "
-"winid"
-
-#: utils/qapt-batch/main.cpp:42
-msgctxt "@info:shell"
-msgid "Install a package"
-msgstr "Встановити пакунок"
-
-#: utils/qapt-batch/main.cpp:43
-msgctxt "@info:shell"
-msgid "Remove a package"
-msgstr "Вилучити пакунок"
-
-#: utils/qapt-batch/main.cpp:44
-msgctxt "@info:shell"
-msgid "Update the package cache"
-msgstr "Оновити кеш пакунків"
-
-#: utils/qapt-batch/main.cpp:45
-msgctxt "@info:shell"
-msgid "Packages to be operated upon"
-msgstr "Пакунки, над якими буде виконано дії"

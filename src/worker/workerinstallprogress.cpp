@@ -94,10 +94,14 @@ pkgPackageManager::OrderResult WorkerInstallProgress::start(pkgPackageManager *p
 
     // make it nonblocking
     fcntl(readFromChildFD[0], F_SETFL, O_NONBLOCK);
+    fcntl(pty_master, F_SETFL, O_NONBLOCK);
 
     // Update the interface until the child dies
     int ret;
+    char masterbuf[1024];
     while (waitpid(m_child_id, &ret, WNOHANG) == 0) {
+        // TODO: This is dpkg's raw output. Let's see if we can't do something with it
+        while(read(pty_master, masterbuf, sizeof(masterbuf)) > 0);
         updateInterface(readFromChildFD[0], pty_master);
     }
 
@@ -193,8 +197,8 @@ void WorkerInstallProgress::updateInterface(int fd, int writeFd)
 QVariantMap WorkerInstallProgress::askQuestion(int questionCode, const QVariantMap &args)
 {
     m_questionBlock = new QEventLoop;
-    connect(m_worker, SIGNAL(answerReady(const QVariantMap&)),
-            this, SLOT(setAnswer(const QVariantMap&)));
+    connect(m_worker, SIGNAL(answerReady(QVariantMap)),
+            this, SLOT(setAnswer(QVariantMap)));
 
     emit workerQuestion(questionCode, args);
     m_questionBlock->exec(); // Process blocked, waiting for answerReady signal over dbus
@@ -204,8 +208,8 @@ QVariantMap WorkerInstallProgress::askQuestion(int questionCode, const QVariantM
 
 void WorkerInstallProgress::setAnswer(const QVariantMap &answer)
 {
-    disconnect(m_worker, SIGNAL(answerReady(const QVariantMap&)),
-               this, SLOT(setAnswer(const QVariantMap&)));
+    disconnect(m_worker, SIGNAL(answerReady(QVariantMap)),
+               this, SLOT(setAnswer(QVariantMap)));
     m_questionResponse = answer;
     m_questionBlock->quit();
 }

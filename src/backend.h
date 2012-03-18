@@ -21,6 +21,7 @@
 #ifndef QAPT_BACKEND_H
 #define QAPT_BACKEND_H
 
+#include <QtCore/QHash>
 #include <QtCore/QVariantMap>
 
 #include "globals.h"
@@ -65,6 +66,7 @@ public:
      /**
       * Default destructor
       */
+    // TODO QApt2: Heck no
     virtual ~Backend();
 
     /**
@@ -105,6 +107,16 @@ public:
      */
     bool isRedoStackEmpty() const;
 
+   /**
+     * Returns whether or not events are being compressed for multiple
+     * markings. Applications doing custom multiple marking loops can
+     * use this function to check whether or not to perform post-marking
+     * code.
+
+     * @since 1.3
+     */
+    bool areEventsCompressed() const;
+
     /**
      * Repopulates the internal package cache, package list, and group list.
      * Mostly used internally, like after an update or a package installation
@@ -119,6 +131,18 @@ public:
      * \return The current state of the cache as a @c CacheState
      */
     CacheState currentCacheState() const;
+
+   /**
+     * Gets changes made to the cache since the given cache state.
+     *
+     * @param oldState The CacheState to compare against
+     * @param excluded List of packages to exlude from the check
+     *
+     * @return A QHash containing lists of changed packages for each
+     *         Package::State change flag.
+     * @since 1.3
+     */
+    QHash<Package::State, PackageList> stateChanges(CacheState oldState, PackageList excluded) const;
 
    /**
      * Returns the last event that the worker reported. When the worker is not
@@ -353,6 +377,17 @@ public:
      */
     bool isBroken() const;
 
+   /**
+    * Returns the last time the APT repository sources have been refreshed/checked
+    * for updates. (Either with updateCache() or externally via other tools
+    * like apt-get)
+    *
+    * @returns @c QDateTime The time that the cache was last checked for updates.
+    * If this cannot be determined, an invalid QDateTime will be returned,
+    * which can be checked with QDateTime::isValid()
+    */
+    QDateTime timeCacheLastUpdated() const;
+
 protected:
     BackendPrivate *const d_ptr;
 
@@ -561,6 +596,26 @@ public Q_SLOTS:
      * @param name The name of the package to be removed
      */
     void markPackageForRemoval(const QString &name);
+
+    /**
+     * Marks multiple packages at once. This is more efficient than marking
+     * packages individually, as event compression is utilized to prevent
+     * post-marking calculations from being performed until after all packages
+     * have been marked.
+     *
+     * @param packages The list of packages to be marked
+     * @param action The action to perform on the list of packages
+     *
+     * @since 1.3
+     */
+    void markPackages(const QApt::PackageList &packages, QApt::Package::State action);
+
+    /**
+     * Manual control for enabling/disabling event compression. Useful for when
+     * an application needs to have its own multiple marking loop, but still wants
+     * to utilize event compression
+     */
+    void setCompressEvents(bool enabled);
 
     /**
      * Commits all pending package state changes that have been made.

@@ -6,9 +6,9 @@
 # Liudas Ališauskas <liudas.alisauskas@gmail.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: l 10n\n"
+"Project-Id-Version: qaptbatch\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-12 03:22+0200\n"
+"POT-Creation-Date: 2012-02-21 18:19+0100\n"
 "PO-Revision-Date: 2011-10-11 11:23+0300\n"
 "Last-Translator: Liudas Ališauskas <liudas.alisauskas@gmail.com>\n"
 "Language-Team: Lithuanian <kde-i18n-doc@kde.org>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10==1 && n%100!=11 ? 1 : n"
-"%10>=2 && (n%100<10 || n%100>=20) ? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
+"%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
 "X-Generator: Lokalize 1.2\n"
 
 #: utils/qapt-batch/detailswidget.cpp:44
@@ -29,6 +29,51 @@ msgstr "Likęs laikas:"
 msgctxt "@label Download Rate"
 msgid "Speed:"
 msgstr "Greitis:"
+
+#: utils/qapt-batch/main.cpp:28
+msgctxt "@info"
+msgid "A batch installer using QApt"
+msgstr "Paketinis programų diegimas naudojant QApt"
+
+#: utils/qapt-batch/main.cpp:34
+msgctxt "@title"
+msgid "QApt Batch Installer"
+msgstr "QApt paketų diegimo programa"
+
+#: utils/qapt-batch/main.cpp:35
+msgctxt "@info:credit"
+msgid "(C) 2010 Jonathan Thomas"
+msgstr "(C) 2010 Jonathan Thomas"
+
+#: utils/qapt-batch/main.cpp:36
+msgctxt "@info:credit"
+msgid "Jonathan Thomas"
+msgstr "Jonathan Thomas"
+
+#: utils/qapt-batch/main.cpp:41
+msgctxt "@info:shell"
+msgid "Attaches the window to an X app specified by winid"
+msgstr "Prijungia langą prie X programos nurodytos winid"
+
+#: utils/qapt-batch/main.cpp:42
+msgctxt "@info:shell"
+msgid "Install a package"
+msgstr "Diegti paketą"
+
+#: utils/qapt-batch/main.cpp:43
+msgctxt "@info:shell"
+msgid "Remove a package"
+msgstr "Pašalinti paketą"
+
+#: utils/qapt-batch/main.cpp:44
+msgctxt "@info:shell"
+msgid "Update the package cache"
+msgstr "Atnaujinti paketų atmintinę"
+
+#: utils/qapt-batch/main.cpp:45
+msgctxt "@info:shell"
+msgid "Packages to be operated upon"
+msgstr "Pirmiausiai apdorotini paketai"
 
 #: utils/qapt-batch/qaptbatch.cpp:70
 msgctxt "@label"
@@ -99,7 +144,7 @@ msgctxt "@title:window"
 msgid "Authentication error"
 msgstr "Tapatumo nustatymo klaida"
 
-#: utils/qapt-batch/qaptbatch.cpp:183 utils/qapt-batch/qaptbatch.cpp:424
+#: utils/qapt-batch/qaptbatch.cpp:183 utils/qapt-batch/qaptbatch.cpp:414
 msgctxt "@label"
 msgid ""
 "It appears that the QApt worker has either crashed or disappeared. Please "
@@ -108,7 +153,7 @@ msgstr ""
 "Rodosi kad QApt darbuotojas žuvo ar dingo. Prašome pranešti apie spragą QApt "
 "prižiūrėtojams."
 
-#: utils/qapt-batch/qaptbatch.cpp:185 utils/qapt-batch/qaptbatch.cpp:426
+#: utils/qapt-batch/qaptbatch.cpp:185 utils/qapt-batch/qaptbatch.cpp:416
 msgctxt "@title:window"
 msgid "Unexpected Error"
 msgstr "Netikėta klaida"
@@ -122,17 +167,17 @@ msgid_plural ""
 "The following packages have not been verified by their authors. Downloading "
 "untrusted packages has been disallowed by your current configuration."
 msgstr[0] ""
-"Sekantis paketas nėra patvirtintas savo autoriaus. Nepatikimų paketų "
-"atsiuntimas yra uždraustas jūsų esamos konfigūracijos."
+"Šis paketas nėra patvirtintas savo autoriaus. Nepatikimų paketų atsiuntimas "
+"yra uždraustas jūsų esamos konfigūracijos."
 msgstr[1] ""
-"Sekantys paketai nėra patvirtinti savo autoriaus. Nepatikimų paketų "
-"atsiuntimas yra uždraustas jūsų esamos konfigūracijos."
+"Šie paketai nėra patvirtinti savo autoriaus. Nepatikimų paketų atsiuntimas "
+"yra uždraustas jūsų esamos konfigūracijos."
 msgstr[2] ""
-"Sekantys paketai nėra patvirtinti savo autoriaus. Nepatikimų paketų "
-"atsiuntimas yra uždraustas jūsų esamos konfigūracijos."
+"Šie paketai nėra patvirtinti savo autoriaus. Nepatikimų paketų atsiuntimas "
+"yra uždraustas jūsų esamos konfigūracijos."
 msgstr[3] ""
-"Sekantys paketai nėra patvirtinti savo autoriaus. Nepatikimų paketų "
-"atsiuntimas yra uždraustas jūsų esamos konfigūracijos."
+"Šie paketai nėra patvirtinti savo autoriaus. Nepatikimų paketų atsiuntimas "
+"yra uždraustas jūsų esamos konfigūracijos."
 
 #: utils/qapt-batch/qaptbatch.cpp:202
 msgctxt "@title:window"
@@ -193,56 +238,56 @@ msgid_plural ""
 "presence of unverifiable software can be a sign of tampering.</warning> Do "
 "you wish to continue?"
 msgstr[0] ""
-"Sekanti programinės įrangos dalis negali būti patikrinta. <warning>Diegimas "
-"nepatikrintos programinės įrangos didina saugumo riziką, nepatikrinta "
-"programinė įranga gali būti klastojimo požymis.</warning> Ar norite tęsti?"
+"Ši programinės įrangos dalis negali būti patikrinta. <warning>Nepatikrintos "
+"programinės įrangos diegimas saugumo riziką, nepatikrinta programinė įranga "
+"gali būti klastojimo požymis.</warning> Ar norite tęsti?"
 msgstr[1] ""
-"Sekančios programinės įrangos dalys negali būti patikrintos. "
-"<warning>Diegimas nepatikrintos programinės įrangos didina saugumo riziką, "
+"Šios programinės įrangos dalys negali būti patikrintos. "
+"<warning>Nepatikrintos programinės įrangos diegimas didina saugumo riziką, "
 "nepatikrinta programinė įranga gali būti klastojimo požymis.</warning> Ar "
 "norite tęsti?"
 msgstr[2] ""
-"Sekančios programinės įrangos dalys negali būti patikrintos. "
-"<warning>Diegimas nepatikrintos programinės įrangos didina saugumo riziką, "
+"Šios programinės įrangos dalys negali būti patikrintos. "
+"<warning>Nepatikrintos programinės įrangos diegimas didina saugumo riziką, "
 "nepatikrinta programinė įranga gali būti klastojimo požymis.</warning> Ar "
 "norite tęsti?"
 msgstr[3] ""
-"Sekančios programinės įrangos dalys negali būti patikrintos. "
-"<warning>Diegimas nepatikrintos programinės įrangos didina saugumo riziką, "
+"Šios programinės įrangos dalys negali būti patikrintos. "
+"<warning>Nepatikrintos programinės įrangos diegimas didina saugumo riziką, "
 "nepatikrinta programinė įranga gali būti klastojimo požymis.</warning> Ar "
 "norite tęsti?"
 
-#: utils/qapt-batch/qaptbatch.cpp:316
+#: utils/qapt-batch/qaptbatch.cpp:306
 msgctxt "@title:window"
 msgid "Refreshing Package Information"
 msgstr "Atnaujinama paketų informacija"
 
-#: utils/qapt-batch/qaptbatch.cpp:317
+#: utils/qapt-batch/qaptbatch.cpp:307
 msgctxt "@info:status"
 msgid "Checking for new, removed or upgradeable packages"
 msgstr "Tikrinami nauji, pašalinti ar atnaujintini paketai"
 
-#: utils/qapt-batch/qaptbatch.cpp:323
+#: utils/qapt-batch/qaptbatch.cpp:313
 msgctxt "@title:window"
 msgid "Refresh Complete"
 msgstr "Naujinimas baigtas"
 
-#: utils/qapt-batch/qaptbatch.cpp:332
+#: utils/qapt-batch/qaptbatch.cpp:322
 msgctxt "@info:status"
 msgid "Refresh completed with errors"
 msgstr "Naujinimas baigtas su klaidomis"
 
-#: utils/qapt-batch/qaptbatch.cpp:334
+#: utils/qapt-batch/qaptbatch.cpp:324
 msgctxt "@label"
 msgid "Package information successfully refreshed"
 msgstr "Paketų informacija sėkmingai atnaujinta"
 
-#: utils/qapt-batch/qaptbatch.cpp:344
+#: utils/qapt-batch/qaptbatch.cpp:334
 msgctxt "@title:window"
 msgid "Downloading"
 msgstr "Atsiunčiama"
 
-#: utils/qapt-batch/qaptbatch.cpp:346
+#: utils/qapt-batch/qaptbatch.cpp:336
 msgctxt "@info:status"
 msgid "Downloading package file"
 msgid_plural "Downloading package files"
@@ -251,41 +296,41 @@ msgstr[1] "Atsiunčiami paketai"
 msgstr[2] "Atsiunčiami paketai"
 msgstr[3] "Atsiunčiami paketai"
 
-#: utils/qapt-batch/qaptbatch.cpp:358
+#: utils/qapt-batch/qaptbatch.cpp:348
 msgctxt "@title:window"
 msgid "Installing Packages"
 msgstr "Diegiami paketai"
 
-#: utils/qapt-batch/qaptbatch.cpp:372
+#: utils/qapt-batch/qaptbatch.cpp:362
 msgctxt "@title:window"
 msgid "Installation Complete"
 msgstr "Diegimas baigtas"
 
-#: utils/qapt-batch/qaptbatch.cpp:376
+#: utils/qapt-batch/qaptbatch.cpp:366
 msgctxt "@label"
 msgid "Package installation finished with errors."
 msgstr "Paketo diegimas baigtas su klaidomis."
 
-#: utils/qapt-batch/qaptbatch.cpp:379
+#: utils/qapt-batch/qaptbatch.cpp:369
 msgctxt "@label"
 msgid "Package successfully installed"
 msgid_plural "Packages successfully installed"
 msgstr[0] "Paketas sėkmingai įdiegtas"
-msgstr[1] "Paketas sėkmingai įdiegtas"
+msgstr[1] "Paketai sėkmingai įdiegti"
 msgstr[2] "Paketai sėkmingai įdiegti"
-msgstr[3] "Paketai sėkmingai įdiegti"
+msgstr[3] "Paketas sėkmingai įdiegtas"
 
-#: utils/qapt-batch/qaptbatch.cpp:383
+#: utils/qapt-batch/qaptbatch.cpp:373
 msgctxt "@title:window"
 msgid "Removal Complete"
 msgstr "Pašalinimas baigtas"
 
-#: utils/qapt-batch/qaptbatch.cpp:387
+#: utils/qapt-batch/qaptbatch.cpp:377
 msgctxt "@label"
 msgid "Package removal finished with errors."
 msgstr "Paketo šalinimas baigtas su klaidomis."
 
-#: utils/qapt-batch/qaptbatch.cpp:390
+#: utils/qapt-batch/qaptbatch.cpp:380
 msgctxt "@label"
 msgid "Package successfully uninstalled"
 msgid_plural "Packages successfully uninstalled"
@@ -294,28 +339,28 @@ msgstr[1] "Paketai sėkmingai pašalinti"
 msgstr[2] "Paketai sėkmingai pašalinti"
 msgstr[3] "Paketai sėkmingai pašalinti"
 
-#: utils/qapt-batch/qaptbatch.cpp:441
+#: utils/qapt-batch/qaptbatch.cpp:431
 msgctxt "@info:progress Remaining time"
 msgid "Unknown"
 msgstr "Nežinoma"
 
-#: utils/qapt-batch/qaptbatch.cpp:446
+#: utils/qapt-batch/qaptbatch.cpp:436
 msgctxt "@info:progress Download rate"
 msgid "Unknown"
 msgstr "Nežinoma"
 
-#: utils/qapt-batch/qaptbatch.cpp:449
+#: utils/qapt-batch/qaptbatch.cpp:439
 #, kde-format
 msgctxt "@info:progress Download rate"
 msgid "%1/s"
 msgstr "%1/s"
 
-#: utils/qapt-batch/qaptbatch.cpp:472
+#: utils/qapt-batch/qaptbatch.cpp:462
 msgctxt "@label"
 msgid "Unable to download the following packages:"
 msgstr "Nepavyksta atsiųsti sekančių paketų:"
 
-#: utils/qapt-batch/qaptbatch.cpp:477
+#: utils/qapt-batch/qaptbatch.cpp:467
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -327,12 +372,12 @@ msgstr ""
 "%2\n"
 "\n"
 
-#: utils/qapt-batch/qaptbatch.cpp:480
+#: utils/qapt-batch/qaptbatch.cpp:470
 msgctxt "@title:window"
 msgid "Some Packages Could not be Downloaded"
 msgstr "Nepavyko atsiųsti keleto paketų"
 
-#: utils/qapt-batch/qaptbatch.cpp:487
+#: utils/qapt-batch/qaptbatch.cpp:477
 msgctxt "@label"
 msgid "An error occurred while applying changes:"
 msgid_plural "The following errors occurred while applying changes:"
@@ -341,64 +386,19 @@ msgstr[1] "Įvyko šios klaidos vykdant pakeitimus:"
 msgstr[2] "Įvyko šios klaidos vykdant pakeitimus:"
 msgstr[3] "Įvyko šios klaidos vykdant pakeitimus:"
 
-#: utils/qapt-batch/qaptbatch.cpp:491
+#: utils/qapt-batch/qaptbatch.cpp:481
 #, kde-format
 msgctxt "@label Shows which package failed"
 msgid "Package: %1"
 msgstr "Paketas: %1"
 
-#: utils/qapt-batch/qaptbatch.cpp:492
+#: utils/qapt-batch/qaptbatch.cpp:482
 #, kde-format
 msgctxt "@label Shows the error"
 msgid "Error: %1"
 msgstr "Klaida: %1"
 
-#: utils/qapt-batch/qaptbatch.cpp:496
+#: utils/qapt-batch/qaptbatch.cpp:486
 msgctxt "@title:window"
 msgid "Commit error"
 msgstr "Išsiųsti klaidą"
-
-#: utils/qapt-batch/main.cpp:28
-msgctxt "@info"
-msgid "A batch installer using QApt"
-msgstr "Paketinis programų diegimas naudojant QApt"
-
-#: utils/qapt-batch/main.cpp:34
-msgctxt "@title"
-msgid "QApt Batch Installer"
-msgstr "QApt paketų diegimo programa"
-
-#: utils/qapt-batch/main.cpp:35
-msgctxt "@info:credit"
-msgid "(C) 2010 Jonathan Thomas"
-msgstr "(C) 2010 Jonathan Thomas"
-
-#: utils/qapt-batch/main.cpp:36
-msgctxt "@info:credit"
-msgid "Jonathan Thomas"
-msgstr "Jonathan Thomas"
-
-#: utils/qapt-batch/main.cpp:41
-msgctxt "@info:shell"
-msgid "Attaches the window to an X app specified by winid"
-msgstr "Prijungia langą prie X programos nurodytos winid"
-
-#: utils/qapt-batch/main.cpp:42
-msgctxt "@info:shell"
-msgid "Install a package"
-msgstr "Diegti paketą"
-
-#: utils/qapt-batch/main.cpp:43
-msgctxt "@info:shell"
-msgid "Remove a package"
-msgstr "Pašalinti paketą"
-
-#: utils/qapt-batch/main.cpp:44
-msgctxt "@info:shell"
-msgid "Update the package cache"
-msgstr "Atnaujinti paketų atmintinę"
-
-#: utils/qapt-batch/main.cpp:45
-msgctxt "@info:shell"
-msgid "Packages to be operated upon"
-msgstr "Pirmiausiai apdorotini paketai"
