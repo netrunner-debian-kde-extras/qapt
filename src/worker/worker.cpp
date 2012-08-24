@@ -31,6 +31,7 @@
 #include <apt-pkg/algorithms.h>
 #include <apt-pkg/acquire-item.h>
 #include <apt-pkg/configuration.h>
+#include <apt-pkg/aptconfiguration.h>
 #include <apt-pkg/error.h>
 #include <apt-pkg/fileutl.h>
 #include <apt-pkg/init.h>
@@ -252,6 +253,7 @@ void QAptWorker::commitChanges(QMap<QString, QVariant> instructionsList)
 
     m_timeout->stop();
 
+    pkgDepCache::ActionGroup *actionGroup = new pkgDepCache::ActionGroup(*m_cache->depCache());
     // Parse out the argument list and mark packages for operations
     QVariantMap::const_iterator mapIter = instructionsList.constBegin();
 
@@ -279,6 +281,7 @@ void QAptWorker::commitChanges(QMap<QString, QVariant> instructionsList)
             emit errorOccurred(QApt::NotFoundError, args);
             emit workerFinished(false);
             m_timeout->start();
+            delete actionGroup;
             return;
         }
 
@@ -296,9 +299,8 @@ void QAptWorker::commitChanges(QMap<QString, QVariant> instructionsList)
                 m_cache->depCache()->MarkInstall(iter, true, 0, fromUser);
                 if (!State.Install() || m_cache->depCache()->BrokenCount() > 0) {
                     pkgProblemResolver Fix(m_cache->depCache());
-                    Fix.Clear(iter);
                     Fix.Protect(iter);
-                    Fix.Resolve(true);
+                    Fix.ResolveByKeep();
                 }
                 break;
             }
@@ -344,7 +346,30 @@ void QAptWorker::commitChanges(QMap<QString, QVariant> instructionsList)
         mapIter++;
     }
 
+    if (_error->PendingError() && (m_cache->depCache()->BrokenCount() == 0))
+    {
+        // We had dep errors, but fixed them
+        _error->Discard();
+        qDebug() << "fixed errors";
+    }
+
+    delete actionGroup;
+
     emit workerStarted();
+
+    if (_error->PendingError()) {
+        string message;
+        QVariantMap details;
+
+        _error->PopMessage(message);
+        details[QLatin1String("FromWorker")] = true;
+        details[QLatin1String("ErrorText")] = QString::fromStdString(message);
+
+        emit errorOccurred(QApt::InitError, details);
+        emit workerFinished(false);
+        m_timeout->start();
+        return;
+    }
 
     // Lock the archive directory
     FileFd Lock;
@@ -463,6 +488,27 @@ void QAptWorker::commitChanges(QMap<QString, QVariant> instructionsList)
     if (fetcher.Run() != pkgAcquire::Continue) {
         // Our fetcher will report warnings for itself, but if it fails entirely
         // we have to send the error and finished signals
+        if (!m_acquireStatus->wasCancelled()) {
+            emit errorOccurred(QApt::FetchError, QVariantMap());
+        }
+
+        emit workerFinished(false);
+        m_timeout->start();
+        return;
+    }
+
+    bool failed = false;
+    for (pkgAcquire::ItemIterator i = fetcher.ItemsBegin(); i != fetcher.ItemsEnd(); ++i) {
+        if((*i)->Status == pkgAcquire::Item::StatDone && (*i)->Complete)
+            continue;
+        if((*i)->Status == pkgAcquire::Item::StatIdle)
+            continue;
+
+        failed = true;
+        break;
+    }
+
+    if (failed && !packageManager->FixMissing()) {
         emit errorOccurred(QApt::FetchError, QVariantMap());
         emit workerFinished(false);
         m_timeout->start();
@@ -580,20 +626,31 @@ void QAptWorker::installDebFile(const QString &fileName)
 
     QApt::DebFile deb(fileName);
 
-    QString arch = deb.architecture();
+    QString debArch = deb.architecture();
 
-    if (arch != QLatin1String("all") &&
-        arch != QString::fromStdString(_config->Find("APT::Architecture", ""))) {
-        // TODO report what arch was provided vs needed
-        qDebug() << arch << QString::fromStdString(_config->Find("APT::Architecture", ""));
-        emit errorOccurred(QApt::WrongArchError, QVariantMap());
+    QStringList archList;
+    archList.append(QLatin1String("all"));
+    std::vector<std::string> archs = APT::Configuration::getArchitectures(false);
+
+    for (std::string &arch : archs)
+    {
+         archList.append(QString::fromStdString(arch));
+    }
+
+    if (!archList.contains(debArch)) {
+        QVariantMap details;
+        details["RequestedArch"] = debArch;
+
+        emit errorOccurred(QApt::WrongArchError, details);
         emit workerFinished(false);
+        m_timeout->start();
         return;
     }
 
     if (!QApt::Auth::authorize(QLatin1String("org.kubuntu.qaptworker.commitChanges"), message().service())) {
         emit errorOccurred(QApt::AuthError, QVariantMap());
         emit workerFinished(false);
+        m_timeout->start();
         return;
     }
 
@@ -608,7 +665,6 @@ void QAptWorker::installDebFile(const QString &fileName)
     connect(m_dpkgProcess, SIGNAL(readyRead()), this, SLOT(updateDpkgProgress()));
     connect(m_dpkgProcess, SIGNAL(finished(int,QProcess::ExitStatus)),
             this, SLOT(dpkgFinished(int,QProcess::ExitStatus)));
-
 }
 
 void QAptWorker::dpkgStarted()

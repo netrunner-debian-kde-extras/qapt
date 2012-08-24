@@ -23,11 +23,15 @@
 
 #include <QtGui/QWidget>
 
+#include "../../src/globals.h"
+
 class QLabel;
+class QPushButton;
 
 class KTextBrowser;
 
 namespace QApt {
+    class Backend;
     class DebFile;
 }
 
@@ -39,11 +43,14 @@ public:
     ~DebViewer();
 
 private:
+    QApt::Backend *m_backend;
     QApt::DebFile *m_debFile;
+    QApt::CacheState m_oldCacheState;
 
     QLabel *m_iconLabel;
     QLabel *m_nameLabel;
     QLabel *m_statusLabel;
+    QPushButton *m_detailsButton;
     QWidget *m_versionInfoWidget;
     QLabel *m_versionTitleLabel;
     QLabel *m_versionInfoLabel;
@@ -56,11 +63,16 @@ private:
     KTextBrowser *m_fileWidget;
 
 public Q_SLOTS:
+    void setBackend(QApt::Backend *backend);
     void setDebFile(QApt::DebFile *debFile);
     void setStatusText(const QString &text);
+    void showDetailsButton(bool show);
     void hideVersionInfo();
     void setVersionTitle(const QString &title);
     void setVersionInfo(const QString &info);
+
+private Q_SLOTS:
+    void detailsButtonClicked();
 };
 
 #endif

@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright © 2010-2011 Jonathan Thomas <echidnaman@kubuntu.org>        *
+ *   Copyright © 2010-2012 Jonathan Thomas <echidnaman@kubuntu.org>        *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or         *
  *   modify it under the terms of the GNU General Public License as        *
@@ -67,6 +67,7 @@ public:
     }
     ~BackendPrivate()
     {
+        qDeleteAll(packages);
         delete cache;
         delete records;
         delete config;
@@ -81,6 +82,8 @@ public:
     QSet<Group> groups;
     // Cache of origin/human-readable name pairings
     QHash<QString, QString> originMap;
+    // Relation of an origin and its hostname
+    QHash<QString, QString> siteMap;
     WorkerEvent state;
 
     // Counts
@@ -88,7 +91,6 @@ public:
 
     // Pointer to the apt cache object
     Cache *cache;
-    pkgPolicy *policy;
     pkgRecords *records;
 
     // Undo/redo stuff
@@ -113,8 +115,10 @@ public:
     bool compressEvents;
     pkgDepCache::ActionGroup *actionGroup;
 
+    // Other
     bool writeSelectionFile(const QString &file, const QString &path) const;
     void setWorkerLocale();
+    QString customProxy;
     void setWorkerProxy();
 };
 
@@ -138,7 +142,8 @@ void BackendPrivate::setWorkerLocale()
 
 void BackendPrivate::setWorkerProxy()
 {
-    worker->setProxy(QLatin1String(qgetenv("http_proxy")));
+    QString proxy = customProxy.isEmpty() ? qgetenv("http_proxy") : proxy = customProxy;
+    worker->setProxy(proxy);
 }
 
 Backend::Backend()
@@ -204,20 +209,19 @@ void Backend::reloadCache()
     d->packages.clear();
     d->groups.clear();
     d->originMap.clear();
+    d->siteMap.clear();
     d->packagesIndex.clear();
     d->installedCount = 0;
 
     int packageCount = depCache->Head().PackageCount;
     d->packagesIndex.resize(packageCount);
+    d->packagesIndex.fill(-1);
     d->packages.reserve(packageCount);
 
     // Populate internal package cache
     int count = 0;
-    QSet<Group> groupSet;
 
     d->isMultiArch = architectures().size() > 1;
-    bool pkgMultiArch;
-    QString arch;
 
     pkgCache::PkgIterator iter;
     for (iter = depCache->PkgBegin(); !iter.end(); ++iter) {
@@ -246,24 +250,23 @@ void Backend::reloadCache()
 
         if(!Ver.end()) {
             pkgCache::VerFileIterator VF = Ver.FileList();
-            d->originMap[QLatin1String(VF.File().Origin())] = QLatin1String(VF.File().Label());
+            QLatin1String origin(QLatin1String(VF.File().Origin()));
+            d->originMap[origin] = VF.File().Label();
+            d->siteMap[origin] = VF.File().Site();
         }
     }
 
-    if (d->originMap.contains(QLatin1String(""))) {
-        d->originMap.remove(QLatin1String(""));
-    }
+    d->originMap.remove(QString());
 
     d->undoStack.clear();
     d->redoStack.clear();
 
     // Determine which packages are pinned for display purposes
-    QString dir = QString::fromStdString(_config->FindDir("Dir::Etc"))
-                  % QLatin1String("preferences.d/");
+    QString dirBase = d->config->findDirectory(QLatin1String("Dir::Etc"));
+    QString dir = dirBase % QLatin1String("preferences.d/");
     QDir logDirectory(dir);
     QStringList pinFiles = logDirectory.entryList(QDir::Files, QDir::Name);
-    pinFiles << QString::fromStdString(_config->FindDir("Dir::Etc")) %
-                QLatin1String("preferences");
+    pinFiles << dirBase % QLatin1String("preferences");
 
     Q_FOREACH (const QString &pinName, pinFiles) {
         QString pinPath;
@@ -286,8 +289,8 @@ void Backend::reloadCache()
 
         pkgTagSection tags;
         while (tagFile.Step(tags)) {
-            QLatin1String name(tags.FindS("Package").c_str());
-            Package *pkg = package(name);
+            string name = tags.FindS("Package");
+            Package *pkg = package(QLatin1String(name.c_str()));
             if (pkg) {
                 pkg->setPinned(true);
             }
@@ -322,12 +325,19 @@ Cache *Backend::cache() const
     return d->cache;
 }
 
+pkgRecords *Backend::records() const
+{
+    Q_D(const Backend);
+
+    return d->records;
+}
+
 Package *Backend::package(pkgCache::PkgIterator &iter) const
 {
     Q_D(const Backend);
 
     int index = d->packagesIndex.at(iter->ID);
-    if (index != -1) {
+    if (index != -1 && index < d->packages.size()) {
         return d->packages.at(index);
     }
     return 0;
@@ -335,7 +345,7 @@ Package *Backend::package(pkgCache::PkgIterator &iter) const
 
 Package *Backend::package(const QString &name) const
 {
-    return package(QLatin1String(name.toStdString().c_str()));
+    return package(QLatin1String(name.toLatin1()));
 }
 
 Package *Backend::package(const QLatin1String &name) const
@@ -363,6 +373,13 @@ Package *Backend::packageForFile(const QString &file) const
         }
     }
     return 0;
+}
+
+QStringList Backend::origins() const
+{
+    Q_D(const Backend);
+
+    return d->originMap.keys();
 }
 
 QStringList Backend::originLabels() const
@@ -617,16 +634,9 @@ bool Backend::isMultiArchEnabled() const
 
 QStringList Backend::architectures() const
 {
-    std::vector<std::string> archs = APT::Configuration::getArchitectures(false);
+    Q_D(const Backend);
 
-    QStringList archList;
-    for (std::string &arch : archs)
-    {
-         archList.append(QString::fromStdString(arch));
-    }
-
-
-    return archList;
+    return d->config->architectures();
 }
 
 QString Backend::nativeArchitecture() const
@@ -1008,6 +1018,7 @@ void Backend::setCompressEvents(bool enabled)
         delete d->actionGroup;
         d->actionGroup = 0;
         d->compressEvents = false;
+        emit packageChanged();
     }
 }
 
@@ -1273,8 +1284,7 @@ bool Backend::setPackagePinned(Package *package, bool pin)
 {
     Q_D(Backend);
 
-    QString dir = QString::fromStdString(_config->FindDir("Dir::Etc"))
-                  % QLatin1String("preferences.d/");
+    QString dir = d->config->findDirectory("Dir::Etc") % QLatin1String("preferences.d/");
     QString path = dir % package->latin1Name();
     QString pinDocument;
 
@@ -1411,6 +1421,13 @@ bool Backend::addArchiveToCache(const DebFile &archive)
     return d->worker->copyArchiveToCache(archive.filePath());
 }
 
+void Backend::setWorkerProxy(const QString &proxy)
+{
+    Q_D(Backend);
+
+    d->customProxy = proxy;
+}
+
 void Backend::workerStarted()
 {
     Q_D(Backend);
@@ -1511,6 +1528,12 @@ void Backend::serviceOwnerChanged(const QString &name, const QString &oldOwner, 
         emit errorOccurred(QApt::WorkerDisappeared, QVariantMap());
         workerFinished(false);
     }
+}
+
+QStringList Backend::originsForHost(const QString& host) const
+{
+    Q_D(const Backend);
+    return d->siteMap.keys(host);
 }
 
 }

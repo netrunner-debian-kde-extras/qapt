@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright © 2010 Jonathan Thomas <echidnaman@kubuntu.org>             *
+ *   Copyright © 2010-2012 Jonathan Thomas <echidnaman@kubuntu.org>        *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or         *
  *   modify it under the terms of the GNU General Public License as        *
@@ -59,16 +59,16 @@ public:
      /**
       * Default destructor
       */
-    // TODO QApt2: no virtual destructor
+    // TODO: QApt2: no virtual destructor
     virtual ~Config();
 
     /**
      * Reads the value of an entry specified by @p key
      *
-     * @param key The key to search for
-     * @param default The default value returned if the key was not found
+     * @param key the key to search for
+     * @param defaultValue the default value returned if the key was not found
      *
-     * @return The value for this key, or @p default if the key was not found
+     * @return the value for this key, or @p default if the key was not found
      *
      * @see writeEntry()
      */
@@ -79,6 +79,22 @@ public:
 
     /** Overload for readEntry(const QString&, const bool) */
     QString readEntry(const QString &key, const QString &defaultValue) const;
+
+    /**
+     * Locates the path of the given key. This uses APT's configuration
+     * key algorithm to return various apt-related directories. For example,
+     * a key of 'Dir::Etc' would return the location of the APT configuration
+     * directory (usually /etc/apt), and 'Dir::Etc::main' would return the
+     * location of apt.conf (usually /etc/apt/apt.conf)
+     *
+     * @param key the key to search for
+     * @param default the directory to use as default if the key isn't found
+     *
+     * @return the location of the config key, or the default if the key
+     * is not found
+     * @since 1.4
+     */
+    QString findDirectory(const QString &key, const QString &defaultValue = QString()) const;
 
     /**
      * Writes a value to the APT configuration object, and applies it
@@ -96,8 +112,30 @@ public:
     /** Overload for writeEntry(const QString&, const bool) */
     void writeEntry(const QString &key, const QString &value);
 
+    /**
+     * Locates the file of the given key. This uses APT's configuration
+     * key algorithm to return various apt-related files. For example,
+     * a key of 'Dir::Etc::sourcelist' would return the location of the APT
+     * sources.list file (usually /etc/apt/sources.list)
+     *
+     * @param key the key to search for
+     * @param default the directory to use as default if the key isn't found
+     *
+     * @return the location of the config key, or the default if the key
+     * is not found
+     * @since 1.4
+     */
+    QString findFile(const QString &key, const QString &defaultValue = QString()) const;
+
+    /**
+     * Returns a list of the CPU architectures APT is configured to support
+     *
+     * @since 1.4
+     */
+    QStringList architectures() const;
+
 private:
-    Q_DECLARE_PRIVATE(Config);
+    Q_DECLARE_PRIVATE(Config)
     ConfigPrivate *const d_ptr;
 };
 
