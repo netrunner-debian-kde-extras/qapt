@@ -1,3 +1,9 @@
+qapt (1.4.0-0r0) UNRELEASED; urgency=low
+
+  * New upstream release.
+
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Fri, 24 Aug 2012 16:39:17 +0200
+
 qapt (1.3.0-2) unstable; urgency=low
 
   * Team upload.
