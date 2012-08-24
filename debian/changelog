@@ -1,6 +1,8 @@
 qapt (1.4.0-0r0) UNRELEASED; urgency=low
 
   * New upstream release.
+  * Remove upstream_directly-include-declaration-of-MD5Summation.patch, applied
+    upstream.
 
  -- José Manuel Santamaría Lema <panfaust@gmail.com>  Fri, 24 Aug 2012 16:39:17 +0200
 
