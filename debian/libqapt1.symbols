@@ -1,3 +1,4 @@
+# SymbolsHelper-Confirmed: 1.3.0 amd64
 libqapt.so.1 libqapt1 #MINVER#
  _ZN4QApt5Cache11qt_metacallEN11QMetaObject4CallEiPPv@Base 0.3.0
  _ZN4QApt11HistoryItemC1ERK7QString@Base 1.0.80
