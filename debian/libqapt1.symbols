@@ -290,13 +290,20 @@ libqapt.so.1 libqapt1 #MINVER#
  _ZTIN6Xapian13DatabaseErrorE@Base 0.3.0
  _ZTIN6Xapian20DatabaseOpeningErrorE@Base 0.3.0
  _ZTIN6Xapian5ErrorE@Base 0.3.0
- (regex|optional=templinst)_ZTISt8iteratorISt20forward_iterator_tagN8pkgCache10DependencyE[il]PS2_RS2_E@Base 1.1.0
- (regex|optional=templinst)_ZTISt8iteratorISt20forward_iterator_tagN8pkgCache11PackageFileE[il]PS2_RS2_E@Base 1.1.0
- (regex|optional=templinst)_ZTISt8iteratorISt20forward_iterator_tagN8pkgCache7PackageE[il]PS2_RS2_E@Base 1.1.0
- (regex|optional=templinst)_ZTISt8iteratorISt20forward_iterator_tagN8pkgCache7VerFileE[il]PS2_RS2_E@Base 1.1.0
- (regex|optional=templinst)_ZTISt8iteratorISt20forward_iterator_tagN8pkgCache7VersionE[il]PS2_RS2_E@Base 1.1.0
- (regex|optional=templinst)_ZTISt8iteratorISt20forward_iterator_tagN8pkgCache8DescFileE[il]PS2_RS2_E@Base 1.1.0
- (regex|optional=templinst)_ZTISt8iteratorISt20forward_iterator_tagN8pkgCache8ProvidesE[il]PS2_RS2_E@Base 1.1.0
+ (optional=templinst)_ZTISt8iteratorISt20forward_iterator_tagN8pkgCache10DependencyEPS2_RS2_E@Base 1.1.0
+ (optional=templinst)_ZTISt8iteratorISt20forward_iterator_tagN8pkgCache10DependencyEilPS2_RS2_E@Base 1.1.0
+ (optional=templinst)_ZTISt8iteratorISt20forward_iterator_tagN8pkgCache11PackageFileEPS2_RS2_E@Base 1.1.0
+ (optional=templinst)_ZTISt8iteratorISt20forward_iterator_tagN8pkgCache11PackageFileEilPS2_RS2_E@Base 1.1.0
+ (optional=templinst)_ZTISt8iteratorISt20forward_iterator_tagN8pkgCache7PackageEPS2_RS2_E@Base 1.1.0
+ (optional=templinst)_ZTISt8iteratorISt20forward_iterator_tagN8pkgCache7PackageEilPS2_RS2_E@Base 1.1.0
+ (optional=templinst)_ZTISt8iteratorISt20forward_iterator_tagN8pkgCache7VerFileEPS2_RS2_E@Base 1.1.0
+ (optional=templinst)_ZTISt8iteratorISt20forward_iterator_tagN8pkgCache7VerFileEilPS2_RS2_E@Base 1.1.0
+ (optional=templinst)_ZTISt8iteratorISt20forward_iterator_tagN8pkgCache7VersionEPS2_RS2_E@Base 1.1.0
+ (optional=templinst)_ZTISt8iteratorISt20forward_iterator_tagN8pkgCache7VersionEilPS2_RS2_E@Base 1.1.0
+ (optional=templinst)_ZTISt8iteratorISt20forward_iterator_tagN8pkgCache8DescFileEPS2_RS2_E@Base 1.1.0
+ (optional=templinst)_ZTISt8iteratorISt20forward_iterator_tagN8pkgCache8DescFileEilPS2_RS2_E@Base 1.1.0
+ (optional=templinst)_ZTISt8iteratorISt20forward_iterator_tagN8pkgCache8ProvidesEPS2_RS2_E@Base 1.1.0
+ (optional=templinst)_ZTISt8iteratorISt20forward_iterator_tagN8pkgCache8ProvidesEilPS2_RS2_E@Base 1.1.0
  _ZTSN4QApt5CacheE@Base 0.3.0
  _ZTSN4QApt6ConfigE@Base 1.0.60
  _ZTSN4QApt7HistoryE@Base 1.0.80
@@ -306,13 +313,20 @@ libqapt.so.1 libqapt1 #MINVER#
  _ZTSN6Xapian13DatabaseErrorE@Base 0.3.0
  _ZTSN6Xapian20DatabaseOpeningErrorE@Base 0.3.0
  _ZTSN6Xapian5ErrorE@Base 0.3.0
- (regex|optional=templinst)_ZTSSt8iteratorISt20forward_iterator_tagN8pkgCache10DependencyE[il]PS2_RS2_E@Base 1.1.0
- (regex|optional=templinst)_ZTSSt8iteratorISt20forward_iterator_tagN8pkgCache11PackageFileE[il]PS2_RS2_E@Base 1.1.0
- (regex|optional=templinst)_ZTSSt8iteratorISt20forward_iterator_tagN8pkgCache7PackageE[il]PS2_RS2_E@Base 1.1.0
- (regex|optional=templinst)_ZTSSt8iteratorISt20forward_iterator_tagN8pkgCache7VerFileE[il]PS2_RS2_E@Base 1.1.0
- (regex|optional=templinst)_ZTSSt8iteratorISt20forward_iterator_tagN8pkgCache7VersionE[il]PS2_RS2_E@Base 1.1.0
- (regex|optional=templinst)_ZTSSt8iteratorISt20forward_iterator_tagN8pkgCache8DescFileE[il]PS2_RS2_E@Base 1.1.0
- (regex|optional=templinst)_ZTSSt8iteratorISt20forward_iterator_tagN8pkgCache8ProvidesE[il]PS2_RS2_E@Base 1.1.0
+ (optional=templinst)_ZTSSt8iteratorISt20forward_iterator_tagN8pkgCache10DependencyEPS2_RS2_E@Base 1.1.0
+ (optional=templinst)_ZTSSt8iteratorISt20forward_iterator_tagN8pkgCache10DependencyEilPS2_RS2_E@Base 1.1.0
+ (optional=templinst)_ZTSSt8iteratorISt20forward_iterator_tagN8pkgCache11PackageFileEPS2_RS2_E@Base 1.1.0
+ (optional=templinst)_ZTSSt8iteratorISt20forward_iterator_tagN8pkgCache11PackageFileEilPS2_RS2_E@Base 1.1.0
+ (optional=templinst)_ZTSSt8iteratorISt20forward_iterator_tagN8pkgCache7PackageEPS2_RS2_E@Base 1.1.0
+ (optional=templinst)_ZTSSt8iteratorISt20forward_iterator_tagN8pkgCache7PackageEilPS2_RS2_E@Base 1.1.0
+ (optional=templinst)_ZTSSt8iteratorISt20forward_iterator_tagN8pkgCache7VerFileEPS2_RS2_E@Base 1.1.0
+ (optional=templinst)_ZTSSt8iteratorISt20forward_iterator_tagN8pkgCache7VerFileEilPS2_RS2_E@Base 1.1.0
+ (optional=templinst)_ZTSSt8iteratorISt20forward_iterator_tagN8pkgCache7VersionEPS2_RS2_E@Base 1.1.0
+ (optional=templinst)_ZTSSt8iteratorISt20forward_iterator_tagN8pkgCache7VersionEilPS2_RS2_E@Base 1.1.0
+ (optional=templinst)_ZTSSt8iteratorISt20forward_iterator_tagN8pkgCache8DescFileEPS2_RS2_E@Base 1.1.0
+ (optional=templinst)_ZTSSt8iteratorISt20forward_iterator_tagN8pkgCache8DescFileEilPS2_RS2_E@Base 1.1.0
+ (optional=templinst)_ZTSSt8iteratorISt20forward_iterator_tagN8pkgCache8ProvidesEPS2_RS2_E@Base 1.1.0
+ (optional=templinst)_ZTSSt8iteratorISt20forward_iterator_tagN8pkgCache8ProvidesEilPS2_RS2_E@Base 1.1.0
  _ZTVN4QApt5CacheE@Base 0.3.0
  _ZTVN4QApt6ConfigE@Base 1.0.60
  _ZTVN4QApt7BackendE@Base 0.3.0
