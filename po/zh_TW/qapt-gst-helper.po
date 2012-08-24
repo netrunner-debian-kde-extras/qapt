@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-12 03:22+0200\n"
+"POT-Creation-Date: 2012-03-09 11:23+0100\n"
 "PO-Revision-Date: 2011-02-11 09:12+0800\n"
 "Last-Translator: Franklin Weng <franklin@goodhorse.idv.tw>\n"
 "Language-Team: Chinese Traditional <zh-l10n@linux.org.tw>\n"
@@ -16,6 +16,36 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Lokalize 1.1\n"
+
+#: utils/qapt-gst-helper/main.cpp:31
+msgctxt "@info"
+msgid "A GStreamer codec installer using QApt"
+msgstr "GStreamer 編解碼器安裝程式，使用 QApt"
+
+#: utils/qapt-gst-helper/main.cpp:37
+msgctxt "@title"
+msgid "QApt Codec Searcher"
+msgstr "QApt 編解碼器搜尋器"
+
+#: utils/qapt-gst-helper/main.cpp:38
+msgctxt "@info:credit"
+msgid "(C) 2011 Jonathan Thomas"
+msgstr "(C) 2011 Jonathan Thomas"
+
+#: utils/qapt-gst-helper/main.cpp:39
+msgctxt "@info:credit"
+msgid "Jonathan Thomas"
+msgstr "Jonathan Thomas"
+
+#: utils/qapt-gst-helper/main.cpp:44
+msgctxt "@info:shell"
+msgid "Attaches the window to an X app specified by winid"
+msgstr "將視窗附加到 winid 指定的 X 應用程式"
+
+#: utils/qapt-gst-helper/main.cpp:45
+msgctxt "@info:shell"
+msgid "GStreamer install info"
+msgstr "GStreamer 安裝資訊"
 
 #: utils/qapt-gst-helper/PluginHelper.cpp:82
 msgctxt "@info Error message"
@@ -64,33 +94,33 @@ msgctxt "Search for packages"
 msgid "Search"
 msgstr "搜尋"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:192
+#: utils/qapt-gst-helper/PluginHelper.cpp:195
 msgid "Confirm Changes"
 msgstr "確認變更"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:193
+#: utils/qapt-gst-helper/PluginHelper.cpp:196
 msgid "Install the following package?"
 msgid_plural "Install the following packages?"
 msgstr[0] "要安裝以下的套件嗎？"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:198
+#: utils/qapt-gst-helper/PluginHelper.cpp:201
 msgctxt "Install packages"
 msgid "Install"
 msgstr "安裝"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:222
+#: utils/qapt-gst-helper/PluginHelper.cpp:225
 msgctxt "@label"
 msgid ""
 "The package system could not be initialized, your configuration may be "
 "broken."
 msgstr "套件系統無法被初始化，您的設定可能有問題。"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:224
+#: utils/qapt-gst-helper/PluginHelper.cpp:227
 msgctxt "@title:window"
 msgid "Initialization error"
 msgstr "初始化錯誤"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:233
+#: utils/qapt-gst-helper/PluginHelper.cpp:236
 msgctxt "@label"
 msgid ""
 "Another application seems to be using the package system at this time. You "
@@ -100,12 +130,12 @@ msgstr ""
 "另一個應用程式似乎正在使用套件系統。您必須關閉另一個套件管理程式，才能繼續安"
 "裝或移除套件。"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:237
+#: utils/qapt-gst-helper/PluginHelper.cpp:240
 msgctxt "@title:window"
 msgid "Unable to obtain package system lock"
 msgstr "無法鎖定套件系統"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:243
+#: utils/qapt-gst-helper/PluginHelper.cpp:246
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -113,45 +143,45 @@ msgid ""
 "this operation."
 msgstr "您在 %1 沒有足夠的磁碟空間來繼續此操作。"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:245
+#: utils/qapt-gst-helper/PluginHelper.cpp:248
 msgctxt "@title:window"
 msgid "Low disk space"
 msgstr "磁碟空間過低"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:250
+#: utils/qapt-gst-helper/PluginHelper.cpp:253
 msgctxt "@label"
 msgid "Could not download packages"
 msgstr "無法下載套件"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:251
+#: utils/qapt-gst-helper/PluginHelper.cpp:254
 msgctxt "@title:window"
 msgid "Download failed"
 msgstr "下載失敗"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:259
+#: utils/qapt-gst-helper/PluginHelper.cpp:262
 msgctxt "@label"
 msgid ""
 "This operation cannot continue since proper authorization was not provided"
 msgstr "此操作無法繼續，因為無法提供適當的認證"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:261
+#: utils/qapt-gst-helper/PluginHelper.cpp:264
 msgctxt "@title:window"
 msgid "Authentication error"
 msgstr "認證錯誤"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:265
+#: utils/qapt-gst-helper/PluginHelper.cpp:268
 msgctxt "@label"
 msgid ""
 "It appears that the QApt worker has either crashed or disappeared. Please "
 "report a bug to the QApt maintainers"
 msgstr "似乎 QApt worker 已崩潰，或是已消失。請回報此問題到 QApt 維護者。"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:267
+#: utils/qapt-gst-helper/PluginHelper.cpp:270
 msgctxt "@title:window"
 msgid "Unexpected Error"
 msgstr "未預期的錯誤"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:275
+#: utils/qapt-gst-helper/PluginHelper.cpp:278
 msgctxt "@label"
 msgid ""
 "The following package has not been verified by its author. Downloading "
@@ -161,12 +191,12 @@ msgid_plural ""
 "untrusted packages has been disallowed by your current configuration."
 msgstr[0] "以下的套件尚未經過作者檢查。您目前的設定不允許下載不受信任的套件。"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:284
+#: utils/qapt-gst-helper/PluginHelper.cpp:287
 msgctxt "@title:window"
 msgid "Untrusted Packages"
 msgstr "未受信任的套件"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:292
+#: utils/qapt-gst-helper/PluginHelper.cpp:295
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -174,38 +204,38 @@ msgid ""
 "Therefore, it cannot be installed. "
 msgstr "套件 %1 並未在您的軟體來源中找到。因此無法安裝。"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:295
+#: utils/qapt-gst-helper/PluginHelper.cpp:298
 msgctxt "@title:window"
 msgid "Package Not Found"
 msgstr "找不到套件"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:316
+#: utils/qapt-gst-helper/PluginHelper.cpp:319
 msgctxt "@label"
 msgid "The size of the downloaded items did not equal the expected size."
 msgstr "下載項目的大小與預期不符。"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:318
+#: utils/qapt-gst-helper/PluginHelper.cpp:321
 msgctxt "@title:window"
 msgid "Size Mismatch"
 msgstr "大小不符"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:342
+#: utils/qapt-gst-helper/PluginHelper.cpp:345
 msgctxt "@title:window"
 msgid "Media Change Required"
 msgstr "需要變更媒體"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:343
+#: utils/qapt-gst-helper/PluginHelper.cpp:346
 #, kde-format
 msgctxt "@label"
 msgid "Please insert %1 into <filename>%2</filename>"
 msgstr "請插入 %1 到 <filename>%2</filename>"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:352
+#: utils/qapt-gst-helper/PluginHelper.cpp:355
 msgctxt "@title:window"
 msgid "Warning - Unverified Software"
 msgstr "警告 - 未確認的軟體"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:354
+#: utils/qapt-gst-helper/PluginHelper.cpp:357
 msgctxt "@label"
 msgid ""
 "The following piece of software cannot be verified. <warning>Installing "
@@ -221,42 +251,42 @@ msgstr[0] ""
 "以下的軟體尚未經過確認。 <warning>安裝未被確認過的軟體可能有安全性上的風險，"
 "有可能是惡意第三方所提供。</warning>您確定要繼續嗎？"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:395
+#: utils/qapt-gst-helper/PluginHelper.cpp:398
 msgctxt "@title:window"
 msgid "Downloading"
 msgstr "下載中"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:396
+#: utils/qapt-gst-helper/PluginHelper.cpp:399
 msgctxt "@info:status"
 msgid "Downloading codecs"
 msgstr "下載編解碼器中"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:403
+#: utils/qapt-gst-helper/PluginHelper.cpp:406
 msgctxt "@title:window"
 msgid "Installing Codecs"
 msgstr "安裝編解碼器中"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:415
+#: utils/qapt-gst-helper/PluginHelper.cpp:418
 msgctxt "@title:window"
 msgid "Installation Complete"
 msgstr "安裝完成"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:419
+#: utils/qapt-gst-helper/PluginHelper.cpp:422
 msgctxt "@label"
 msgid "Package installation finished with errors."
 msgstr "套件安裝完成，但是有錯誤"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:422
+#: utils/qapt-gst-helper/PluginHelper.cpp:425
 msgctxt "@label"
 msgid "Codecs successfully installed"
 msgstr "編解碼器已成功安裝"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:436
+#: utils/qapt-gst-helper/PluginHelper.cpp:439
 msgctxt "@label"
 msgid "Unable to download the following packages:"
 msgstr "無法下載以下的套件："
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:441
+#: utils/qapt-gst-helper/PluginHelper.cpp:444
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -268,65 +298,35 @@ msgstr ""
 "%2\n"
 "\n"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:444
+#: utils/qapt-gst-helper/PluginHelper.cpp:447
 msgctxt "@title:window"
 msgid "Some Packages Could not be Downloaded"
 msgstr "有些套件無法被下載"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:451
+#: utils/qapt-gst-helper/PluginHelper.cpp:454
 msgctxt "@label"
 msgid "An error occurred while applying changes:"
 msgid_plural "The following errors occurred while applying changes:"
 msgstr[0] "套用變更時發生以下錯誤："
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:455
+#: utils/qapt-gst-helper/PluginHelper.cpp:458
 #, kde-format
 msgctxt "@label Shows which package failed"
 msgid "Package: %1"
 msgstr "套件：%1"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:456
+#: utils/qapt-gst-helper/PluginHelper.cpp:459
 #, kde-format
 msgctxt "@label Shows the error"
 msgid "Error: %1"
 msgstr "錯誤：%1"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:460
+#: utils/qapt-gst-helper/PluginHelper.cpp:463
 msgctxt "@title:window"
 msgid "Commit error"
 msgstr "提交錯誤"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:510
+#: utils/qapt-gst-helper/PluginHelper.cpp:513
 msgctxt "@label Progress bar label when waiting to start"
 msgid "Waiting"
 msgstr "等待中"
-
-#: utils/qapt-gst-helper/main.cpp:31
-msgctxt "@info"
-msgid "A GStreamer codec installer using QApt"
-msgstr "GStreamer 編解碼器安裝程式，使用 QApt"
-
-#: utils/qapt-gst-helper/main.cpp:37
-msgctxt "@title"
-msgid "QApt Codec Searcher"
-msgstr "QApt 編解碼器搜尋器"
-
-#: utils/qapt-gst-helper/main.cpp:38
-msgctxt "@info:credit"
-msgid "(C) 2011 Jonathan Thomas"
-msgstr "(C) 2011 Jonathan Thomas"
-
-#: utils/qapt-gst-helper/main.cpp:39
-msgctxt "@info:credit"
-msgid "Jonathan Thomas"
-msgstr "Jonathan Thomas"
-
-#: utils/qapt-gst-helper/main.cpp:44
-msgctxt "@info:shell"
-msgid "Attaches the window to an X app specified by winid"
-msgstr "將視窗附加到 winid 指定的 X 應用程式"
-
-#: utils/qapt-gst-helper/main.cpp:45
-msgctxt "@info:shell"
-msgid "GStreamer install info"
-msgstr "GStreamer 安裝資訊"

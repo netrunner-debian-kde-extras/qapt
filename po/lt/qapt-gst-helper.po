@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qapt-gst-helper\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-12 03:22+0200\n"
+"POT-Creation-Date: 2012-03-09 11:23+0100\n"
 "PO-Revision-Date: 2011-10-11 11:31+0300\n"
 "Last-Translator: Liudas Ališauskas <liudas.alisauskas@gmail.com>\n"
 "Language-Team: Lithuanian <kde-i18n-doc@kde.org>\n"
@@ -19,6 +19,36 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
 "X-Generator: Lokalize 1.2\n"
+
+#: utils/qapt-gst-helper/main.cpp:31
+msgctxt "@info"
+msgid "A GStreamer codec installer using QApt"
+msgstr "GStreamer kodeko diegimas naudojant QApt"
+
+#: utils/qapt-gst-helper/main.cpp:37
+msgctxt "@title"
+msgid "QApt Codec Searcher"
+msgstr "QApt kodekų ieškiklis"
+
+#: utils/qapt-gst-helper/main.cpp:38
+msgctxt "@info:credit"
+msgid "(C) 2011 Jonathan Thomas"
+msgstr "(C) 2011 Jonathan Thomas"
+
+#: utils/qapt-gst-helper/main.cpp:39
+msgctxt "@info:credit"
+msgid "Jonathan Thomas"
+msgstr "Jonathan Thomas"
+
+#: utils/qapt-gst-helper/main.cpp:44
+msgctxt "@info:shell"
+msgid "Attaches the window to an X app specified by winid"
+msgstr "Prijungia langą prie X programos nurodytos winid"
+
+#: utils/qapt-gst-helper/main.cpp:45
+msgctxt "@info:shell"
+msgid "GStreamer install info"
+msgstr "GStreamer diegimo informacija"
 
 #: utils/qapt-gst-helper/PluginHelper.cpp:82
 msgctxt "@info Error message"
@@ -82,11 +112,11 @@ msgctxt "Search for packages"
 msgid "Search"
 msgstr "Ieškoti"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:192
+#: utils/qapt-gst-helper/PluginHelper.cpp:195
 msgid "Confirm Changes"
 msgstr "Patvirtinti pakeitimus"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:193
+#: utils/qapt-gst-helper/PluginHelper.cpp:196
 msgid "Install the following package?"
 msgid_plural "Install the following packages?"
 msgstr[0] "Įdiegti šį paketą?"
@@ -94,12 +124,12 @@ msgstr[1] "Įdiegti šiuos paketus?"
 msgstr[2] "Įdiegti šiuos paketus?"
 msgstr[3] "Įdiegti šiuos paketus?"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:198
+#: utils/qapt-gst-helper/PluginHelper.cpp:201
 msgctxt "Install packages"
 msgid "Install"
 msgstr "Įdiegti"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:222
+#: utils/qapt-gst-helper/PluginHelper.cpp:225
 msgctxt "@label"
 msgid ""
 "The package system could not be initialized, your configuration may be "
@@ -108,12 +138,12 @@ msgstr ""
 "Paketų sistema negalėjo būti inicializuota, Jūsų konfigūracija gali būti "
 "sugadinta."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:224
+#: utils/qapt-gst-helper/PluginHelper.cpp:227
 msgctxt "@title:window"
 msgid "Initialization error"
 msgstr "Inicializacijos klaida"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:233
+#: utils/qapt-gst-helper/PluginHelper.cpp:236
 msgctxt "@label"
 msgid ""
 "Another application seems to be using the package system at this time. You "
@@ -123,12 +153,12 @@ msgstr ""
 "Kita programa naudoja paketų sistemą šiuo metu. Jūs privalote uždaryti visas "
 "kitas paketų tvarkykles, kad galėtumėte įdiegti ar šalinti paketus."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:237
+#: utils/qapt-gst-helper/PluginHelper.cpp:240
 msgctxt "@title:window"
 msgid "Unable to obtain package system lock"
 msgstr "Nepavyko gauti paketų sistemos užrakto"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:243
+#: utils/qapt-gst-helper/PluginHelper.cpp:246
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -137,33 +167,33 @@ msgid ""
 msgstr ""
 "Jūs neturite pakankamai disko vietos aplanke %1, kad tęsti šią operaciją."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:245
+#: utils/qapt-gst-helper/PluginHelper.cpp:248
 msgctxt "@title:window"
 msgid "Low disk space"
 msgstr "Mažai vietos diske"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:250
+#: utils/qapt-gst-helper/PluginHelper.cpp:253
 msgctxt "@label"
 msgid "Could not download packages"
 msgstr "Nepavyksta atsisiųsti paketų"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:251
+#: utils/qapt-gst-helper/PluginHelper.cpp:254
 msgctxt "@title:window"
 msgid "Download failed"
 msgstr "Atsiuntimas nepavyko"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:259
+#: utils/qapt-gst-helper/PluginHelper.cpp:262
 msgctxt "@label"
 msgid ""
 "This operation cannot continue since proper authorization was not provided"
 msgstr "Ši operacija negali tęstis, nes reikiamos leidimas nebuvo suteiktas"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:261
+#: utils/qapt-gst-helper/PluginHelper.cpp:264
 msgctxt "@title:window"
 msgid "Authentication error"
 msgstr "Tapatumo nustatymo klaida"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:265
+#: utils/qapt-gst-helper/PluginHelper.cpp:268
 msgctxt "@label"
 msgid ""
 "It appears that the QApt worker has either crashed or disappeared. Please "
@@ -172,12 +202,12 @@ msgstr ""
 "Rodosi kad QApt darbuotojas žuvo ar dingo. Prašome pranešti apie spragą QApt "
 "prižiūrėtojams."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:267
+#: utils/qapt-gst-helper/PluginHelper.cpp:270
 msgctxt "@title:window"
 msgid "Unexpected Error"
 msgstr "Netikėta klaida"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:275
+#: utils/qapt-gst-helper/PluginHelper.cpp:278
 msgctxt "@label"
 msgid ""
 "The following package has not been verified by its author. Downloading "
@@ -198,12 +228,12 @@ msgstr[3] ""
 "Šie paketai nėra patvirtinti savo autoriaus. Nepatikimų paketų atsiuntimas "
 "yra uždraustas jūsų esamos konfigūracijos."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:284
+#: utils/qapt-gst-helper/PluginHelper.cpp:287
 msgctxt "@title:window"
 msgid "Untrusted Packages"
 msgstr "Nepatikimi paketai"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:292
+#: utils/qapt-gst-helper/PluginHelper.cpp:295
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -213,38 +243,38 @@ msgstr ""
 "Paketas „%1“ nebuvo rastas tarp jūsų programinės įrangos šaltinių. Todėl jis "
 "negali būti atsiųstas."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:295
+#: utils/qapt-gst-helper/PluginHelper.cpp:298
 msgctxt "@title:window"
 msgid "Package Not Found"
 msgstr "Paketas nerastas"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:316
+#: utils/qapt-gst-helper/PluginHelper.cpp:319
 msgctxt "@label"
 msgid "The size of the downloaded items did not equal the expected size."
 msgstr "Dydis atsiųstų elementų nėra lygus lauktam dydžiui."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:318
+#: utils/qapt-gst-helper/PluginHelper.cpp:321
 msgctxt "@title:window"
 msgid "Size Mismatch"
 msgstr "Dydžio neatitikimas"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:342
+#: utils/qapt-gst-helper/PluginHelper.cpp:345
 msgctxt "@title:window"
 msgid "Media Change Required"
 msgstr "Reikia pakeisti mediją"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:343
+#: utils/qapt-gst-helper/PluginHelper.cpp:346
 #, kde-format
 msgctxt "@label"
 msgid "Please insert %1 into <filename>%2</filename>"
 msgstr "Prašome įdėti %1 į <filename>%2</filename>"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:352
+#: utils/qapt-gst-helper/PluginHelper.cpp:355
 msgctxt "@title:window"
 msgid "Warning - Unverified Software"
 msgstr "Dėmesio - nepatikrinta programinė įranga"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:354
+#: utils/qapt-gst-helper/PluginHelper.cpp:357
 msgctxt "@label"
 msgid ""
 "The following piece of software cannot be verified. <warning>Installing "
@@ -276,42 +306,42 @@ msgstr[3] ""
 "nepatikrinta programinė įranga gali būti klastojimo požymis.</warning> Ar "
 "norite tęsti?"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:395
+#: utils/qapt-gst-helper/PluginHelper.cpp:398
 msgctxt "@title:window"
 msgid "Downloading"
 msgstr "Atsiunčiama"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:396
+#: utils/qapt-gst-helper/PluginHelper.cpp:399
 msgctxt "@info:status"
 msgid "Downloading codecs"
 msgstr "Atsiunčiami kodekai"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:403
+#: utils/qapt-gst-helper/PluginHelper.cpp:406
 msgctxt "@title:window"
 msgid "Installing Codecs"
 msgstr "Diegiami kodekai"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:415
+#: utils/qapt-gst-helper/PluginHelper.cpp:418
 msgctxt "@title:window"
 msgid "Installation Complete"
 msgstr "Įdiegimas baigtas"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:419
+#: utils/qapt-gst-helper/PluginHelper.cpp:422
 msgctxt "@label"
 msgid "Package installation finished with errors."
 msgstr "Paketo diegimas baigtas su klaidomis."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:422
+#: utils/qapt-gst-helper/PluginHelper.cpp:425
 msgctxt "@label"
 msgid "Codecs successfully installed"
 msgstr "Kodekai sėkmingai įdiegti"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:436
+#: utils/qapt-gst-helper/PluginHelper.cpp:439
 msgctxt "@label"
 msgid "Unable to download the following packages:"
 msgstr "Nepavyksta atsiųsti sekančių paketų:"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:441
+#: utils/qapt-gst-helper/PluginHelper.cpp:444
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -323,12 +353,12 @@ msgstr ""
 "%2\n"
 "\n"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:444
+#: utils/qapt-gst-helper/PluginHelper.cpp:447
 msgctxt "@title:window"
 msgid "Some Packages Could not be Downloaded"
 msgstr "Nepavyko atsiųsti keleto paketų"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:451
+#: utils/qapt-gst-helper/PluginHelper.cpp:454
 msgctxt "@label"
 msgid "An error occurred while applying changes:"
 msgid_plural "The following errors occurred while applying changes:"
@@ -337,54 +367,24 @@ msgstr[1] "Įvyko šios klaidos vykdant pakeitimus:"
 msgstr[2] "Įvyko šios klaidos vykdant pakeitimus:"
 msgstr[3] "Įvyko šios klaidos vykdant pakeitimus:"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:455
+#: utils/qapt-gst-helper/PluginHelper.cpp:458
 #, kde-format
 msgctxt "@label Shows which package failed"
 msgid "Package: %1"
 msgstr "Paketas: %1"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:456
+#: utils/qapt-gst-helper/PluginHelper.cpp:459
 #, kde-format
 msgctxt "@label Shows the error"
 msgid "Error: %1"
 msgstr "Klaida: %1"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:460
+#: utils/qapt-gst-helper/PluginHelper.cpp:463
 msgctxt "@title:window"
 msgid "Commit error"
 msgstr "Išsiųsti klaidą"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:510
+#: utils/qapt-gst-helper/PluginHelper.cpp:513
 msgctxt "@label Progress bar label when waiting to start"
 msgid "Waiting"
 msgstr "Laukiama"
-
-#: utils/qapt-gst-helper/main.cpp:31
-msgctxt "@info"
-msgid "A GStreamer codec installer using QApt"
-msgstr "GStreamer kodeko diegimas naudojant QApt"
-
-#: utils/qapt-gst-helper/main.cpp:37
-msgctxt "@title"
-msgid "QApt Codec Searcher"
-msgstr "QApt kodekų ieškiklis"
-
-#: utils/qapt-gst-helper/main.cpp:38
-msgctxt "@info:credit"
-msgid "(C) 2011 Jonathan Thomas"
-msgstr "(C) 2011 Jonathan Thomas"
-
-#: utils/qapt-gst-helper/main.cpp:39
-msgctxt "@info:credit"
-msgid "Jonathan Thomas"
-msgstr "Jonathan Thomas"
-
-#: utils/qapt-gst-helper/main.cpp:44
-msgctxt "@info:shell"
-msgid "Attaches the window to an X app specified by winid"
-msgstr "Prijungia langą prie X programos nurodytos winid"
-
-#: utils/qapt-gst-helper/main.cpp:45
-msgctxt "@info:shell"
-msgid "GStreamer install info"
-msgstr "GStreamer diegimo informacija"

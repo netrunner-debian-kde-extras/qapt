@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qapt-batch\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-12 03:22+0200\n"
+"POT-Creation-Date: 2012-03-09 11:23+0100\n"
 "PO-Revision-Date: 2011-09-11 06:26+0200\n"
 "Last-Translator: Manfred Wiese <m.j.wiese@web.de>\n"
 "Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
@@ -17,6 +17,36 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 1.0\n"
+
+#: utils/qapt-gst-helper/main.cpp:31
+msgctxt "@info"
+msgid "A GStreamer codec installer using QApt"
+msgstr "En GStreamer-Installeerprogramm för den Bruuk mit QApt"
+
+#: utils/qapt-gst-helper/main.cpp:37
+msgctxt "@title"
+msgid "QApt Codec Searcher"
+msgstr "QApt-Kodeksöök"
+
+#: utils/qapt-gst-helper/main.cpp:38
+msgctxt "@info:credit"
+msgid "(C) 2011 Jonathan Thomas"
+msgstr "© 2011: Jonathan Thomas"
+
+#: utils/qapt-gst-helper/main.cpp:39
+msgctxt "@info:credit"
+msgid "Jonathan Thomas"
+msgstr "Jonathan Thomas"
+
+#: utils/qapt-gst-helper/main.cpp:44
+msgctxt "@info:shell"
+msgid "Attaches the window to an X app specified by winid"
+msgstr "Föögt dat Finster na en X-Programm to, dat \"WinID\" angifft."
+
+#: utils/qapt-gst-helper/main.cpp:45
+msgctxt "@info:shell"
+msgid "GStreamer install info"
+msgstr "Informatschonen över de Installatschoon vun GStreamer"
 
 #: utils/qapt-gst-helper/PluginHelper.cpp:82
 msgctxt "@info Error message"
@@ -74,22 +104,22 @@ msgctxt "Search for packages"
 msgid "Search"
 msgstr "Söken"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:192
+#: utils/qapt-gst-helper/PluginHelper.cpp:195
 msgid "Confirm Changes"
 msgstr "Ännern beglöven"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:193
+#: utils/qapt-gst-helper/PluginHelper.cpp:196
 msgid "Install the following package?"
 msgid_plural "Install the following packages?"
 msgstr[0] "Dit Paket installeren?"
 msgstr[1] "Disse Paketen installeren?"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:198
+#: utils/qapt-gst-helper/PluginHelper.cpp:201
 msgctxt "Install packages"
 msgid "Install"
 msgstr "Installeren"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:222
+#: utils/qapt-gst-helper/PluginHelper.cpp:225
 msgctxt "@label"
 msgid ""
 "The package system could not be initialized, your configuration may be "
@@ -98,12 +128,12 @@ msgstr ""
 "Dat Paketsysteem lett sik nich torechtmaken. Villicht sünd Dien Instellen "
 "leeg."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:224
+#: utils/qapt-gst-helper/PluginHelper.cpp:227
 msgctxt "@title:window"
 msgid "Initialization error"
 msgstr "Fehler bi't Torechtmaken"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:233
+#: utils/qapt-gst-helper/PluginHelper.cpp:236
 msgctxt "@label"
 msgid ""
 "Another application seems to be using the package system at this time. You "
@@ -114,12 +144,12 @@ msgstr ""
 "toeerst all anner Paketplegers tomaken, ehr Du Paketen installeren oder "
 "wegmaken kannst."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:237
+#: utils/qapt-gst-helper/PluginHelper.cpp:240
 msgctxt "@title:window"
 msgid "Unable to obtain package system lock"
 msgstr "Dat Paketsystem lett sik nich afsluten."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:243
+#: utils/qapt-gst-helper/PluginHelper.cpp:246
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -127,22 +157,22 @@ msgid ""
 "this operation."
 msgstr "Binnen Orner \"%1\" gifft dat nich noog free Ruum för't Wiedermaken."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:245
+#: utils/qapt-gst-helper/PluginHelper.cpp:248
 msgctxt "@title:window"
 msgid "Low disk space"
 msgstr "To minn free Ruum op de Fastplaat"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:250
+#: utils/qapt-gst-helper/PluginHelper.cpp:253
 msgctxt "@label"
 msgid "Could not download packages"
 msgstr "Paketen laat sik nich daalladen."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:251
+#: utils/qapt-gst-helper/PluginHelper.cpp:254
 msgctxt "@title:window"
 msgid "Download failed"
 msgstr "Daalladen fehlslaan"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:259
+#: utils/qapt-gst-helper/PluginHelper.cpp:262
 msgctxt "@label"
 msgid ""
 "This operation cannot continue since proper authorization was not provided"
@@ -150,12 +180,12 @@ msgstr ""
 "Wiedermaken nich mööglich, wiel keen propper Identiteetprööv praatstellt "
 "warrt."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:261
+#: utils/qapt-gst-helper/PluginHelper.cpp:264
 msgctxt "@title:window"
 msgid "Authentication error"
 msgstr "Identiteetprööv fehlslaan"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:265
+#: utils/qapt-gst-helper/PluginHelper.cpp:268
 msgctxt "@label"
 msgid ""
 "It appears that the QApt worker has either crashed or disappeared. Please "
@@ -164,12 +194,12 @@ msgstr ""
 "As't lett is dat QApt-Arbeitprogramm afstört oder wegkamen. Bitte stüer de "
 "QApt-Plegers en Fehlerbericht to."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:267
+#: utils/qapt-gst-helper/PluginHelper.cpp:270
 msgctxt "@title:window"
 msgid "Unexpected Error"
 msgstr "Nich verwacht Fehler"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:275
+#: utils/qapt-gst-helper/PluginHelper.cpp:278
 msgctxt "@label"
 msgid ""
 "The following package has not been verified by its author. Downloading "
@@ -184,12 +214,12 @@ msgstr[1] ""
 "De Schriever hett disse Paketen nich beglöövt. Dat Daalladen vun nich "
 "beglöövt Paketen is op Dien Systeem nich tolaten."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:284
+#: utils/qapt-gst-helper/PluginHelper.cpp:287
 msgctxt "@title:window"
 msgid "Untrusted Packages"
 msgstr "Nich troot Paketen"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:292
+#: utils/qapt-gst-helper/PluginHelper.cpp:295
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -199,38 +229,38 @@ msgstr ""
 "Dat Paket \"%1\" lett sik binnen Dien Programmborns nich finnen. Dorüm lett "
 "sik dat nich installeren. "
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:295
+#: utils/qapt-gst-helper/PluginHelper.cpp:298
 msgctxt "@title:window"
 msgid "Package Not Found"
 msgstr "Paket lett sik nich finnen."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:316
+#: utils/qapt-gst-helper/PluginHelper.cpp:319
 msgctxt "@label"
 msgid "The size of the downloaded items did not equal the expected size."
 msgstr "De Grött vun de daallaadt Objekten is nich de sülvige as verwacht."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:318
+#: utils/qapt-gst-helper/PluginHelper.cpp:321
 msgctxt "@title:window"
 msgid "Size Mismatch"
 msgstr "Grött passt nich."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:342
+#: utils/qapt-gst-helper/PluginHelper.cpp:345
 msgctxt "@title:window"
 msgid "Media Change Required"
 msgstr "En Medienwessel deit noot"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:343
+#: utils/qapt-gst-helper/PluginHelper.cpp:346
 #, kde-format
 msgctxt "@label"
 msgid "Please insert %1 into <filename>%2</filename>"
 msgstr "Bitte %1 na <filename>%2</filename> inleggen."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:352
+#: utils/qapt-gst-helper/PluginHelper.cpp:355
 msgctxt "@title:window"
 msgid "Warning - Unverified Software"
 msgstr "Wohrschoen: Programmen nich beglöövt"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:354
+#: utils/qapt-gst-helper/PluginHelper.cpp:357
 msgctxt "@label"
 msgid ""
 "The following piece of software cannot be verified. <warning>Installing "
@@ -251,42 +281,42 @@ msgstr[1] ""
 "beglöövt Programmen kann en Riskanz för de Sekerheit wesen, wiel de "
 "Programmen villicht vermurkst wesen köönt.</warning> Wullt Du wiedermaken?"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:395
+#: utils/qapt-gst-helper/PluginHelper.cpp:398
 msgctxt "@title:window"
 msgid "Downloading"
 msgstr "Bi to daalladen..."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:396
+#: utils/qapt-gst-helper/PluginHelper.cpp:399
 msgctxt "@info:status"
 msgid "Downloading codecs"
 msgstr "Kodeks warrt daallaadt"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:403
+#: utils/qapt-gst-helper/PluginHelper.cpp:406
 msgctxt "@title:window"
 msgid "Installing Codecs"
 msgstr "Kodeks warrt installeert"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:415
+#: utils/qapt-gst-helper/PluginHelper.cpp:418
 msgctxt "@title:window"
 msgid "Installation Complete"
 msgstr "Installatschoon afslaten"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:419
+#: utils/qapt-gst-helper/PluginHelper.cpp:422
 msgctxt "@label"
 msgid "Package installation finished with errors."
 msgstr "Paketinstallatschoon mit Fehlers afslaten"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:422
+#: utils/qapt-gst-helper/PluginHelper.cpp:425
 msgctxt "@label"
 msgid "Codecs successfully installed"
 msgstr "Kodeks mit Spood installeert"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:436
+#: utils/qapt-gst-helper/PluginHelper.cpp:439
 msgctxt "@label"
 msgid "Unable to download the following packages:"
 msgstr "Disse Paketen laat sik nich daalladen:"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:441
+#: utils/qapt-gst-helper/PluginHelper.cpp:444
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -298,66 +328,36 @@ msgstr ""
 "%2\n"
 "\n"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:444
+#: utils/qapt-gst-helper/PluginHelper.cpp:447
 msgctxt "@title:window"
 msgid "Some Packages Could not be Downloaded"
 msgstr "En poor Paketen laat sik nich daalladen."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:451
+#: utils/qapt-gst-helper/PluginHelper.cpp:454
 msgctxt "@label"
 msgid "An error occurred while applying changes:"
 msgid_plural "The following errors occurred while applying changes:"
 msgstr[0] "Bi't Övernehmen vun Ännern geev dat en Fehler:"
 msgstr[1] "Bi't Övernehmen vun Ännern geev dat disse Fehlers:"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:455
+#: utils/qapt-gst-helper/PluginHelper.cpp:458
 #, kde-format
 msgctxt "@label Shows which package failed"
 msgid "Package: %1"
 msgstr "Paket: %1"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:456
+#: utils/qapt-gst-helper/PluginHelper.cpp:459
 #, kde-format
 msgctxt "@label Shows the error"
 msgid "Error: %1"
 msgstr "Fehler: %1"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:460
+#: utils/qapt-gst-helper/PluginHelper.cpp:463
 msgctxt "@title:window"
 msgid "Commit error"
 msgstr "Inspelen fehlslaan"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:510
+#: utils/qapt-gst-helper/PluginHelper.cpp:513
 msgctxt "@label Progress bar label when waiting to start"
 msgid "Waiting"
 msgstr "An't Töven"
-
-#: utils/qapt-gst-helper/main.cpp:31
-msgctxt "@info"
-msgid "A GStreamer codec installer using QApt"
-msgstr "En GStreamer-Installeerprogramm för den Bruuk mit QApt"
-
-#: utils/qapt-gst-helper/main.cpp:37
-msgctxt "@title"
-msgid "QApt Codec Searcher"
-msgstr "QApt-Kodeksöök"
-
-#: utils/qapt-gst-helper/main.cpp:38
-msgctxt "@info:credit"
-msgid "(C) 2011 Jonathan Thomas"
-msgstr "© 2011: Jonathan Thomas"
-
-#: utils/qapt-gst-helper/main.cpp:39
-msgctxt "@info:credit"
-msgid "Jonathan Thomas"
-msgstr "Jonathan Thomas"
-
-#: utils/qapt-gst-helper/main.cpp:44
-msgctxt "@info:shell"
-msgid "Attaches the window to an X app specified by winid"
-msgstr "Föögt dat Finster na en X-Programm to, dat \"WinID\" angifft."
-
-#: utils/qapt-gst-helper/main.cpp:45
-msgctxt "@info:shell"
-msgid "GStreamer install info"
-msgstr "Informatschonen över de Installatschoon vun GStreamer"

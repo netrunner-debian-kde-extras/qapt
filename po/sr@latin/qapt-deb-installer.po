@@ -1,12 +1,12 @@
 # Translation of qapt-deb-installer.po into Serbian.
 # Dalibor Djuric <daliborddjuric@gmail.com>, 2011.
-# Chusslove Illich <caslav.ilic@gmx.net>, 2011.
+# Chusslove Illich <caslav.ilic@gmx.net>, 2011, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: qapt-deb-installer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2012-02-21 18:19+0100\n"
-"PO-Revision-Date: 2011-05-26 10:31+0200\n"
+"PO-Revision-Date: 2012-07-22 22:37+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
 "Language: sr@latin\n"
@@ -89,7 +89,7 @@ msgstr "Ovaj paket ne odgovara vašem računaru."
 #, kde-format
 msgctxt "@info"
 msgid "Error: Wrong architecture '%1'"
-msgstr "Greška: pogrešna arhitektura '%1'"
+msgstr "Greška: pogrešna arhitektura „%1“"
 
 #: utils/qapt-deb-installer/DebInstaller.cpp:246
 #, kde-format
@@ -156,17 +156,11 @@ msgstr ""
 "one obično bolje podržane."
 
 #: utils/qapt-deb-installer/DebViewer.cpp:65
-#, fuzzy
-#| msgctxt "@label Label preceeding the package name"
-#| msgid "Package:"
 msgctxt "@label Label preceding the package name"
 msgid "Package:"
 msgstr "Paket:"
 
 #: utils/qapt-deb-installer/DebViewer.cpp:73
-#, fuzzy
-#| msgctxt "@label Label preceeding the package status"
-#| msgid "Status:"
 msgctxt "@label Label preceding the package status"
 msgid "Status:"
 msgstr "Stanje:"
@@ -204,7 +198,7 @@ msgstr "Opis"
 #: utils/qapt-deb-installer/DebViewer.cpp:159
 msgctxt "@title:tab"
 msgid "Details"
-msgstr "Pojedinosti"
+msgstr "Detalji"
 
 #: utils/qapt-deb-installer/DebViewer.cpp:160
 msgctxt "@title:tab"

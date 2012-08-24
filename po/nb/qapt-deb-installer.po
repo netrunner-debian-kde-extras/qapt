@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-10-24 08:52+0200\n"
-"PO-Revision-Date: 2011-02-25 18:58+0100\n"
+"POT-Creation-Date: 2012-02-21 18:19+0100\n"
+"PO-Revision-Date: 2012-01-01 15:18+0100\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
@@ -23,81 +23,6 @@ msgstr ""
 msgctxt "@info The widget's header label"
 msgid "<title>Installing</title>"
 msgstr "<title>Installerer</title>"
-
-#: utils/qapt-deb-installer/main.cpp:29
-msgctxt "@info"
-msgid "A Debian package installer"
-msgstr "En Debian pakkeinstallerer"
-
-#: utils/qapt-deb-installer/main.cpp:35
-msgctxt "@title"
-msgid "QApt Package Installer"
-msgstr "QApt Pakkeinstallerer"
-
-#: utils/qapt-deb-installer/main.cpp:36
-msgctxt "@info:credit"
-msgid "(C) 2011 Jonathan Thomas"
-msgstr "© 2011 Jonathan Thomas"
-
-#: utils/qapt-deb-installer/main.cpp:37
-msgctxt "@info:credit"
-msgid "Jonathan Thomas"
-msgstr "Jonathan Thomas"
-
-#: utils/qapt-deb-installer/main.cpp:42
-msgctxt "@info:shell"
-msgid ".deb file"
-msgstr ".deb-fil"
-
-#: utils/qapt-deb-installer/DebViewer.cpp:65
-msgctxt "@label Label preceeding the package name"
-msgid "Package:"
-msgstr "Pakke:"
-
-#: utils/qapt-deb-installer/DebViewer.cpp:73
-msgctxt "@label Label preceeding the package status"
-msgid "Status:"
-msgstr "Status:"
-
-#: utils/qapt-deb-installer/DebViewer.cpp:118
-msgctxt "@label Label preceding the package version"
-msgid "Version:"
-msgstr "Versjon:"
-
-#: utils/qapt-deb-installer/DebViewer.cpp:125
-msgctxt "@label Label preceding the package size"
-msgid "Installed Size:"
-msgstr "Installert størrelse:"
-
-#: utils/qapt-deb-installer/DebViewer.cpp:132
-msgctxt "@label Label preceding the package maintainer"
-msgid "Maintainer:"
-msgstr "Vedlikeholder:"
-
-#: utils/qapt-deb-installer/DebViewer.cpp:139
-msgctxt "@label Label preceding the package category"
-msgid "Category:"
-msgstr "Kategori:"
-
-#: utils/qapt-deb-installer/DebViewer.cpp:146
-msgctxt "@label Label preceding the package homepage"
-msgid "Homepage:"
-msgstr "Hjemmeside:"
-
-#: utils/qapt-deb-installer/DebViewer.cpp:158
-msgctxt "@title:tab"
-msgid "Description"
-msgstr "Beskrivelse"
-
-#: utils/qapt-deb-installer/DebViewer.cpp:159
-msgctxt "@title:tab"
-msgid "Details"
-msgstr "Detaljer"
-
-#: utils/qapt-deb-installer/DebViewer.cpp:160
-msgctxt "@title:tab"
-msgid "Included Files"
-msgstr "Inkluderte filer"
 
 #: utils/qapt-deb-installer/DebInstaller.cpp:68
 msgctxt "@label"
@@ -225,3 +150,78 @@ msgid ""
 msgstr ""
 "Det anbefales sterkt å installere versjonen fra programvare-kanalen, siden "
 "den som regel er bedre støttet."
+
+#: utils/qapt-deb-installer/DebViewer.cpp:65
+msgctxt "@label Label preceding the package name"
+msgid "Package:"
+msgstr "Pakke:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:73
+msgctxt "@label Label preceding the package status"
+msgid "Status:"
+msgstr "Status:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:118
+msgctxt "@label Label preceding the package version"
+msgid "Version:"
+msgstr "Versjon:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:125
+msgctxt "@label Label preceding the package size"
+msgid "Installed Size:"
+msgstr "Installert størrelse:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:132
+msgctxt "@label Label preceding the package maintainer"
+msgid "Maintainer:"
+msgstr "Vedlikeholder:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:139
+msgctxt "@label Label preceding the package category"
+msgid "Category:"
+msgstr "Kategori:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:146
+msgctxt "@label Label preceding the package homepage"
+msgid "Homepage:"
+msgstr "Hjemmeside:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:158
+msgctxt "@title:tab"
+msgid "Description"
+msgstr "Beskrivelse"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:159
+msgctxt "@title:tab"
+msgid "Details"
+msgstr "Detaljer"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:160
+msgctxt "@title:tab"
+msgid "Included Files"
+msgstr "Inkluderte filer"
+
+#: utils/qapt-deb-installer/main.cpp:29
+msgctxt "@info"
+msgid "A Debian package installer"
+msgstr "En Debian pakkeinstallerer"
+
+#: utils/qapt-deb-installer/main.cpp:35
+msgctxt "@title"
+msgid "QApt Package Installer"
+msgstr "QApt Pakkeinstallerer"
+
+#: utils/qapt-deb-installer/main.cpp:36
+msgctxt "@info:credit"
+msgid "(C) 2011 Jonathan Thomas"
+msgstr "© 2011 Jonathan Thomas"
+
+#: utils/qapt-deb-installer/main.cpp:37
+msgctxt "@info:credit"
+msgid "Jonathan Thomas"
+msgstr "Jonathan Thomas"
+
+#: utils/qapt-deb-installer/main.cpp:42
+msgctxt "@info:shell"
+msgid ".deb file"
+msgstr ".deb-fil"

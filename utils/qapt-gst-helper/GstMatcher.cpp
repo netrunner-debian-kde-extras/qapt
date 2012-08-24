@@ -46,6 +46,10 @@ GstMatcher::~GstMatcher()
 
 bool GstMatcher::matches(QApt::Package *package)
 {
+    // Reject already-installed packages
+    if (package->isInstalled())
+        return false;
+
     if (package->controlField(QLatin1String("Gstreamer-Version")) != m_info->version())
         return false;
 

@@ -1,11 +1,11 @@
 # Translation of qapt-gst-helper.po into Serbian.
 # Dalibor Djuric <daliborddjuric@gmail.com>, 2011.
-# Chusslove Illich <caslav.ilic@gmx.net>, 2011.
+# Chusslove Illich <caslav.ilic@gmx.net>, 2011, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: qapt-gst-helper\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-12 03:22+0200\n"
+"POT-Creation-Date: 2012-03-09 11:23+0100\n"
 "PO-Revision-Date: 2011-05-26 12:18+0200\n"
 "Last-Translator: Dalibor Djuric <daliborddjuric@gmail.com>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -19,6 +19,36 @@ msgstr ""
 "X-Text-Markup: kde4\n"
 "X-Environment: kde\n"
 "X-Generator: Lokalize 1.1\n"
+
+#: utils/qapt-gst-helper/main.cpp:31
+msgctxt "@info"
+msgid "A GStreamer codec installer using QApt"
+msgstr "Инсталатер Гстримерових кодека заснован на Ку‑апту"
+
+#: utils/qapt-gst-helper/main.cpp:37
+msgctxt "@title"
+msgid "QApt Codec Searcher"
+msgstr "Ку‑аптов претраживач кодека"
+
+#: utils/qapt-gst-helper/main.cpp:38
+msgctxt "@info:credit"
+msgid "(C) 2011 Jonathan Thomas"
+msgstr "© 2011, Џонатан Томас"
+
+#: utils/qapt-gst-helper/main.cpp:39
+msgctxt "@info:credit"
+msgid "Jonathan Thomas"
+msgstr "Џонатан Томас"
+
+#: utils/qapt-gst-helper/main.cpp:44
+msgctxt "@info:shell"
+msgid "Attaches the window to an X app specified by winid"
+msgstr "Качи прозор на икс програм са задатим ИД‑а прозора"
+
+#: utils/qapt-gst-helper/main.cpp:45
+msgctxt "@info:shell"
+msgid "GStreamer install info"
+msgstr "Подаци о инсталацији Гстримера"
 
 #: utils/qapt-gst-helper/PluginHelper.cpp:82
 msgctxt "@info Error message"
@@ -86,11 +116,11 @@ msgid "Search"
 msgstr "Тражи"
 
 # >> @title:window
-#: utils/qapt-gst-helper/PluginHelper.cpp:192
+#: utils/qapt-gst-helper/PluginHelper.cpp:195
 msgid "Confirm Changes"
 msgstr "Потврда измена"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:193
+#: utils/qapt-gst-helper/PluginHelper.cpp:196
 msgid "Install the following package?"
 msgid_plural "Install the following packages?"
 msgstr[0] "Да ли да инсталирам следеће пакете?"
@@ -98,24 +128,24 @@ msgstr[1] "Да ли да инсталирам следеће пакете?"
 msgstr[2] "Да ли да инсталирам следеће пакете?"
 msgstr[3] "Да ли да инсталирам следећи пакет?"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:198
+#: utils/qapt-gst-helper/PluginHelper.cpp:201
 msgctxt "Install packages"
 msgid "Install"
 msgstr "Инсталирај"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:222
+#: utils/qapt-gst-helper/PluginHelper.cpp:225
 msgctxt "@label"
 msgid ""
 "The package system could not be initialized, your configuration may be "
 "broken."
 msgstr "Пакетни систем не може да се припреми, можда је постава искварена."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:224
+#: utils/qapt-gst-helper/PluginHelper.cpp:227
 msgctxt "@title:window"
 msgid "Initialization error"
 msgstr "Грешка у припремању"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:233
+#: utils/qapt-gst-helper/PluginHelper.cpp:236
 msgctxt "@label"
 msgid ""
 "Another application seems to be using the package system at this time. You "
@@ -125,12 +155,12 @@ msgstr ""
 "Изгледа да други програм користи пакетни систем. Морате затворити остале "
 "менаџере пакета ако желите да инсталирате или уклоните неки пакет."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:237
+#: utils/qapt-gst-helper/PluginHelper.cpp:240
 msgctxt "@title:window"
 msgid "Unable to obtain package system lock"
 msgstr "Не могу да закључам пакетни систем"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:243
+#: utils/qapt-gst-helper/PluginHelper.cpp:246
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -138,33 +168,33 @@ msgid ""
 "this operation."
 msgstr "Нема довољно простора у фасцикли %1 за настављање ове операције."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:245
+#: utils/qapt-gst-helper/PluginHelper.cpp:248
 msgctxt "@title:window"
 msgid "Low disk space"
 msgstr "Мало простора на диску"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:250
+#: utils/qapt-gst-helper/PluginHelper.cpp:253
 msgctxt "@label"
 msgid "Could not download packages"
 msgstr "Не могу да преузмем пакете."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:251
+#: utils/qapt-gst-helper/PluginHelper.cpp:254
 msgctxt "@title:window"
 msgid "Download failed"
 msgstr "Преузимање није успело"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:259
+#: utils/qapt-gst-helper/PluginHelper.cpp:262
 msgctxt "@label"
 msgid ""
 "This operation cannot continue since proper authorization was not provided"
 msgstr "Не могу да наставим ову операцију због недостатка овлашћења."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:261
+#: utils/qapt-gst-helper/PluginHelper.cpp:264
 msgctxt "@title:window"
 msgid "Authentication error"
 msgstr "Грешка при аутентификацији"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:265
+#: utils/qapt-gst-helper/PluginHelper.cpp:268
 msgctxt "@label"
 msgid ""
 "It appears that the QApt worker has either crashed or disappeared. Please "
@@ -173,12 +203,12 @@ msgstr ""
 "Изгледа да се радни део Ку‑апта срушио или је нестао. Известите одржаваоце "
 "Ку‑апта о овој грешци."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:267
+#: utils/qapt-gst-helper/PluginHelper.cpp:270
 msgctxt "@title:window"
 msgid "Unexpected Error"
 msgstr "Неочекивана грешка"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:275
+#: utils/qapt-gst-helper/PluginHelper.cpp:278
 msgctxt "@label"
 msgid ""
 "The following package has not been verified by its author. Downloading "
@@ -199,12 +229,12 @@ msgstr[3] ""
 "Следећи пакет није оверио његов аутор. Ваша тренутна постава онемогућава "
 "преузимање непоузданих пакета."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:284
+#: utils/qapt-gst-helper/PluginHelper.cpp:287
 msgctxt "@title:window"
 msgid "Untrusted Packages"
 msgstr "Непоуздани пакети"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:292
+#: utils/qapt-gst-helper/PluginHelper.cpp:295
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -214,40 +244,40 @@ msgstr ""
 "Не могу да нађем пакет „%1“ у програмским изворима. Зато не може да се "
 "инсталира."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:295
+#: utils/qapt-gst-helper/PluginHelper.cpp:298
 msgctxt "@title:window"
 msgid "Package Not Found"
 msgstr "Пакет није нађен"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:316
+#: utils/qapt-gst-helper/PluginHelper.cpp:319
 msgctxt "@label"
 msgid "The size of the downloaded items did not equal the expected size."
 msgstr "Величина преузетих ставки не одговара очекиваној."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:318
+#: utils/qapt-gst-helper/PluginHelper.cpp:321
 msgctxt "@title:window"
 msgid "Size Mismatch"
 msgstr "Величина не одговара"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:342
+#: utils/qapt-gst-helper/PluginHelper.cpp:345
 msgctxt "@title:window"
 msgid "Media Change Required"
 msgstr "Потребна измена медијума"
 
 # >> %1 media name, %2 device name
-#: utils/qapt-gst-helper/PluginHelper.cpp:343
+#: utils/qapt-gst-helper/PluginHelper.cpp:346
 #, kde-format
 msgctxt "@label"
 msgid "Please insert %1 into <filename>%2</filename>"
 msgstr "Убаците %1 у <filename>%2</filename>"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:352
+#: utils/qapt-gst-helper/PluginHelper.cpp:355
 msgctxt "@title:window"
 msgid "Warning - Unverified Software"
 msgstr "Упозорење — неоверен софтвер"
 
 # rewrite-msgid: /authenticated/verified/
-#: utils/qapt-gst-helper/PluginHelper.cpp:354
+#: utils/qapt-gst-helper/PluginHelper.cpp:357
 msgctxt "@label"
 msgid ""
 "The following piece of software cannot be verified. <warning>Installing "
@@ -276,42 +306,42 @@ msgstr[3] ""
 "програма представља безбедносни ризик, јер може бити знак саботаже.</"
 "warning> Желите ли да наставите?"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:395
+#: utils/qapt-gst-helper/PluginHelper.cpp:398
 msgctxt "@title:window"
 msgid "Downloading"
 msgstr "Преузимам"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:396
+#: utils/qapt-gst-helper/PluginHelper.cpp:399
 msgctxt "@info:status"
 msgid "Downloading codecs"
 msgstr "Преузимам кодеке"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:403
+#: utils/qapt-gst-helper/PluginHelper.cpp:406
 msgctxt "@title:window"
 msgid "Installing Codecs"
 msgstr "Инсталирам кодеке"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:415
+#: utils/qapt-gst-helper/PluginHelper.cpp:418
 msgctxt "@title:window"
 msgid "Installation Complete"
 msgstr "Инсталирање је завршено"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:419
+#: utils/qapt-gst-helper/PluginHelper.cpp:422
 msgctxt "@label"
 msgid "Package installation finished with errors."
 msgstr "Инсталирање пакета завршено је са грешкама."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:422
+#: utils/qapt-gst-helper/PluginHelper.cpp:425
 msgctxt "@label"
 msgid "Codecs successfully installed"
 msgstr "Кодеци су успешно инсталирани"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:436
+#: utils/qapt-gst-helper/PluginHelper.cpp:439
 msgctxt "@label"
 msgid "Unable to download the following packages:"
 msgstr "Не могу да преузмем следеће пакете:"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:441
+#: utils/qapt-gst-helper/PluginHelper.cpp:444
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -323,12 +353,12 @@ msgstr ""
 "%2\n"
 "\n"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:444
+#: utils/qapt-gst-helper/PluginHelper.cpp:447
 msgctxt "@title:window"
 msgid "Some Packages Could not be Downloaded"
 msgstr "Не могу да преузмем неке пакете"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:451
+#: utils/qapt-gst-helper/PluginHelper.cpp:454
 msgctxt "@label"
 msgid "An error occurred while applying changes:"
 msgid_plural "The following errors occurred while applying changes:"
@@ -337,54 +367,24 @@ msgstr[1] "Током примењивања измена дошло је до �
 msgstr[2] "Током примењивања измена дошло је до следећих грешака:"
 msgstr[3] "Током примењивања измена дошло је до следеће грешке:"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:455
+#: utils/qapt-gst-helper/PluginHelper.cpp:458
 #, kde-format
 msgctxt "@label Shows which package failed"
 msgid "Package: %1"
 msgstr "Пакет: %1"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:456
+#: utils/qapt-gst-helper/PluginHelper.cpp:459
 #, kde-format
 msgctxt "@label Shows the error"
 msgid "Error: %1"
 msgstr "Грешка: %1"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:460
+#: utils/qapt-gst-helper/PluginHelper.cpp:463
 msgctxt "@title:window"
 msgid "Commit error"
 msgstr "Грешка при извршавању"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:510
+#: utils/qapt-gst-helper/PluginHelper.cpp:513
 msgctxt "@label Progress bar label when waiting to start"
 msgid "Waiting"
 msgstr "Чекам"
-
-#: utils/qapt-gst-helper/main.cpp:31
-msgctxt "@info"
-msgid "A GStreamer codec installer using QApt"
-msgstr "Инсталатер Гстримерових кодека заснован на Ку‑апту"
-
-#: utils/qapt-gst-helper/main.cpp:37
-msgctxt "@title"
-msgid "QApt Codec Searcher"
-msgstr "Ку‑аптов претраживач кодека"
-
-#: utils/qapt-gst-helper/main.cpp:38
-msgctxt "@info:credit"
-msgid "(C) 2011 Jonathan Thomas"
-msgstr "© 2011, Џонатан Томас"
-
-#: utils/qapt-gst-helper/main.cpp:39
-msgctxt "@info:credit"
-msgid "Jonathan Thomas"
-msgstr "Џонатан Томас"
-
-#: utils/qapt-gst-helper/main.cpp:44
-msgctxt "@info:shell"
-msgid "Attaches the window to an X app specified by winid"
-msgstr "Качи прозор на икс програм са задатим ИД‑а прозора"
-
-#: utils/qapt-gst-helper/main.cpp:45
-msgctxt "@info:shell"
-msgid "GStreamer install info"
-msgstr "Подаци о инсталацији Гстримера"

@@ -64,13 +64,14 @@ public:
     * @param records The underlying package records for fetching some info
     * @param packageIter The underlying object representing the package in APT
     */
+    // TODO: QApt2: Remove unused pkgRecords param
     Package(QApt::Backend* parent, pkgDepCache *depcache,
             pkgRecords *records, pkgCache::PkgIterator &packageIter);
 
    /**
     * Default destructor
     */
-    // TODO QApt2: Nope
+    // TODO: QApt2: Nope
     virtual ~Package();
 
    /**
@@ -87,7 +88,7 @@ public:
     */
     QString name() const;
 
-    // TODO QApt2: Get rid of QString impl. and rename latin1Name() to name()
+    // TODO: QApt2: Get rid of QString impl. and rename latin1Name() to name()
    /**
     * Returns the name of the package. This is the better choice over the
     * regular name() since a QLatin1String is much cheaper to construct
@@ -155,7 +156,7 @@ public:
     */
     QStringList availableVersions() const;
 
-    // TODO QApt2: Get rid of QString impl. and rename latin1Section() to
+    // TODO: QApt2: Get rid of QString impl. and rename latin1Section() to
     // section()
    /**
     * Returns the categorical section where the package resides
@@ -164,7 +165,7 @@ public:
     */
     QString section() const;
 
-   // TODO QApt2: Get rid of QString impl. and rename latin1Section() to section()
+   // TODO: QApt2: Get rid of QString impl. and rename latin1Section() to section()
    /**
     * Returns the categorical section of the package. This is the better choice
     * over the regular section() since a QLatin1String is much cheaper to construct
@@ -295,7 +296,7 @@ public:
     */
     QUrl screenshotUrl(QApt::ScreenshotType type) const;
 
-    // TODO QApt2: Return a QDateTime so that KDE apps can localize
+    // TODO: QApt2: Return a QDateTime so that KDE apps can localize
    /**
     * Returns the date when Canonical's support of the package ends.
     *
@@ -397,8 +398,76 @@ public:
     * binary packages were considered MultiArch by APT. This is not true,
     * so this function was renamed to isForeignArch() and expanded to include
     * non-native binary packages.
+    *
+    * The purpose of this function was originally to filter out multi-arch
+    * functions that duplicated native ones. Due to the false assumptions
+    * made, this both didn't work and managed to poorly describe a boolean
+    * system to describe multi-arch duplicated. It was therefore renamed and
+    * re-implemented as isMultiArchDuplicate(). This function now just returns
+    * whether or not the package is foreign-arch.
+    *
+    * @return the result of isForeignArch()
+    *
+    * @see isForeignArch()
+    * @see isMultiArchDuplicate()
+    *
+    * @since 1.2
     */
     QT_DEPRECATED bool isMultiArchEnabled() const;
+
+   /**
+    * A package prepared for MultiArch can have any of three MultiArch "states"
+    * that control how dpkg treats the package as a dependency. A package can
+    * either be MultiArch: same, MultiArch: foreign, or MultiArch: Allowed.
+    *
+    * MultiArch: same:
+    * - This package is co-installable with itself, but it must not be used to
+    *   satisfy the dependency of any package of a different architecture from itself.
+    *   (Basically, this package is not multiarch)
+    *
+    * MultiArch: foreign:
+    * - The package is @b not co-installable with itself, but should be allowed to
+    *   satisfy the dependencies of a package of a different arch from itself.
+    *
+    * MultiArch: allowed:
+    * - This permits the reverse-dependencies of the package to annotate their Depends:
+    *   field to indicate that a foreign architecture version of the package satisfies
+    *   the dependencies, but does not change the resolution of any existing dependencies.
+    *
+    * @return a @c QString for the package's MultiArch state
+    *
+    * @see multiArchType()
+    *
+    * @since 1.4
+    */
+    QString multiArchTypeString() const;
+
+    /**
+     * A package prepared for MultiArch can have any of three MultiArch "states"
+     * that control how dpkg treats the package as a dependency. A package can
+     * either be MultiArch: same, MultiArch: foreign, or MultiArch: Allowed.
+     *
+     * @return a @c MultiArchType for the package's MultiArch state
+     *
+     * @see multiArchTypeString()
+     *
+     * @since 1.4
+     */
+    MultiArchType multiArchType() const;
+
+    /**
+     * Returns whether or not a package is a foreign-arch version of a package
+     * that also has a native-architecture counterpart (a "duplicate")
+     *
+     * This includes installed packages, which are always considered
+     * "interesting".
+     *
+     * @return @c true when the same package is available for the native arch
+     * @return @c false when the package is a unique foreign-arch package
+     *
+     * @since 1.4
+     */
+    bool isMultiArchDuplicate() const;
 
    /**
     * Returns whether or not the package is for the native CPU architecture
@@ -489,7 +558,7 @@ public:
     * \return A @c QHash of reasons why the package is broken, corresponding to a
     * QApt::BrokenReason
     */
-    // TODO QApt2: Get rid of this insane thing and use a proper OO scheme,
+    // TODO: QApt2: Get rid of this insane thing and use a proper OO scheme,
     // perhaps something like DependencyInfo
     QHash<int, QHash<QString, QVariantMap> > brokenReason() const;
 

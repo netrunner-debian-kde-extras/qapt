@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright © 2010 Jonathan Thomas <echidnaman@kubuntu.org>             *
+ *   Copyright © 2010-2012 Jonathan Thomas <echidnaman@kubuntu.org>        *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or         *
  *   modify it under the terms of the GNU General Public License as        *
@@ -28,6 +28,7 @@
 #include "package.h"
 
 class pkgSourceList;
+class pkgRecords;
 
 namespace QApt {
     class Cache;
@@ -66,7 +67,7 @@ public:
      /**
       * Default destructor
       */
-    // TODO QApt2: Heck no
+    // TODO: QApt2: Heck no
     virtual ~Backend();
 
     /**
@@ -194,6 +195,15 @@ public:
     Package *packageForFile(const QString &file) const;
 
     /**
+     * Returns a list of all package origins, as machine-readable strings
+     *
+     * @return The list of machine-readable origin labels
+     *
+     * @since 1.4
+     */
+    QStringList origins() const;
+
+    /**
      * Returns a list of all package origins, as user readable strings.
      *
      * @return The list of human-readable origin labels
@@ -208,7 +218,7 @@ public:
      */
     QString originLabel(const QString &origin) const;
 
-    // TODO QApt2: const QString &originLabel
+    // TODO: QApt2: const QString &originLabel
     /**
      * Returns the machine-readable name for the origin repository of the given
      * the human-readable name.
@@ -217,7 +227,12 @@ public:
      */
     QString origin(QString originLabel) const;
 
-    // TODO QApt2: Around that time it might be wise to use qint64 for count()'s
+    /** 
+     * @returns the origins for a given @p host
+     */
+    QStringList originsForHost(const QString& host) const;
+
+    // TODO: QApt2: Around that time it might be wise to use qint64 for count()'s
     /**
      * Queries the backend for the total number of packages in the APT
      * database, discarding no-longer-existing packages that linger on in the
@@ -407,8 +422,17 @@ protected:
      */
     Cache *cache() const;
 
+    /**
+     * Returns a pointer to the internal package records object. Mainly used
+     * for internal purposes in QApt::Package
+     *
+     * @return the package records object used by the backend
+     * @since 1.4
+     */
+    pkgRecords *records() const;
+
 private:
-    Q_DECLARE_PRIVATE(Backend);
+    Q_DECLARE_PRIVATE(Backend)
     friend class Package;
     friend class PackagePrivate;
 
@@ -638,15 +662,38 @@ public Q_SLOTS:
     *
     * @param listFile The path to the package list file
     * @param destination The path of the directory to download the packages to
+    *
+    * @since 1.2
     */
     void downloadArchives(const QString &listFile, const QString &destination);
 
+   /**
+    * Installs a .deb package archive file.
+    *
+    * If the file has any additional dependencies that are not currently
+    * installed, the worker will install these. The backend sends out normal
+    * download event signals.
+    *
+    * When the commit process for the DebFile starts, the backend will emit the
+    * QApt::DebInstallStarted worker signal. Similarly, when the commit is
+    * finished the backend will emit the QApt::DebInstallFinished signal.
+    *
+    * @param file the DebFile to install
+    *
+    * @see workerEvent()
+    * @see packageDownloadProgress()
+    *
+    * @since 1.2
+    */
     void installDebFile(const DebFile &file);
 
     /**
      * A slot that Packages use to tell the backend they've changed.
      * (Used internally by QApt::Package. You likely will never use this)
+     *
+     * @param package the package which has changed
      */
+    // TODO: QApt2: Make this a private slot.
     void packageChanged(Package *package);
 
     /**
@@ -692,10 +739,10 @@ public Q_SLOTS:
      *
      * @param path The path to save the selection list to
      *
-     * \return @c true if saving succeeded
-     * \return @c false if the saving failed
+     * @return @c true if saving succeeded
+     * @return @c false if the saving failed
      *
-     * @since 1.1
+     * @since 1.2
      *
      * @see loadSelections()
      * @see saveSelections()
@@ -708,8 +755,10 @@ public Q_SLOTS:
      *
      * @param path The path to save the selection list to
      *
-     * \return @c true if saving succeeded
-     * \return @c false if the saving failed
+     * @return @c true if saving succeeded
+     * @return @c false if the saving failed
+     *
+     * @since 1.2
      *
      * @see saveInstalledPackagesList()
      * @see loadSelections()
@@ -722,8 +771,10 @@ public Q_SLOTS:
      *
      * @param path The path from which to read the selection list
      *
-     * \return @c true if reading/marking succeeded
-     * \return @c false if the reading/marking failed
+     * @return @c true if reading/marking succeeded
+     * @return @c false if the reading/marking failed
+     *
+     * @since 1.2
      *
      * @see saveSelections()
      * @see saveInstalledPackagesList()
@@ -738,6 +789,8 @@ public Q_SLOTS:
     * @param path The path to save the download list to
     *
     * @return @c true if savign succeeded, @c false if the saving failed
+    *
+    * @since 1.2
     */
     bool saveDownloadList(const QString &path) const;
 
@@ -751,6 +804,8 @@ public Q_SLOTS:
     * @param pin Whether to pin or unpin the package
     *
     * @return @c true on success, @c false on failure
+    *
+    * @since 1.2
     */
     bool setPackagePinned(QApt::Package *package, bool pin);
 
@@ -785,6 +840,22 @@ public Q_SLOTS:
     * @return @c true on success, @c false on failure
     */
     bool addArchiveToCache(const DebFile &archive);
+
+   /**
+    * Sets the proxy to be used by the QApt Worker
+    *
+    * This function is used to aid in integration with environments that do not
+    * primarily use the proxy set by either APT or their shell environment's
+    * http_proxy environment variable. (Such as KDE)
+    *
+    * Once you call this function, the QApt Worker will use the custom proxy for
+    * the life of the QApt::Backend object.
+    *
+    * @param proxy the proxy to be used by the QApt Worker
+    *
+    * @since 1.4
+    */
+    void setWorkerProxy(const QString &proxy);
 
 private Q_SLOTS:
     void serviceOwnerChanged(const QString &name, const QString &oldOwner, const QString &newOwner);

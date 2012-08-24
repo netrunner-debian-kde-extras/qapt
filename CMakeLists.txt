@@ -3,10 +3,10 @@ project(libqapt)
 cmake_minimum_required(VERSION 2.6.0)
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules")
 
-set(qapt_VERSION 1.3.0)
+set(qapt_VERSION 1.4.0)
 
 set(qapt_lib_SOVERSION 1)
-set(qapt_lib_VERSION ${qapt_lib_SOVERSION}.3.0)
+set(qapt_lib_VERSION ${qapt_lib_SOVERSION}.4.0)
 
 configure_file(
        "${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules/cmake_uninstall.cmake.in"
@@ -112,7 +112,7 @@ ENDMACRO(MACRO_ENSURE_VERSION_RANGE)
 if (CMAKE_COMPILER_IS_GNUCXX)
    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
 
-  include(CheckCXXCompilerFlag)
+   include(CheckCXXCompilerFlag)
 
    # visibility support
    check_cxx_compiler_flag(-fvisibility=hidden __HAVE_GCC_VISIBILITY)
@@ -189,6 +189,8 @@ macro_optional_add_subdirectory( po )
 
     #DOC_SUBDIR
 
+macro_log_feature(KDE4_FOUND "KDE" "Development libraries for the KDE Platform"
+                  "http://kde.org" FALSE "" "Used to build optional utilities that use QApt")
 macro_log_feature(QTGSTREAMER_FOUND "QtGStreamer" "Qt wrapper around the GStreamer multimedia framework"
                   "http://gstreamer.freedesktop.org" FALSE "" "Used to build an optional GStreamer plugin installer")
 

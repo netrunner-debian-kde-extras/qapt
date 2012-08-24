@@ -18,65 +18,28 @@
  *   along with this program.  If not, see <http://www.gnu.org/licenses/>. *
  ***************************************************************************/
 
-#include "PluginFinder.h"
+#ifndef CHANGESDIALOG_H
+#define CHANGESDIALOG_H
 
-#include <QtCore/QThread>
+// Qt includes
+#include <QStandardItemModel>
+#include <QtGui/QDialog>
 
-#include "../../src/backend.h"
+// LibQApt includes
+#include "../../src/package.h"
 
-#include "GstMatcher.h"
-#include "PluginInfo.h"
+class QStandardItemModel;
 
-PluginFinder::PluginFinder(QObject *parent, QApt::Backend *backend)
-    : QObject(parent)
-    , m_backend(backend)
-    , m_stop(false)
+class ChangesDialog : public QDialog
 {
-}
+public:
+    ChangesDialog(QWidget *parent, const QApt::StateChanges &changes);
 
-PluginFinder::~PluginFinder()
-{
-}
+private:
+    QStandardItemModel *m_model;
 
-void PluginFinder::find(const PluginInfo *pluginInfo)
-{
-    if (m_stop) {
-        return;
-    }
+    void addPackages(const QApt::StateChanges &changes);
+    int countChanges(const QApt::StateChanges &changes);
+};
 
-    GstMatcher matcher(pluginInfo);
-
-    if (!matcher.hasMatches()) {
-        // No such codec
-        emit notFound();
-        return;
-    }
-
-    foreach (QApt::Package *package, m_backend->availablePackages()) {
-        if (matcher.matches(package) && package->architecture() == m_backend->nativeArchitecture()) {
-            emit foundCodec(package);
-            return;
-        }
-    }
-
-    emit notFound();
-}
-
-void PluginFinder::setSearchList(const QList<PluginInfo *> &list)
-{
-    m_searchList = list;
-}
-
-void PluginFinder::startSearch()
-{
-    foreach(PluginInfo *info, m_searchList) {
-        find(info);
-    }
-
-    thread()->quit();
-}
-
-void PluginFinder::stop()
-{
-    m_stop = true;
-}
+#endif // CHANGESDIALOG_H

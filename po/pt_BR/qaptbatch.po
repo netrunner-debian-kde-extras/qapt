@@ -6,13 +6,14 @@
 # Luiz Fernando Ranghetti, 2010.
 # Luiz Fernando Ranghetti <elchevive@opensuse.org>, 2010.
 # André Marcelo Alvarenga <andrealvarenga@gmx.net>, 2010, 2011.
+# André Marcelo Alvarenga <alvarenga@kde.org>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: qaptbatch\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2012-02-21 18:19+0100\n"
-"PO-Revision-Date: 2011-06-25 00:27-0300\n"
-"Last-Translator: André Marcelo Alvarenga <andrealvarenga@gmx.net>\n"
+"PO-Revision-Date: 2012-06-26 00:26-0300\n"
+"Last-Translator: André Marcelo Alvarenga <alvarenga@kde.org>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_br@kde.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -155,8 +156,8 @@ msgid ""
 "It appears that the QApt worker has either crashed or disappeared. Please "
 "report a bug to the QApt maintainers"
 msgstr ""
-"Parece que o utilitário do QApt estourou ou desapareceu. Por favor comunique "
-"um erro aos programadores do QApt"
+"Parece que o utilitário QApt falhou ou desapareceu. Por favor, informe o "
+"erro aos programadores do QApt"
 
 #: utils/qapt-batch/qaptbatch.cpp:185 utils/qapt-batch/qaptbatch.cpp:416
 msgctxt "@title:window"

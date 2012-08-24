@@ -4,13 +4,14 @@
 #
 #
 # Stelios <sstavra@gmail.com>, 2011.
+# Dimitrios Glentadakis <dglent@gmail.com>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: qapt-deb-installer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2012-02-21 18:19+0100\n"
-"PO-Revision-Date: 2011-07-24 14:15+0300\n"
-"Last-Translator: Stelios <sstavra@gmail.com>\n"
+"PO-Revision-Date: 2012-04-11 19:51+0200\n"
+"Last-Translator: Dimitrios Glentadakis <dglent@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
@@ -153,13 +154,11 @@ msgstr ""
 "συνήθως από εκεί υπάρχει καλύτερη υποστήριξη."
 
 #: utils/qapt-deb-installer/DebViewer.cpp:65
-#, fuzzy
 msgctxt "@label Label preceding the package name"
 msgid "Package:"
 msgstr "Πακέτο:"
 
 #: utils/qapt-deb-installer/DebViewer.cpp:73
-#, fuzzy
 msgctxt "@label Label preceding the package status"
 msgid "Status:"
 msgstr "Κατάσταση:"
