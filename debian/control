@@ -46,6 +46,7 @@ Description: Development headers for the QApt library
 Package: libqapt-runtime
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Breaks: apt-listchanges (<< 2.85.12~)
 Description: Runtime components for the QApt library
  LibQApt is a Qt wrapper around the libapt-pkg library as well as an APT
  implementation using libapt-pkg. The aim is to provide a sane API for

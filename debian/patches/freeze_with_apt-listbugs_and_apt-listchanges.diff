@@ -1,0 +1,27 @@
+From 69eb9e6fe2b6357522b742568305b5801f60cde3 Mon Sep 17 00:00:00 2001
+From: Jonathan Thomas <echidnaman@kubuntu.org>
+Date: Sat, 8 Sep 2012 13:00:04 -0400
+Subject: [PATCH] Prevent freezing with apt-listchanges and apt-listbugs
+
+---
+ src/worker/workerinstallprogress.cpp |    4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/src/worker/workerinstallprogress.cpp b/src/worker/workerinstallprogress.cpp
+index 26a320c..fbe9844 100644
+--- a/src/worker/workerinstallprogress.cpp
++++ b/src/worker/workerinstallprogress.cpp
+@@ -49,8 +49,8 @@ WorkerInstallProgress::WorkerInstallProgress(QAptWorker* parent)
+ {
+     setenv("DEBIAN_FRONTEND", "passthrough", 1);
+     setenv("DEBCONF_PIPE", "/tmp/qapt-sock", 1);
+-    // TODO: apt-listchanges
+-    setenv("APT_LISTCHANGES_FRONTEND", "none", 1);
++    setenv("APT_LISTBUGS_FRONTEND", "none", 1);
++    setenv("APT_LISTCHANGES_FRONTEND", "debconf", 1);
+ }
+ 
+ WorkerInstallProgress::~WorkerInstallProgress()
+-- 
+1.7.10.4
+
