@@ -1,4 +1,4 @@
-qapt (1.4.0-0r2) UNRELEASED; urgency=low
+qapt (1.4.0-1) experimental; urgency=low
 
   * New upstream release.
   * Remove upstream_directly-include-declaration-of-MD5Summation.patch, applied
@@ -6,7 +6,7 @@ qapt (1.4.0-0r2) UNRELEASED; urgency=low
   * Add freeze_with_apt-listbugs_and_apt-listchanges.diff.
   * Sync debian/copyright file with Ubuntu, fixes a lintian warning.
 
- -- José Manuel Santamaría Lema <panfaust@gmail.com>  Fri, 24 Aug 2012 16:39:17 +0200
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Tue, 11 Sep 2012 22:42:03 +0200
 
 qapt (1.3.0-2) unstable; urgency=low
 
