@@ -1,6 +1,7 @@
 qapt (1.4.1-0r0) UNRELEASED; urgency=low
 
   * New upstream release.
+  * Drop freeze_with_apt-listbugs_and_apt-listchanges.diff, applied upstream.
   * In libqapt-runtime add Breaks/Replaces against libdebconf-kde0 (<< 0.3~)
     because the patch freeze_with_apt-listbugs_and_apt-listchanges.diff in this
     package and apt-listbugs hang debconf-kde because some debconf commands were
