@@ -1,3 +1,11 @@
+qapt (1.3.0-3) UNRELEASED; urgency=low
+
+  * Add me to uploaders
+  * Remove Jose Manuel Santamaria Lema from uploaders.
+  * Remove the unused DMUA-field.
+
+ -- Sune Vuorela <sune@debian.org>  Sun, 01 Jun 2014 16:19:15 +0200
+
 qapt (1.3.0-2) unstable; urgency=low
 
   * Team upload.
