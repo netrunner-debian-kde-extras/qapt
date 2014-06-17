@@ -1,0 +1,11 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -202,6 +202,6 @@
+         DESTINATION ${CMAKE_INSTALL_PREFIX}/lib/cmake/QApt/
+         COMPONENT Devel )
+ 
+-add_test(NAME sourceslisttest COMMAND ${CMAKE_CURRENT_BINARY_DIR}/tests/sourceslisttest)
+-add_test(NAME transactionerrorhandlingtest COMMAND ${CMAKE_CURRENT_BINARY_DIR}/tests/transactionerrorhandlingtest)
++#add_test(NAME sourceslisttest COMMAND ${CMAKE_CURRENT_BINARY_DIR}/tests/sourceslisttest)
++#add_test(NAME transactionerrorhandlingtest COMMAND ${CMAKE_CURRENT_BINARY_DIR}/tests/transactionerrorhandlingtest)
+ 
