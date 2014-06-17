@@ -19,7 +19,7 @@ Homepage: https://projects.kde.org/projects/extragear/sysadmin/libqapt/
 Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-extras/qapt.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-extras/qapt.git;a=summary
 
-Package: libqapt1
+Package: libqapt2
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: QApt library package
@@ -33,7 +33,7 @@ Description: QApt library package
 Package: libqapt-dev
 Section: libdevel
 Architecture: any
-Depends: ${misc:Depends}, libqapt1 (= ${binary:Version}), libapt-pkg-dev
+Depends: ${misc:Depends}, libqapt2 (= ${binary:Version}), libapt-pkg-dev
 Description: Development headers for the QApt library
  LibQApt is a Qt wrapper around the libapt-pkg library as well as an APT
  implementation using libapt-pkg. The aim is to provide a sane API for
@@ -58,7 +58,7 @@ Package: qapt-utils
 Architecture: any
 Depends: ${misc:Depends}, qapt-batch, qapt-deb-installer,
  plasma-runner-installer, kde-thumbnailer-deb
-Recommends: gstreamer0.10-qapt
+Recommends: gstreamer1.0-qapt
 Description: complete collection of QApt package management utilities
  QApt is a collection of tools and a library providing a wrapper around
  APT. The intention is to ease the use of APT in Qt-based programs.
@@ -112,7 +112,7 @@ Description: KDE plugin to show thumbnails of Debian package files
  A plugin for KDE file managers (Dolphin and Konqueror) to preview Debian
  packages (.deb files) as thumbnails.
 
-Package: gstreamer0.10-qapt
+Package: gstreamer1.0-qapt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, libqapt-runtime
 Description: GStreamer plugin to install codecs using QApt
