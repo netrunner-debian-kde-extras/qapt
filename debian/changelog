@@ -7,6 +7,11 @@ qapt (2.2.0-1) UNRELEASED; urgency=low
 
   [ Floris-Andrei Stoica-Marcu ]
   * New Upstream Release
+  * Updated package structure, now it is unmerged
+  * Bumped up version of libqapt-runtime
+  * Added new symbol file for qapt-dbg
+  * Disabled tests that broke build
+  * Updated dependencies
 
  -- Floris-Andrei Stoica-Marcu <floris.sm@gmail.com>  Wed, 18 Jun 2014 00:52:06 +0300
 
