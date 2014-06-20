@@ -43,7 +43,7 @@ Description: Development headers for the QApt library
  .
  This package contains the development headers for the QApt library
 
-Package: libqapt-runtime
+Package: libqapt2-runtime
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Runtime components for the QApt library
@@ -69,7 +69,7 @@ Description: complete collection of QApt package management utilities
 
 Package: qapt-batch
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libqapt-runtime
+Depends: ${shlibs:Depends}, ${misc:Depends}, libqapt2-runtime
 Description: Batch package manager for KDE
  QApt is a collection of tools and a library providing a wrapper around
  APT. The intention is to ease the use of APT in Qt-based programs.
@@ -82,7 +82,7 @@ Description: Batch package manager for KDE
 
 Package: qapt-deb-installer
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libqapt-runtime
+Depends: ${shlibs:Depends}, ${misc:Depends}, libqapt2-runtime
 Description: tool for installing deb files
  QApt is a collection of tools and a library providing a wrapper around
  APT. The intention is to ease the use of APT in Qt-based programs.
@@ -115,7 +115,7 @@ Description: KDE plugin to show thumbnails of Debian package files
 
 Package: gstreamer1.0-qapt
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libqapt-runtime
+Depends: ${shlibs:Depends}, ${misc:Depends}, libqapt2-runtime
 Description: GStreamer plugin to install codecs using QApt
  QApt is a collection of tools and a library providing a wrapper around
  APT. The intention is to ease the use of APT in Qt-based programs.
