@@ -127,7 +127,7 @@ Package: qapt-dbg
 Section: debug
 Architecture: any
 Priority: extra
-Depends: ${misc:Depends}, libqapt1 (= ${binary:Version})
+Depends: ${misc:Depends}, libqapt2(= ${binary:Version})
 Recommends: kdelibs5-dbg
 Description: QApt debugging symbols
  QApt is a collection of tools and a library providing a wrapper around
