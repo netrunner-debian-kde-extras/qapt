@@ -16,28 +16,28 @@ libqapt.so.2 libqapt2 #MINVER#
  _ZN4QApt11SourceEntryC1ERK7QStringS3_@Base 2.0.65
  _ZN4QApt11SourceEntryC1ERK7QStringS3_S3_RK11QStringListS3_S6_S3_@Base 2.0.65
  _ZN4QApt11SourceEntryC1ERKS0_@Base 2.0.65
- _ZN4QApt11SourceEntryC1Ev@Base 2.2.0-1
+ _ZN4QApt11SourceEntryC1Ev@Base 2.2.0
  _ZN4QApt11SourceEntryC2ERK7QStringS3_@Base 2.0.65
  _ZN4QApt11SourceEntryC2ERK7QStringS3_S3_RK11QStringListS3_S6_S3_@Base 2.0.65
  _ZN4QApt11SourceEntryC2ERKS0_@Base 2.0.65
- _ZN4QApt11SourceEntryC2Ev@Base 2.2.0-1
+ _ZN4QApt11SourceEntryC2Ev@Base 2.2.0
  _ZN4QApt11SourceEntryD1Ev@Base 2.0.65
  _ZN4QApt11SourceEntryD2Ev@Base 2.0.65
  _ZN4QApt11SourceEntryaSERKS0_@Base 2.0.65
  _ZN4QApt11SourcesList11qt_metacallEN11QMetaObject4CallEiPPv@Base 2.0.65
  _ZN4QApt11SourcesList11qt_metacastEPKc@Base 2.0.65
  _ZN4QApt11SourcesList11removeEntryERKNS_11SourceEntryE@Base 2.0.65
- _ZN4QApt11SourcesList11sourceFilesEv@Base 2.2.0-1
- _ZN4QApt11SourcesList13containsEntryERKNS_11SourceEntryERK7QString@Base 2.2.0-1
+ _ZN4QApt11SourcesList11sourceFilesEv@Base 2.2.0
+ _ZN4QApt11SourcesList13containsEntryERKNS_11SourceEntryERK7QString@Base 2.2.0
  _ZN4QApt11SourcesList16staticMetaObjectE@Base 2.0.65
- _ZN4QApt11SourcesList17dataForSourceFileERK7QString@Base 2.2.0-1
+ _ZN4QApt11SourcesList17dataForSourceFileERK7QString@Base 2.2.0
  _ZN4QApt11SourcesList4saveEv@Base 2.0.65
  _ZN4QApt11SourcesList6reloadEv@Base 2.0.65
  _ZN4QApt11SourcesList8addEntryERKNS_11SourceEntryE@Base 2.0.65
  _ZN4QApt11SourcesListC1EP7QObject@Base 2.0.65
- _ZN4QApt11SourcesListC1EP7QObjectRK11QStringList@Base 2.2.0-1
+ _ZN4QApt11SourcesListC1EP7QObjectRK11QStringList@Base 2.2.0
  _ZN4QApt11SourcesListC2EP7QObject@Base 2.0.65
- _ZN4QApt11SourcesListC2EP7QObjectRK11QStringList@Base 2.2.0-1
+ _ZN4QApt11SourcesListC2EP7QObjectRK11QStringList@Base 2.2.0
  _ZN4QApt11SourcesListD0Ev@Base 2.0.65
  _ZN4QApt11SourcesListD1Ev@Base 2.0.65
  _ZN4QApt11SourcesListD2Ev@Base 2.0.65
@@ -253,14 +253,14 @@ libqapt.so.2 libqapt2 #MINVER#
  _ZNK4QApt11SourceEntry9isEnabledEv@Base 2.0.65
  _ZNK4QApt11SourceEntryeqERKS0_@Base 2.0.65
  _ZNK4QApt11SourcesList10metaObjectEv@Base 2.0.65
- _ZNK4QApt11SourcesList7entriesERK7QString@Base 2.2.0-1
+ _ZNK4QApt11SourcesList7entriesERK7QString@Base 2.2.0
  _ZNK4QApt11SourcesList7entriesEv@Base 2.0.65
- _ZNK4QApt11SourcesList8toStringEv@Base 2.2.0-1
+ _ZNK4QApt11SourcesList8toStringEv@Base 2.2.0
  _ZNK4QApt11Transaction10exitStatusEv@Base 1.9.60
  _ZNK4QApt11Transaction10metaObjectEv@Base 1.9.60
  _ZNK4QApt11Transaction11debconfPipeEv@Base 1.9.60
  _ZNK4QApt11Transaction11downloadETAEv@Base 1.9.60
- _ZNK4QApt11Transaction11errorStringEv@Base 2.2.0-1
+ _ZNK4QApt11Transaction11errorStringEv@Base 2.2.0
  _ZNK4QApt11Transaction11isCancelledEv@Base 1.9.60
  _ZNK4QApt11Transaction12errorDetailsEv@Base 1.9.60
  _ZNK4QApt11Transaction12frontendCapsEv@Base 2.0.65
