@@ -1,4 +1,4 @@
-qapt (2.2.0-1) UNRELEASED; urgency=low
+qapt (2.2.0-1) experimental; urgency=low
 
   [ Sune Vuorela ]
   * Add me to uploaders
@@ -13,7 +13,7 @@ qapt (2.2.0-1) UNRELEASED; urgency=low
   * Disabled tests that broke build
   * Updated dependencies
 
- -- Floris-Andrei Stoica-Marcu <floris.sm@gmail.com>  Wed, 18 Jun 2014 00:52:06 +0300
+ -- Sune Vuorela <sune@debian.org>  Wed, 03 Sep 2014 14:19:55 +0200
 
 qapt (1.3.0-2) unstable; urgency=low
 
