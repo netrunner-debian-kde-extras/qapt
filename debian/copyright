@@ -1,19 +1,19 @@
-Format: http://dep.debian.net/deps/dep5/
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: QApt
 Upstream-Contact: Jonathan Thomas <echidnaman@kubuntu.org>
 Source: https://projects.kde.org/projects/extragear/sysadmin/libqapt/repository
 
 Files: *
 Copyright: 2010, Jonathan Thomas <echidnaman@kubuntu.org>
-Copyright: 2010, Dario Freddi <drf@kde.org>
-Copyright: 2002, Holger Freyther <freyther@kde.org>
-Copyright: 1997, Matthias Kalle Dalheimer <kalle@kde.org>
-Copyright: 2008, Volker Krause <vkrause@kde.org>
-Copyright: 2010, Harald Sitter <apachelogger@ubuntu.com>
-Copyright: 2014, Aleix Pol <apol@kde.org>
-Copyright: 2007, Sebastian Trueg <trueg@kde.org>
-Copyright: 2008-2009, Sebastian Heinlein <devel@glatzor.de>
-Copyright: 2004, Michael Vogt <mvo@debian.org>
+           2010, Dario Freddi <drf@kde.org>
+           2002, Holger Freyther <freyther@kde.org>
+           1997, Matthias Kalle Dalheimer <kalle@kde.org>
+           2008, Volker Krause <vkrause@kde.org>
+           2010, Harald Sitter <apachelogger@ubuntu.com>
+           2014, Aleix Pol <apol@kde.org>
+           2007, Sebastian Trueg <trueg@kde.org>
+           2008-2009, Sebastian Heinlein <devel@glatzor.de>
+           2004, Michael Vogt <mvo@debian.org>
 License: GPL-2 or GPL-3
  This program is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public License as
@@ -33,18 +33,18 @@ License: GPL-2 or GPL-3
 
 Files: debian/*
 Copyright: 2010, Jonathan Thomas <echidnaman@kubuntu.org>
-Copyright: 2011, Kai Wasserbäch <curan@debian.org>
+           2011, Kai Wasserbäch <curan@debian.org>
 License: GPL-3
  On Debian systems the full text of the GNU General Public License can be found
  in the `/usr/share/common-licenses/GPL-3' file.
 
 Files: cmake/modules/*
 Copyright: 2009-2010, Dario Freddi <drf@kde.org>
-Copyright: 2010, Harald Sitter <apachelogger@ubuntu.com>
-Copyright: 2010, David Palacio <dpalacio@uninorte.edu.co>
-Copyright: 2008, Laurent Montel <montel@kde.org>
-Copyright: 2006-2009, Alexander Neundorf <neundorf@kde.org>
-Copyright: 2006, Allen Winter <winter@kde.org>
+           2010, Harald Sitter <apachelogger@ubuntu.com>
+           2010, David Palacio <dpalacio@uninorte.edu.co>
+           2008, Laurent Montel <montel@kde.org>
+           2006-2009, Alexander Neundorf <neundorf@kde.org>
+           2006, Allen Winter <winter@kde.org>
 License: BSD
   Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
