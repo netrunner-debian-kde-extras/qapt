@@ -5,11 +5,11 @@ Source: https://projects.kde.org/projects/extragear/sysadmin/libqapt/repository
 
 Files: *
 Copyright: 2010, Jonathan Thomas <echidnaman@kubuntu.org>
-Copyright: 2010, Dario Freddi
-Copyright: 2002, Holger Freyther <freyther@kde.org>
-Copyright: 1997, Matthias Kalle Dalheimer <kalle@kde.org>
-Copyright: 2008, Volker Krause <vkrause@kde.org>
-Copyright: 2010, Harald Sitter <apachelogger@ubuntu.com>
+ 2010, Dario Freddi
+ 2002, Holger Freyther <freyther@kde.org>
+ 1997, Matthias Kalle Dalheimer <kalle@kde.org>
+ 2008, Volker Krause <vkrause@kde.org>
+ 2010, Harald Sitter <apachelogger@ubuntu.com>
 License: GPL-2 or GPL-3
  This program is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public License as
@@ -29,7 +29,7 @@ License: GPL-2 or GPL-3
 
 Files: debian/*
 Copyright: 2010, Jonathan Thomas <echidnaman@kubuntu.org>
-Copyright: 2011, Kai Wasserbäch <curan@debian.org>
+ 2011, Kai Wasserbäch <curan@debian.org>
 License: GPL-3
  On Debian systems the full text of the GNU General Public License can be found
  in the `/usr/share/common-licenses/GPL-3' file.

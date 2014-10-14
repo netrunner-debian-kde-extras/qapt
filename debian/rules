@@ -6,4 +6,6 @@
 override_dh_install:
 	dh_install --fail-missing
 
-.PHONY: override_dh_install
+override_dh_auto_test:
+
+.PHONY: override_dh_install override_dh_auto_test
