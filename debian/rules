@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 
 %:
-	dh $@ --with kde --parallel --dbg-package=qapt-dbg
+	dh $@ --with kf5 --parallel --dbg-package=qapt-dbg
 
 override_dh_install:
 	dh_install --fail-missing
