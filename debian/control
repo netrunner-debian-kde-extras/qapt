@@ -34,7 +34,7 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-extras/qapt.git;a=s
 Package: libqapt3
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Recommends: libqapt2-runtime
+Recommends: libqapt3-runtime
 Description: QApt library package
  LibQApt is a Qt wrapper around the libapt-pkg library as well as an APT
  implementation using libapt-pkg. The aim is to provide a sane API for
@@ -55,7 +55,7 @@ Description: Development headers for the QApt library
  .
  This package contains the development headers for the QApt library
 
-Package: libqapt2-runtime
+Package: libqapt3-runtime
 Architecture: any
 Depends: polkit-kde-1 | policykit-1-gnome, ${misc:Depends}, ${shlibs:Depends}
 Description: Runtime components for the QApt library
@@ -84,7 +84,7 @@ Description: complete collection of QApt package management utilities
 
 Package: qapt-batch
 Architecture: any
-Depends: libqapt2-runtime, ${misc:Depends}, ${shlibs:Depends}
+Depends: libqapt3-runtime, ${misc:Depends}, ${shlibs:Depends}
 Description: Batch package manager for KDE
  QApt is a collection of tools and a library providing a wrapper around
  APT. The intention is to ease the use of APT in Qt-based programs.
@@ -97,7 +97,7 @@ Description: Batch package manager for KDE
 
 Package: qapt-deb-installer
 Architecture: any
-Depends: libqapt2-runtime, ${misc:Depends}, ${shlibs:Depends}
+Depends: libqapt3-runtime, ${misc:Depends}, ${shlibs:Depends}
 Description: tool for installing deb files
  QApt is a collection of tools and a library providing a wrapper around
  APT. The intention is to ease the use of APT in Qt-based programs.
@@ -130,7 +130,7 @@ Description: KDE plugin to show thumbnails of Debian package files
 
 Package: gstreamer-qapt
 Architecture: any
-Depends: libqapt2-runtime, ${misc:Depends}, ${shlibs:Depends}
+Depends: libqapt3-runtime, ${misc:Depends}, ${shlibs:Depends}
 Replaces: gstreamer0.10-qapt (<< 2.1.70-0ubuntu5~)
 Breaks: gstreamer0.10-qapt (<< 2.1.70-0ubuntu5~)
 Description: GStreamer plugin to install codecs using QApt
