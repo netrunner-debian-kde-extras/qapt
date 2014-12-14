@@ -8,8 +8,8 @@ usr/include/QApt/Globals
 usr/include/QApt/History
 usr/include/QApt/MarkingErrorInfo
 usr/include/QApt/Package
-usr/include/QApt/SourcesList
 usr/include/QApt/SourceEntry
+usr/include/QApt/SourcesList
 usr/include/QApt/Transaction
 usr/include/qapt/backend.h
 usr/include/qapt/changelog.h
@@ -21,10 +21,10 @@ usr/include/qapt/globals.h
 usr/include/qapt/history.h
 usr/include/qapt/markingerrorinfo.h
 usr/include/qapt/package.h
-usr/include/qapt/sourceslist.h
-usr/include/qapt/sourceentry.h
-usr/include/qapt/transaction.h
 usr/include/qapt/qaptversion.h
+usr/include/qapt/sourceentry.h
+usr/include/qapt/sourceslist.h
+usr/include/qapt/transaction.h
 usr/lib/*/cmake/QApt/*
 usr/lib/*/libQApt.so
 usr/lib/*/pkgconfig/libqapt.pc
