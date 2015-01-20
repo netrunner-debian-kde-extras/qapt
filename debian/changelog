@@ -1,3 +1,9 @@
+libqapt (3.0.0-0ubuntu1) vivid; urgency=medium
+
+  * Initial upload for qapt3
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 20 Jan 2015 12:13:04 +0100
+
 libqapt (2.2.0+qt5+20140826-0ubuntu1) utopic; urgency=medium
 
   * New upstream snapshot
