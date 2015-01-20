@@ -1,3 +1,9 @@
+libqapt (3.0.0-0ubuntu2) vivid; urgency=medium
+
+  * Add build-dep on qttools5-dev-tools
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 20 Jan 2015 13:15:44 +0100
+
 libqapt (3.0.0-0ubuntu1) vivid; urgency=medium
 
   * Initial upload for qapt3
