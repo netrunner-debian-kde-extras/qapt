@@ -1,12 +1,12 @@
 # Translation of qapt-gst-helper to Norwegian Bokmål
 #
-# Bjørn Steensrud <bjornst@skogkatt.homelinux.org>, 2010, 2011.
+# Bjørn Steensrud <bjornst@skogkatt.homelinux.org>, 2010, 2011, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-09 11:23+0100\n"
-"PO-Revision-Date: 2011-02-25 19:50+0100\n"
+"POT-Creation-Date: 2014-04-08 01:38+0000\n"
+"PO-Revision-Date: 2012-12-08 09:29+0100\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 1.1\n"
+"X-Generator: Lokalize 1.4\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
@@ -49,24 +49,39 @@ msgctxt "@info:shell"
 msgid "GStreamer install info"
 msgstr "GStreamer installeringsinfo"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:82
+#: utils/qapt-gst-helper/PluginHelper.cpp:81
 msgctxt "@info Error message"
 msgid "No valid plugin info was provided, so no plugins could be found."
 msgstr ""
 "Det ble ikke oppgitt noen gyldig info om programtillegg, så det kunne ikke "
 "finnes noen programtillegg."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:85
+#: utils/qapt-gst-helper/PluginHelper.cpp:84
 msgctxt "@title:window"
 msgid "Couldn't Find Plugins"
 msgstr "Klarte ikke finne programtillegg"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:91
+#: utils/qapt-gst-helper/PluginHelper.cpp:90
 msgctxt "@info:progress"
 msgid "Looking for plugins"
 msgstr "Leter etter programtillegg"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:129
+#: utils/qapt-gst-helper/PluginHelper.cpp:117
+#: utils/qapt-gst-helper/PluginHelper.cpp:229
+msgctxt "@label"
+msgid ""
+"The package system could not be initialized, your configuration may be "
+"broken."
+msgstr ""
+"Det gikk ikke å klargøre pakkesystemet, kanskje oppsettet ditt er feil."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:119
+#: utils/qapt-gst-helper/PluginHelper.cpp:231
+msgctxt "@title:window"
+msgid "Initialization error"
+msgstr "Klargjøringsfeil"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:134
 #, kde-format
 msgid ""
 "The following plugin is required: <ul><li>%2</li></ul>Do you want to search "
@@ -81,59 +96,46 @@ msgstr[1] ""
 "Følgende programtillegg kreves: <ul><li>%2</li></ul>Vil du søke etter disse "
 "nå?"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:142
+#: utils/qapt-gst-helper/PluginHelper.cpp:146
 msgctxt "A program for which we have no name"
 msgid "A program"
 msgstr "Et program"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:151
+#: utils/qapt-gst-helper/PluginHelper.cpp:153
 #, kde-format
 msgid "%2 requires an additional plugin to encode this file"
 msgid_plural "%2 requires additional plugins to encode this file"
 msgstr[0] "%2 krever et programtillegg til for å kode denne fila"
 msgstr[1] "%2 krever flere programtillegg for å kode denne fila"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:157
+#: utils/qapt-gst-helper/PluginHelper.cpp:159
 #, kde-format
 msgid "%2 requires an additional plugin to decode this file"
 msgid_plural "%2 requires additional plugins to decode this file"
 msgstr[0] "%2 krever et programtillegg til for å avkode denne fila"
 msgstr[1] "%2 krever flere programtillegg for å avkode denne fila"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:169
+#: utils/qapt-gst-helper/PluginHelper.cpp:171
 msgctxt "Search for packages"
 msgid "Search"
 msgstr "Søk"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:195
+#: utils/qapt-gst-helper/PluginHelper.cpp:197
 msgid "Confirm Changes"
 msgstr "Bekreft endringer"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:196
+#: utils/qapt-gst-helper/PluginHelper.cpp:198
 msgid "Install the following package?"
 msgid_plural "Install the following packages?"
 msgstr[0] "Installer følgende pakke?"
 msgstr[1] "Installer følgende pakker?"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:201
+#: utils/qapt-gst-helper/PluginHelper.cpp:203
 msgctxt "Install packages"
 msgid "Install"
 msgstr "Installer"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:225
-msgctxt "@label"
-msgid ""
-"The package system could not be initialized, your configuration may be "
-"broken."
-msgstr ""
-"Det gikk ikke å klargøre pakkesystemet, kanskje oppsettet ditt er feil."
-
-#: utils/qapt-gst-helper/PluginHelper.cpp:227
-msgctxt "@title:window"
-msgid "Initialization error"
-msgstr "Klargjøringsfeil"
-
-#: utils/qapt-gst-helper/PluginHelper.cpp:236
+#: utils/qapt-gst-helper/PluginHelper.cpp:239
 msgctxt "@label"
 msgid ""
 "Another application seems to be using the package system at this time. You "
@@ -144,12 +146,12 @@ msgstr ""
 "lukke alle andre pakkebehandlere før du vil kunne installere eller fjerne "
 "noen pakker."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:240
+#: utils/qapt-gst-helper/PluginHelper.cpp:243
 msgctxt "@title:window"
 msgid "Unable to obtain package system lock"
 msgstr "Klarte ikke å låse pakkesystemet"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:246
+#: utils/qapt-gst-helper/PluginHelper.cpp:248
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -159,35 +161,45 @@ msgstr ""
 "Det er ikke nok diskplass i mappa %1 til å kunne fortsette med denne "
 "handlingen."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:248
+#: utils/qapt-gst-helper/PluginHelper.cpp:250
 msgctxt "@title:window"
 msgid "Low disk space"
 msgstr "Lite diskplass"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:253
+#: utils/qapt-gst-helper/PluginHelper.cpp:254
 msgctxt "@label"
 msgid "Could not download packages"
 msgstr "Kunne ikke laste ned pakker"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:254
+#: utils/qapt-gst-helper/PluginHelper.cpp:255
 msgctxt "@title:window"
 msgid "Download failed"
 msgstr "Nedlasting mislyktes"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:262
+#: utils/qapt-gst-helper/PluginHelper.cpp:260
+msgctxt "@label"
+msgid "An error occurred while applying changes:"
+msgstr "Det oppsto en feil da endringer ble tatt i bruk:"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:261
+msgctxt "@title:window"
+msgid "Commit Error"
+msgstr "Feil ved commit"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:267
 msgctxt "@label"
 msgid ""
 "This operation cannot continue since proper authorization was not provided"
 msgstr ""
 "Denne handlingen kan ikke fortsette siden det ikke ble oppgitt riktig "
-"autorisering"
+"autorisasjon"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:264
+#: utils/qapt-gst-helper/PluginHelper.cpp:269
 msgctxt "@title:window"
 msgid "Authentication error"
 msgstr "Autentiseringsfeil"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:268
+#: utils/qapt-gst-helper/PluginHelper.cpp:273
 msgctxt "@label"
 msgid ""
 "It appears that the QApt worker has either crashed or disappeared. Please "
@@ -196,12 +208,12 @@ msgstr ""
 "Det ser ut til at QApt-arbeideren har enten krasjet eller forsvunnet. Meld "
 "inn en feil til QApt-vedlikeholderne"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:270
+#: utils/qapt-gst-helper/PluginHelper.cpp:275
 msgctxt "@title:window"
 msgid "Unexpected Error"
 msgstr "Uventet feil"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:278
+#: utils/qapt-gst-helper/PluginHelper.cpp:283
 msgctxt "@label"
 msgid ""
 "The following package has not been verified by its author. Downloading "
@@ -216,12 +228,12 @@ msgstr[1] ""
 "Følgende pakker er ikke verifisert av forfatteren Det gjeldende oppsettet "
 "tillater ikke å laste ned ikke tiltrodde pakker."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:287
+#: utils/qapt-gst-helper/PluginHelper.cpp:292
 msgctxt "@title:window"
 msgid "Untrusted Packages"
 msgstr "Ikke tiltrodde pakker"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:295
+#: utils/qapt-gst-helper/PluginHelper.cpp:299
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -231,38 +243,28 @@ msgstr ""
 "Pakka «%1» ble ikke funnet i dine programvarekilder, derfor kan den ikke "
 "installeres."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:298
+#: utils/qapt-gst-helper/PluginHelper.cpp:302
 msgctxt "@title:window"
 msgid "Package Not Found"
 msgstr "Fant ikke pakka"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:319
-msgctxt "@label"
-msgid "The size of the downloaded items did not equal the expected size."
-msgstr "Størrelsen på nedlastingene var ikke lik forventede størrelser."
-
-#: utils/qapt-gst-helper/PluginHelper.cpp:321
-msgctxt "@title:window"
-msgid "Size Mismatch"
-msgstr "Størrelsesfeil"
-
-#: utils/qapt-gst-helper/PluginHelper.cpp:345
+#: utils/qapt-gst-helper/PluginHelper.cpp:316
 msgctxt "@title:window"
 msgid "Media Change Required"
 msgstr "Må bytte medium"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:346
+#: utils/qapt-gst-helper/PluginHelper.cpp:317
 #, kde-format
 msgctxt "@label"
 msgid "Please insert %1 into <filename>%2</filename>"
 msgstr "Sett inn %1 i <filename>%2</filename>"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:355
+#: utils/qapt-gst-helper/PluginHelper.cpp:326
 msgctxt "@title:window"
 msgid "Warning - Unverified Software"
 msgstr "Advarsel – uverifisert programvare"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:357
+#: utils/qapt-gst-helper/PluginHelper.cpp:328
 msgctxt "@label"
 msgid ""
 "The following piece of software cannot be verified. <warning>Installing "
@@ -283,83 +285,82 @@ msgstr[1] ""
 "sikkerhetsrisiko å installere programvare som ikke er verifisert, for det "
 "kan være et tegn på at den er klusset med.</warning> Vil du fortsette?"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:398
+#: utils/qapt-gst-helper/PluginHelper.cpp:357
+msgctxt "@label Progress bar label when waiting to start"
+msgid "Waiting to start."
+msgstr "Venter på å starte."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:362
+msgctxt "@label Status label when waiting for a password"
+msgid "Waiting for authentication."
+msgstr "Venter på autentisering."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:367
+msgctxt "@label Status label when waiting for a CD-ROM"
+msgid "Waiting for required media."
+msgstr "Venter på nødvendige media."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:372
+msgctxt "@label Status label"
+msgid "Waiting for other package managers to quit."
+msgstr "Venter på at andre pakkebehandlere skal avslutte."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:380
+msgctxt "@label Status label"
+msgid "Loading package cache."
+msgstr "Laster pakke-mellomlager."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:383
 msgctxt "@title:window"
 msgid "Downloading"
 msgstr "Laster ned"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:399
+#: utils/qapt-gst-helper/PluginHelper.cpp:384
 msgctxt "@info:status"
 msgid "Downloading codecs"
 msgstr "Laster ned kodeker"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:406
+#: utils/qapt-gst-helper/PluginHelper.cpp:387
 msgctxt "@title:window"
-msgid "Installing Codecs"
-msgstr "Installerer kodeker"
+msgid "Installing"
+msgstr "Installerer"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:418
-msgctxt "@title:window"
-msgid "Installation Complete"
-msgstr "Installasjonen fullført"
+#: utils/qapt-gst-helper/PluginHelper.cpp:388
+msgctxt "@info:status"
+msgid "Installing codecs"
+msgstr "nstallerer kodeker"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:422
+#: utils/qapt-gst-helper/PluginHelper.cpp:395
 msgctxt "@label"
 msgid "Package installation finished with errors."
-msgstr "Pakkeinstallasjonen ferdig, med feil."
+msgstr "Pakkeinstalleringen ferdig, med feil."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:425
+#: utils/qapt-gst-helper/PluginHelper.cpp:396
+msgctxt "@title:window"
+msgid "Installation Failed"
+msgstr "Installering mislyktes"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:398
 msgctxt "@label"
 msgid "Codecs successfully installed"
 msgstr "Kodeker vellykket installert"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:439
-msgctxt "@label"
-msgid "Unable to download the following packages:"
-msgstr "Klarte ikke å laste ned følgende pakker:"
-
-#: utils/qapt-gst-helper/PluginHelper.cpp:444
-#, kde-format
-msgctxt "@label"
-msgid ""
-"Failed to download %1\n"
-"%2\n"
-"\n"
-msgstr ""
-"Klarte ikke laste ned %1\n"
-"%2\n"
-"\n"
-
-#: utils/qapt-gst-helper/PluginHelper.cpp:447
+#: utils/qapt-gst-helper/PluginHelper.cpp:399
 msgctxt "@title:window"
-msgid "Some Packages Could not be Downloaded"
-msgstr "Noen pakker kunne ikke lastes ned"
+msgid "Installation Complete"
+msgstr "Installeringen fullført"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:454
-msgctxt "@label"
-msgid "An error occurred while applying changes:"
-msgid_plural "The following errors occurred while applying changes:"
-msgstr[0] "Det oppsto en feil da endringer ble tatt i bruk:"
-msgstr[1] "Følgende feil oppstod mens endringer ble tatt i bruk:"
+#: utils/qapt-gst-helper/PluginHelper.cpp:436
+msgctxt "@info"
+msgid "No plugins could be found"
+msgstr "Kunne ikke finne noen programtillegg"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:458
-#, kde-format
-msgctxt "@label Shows which package failed"
-msgid "Package: %1"
-msgstr "Pakke: %1"
+#: utils/qapt-gst-helper/PluginHelper.cpp:437
+msgctxt "@title"
+msgid "Plugins Not Found"
+msgstr "Fant ikke programtillegg"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:459
-#, kde-format
-msgctxt "@label Shows the error"
-msgid "Error: %1"
-msgstr "Feil: %1"
-
-#: utils/qapt-gst-helper/PluginHelper.cpp:463
-msgctxt "@title:window"
-msgid "Commit error"
-msgstr "Feil ved commit"
-
-#: utils/qapt-gst-helper/PluginHelper.cpp:513
+#: utils/qapt-gst-helper/PluginHelper.cpp:499
 msgctxt "@label Progress bar label when waiting to start"
 msgid "Waiting"
 msgstr "Venter"

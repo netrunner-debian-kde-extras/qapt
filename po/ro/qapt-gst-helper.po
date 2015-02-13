@@ -1,0 +1,397 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Sergiu Bivol <sergiu@ase.md>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-12-14 07:45+0000\n"
+"PO-Revision-Date: 2012-12-26 13:46+0200\n"
+"Last-Translator: Sergiu Bivol <sergiu@ase.md>\n"
+"Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: utils/qapt-gst-helper/main.cpp:33
+msgctxt "@info"
+msgid "A GStreamer codec installer using QApt"
+msgstr "Instalator de codecuri GStreamer ce folosește QApt"
+
+#: utils/qapt-gst-helper/main.cpp:43
+msgctxt "@title"
+msgid "QApt Codec Searcher"
+msgstr "Căutător de codecuri QApt"
+
+#: utils/qapt-gst-helper/main.cpp:47
+msgctxt "@info:credit"
+msgid "(C) 2011 Jonathan Thomas"
+msgstr "(C) 2011 Jonathan Thomas"
+
+#: utils/qapt-gst-helper/main.cpp:49
+msgctxt "@info:credit"
+msgid "Jonathan Thomas"
+msgstr "Jonathan Thomas"
+
+#: utils/qapt-gst-helper/main.cpp:52
+msgctxt "@info:credit"
+msgid "Harald Sitter"
+msgstr ""
+
+#: utils/qapt-gst-helper/main.cpp:53
+msgctxt "@info:credit"
+msgid "Qt 5 port"
+msgstr ""
+
+#: utils/qapt-gst-helper/main.cpp:61
+msgctxt "@info:shell"
+msgid "Attaches the window to an X app specified by winid"
+msgstr "Atașează fereastra la o aplicație X specificată de „winid”"
+
+#: utils/qapt-gst-helper/main.cpp:62
+msgctxt "@info:shell value name"
+msgid "winid"
+msgstr ""
+
+#: utils/qapt-gst-helper/main.cpp:66
+msgctxt "@info:shell"
+msgid "GStreamer install info"
+msgstr "Informații de instalare GStreamer"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:86
+msgctxt "@info Error message"
+msgid "No valid plugin info was provided, so no plugins could be found."
+msgstr ""
+"Nu au fost furnizate informații valide despre extensii, de aceea extensiile "
+"nu au putut fi găsite."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:89
+msgctxt "@title:window"
+msgid "Couldn't Find Plugins"
+msgstr "Extensiile nu au fost găsite"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:95
+msgctxt "@info:progress"
+msgid "Looking for plugins"
+msgstr "Se caută extensii"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:129
+#: utils/qapt-gst-helper/PluginHelper.cpp:244
+msgctxt "@label"
+msgid ""
+"The package system could not be initialized, your configuration may be "
+"broken."
+msgstr ""
+"Sistemul de pachete nu a putut fi inițializat. Configurația dumneavoastră "
+"poate fi deteriorată."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:131
+#: utils/qapt-gst-helper/PluginHelper.cpp:246
+msgctxt "@title:window"
+msgid "Initialization error"
+msgstr "Eroare de inițializare"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:146
+#, kde-format
+msgid ""
+"The following plugin is required: <ul><li>%2</li></ul>Do you want to search "
+"for this now?"
+msgid_plural ""
+"The following plugins are required: <ul><li>%2</li></ul>Do you want to "
+"search for these now?"
+msgstr[0] ""
+"Următoarea extensie este necesară: <ul><li>%2</li></ul>Doriți s-o căutați "
+"acum?"
+msgstr[1] ""
+"Următoarele extensii sînt necesare: <ul><li>%2</li></ul>Doriți să le căutați "
+"acum?"
+msgstr[2] ""
+"Următoarele extensii sînt necesare: <ul><li>%2</li></ul>Doriți să le căutați "
+"acum?"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:158
+msgctxt "A program for which we have no name"
+msgid "A program"
+msgstr "Un program"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:165
+#, kde-format
+msgid "%2 requires an additional plugin to encode this file"
+msgid_plural "%2 requires additional plugins to encode this file"
+msgstr[0] "%2 cere o extensie suplimentară pentru a codifica acest fișier"
+msgstr[1] "%2 cere extensii suplimentare pentru a codifica acest fișier"
+msgstr[2] "%2 cere extensii suplimentare pentru a codifica acest fișier"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:171
+#, kde-format
+msgid "%2 requires an additional plugin to decode this file"
+msgid_plural "%2 requires additional plugins to decode this file"
+msgstr[0] "%2 cere o extensie suplimentară pentru a decodifica acest fișier"
+msgstr[1] "%2 cere extensii suplimentare pentru a decodifica acest fișier"
+msgstr[2] "%2 cere extensii suplimentare pentru a decodifica acest fișier"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:183
+msgctxt "Search for packages"
+msgid "Search"
+msgstr "Caută"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:209
+msgid "Confirm Changes"
+msgstr "Confirmă modificările"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:210
+msgid "Install the following package?"
+msgid_plural "Install the following packages?"
+msgstr[0] "Instalați următorul pachet?"
+msgstr[1] "Instalați următoarele pachete?"
+msgstr[2] "Instalați următoarele pachete?"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:215
+msgctxt "Install packages"
+msgid "Install"
+msgstr "Instalează"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:254
+msgctxt "@label"
+msgid ""
+"Another application seems to be using the package system at this time. You "
+"must close all other package managers before you will be able to install or "
+"remove any packages."
+msgstr ""
+"Se pare că altă aplicație folosește sistemul de pachete în acest moment. "
+"Trebuie să închideți toți ceilalți administratori de pachete înainte să "
+"puteți adăuga sau elimina vreun pachet."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:258
+msgctxt "@title:window"
+msgid "Unable to obtain package system lock"
+msgstr "Nu se poate obține blocarea sistemului de pachete"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:263
+#, kde-format
+msgctxt "@label"
+msgid ""
+"You do not have enough disk space in the directory at %1 to continue with "
+"this operation."
+msgstr ""
+"Nu aveți destul spațiu disponibil în dosarul din %1 pentru a continua "
+"această operație."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:265
+msgctxt "@title:window"
+msgid "Low disk space"
+msgstr "Spațiu insuficient"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:269
+msgctxt "@label"
+msgid "Could not download packages"
+msgstr "Pachetele nu au putut fi descărcate"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:270
+msgctxt "@title:window"
+msgid "Download failed"
+msgstr "Descărcare eșuată"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:275
+msgctxt "@label"
+msgid "An error occurred while applying changes:"
+msgstr "A intervenit o eroare în timpul aplicării modificărilor:"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:276
+msgctxt "@title:window"
+msgid "Commit Error"
+msgstr "Eroare de comitere"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:282
+msgctxt "@label"
+msgid ""
+"This operation cannot continue since proper authorization was not provided"
+msgstr ""
+"Această operație nu poate continua deoarece nu au fost furnizate "
+"autorizările necesare"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:284
+msgctxt "@title:window"
+msgid "Authentication error"
+msgstr "Eroare de autentificare"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:288
+msgctxt "@label"
+msgid ""
+"It appears that the QApt worker has either crashed or disappeared. Please "
+"report a bug to the QApt maintainers"
+msgstr ""
+"Se pare că lucrătoarea QApt s-a blocat sau a dispărut. Raportați o eroare "
+"către dezvoltatorii QApt."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:290
+msgctxt "@title:window"
+msgid "Unexpected Error"
+msgstr "Eroare neașteptată"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:298
+msgctxt "@label"
+msgid ""
+"The following package has not been verified by its author. Downloading "
+"untrusted packages has been disallowed by your current configuration."
+msgid_plural ""
+"The following packages have not been verified by their authors. Downloading "
+"untrusted packages has been disallowed by your current configuration."
+msgstr[0] ""
+"Următorul pachet nu a fost verificat de către autorul său. Descărcarea "
+"pachetelor nesigure a fost interzisă de configurația dumneavoastră actuală."
+msgstr[1] ""
+"Următoarele pachete nu au fost verificate de către autorul lor. Descărcarea "
+"pachetelor nesigure a fost interzisă de configurația dumneavoastră actuală."
+msgstr[2] ""
+"Următoarele pachete nu au fost verificate de către autorul lor. Descărcarea "
+"pachetelor nesigure a fost interzisă de configurația dumneavoastră actuală."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:307
+msgctxt "@title:window"
+msgid "Untrusted Packages"
+msgstr "Pachete nesigure"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:314
+#, kde-format
+msgctxt "@label"
+msgid ""
+"The package \"%1\" has not been found among your software sources. "
+"Therefore, it cannot be installed. "
+msgstr ""
+"Pachetul „%1” nu a fost găsit printre sursele dumneavoastră de programe. De "
+"aceea, nu poate fi instalat. "
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:317
+msgctxt "@title:window"
+msgid "Package Not Found"
+msgstr "Pachetul nu a fost găsit"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:331
+msgctxt "@title:window"
+msgid "Media Change Required"
+msgstr "Este necesară schimbarea mediului"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:332
+#, kde-format
+msgctxt "@label"
+msgid "Please insert %1 into <filename>%2</filename>"
+msgstr "Introduceți %1 în <filename>%2</filename>"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:341
+msgctxt "@title:window"
+msgid "Warning - Unverified Software"
+msgstr "Atenție - Programe neverificate"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:343
+msgctxt "@label"
+msgid ""
+"The following piece of software cannot be verified. <warning>Installing "
+"unverified software represents a security risk, as the presence of "
+"unverifiable software can be a sign of tampering.</warning> Do you wish to "
+"continue?"
+msgid_plural ""
+"The following pieces of software cannot be authenticated. "
+"<warning>Installing unverified software represents a security risk, as the "
+"presence of unverifiable software can be a sign of tampering.</warning> Do "
+"you wish to continue?"
+msgstr[0] ""
+"Următorul program nu poate fi verificat. <warning>Instalarea programelor "
+"neverificate prezintă un risc de securitate, întrucît prezența programelor "
+"ce nu pot fi verificate poate fi un semn de corupere.</warning> Doriți să "
+"continuați?"
+msgstr[1] ""
+"Următoarele programe nu pot fi autentificate. <warning>Instalarea "
+"programelor neverificate prezintă un risc de securitate, întrucît prezența "
+"programelor ce nu pot fi verificate poate fi un semn de corupere.</warning> "
+"Doriți să continuați?"
+msgstr[2] ""
+"Următoarele programe nu pot fi autentificate. <warning>Instalarea "
+"programelor neverificate prezintă un risc de securitate, întrucît prezența "
+"programelor ce nu pot fi verificate poate fi un semn de corupere.</warning> "
+"Doriți să continuați?"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:372
+msgctxt "@label Progress bar label when waiting to start"
+msgid "Waiting to start."
+msgstr "Se așteaptă pornirea."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:377
+msgctxt "@label Status label when waiting for a password"
+msgid "Waiting for authentication."
+msgstr "Se așteaptă autentificarea."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:382
+msgctxt "@label Status label when waiting for a CD-ROM"
+msgid "Waiting for required media."
+msgstr "Se așteaptă suportul cerut."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:387
+msgctxt "@label Status label"
+msgid "Waiting for other package managers to quit."
+msgstr "Se așteaptă închiderea altor administratori de pachete."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:395
+msgctxt "@label Status label"
+msgid "Loading package cache."
+msgstr "Se încarcă cache-ul de pachete."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:398
+msgctxt "@title:window"
+msgid "Downloading"
+msgstr "Se descarcă"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:399
+msgctxt "@info:status"
+msgid "Downloading codecs"
+msgstr "Se descarcă codecuri"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:402
+msgctxt "@title:window"
+msgid "Installing"
+msgstr "Se instalează"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:403
+msgctxt "@info:status"
+msgid "Installing codecs"
+msgstr "Se instalează codecuri"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:409
+msgctxt "@label"
+msgid "Package installation finished with errors."
+msgstr "Instalarea pachetelor s-a încheiat cu erori."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:410
+msgctxt "@title:window"
+msgid "Installation Failed"
+msgstr "Instalarea a eșuat"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:412
+msgctxt "@label"
+msgid "Codecs successfully installed"
+msgstr "Codecuri instalate cu succes"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:413
+msgctxt "@title:window"
+msgid "Installation Complete"
+msgstr "Instalare încheiată"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:449
+msgctxt "@info"
+msgid "No plugins could be found"
+msgstr "Nu au fost găsite extensii"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:450
+msgctxt "@title"
+msgid "Plugins Not Found"
+msgstr "Extensiile nu au fost găsite"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:512
+msgctxt "@label Progress bar label when waiting to start"
+msgid "Waiting"
+msgstr "Se așteaptă"

@@ -1,12 +1,132 @@
-1.4.1:
+2.2.0:
+======
+- Features:
+  * Handles multiple sources.list-formatted files
+  * Supports arbitrary sources.list loading, parsing, and writing
+    (meaning you can load any source file directly, or use the default set.)
+  * Added the ability to query a list of all loaded sources.list files.
+  * You can now fetch only the files for a specific repository.
+  * gstreamer1.0 port completed by Harald Sitter
+  * Dropped qtgstreamer in favor of native gstreamer API
+- Bugfixes:
+  * There was a bug in the unreleased alpha where removing all entries from
+    any file could potentially result in overwriting the defaulatet /etc/apt/sources.list.
+  * Various minor (but important) bug fixes (Harald)
+
+2.1: (as of 2.1 alpha, unreleased)
+======
+- Features:
+  * Added a new SourcesList class for manipulating APT source list files.
+  * Added a new SourceEntry class for manipulating individual APT sources within source list
+    files.
+  * Added a "frontend capabilities" API which frontends use to advertise which forms of user
+    interaction they support during the commit process. (Config file conflict, untrusted packages
+    prompt, debconf, etc) This will prevent frontends that don't explicitly support these
+    interactions from hanging the commit process indefinitely.
+  * Add support for the new Synaptic marking file syntax (BKO: #314549)
+- Bugfixes:
+  * Stop leaking a file descriptor when reading APT pin files.
+  * Stop taking the address of a temporary variable in the package search function.
+
+2.0.1:
 ======
 - Bugfixes:
-  * Fixed a small memory leak where invalid QApt::HistoryItems would never be deleted.
-  * Fixed a bug where apt-listchanges and apt-listbugs would freeze the QApt Worker.
-  * Fixed Package::priority() returning an empty QString
-  * Fixed Backend::xapianIndexNeedsUpdate() always returning true, even if an
-    update wasn't needed.
-  * Fixed API documentation formatting for QApt::MultiArchType
+  * Fixed a crash that could occur if an empty cache state is passed to
+    Backend::stateChanges(). An empty change set is returned in this case.
+
+2.0
+======
+- Release Notes:
+  * This release includes API/ABI changes, that, while mostly source compatible, aren't
+    100% compatible with code written aginst LibQApt 1.x. Additionally, code that invokes
+    asynchronous worker actions will need more code to work now.
+- Features:
+  * New transaction-based worker API. Asyncronous actions run by the QApt Worker are now
+    tracked with QApt::Transaction objects. The worker transactions can be tracked and
+    controlled through the transaction object, and the transaction object will also signal
+    property/state changes for the worker transaction. This fixes the long-standing issue of
+    the QApt Backend listening for worker signals globally, potentially broadcasting information
+    about a worker action initiated by another QApt frontend.
+  * The new QApt Worker queues transactions as dispatched by either a single frontend or from
+    multiple frontends.
+  * If a non-QApt package manager such as apt-get, synaptic, aptdaemon, etc currently has a lock
+    on the package system, the QApt Worker will wait until it can obtain the lock instead of
+    immediately failing.
+  * Added a new class QApt::DownloadProgress to replace the global download progress signal in
+    QApt::Backend. Instances of QApt::Transaction will emit DownloadProgress objects to report
+    new progress information for a file the QApt Worker is downloading. (E.g. a package file,
+    on in the case of a cache update, package information lists.)
+  * QApt::ChangelogEntry now has a CVEUrls() method to return a list of urls to websites
+    describing vulnerability exploits which the version specified in the changelog entry fixes.
+  * Backend::init() and Backend::reload() now return a boolean value based on whether or not
+    the backend could be (re)initialized. If not, an error message can be retrieved through the
+    new Backend::initErrorMessage() method. If init() or reload() return false, applications
+    should immediately exit.
+  * The QApt::Backend constructor now takes a QObject parameter to use as a parent, removing the
+    need for manual deletion. (This could perhaps be considered a bug that it didn't before...)
+  * Added API to QApt::DependencyInfo analgous to libapt-pkg's pkgCache::DepType() static method
+    for obtaining a user-readable string from a QApt::DependencyType.
+- API changes:
+  * The Cache class was removed. It really had no external uses and now is a trivial wrapper
+    around libapt-pkg's pkgCacheFile with a few additions for internal use.
+  * The Backend::workerEvent() signal and Backend::workerState() method have been removed.
+    The new Transaction object reports state changes on a per-transaction basis now.
+  * Similarly, Backend::errorOccurred() and Backend::workerQuestion() have been replaced by
+    analogous code in the Transaction class.
+  * The Backend::setProxy() and setLocale() functions have been removed. Proxy and locale are now
+    set on a per-transaction basis via the QApt::Transaction class.
+  * Global signals for download/commit progress in QApt::Backend have been replaced by signals in
+    the Transaction class for reporting info on a per-transaction basis.
+  * The already-deprecated Backend::downloadMessage() signal was removed.
+  * The Backend::packageChanged() signal no longer emits a pointer to the package that changed.
+    There wasn't much use in emitting a pointer to the package just changed, as there was no
+    garuantee that it was the only package that had changed (without doing expensive checks on
+    every package), which meant that you had to assume that everything had changed.
+  * Added a Backend::upgradeSystem() method that starts a worker transaction to upgrade all
+    upgradeable packages. This is useful if you want to run a commit that will only upgrade
+    packages, and will result in faster upgrade marking in the worker.
+  * Added a new MarkingErrorInfo class to replace the QHash<int, QHash<QString, QVariantMap> >
+    mess that Package::brokenReason() returned. The new class features a much nicer API.
+  * Package::supportedUntil() now returns a QDateTime to allow localization in KDE applications.
+- Bugfixes:
+  * QApt::Backend will no longer emit progress information for worker actions not initiated by
+    your application. (By virtue of not emitting progress information at all. Info is now emitted
+    on a per-transaction basis.) This fixes a bunch of potential crashes where applications
+    inappropriately react to worker state changes. (Muon worked around a bunch of these,
+    but not all) (BKO: #305277, #307951)
+  * Frontends can gracefully wait in line to use the QApt Worker (BKO: #274262)
+  * The dependencies of an application marked for installation are now properly marked as
+    auto-installed. (Before they weren't, which means they couldn't be autoremoved after all
+    packages depending on them had been removed)
+- Optimizations:
+  * Public functions that took references to QLatin1String objects now take QLatin1String objects
+    passed by value. A QLatin1String is nothing more than a char pointer with some convenience
+    functions, so passing them by reference is really just introducing a double-indirection to get
+    to the char pointer. (API change, should be source compatible)
+  * QApt::Backend::origin() takes a const reference to a QString instead of a QString passed by
+    value, preventing the need to copy the QString given as a parameter. (API change, source
+    compatible)
+  * Package::name() and Package::section() have been changed to return QLatin1Strings, using the
+    implementations of the the latin1Name() and latin1Section() methods, which have been removed.
+    (API change, usage of latin1Name() and latin1Section() should be changed to name() and
+    section(). additionally, current usage that depends on the rvalues of name() and section()
+    being QString need to be changed to first assign the result of name() or section() to a
+    QString variable before running QString methods.
+  * HistoryItems are now implicitly shared, copy-on-write objects. This makes copying HistoryItem
+    instances around very cheap, and allows us to not need to use pointers to share access to them.
+    (The History class now returns QList<HistoryItem> vs QList<HistoryItem *>)
+  * Upgradeable packages that have not been marked for upgrade are no longer sent to the worker,
+    for consideration when committing packages. This speeds up the dependency calculation for
+    a commit involving a handful of packages, when hundreds of upgrades are also available.
+  * Make QApt::Package constructing faster by storing the APT pkgIterator as a member variable
+    in PackagePrivate, rather than having a pointer to a pkgIterator and storing the pkgIterator
+    on the heap. Does not appreciably reduce memory usage, but reduced the number of times a
+    heap memory allocation is performed.
+  * Small speed optimizations to Backend::stateChanges()
+  * Qt containers such as QList specialized for QApt types are now declared as movable, decreasing
+    the amount of memory used to store these containers.
+  * Small optimization in Package::setVersion()
+
 
 1.4.0
 ======

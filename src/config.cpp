@@ -18,7 +18,7 @@
  *   along with this program.  If not, see <http://www.gnu.org/licenses/>. *
  ***************************************************************************/
 
-#include "config.h"
+#include "config.h" // krazy:exclude=includes
 
 // Qt includes
 #include <QtCore/QByteArray>
@@ -32,7 +32,7 @@
 #include <apt-pkg/configuration.h>
 
 // Own includes
-#include "workerdbus.h" // OrgKubuntuQaptworkerInterface
+#include "dbusinterfaces_p.h"
 
 namespace QApt {
 
@@ -42,7 +42,7 @@ class ConfigPrivate
 {
     public:
         // DBus
-        OrgKubuntuQaptworkerInterface *worker;
+        WorkerInterface *worker;
 
         // Data
         QByteArray buffer;
@@ -53,7 +53,7 @@ class ConfigPrivate
 
 void ConfigPrivate::writeBufferEntry(const QByteArray &key, const QByteArray &value)
 {
-    unsigned int lineIndex = 0;
+    int lineIndex = 0;
     bool changed = false;
 
     QList<QByteArray> lines = buffer.split('\n');
@@ -115,9 +115,9 @@ Config::Config(QObject *parent)
 {
     Q_D(Config);
 
-    d->worker = new OrgKubuntuQaptworkerInterface(QLatin1String("org.kubuntu.qaptworker"),
-                                                  QLatin1String("/"), QDBusConnection::systemBus(),
-                                                  this);
+    d->worker = new WorkerInterface(QLatin1String(s_workerReverseDomainName),
+                                    QLatin1String("/"), QDBusConnection::systemBus(),
+                                    this);
 
     QFile file(APT_CONFIG_PATH);
 
@@ -186,10 +186,10 @@ void Config::writeEntry(const QString &key, const bool value)
         d->buffer.append(key + ' ' + boolString);
         d->newFile = false;
     } else {
-        d->writeBufferEntry(key.toAscii(), boolString);
+        d->writeBufferEntry(key.toLatin1(), boolString);
     }
 
-    _config->Set(key.toStdString().c_str(), value);
+    _config->Set(key.toLatin1(), value);
     d->worker->writeFileToDisk(QString(d->buffer), APT_CONFIG_PATH);
 }
 
@@ -199,16 +199,16 @@ void Config::writeEntry(const QString &key, const int value)
 
     QByteArray intString;
 
-    intString = '\"' + QString::number(value).toAscii() + "\";";
+    intString = '\"' + QString::number(value).toLatin1() + "\";";
 
     if (d->newFile) {
-        d->buffer.append(key.toAscii() + ' ' + intString);
+        d->buffer.append(key.toLatin1() + ' ' + intString);
         d->newFile = false;
     } else {
-        d->writeBufferEntry(key.toAscii(), intString);
+        d->writeBufferEntry(key.toLatin1(), intString);
     }
 
-    _config->Set(key.toStdString().c_str(), value);
+    _config->Set(key.toLatin1(), value);
     d->worker->writeFileToDisk(QString(d->buffer), APT_CONFIG_PATH);
 }
 
@@ -218,13 +218,13 @@ void Config::writeEntry(const QString &key, const QString &value)
 
     QByteArray valueString;
 
-    valueString = '\"' + value.toAscii() + "\";";
+    valueString = '\"' + value.toLatin1() + "\";";
 
     if (d->newFile) {
         d->buffer.append(key + ' ' + valueString);
         d->newFile = false;
     } else {
-        d->writeBufferEntry(key.toAscii(), valueString);
+        d->writeBufferEntry(key.toLatin1(), valueString);
     }
 
     _config->Set(key.toStdString(), value.toStdString());

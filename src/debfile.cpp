@@ -29,7 +29,6 @@
 #include <apt-pkg/fileutl.h>
 #include <apt-pkg/md5.h>
 #include <apt-pkg/tagfile.h>
-#include <apt-pkg/md5.h>
 
 #include <QDebug>
 
@@ -39,9 +38,9 @@ class DebFilePrivate
 {
     public:
         DebFilePrivate(const QString &path)
-            : filePath(path)
+            : isValid(false)
+            , filePath(path)
             , extractor(0)
-            , isValid(true)
         {
             init();
         }
@@ -65,10 +64,18 @@ void DebFilePrivate::init()
     debDebFile deb(in);
 
     // Extract control data
-    extractor = new debDebFile::MemControlExtract("control");
-    if(!extractor->Read(deb)) {
-      isValid = false;
-      return;
+    try {
+        extractor = new debDebFile::MemControlExtract("control");
+        if(!extractor->Read(deb)) {
+            return; // not valid.
+        } else {
+            isValid = true;
+        }
+    } catch (...) {
+        // MemControlExtract likes to throw out of range exceptions when it
+        // encounters an invalid file. Catch those to prevent the application
+        // from exploding.
+        return;
     }
 
     controlData = extractor->Section;
@@ -179,7 +186,7 @@ QString DebFile::controlField(const QLatin1String &field) const
 
 QString DebFile::controlField(const QString &field) const
 {
-    return controlField(QLatin1String(field.toStdString().c_str()));
+    return controlField(QLatin1String(field.toLatin1()));
 }
 
 QByteArray DebFile::md5Sum() const

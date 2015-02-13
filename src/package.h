@@ -32,12 +32,10 @@
 #include "dependencyinfo.h"
 #include "globals.h"
 
-class pkgRecords;
-class pkgDepCache;
-
 namespace QApt {
 
 class Backend;
+class MarkingErrorInfo;
 
 /**
  * PackagePrivate is a class containing all private members of the Package class
@@ -56,50 +54,16 @@ class Q_DECL_EXPORT Package
 
 public:
    /**
-    * Constructor. You will most likely never use this, and it will probably
-    * become private in QApt2.
-    *
-    * @param parent The backend that this package is being made a child of
-    * @param depcache The underlying dependency cache for fetching some info
-    * @param records The underlying package records for fetching some info
-    * @param packageIter The underlying object representing the package in APT
+    * Destructor.
     */
-    // TODO: QApt2: Remove unused pkgRecords param
-    Package(QApt::Backend* parent, pkgDepCache *depcache,
-            pkgRecords *records, pkgCache::PkgIterator &packageIter);
-
-   /**
-    * Default destructor
-    */
-    // TODO: QApt2: Nope
-    virtual ~Package();
-
-   /**
-    * Returns the internal APT representation of the package
-    *
-    * \return The interal APT package pointer
-    */
-    pkgCache::PkgIterator *packageIterator() const;
+    ~Package();
 
    /**
     * Returns the name of the package
     *
     * \return The name of the package
     */
-    QString name() const;
-
-    // TODO: QApt2: Get rid of QString impl. and rename latin1Name() to name()
-   /**
-    * Returns the name of the package. This is the better choice over the
-    * regular name() since a QLatin1String is much cheaper to construct
-    * than a QString, since we don't have to convert from ascii. QLatin1String
-    * can also be used everywhere a QString is needed.
-    *
-    * \return The name of the package as a \c QLatin1String
-    *
-    * @since 1.1
-    */
-    QLatin1String latin1Name() const;
+    QLatin1String name() const;
 
    /**
     * Returns the unique internal identifier for the package
@@ -156,27 +120,12 @@ public:
     */
     QStringList availableVersions() const;
 
-    // TODO: QApt2: Get rid of QString impl. and rename latin1Section() to
-    // section()
    /**
     * Returns the categorical section where the package resides
     *
     * \return The section of the package
     */
-    QString section() const;
-
-   // TODO: QApt2: Get rid of QString impl. and rename latin1Section() to section()
-   /**
-    * Returns the categorical section of the package. This is the better choice
-    * over the regular section() since a QLatin1String is much cheaper to construct
-    * than a QString, since we don't have to convert from ascii. QLatin1String can
-    * also be used everywhere a QString is needed.
-    *
-    * \return The name of the package as a \c QLatin1String
-    *
-    * @since 1.1
-    */
-    QLatin1String latin1Section() const;
+    QLatin1String section() const;
 
    /**
     * Returns the source package corresponding to the package
@@ -296,7 +245,6 @@ public:
     */
     QUrl screenshotUrl(QApt::ScreenshotType type) const;
 
-    // TODO: QApt2: Return a QDateTime so that KDE apps can localize
    /**
     * Returns the date when Canonical's support of the package ends.
     *
@@ -304,7 +252,7 @@ public:
     *         supported now, then it will return an empty QString. The date
     *         will be localized in the "month year" format.
     */
-    QString supportedUntil() const;
+    QDateTime supportedUntil() const;
 
    /**
     * Returns the specified field of the package's debian/control file
@@ -322,9 +270,9 @@ public:
     *
     * @since 1.1
     */
-    QString controlField(const QLatin1String &name) const;
+    QString controlField(QLatin1String name) const;
 
-    /** Overload for QString controlField(const QLatin1String &name) const; **/
+    /** Overload for QString controlField(QLatin1String name) const; **/
     QString controlField(const QString &name) const;
 
    /**
@@ -392,30 +340,6 @@ public:
     bool isSupported() const;
 
    /**
-    * Returns whether or not a package is MultiArch-enabled.
-    *
-    * This function was made under the false assumption that non-native
-    * binary packages were considered MultiArch by APT. This is not true,
-    * so this function was renamed to isForeignArch() and expanded to include
-    * non-native binary packages.
-    *
-    * The purpose of this function was originally to filter out multi-arch
-    * functions that duplicated native ones. Due to the false assumptions
-    * made, this both didn't work and managed to poorly describe a boolean
-    * system to describe multi-arch duplicated. It was therefore renamed and
-    * re-implemented as isMultiArchDuplicate(). This function now just returns
-    * whether or not the package is foreign-arch.
-    *
-    * @return the result of isForeignArch()
-    *
-    * @see isForeignArch()
-    * @see isMultiArchDuplicate()
-    *
-    * @since 1.2
-    */
-    QT_DEPRECATED bool isMultiArchEnabled() const;
-
-   /**
     * A package prepared for MultiArch can have any of three MultiArch "states"
     * that control how dpkg treats the package as a dependency. A package can
     * either be MultiArch: same, MultiArch: foreign, or MultiArch: Allowed.
@@ -474,22 +398,31 @@ public:
     */
     bool isForeignArch() const;
 
+    /// Returns a list of DependencyItems that this package depends on.
     QList<DependencyItem> depends() const;
 
+    /// Returns a list of DependencyItems that required to install this package.
     QList<DependencyItem> preDepends() const;
 
+    /// Returns a list of DependencyItems that this package suggests to be installed.
     QList<DependencyItem> suggests() const;
 
+    /// Returns a list of DependencyItems that this package recommends to be installed.
     QList<DependencyItem> recommends() const;
 
+    /// Returns a list of DependencyItems that conflict with this package
     QList<DependencyItem> conflicts() const;
 
+    /// Returns a list of DependencyItems that this package replaces.
     QList<DependencyItem> replaces() const;
 
+    /// Returns a list of DependencyItems that this package obsoletes.
     QList<DependencyItem> obsoletes() const;
 
+    /// Returns a list of DependencyItems that this package breaks.
     QList<DependencyItem> breaks() const;
 
+    /// Returns a list of DependencyItems that this package enhances.
     QList<DependencyItem> enhances() const;
 
    /**
@@ -544,23 +477,11 @@ public:
     QStringList enhancedByList() const;
 
    /**
-    * If a package is in a broke state, this function returns why the package
+    * If a package is in a broke state, this function returns a why the package
     * is broken by showing all errors in the dependency cache that marking the
     * package has caused.
-    *
-    * The format is a bit complex. The QHash contains a QHash corresponding to
-    * each QApt::BrokenReason. This internal QHash is a QString corresponding to
-    * a QVariantMap. The QString in this case is a package that is broken by this
-    * QApt::Package, and the QVariantMap contails details on why the corresponding
-    * package is broken. These details may vary based on what QApt::BrokenState
-    * the QHash corresponds to.
-    *
-    * \return A @c QHash of reasons why the package is broken, corresponding to a
-    * QApt::BrokenReason
     */
-    // TODO: QApt2: Get rid of this insane thing and use a proper OO scheme,
-    // perhaps something like DependencyInfo
-    QHash<int, QHash<QString, QVariantMap> > brokenReason() const;
+    QList<QApt::MarkingErrorInfo> brokenReason() const;
 
    /**
     * Returns whether the package is signed with a trusted GPG signature.
@@ -638,7 +559,7 @@ public:
         ToDowngrade         = 1 << 5,
         /// The package has been marked for removal
         ToRemove            = 1 << 6,
-        /// The package has been held from beinig upgraded
+        /// The package has been held from being upgraded
         Held                = 1 << 7,
         /// The package is currently installed
         Installed           = 1 << 8,
@@ -675,12 +596,39 @@ public:
         /// The package is not installed
         NotInstalled        = 1 << 24,
         /// The package has been pinned
-        IsPinned            = 1 << 25
+        IsPinned            = 1 << 25,
+        /// The package was auto-marked as a recommend, but then manually held
+        IsManuallyHeld      = 1 << 26
     };
-    Q_DECLARE_FLAGS(States, State);
+    Q_DECLARE_FLAGS(States, State)
 
 private:
     PackagePrivate *const d;
+
+    /**
+     * Internal constructor.
+     *
+     * @param parent The backend that this package is being made a child of
+     * @param packageIter The underlying object representing the package in APT
+     */
+     Package(QApt::Backend* parent, pkgCache::PkgIterator &packageIter);
+
+    /**
+     * Returns the internal APT representation of the package
+     *
+     * \return The interal APT package pointer
+     */
+     const pkgCache::PkgIterator &packageIterator() const;
+
+     /**
+      * Returns a set of state flags that won't change until the next
+      * cache reload, and excluding any flags that are able to change.
+      * Used internally to avoid having to calculate mutable flags when we know
+      * the flag we want to check is immutable.
+      */
+     int staticState() const;
+
+     friend class Backend;
 };
 
 /**

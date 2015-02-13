@@ -20,45 +20,64 @@
 
 #include "DebInstaller.h"
 
-#include <KApplication>
+#include <QApplication>
+#include <QCommandLineParser>
+#include <QIcon>
+#include <QPointer>
+
 #include <KAboutData>
-#include <KCmdLineArgs>
-#include <KLocale>
+#include <KLocalizedString>
 
 static const char description[] =
     I18N_NOOP2("@info", "A Debian package installer");
 
-static const char version[] = "1.4";
+static const char version[] = CMAKE_PROJECT_VERSION;
 
 int main(int argc, char **argv)
 {
-    KAboutData about("qapt-deb-installer", 0, ki18nc("@title", "QApt Package Installer"), version, ki18nc("@info", description),
-                     KAboutData::License_GPL, ki18nc("@info:credit", "(C) 2011 Jonathan Thomas"), KLocalizedString(), 0, "echidnaman@kubuntu.org");
-    about.addAuthor( ki18nc("@info:credit", "Jonathan Thomas"), KLocalizedString(), "echidnaman@kubuntu.org" );
-    about.setProgramIconName("applications-other");
-    KCmdLineArgs::init(argc, argv, &about);
+    QApplication app(argc, argv);
+    app.setWindowIcon(QIcon::fromTheme("applications-other"));
 
-    KCmdLineOptions options;
-    options.add("+[File]", ki18nc("@info:shell", ".deb file"));
-    KCmdLineArgs::addCmdLineOptions(options);
+    KLocalizedString::setApplicationDomain("qapt-deb-installer");
 
-    KApplication app;
+    KAboutData aboutData("qapt-deb-installer",
+                         i18nc("@title", "QApt Package Installer"),
+                         version,
+                         i18nc("@info", description),
+                         KAboutLicense::LicenseKey::GPL,
+                         i18nc("@info:credit", "(C) 2011 Jonathan Thomas"));
+
+    aboutData.addAuthor(i18nc("@info:credit", "Jonathan Thomas"),
+                        QString(),
+                        QStringLiteral("echidnaman@kubuntu.org"));
+    aboutData.addAuthor(i18nc("@info:credit", "Harald Sitter"),
+                        i18nc("@info:credit", "Qt 5 port"),
+                        QStringLiteral("apachelogger@kubuntu.org"));
+    KAboutData::setApplicationData(aboutData);
+
+    QCommandLineParser parser;
+    parser.addHelpOption();
+    parser.addVersionOption();
+    parser.addPositionalArgument("file",
+                                 i18nc("@info:shell argument", ".deb file"));
+    aboutData.setupCommandLine(&parser);
+    parser.process(app);
+    aboutData.processCommandLine(&parser);
 
     // do not restore!
     if (app.isSessionRestored()) {
         exit(0);
     }
 
-    KCmdLineArgs *args = KCmdLineArgs::parsedArgs();
     QString debFile;
 
-    if (args->count()) {
-        debFile = args->arg(0);
+    if (parser.positionalArguments().size() > 0) {
+        debFile = parser.positionalArguments().at(0);
     }
 
-    DebInstaller debInstaller(0, debFile);
+    QPointer<DebInstaller> debInstaller = new DebInstaller(0, debFile);
 
-    switch (debInstaller.exec()) {
+    switch (debInstaller->exec()) {
         case QDialog::Accepted:
             return 0;
             break;

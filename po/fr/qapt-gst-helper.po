@@ -1,70 +1,107 @@
 # translation of qapt-gst-helper.po to Français
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-# Joëlle Cornavin <jcorn@free.fr>, 2011, 2012.
+# Joëlle Cornavin <jcorn@free.fr>, 2011, 2012, 2013.
+# xavier <xavier.besnard@neuf.fr>, 2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: qapt-gst-helper\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-09 11:23+0100\n"
-"PO-Revision-Date: 2011-02-10 12:15+0100\n"
-"Last-Translator: Joëlle Cornavin <jcornavin_AT_laposte_DOT_net>\n"
-"Language-Team: French <kde-francophone@kde.orh>\n"
+"POT-Creation-Date: 2014-12-14 07:45+0000\n"
+"PO-Revision-Date: 2013-06-27 15:18+0200\n"
+"Last-Translator: xavier <xavier.besnard@neuf.fr>\n"
+"Language-Team: French <kde-i18n-doc@kde.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 1.5\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
 
-#: utils/qapt-gst-helper/main.cpp:31
+#: utils/qapt-gst-helper/main.cpp:33
 msgctxt "@info"
 msgid "A GStreamer codec installer using QApt"
-msgstr "Un programme d'installation de codecs pour GStreamer utilisant QApt"
+msgstr ""
+"Un programme d'installation de codecs pour GStreamer utilisant « QApt »"
 
-#: utils/qapt-gst-helper/main.cpp:37
+#: utils/qapt-gst-helper/main.cpp:43
 msgctxt "@title"
 msgid "QApt Codec Searcher"
-msgstr "Programme d'installation de codecs pour QApt"
+msgstr "Programme de recherche de codecs avec « QApt »"
 
-#: utils/qapt-gst-helper/main.cpp:38
+#: utils/qapt-gst-helper/main.cpp:47
 msgctxt "@info:credit"
 msgid "(C) 2011 Jonathan Thomas"
 msgstr "(C) 2011 Jonathan Thomas"
 
-#: utils/qapt-gst-helper/main.cpp:39
+#: utils/qapt-gst-helper/main.cpp:49
 msgctxt "@info:credit"
 msgid "Jonathan Thomas"
 msgstr "Jonathan Thomas"
 
-#: utils/qapt-gst-helper/main.cpp:44
+#: utils/qapt-gst-helper/main.cpp:52
+msgctxt "@info:credit"
+msgid "Harald Sitter"
+msgstr ""
+
+#: utils/qapt-gst-helper/main.cpp:53
+msgctxt "@info:credit"
+msgid "Qt 5 port"
+msgstr ""
+
+#: utils/qapt-gst-helper/main.cpp:61
 msgctxt "@info:shell"
 msgid "Attaches the window to an X app specified by winid"
-msgstr "Ancre la fenêtre à une application X spécifiée par « winid »"
+msgstr "Associe la fenêtre à une application X spécifiée par « winid »"
 
-#: utils/qapt-gst-helper/main.cpp:45
+#: utils/qapt-gst-helper/main.cpp:62
+msgctxt "@info:shell value name"
+msgid "winid"
+msgstr ""
+
+#: utils/qapt-gst-helper/main.cpp:66
 msgctxt "@info:shell"
 msgid "GStreamer install info"
 msgstr "Informations d'installation de GStreamer"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:82
+#: utils/qapt-gst-helper/PluginHelper.cpp:86
 msgctxt "@info Error message"
 msgid "No valid plugin info was provided, so no plugins could be found."
 msgstr ""
-"Aucune information sur le module externe valable n'ayant été fournie, aucun "
+"Aucune information valable sur le module externe n'ayant été fournie, aucun "
 "module externe n'a été trouvé."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:85
+#: utils/qapt-gst-helper/PluginHelper.cpp:89
 msgctxt "@title:window"
 msgid "Couldn't Find Plugins"
 msgstr "Impossible de trouver des modules externes"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:91
+#: utils/qapt-gst-helper/PluginHelper.cpp:95
 msgctxt "@info:progress"
 msgid "Looking for plugins"
 msgstr "Recherche de modules externes"
 
 #: utils/qapt-gst-helper/PluginHelper.cpp:129
+#: utils/qapt-gst-helper/PluginHelper.cpp:244
+msgctxt "@label"
+msgid ""
+"The package system could not be initialized, your configuration may be "
+"broken."
+msgstr ""
+"Impossible d'initialiser le système de paquets. Il se peut que votre "
+"configuration soit cassée."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:131
+#: utils/qapt-gst-helper/PluginHelper.cpp:246
+msgctxt "@title:window"
+msgid "Initialization error"
+msgstr "Erreur d'initialisation"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:146
 #, kde-format
 msgid ""
 "The following plugin is required: <ul><li>%2</li></ul>Do you want to search "
@@ -73,26 +110,27 @@ msgid_plural ""
 "The following plugins are required: <ul><li>%2</li></ul>Do you want to "
 "search for these now?"
 msgstr[0] ""
-"Le module externe suivant est requis : <ul><li>%2</li></ul>Voulez-vous le "
-"rechercher maintenant ?"
+"Le module externe suivant est nécessaire : <ul><li>%2</li></ul>Voulez-vous "
+"le rechercher maintenant ?"
 msgstr[1] ""
-"Les modules externes suivants sont requis : <ul><li>%2</li></ul>Voulez-vous "
-"les rechercher maintenant ?"
+"Les modules externes suivants sont nécessaires : <ul><li>%2</li></ul>Voulez-"
+"vous les rechercher maintenant ?"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:142
+#: utils/qapt-gst-helper/PluginHelper.cpp:158
 msgctxt "A program for which we have no name"
 msgid "A program"
 msgstr "Un programme"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:151
+#: utils/qapt-gst-helper/PluginHelper.cpp:165
 #, kde-format
 msgid "%2 requires an additional plugin to encode this file"
 msgid_plural "%2 requires additional plugins to encode this file"
-msgstr[0] "%2 nécessite un module externe pour encoder ce fichier"
+msgstr[0] ""
+"%2 nécessite un module externe supplémentaire pour encoder ce fichier"
 msgstr[1] ""
 "%2 nécessite des modules externes supplémentaires pour encoder ce fichier"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:157
+#: utils/qapt-gst-helper/PluginHelper.cpp:171
 #, kde-format
 msgid "%2 requires an additional plugin to decode this file"
 msgid_plural "%2 requires additional plugins to decode this file"
@@ -101,109 +139,105 @@ msgstr[0] ""
 msgstr[1] ""
 "%2 nécessite des modules externes supplémentaires pour décoder ce fichier"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:169
+#: utils/qapt-gst-helper/PluginHelper.cpp:183
 msgctxt "Search for packages"
 msgid "Search"
 msgstr "Rechercher"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:195
+#: utils/qapt-gst-helper/PluginHelper.cpp:209
 msgid "Confirm Changes"
-msgstr "Confirmer les changements"
+msgstr "Confirmer les modifications"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:196
+#: utils/qapt-gst-helper/PluginHelper.cpp:210
 msgid "Install the following package?"
 msgid_plural "Install the following packages?"
-msgstr[0] "Installer le paquetage suivant ?"
-msgstr[1] "Installer les paquetages suivants ?"
+msgstr[0] "Installer le paquet suivant ?"
+msgstr[1] "Installer les paquets suivants ?"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:201
+#: utils/qapt-gst-helper/PluginHelper.cpp:215
 msgctxt "Install packages"
 msgid "Install"
 msgstr "Installer"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:225
-msgctxt "@label"
-msgid ""
-"The package system could not be initialized, your configuration may be "
-"broken."
-msgstr ""
-"Impossible d'initialiser le système de paquetages, il se peut que votre "
-"configuration soit cassée."
-
-#: utils/qapt-gst-helper/PluginHelper.cpp:227
-msgctxt "@title:window"
-msgid "Initialization error"
-msgstr "Erreur d'initialisation"
-
-#: utils/qapt-gst-helper/PluginHelper.cpp:236
+#: utils/qapt-gst-helper/PluginHelper.cpp:254
 msgctxt "@label"
 msgid ""
 "Another application seems to be using the package system at this time. You "
 "must close all other package managers before you will be able to install or "
 "remove any packages."
 msgstr ""
-"Il semble qu'une autre application utilise le système de paquetages en ce "
-"moment. Vous devez fermer tous les gestionnaires de paquetages avant de "
-"pouvoir installer ou supprimer un quelconque paquetage."
+"Une autre application semble utiliser le système de paquets en ce moment. "
+"Vous devez fermer tous les gestionnaires de paquets avant de pouvoir "
+"installer ou supprimer n'importe quel paquet."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:240
+#: utils/qapt-gst-helper/PluginHelper.cpp:258
 msgctxt "@title:window"
 msgid "Unable to obtain package system lock"
-msgstr "Impossible d'obtenir un verrou pour le système de paquetages"
+msgstr "Impossible d'obtenir un verrou pour le système de paquets"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:246
+#: utils/qapt-gst-helper/PluginHelper.cpp:263
 #, kde-format
 msgctxt "@label"
 msgid ""
 "You do not have enough disk space in the directory at %1 to continue with "
 "this operation."
 msgstr ""
-"Vous n'avez pas assez d'espace disque dans le dossier à %1 pour poursuivre "
-"cette opération."
+"Vous n'avez pas assez d'espace disque dans le dossier à l'emplacement %1 "
+"pour poursuivre cette opération."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:248
+#: utils/qapt-gst-helper/PluginHelper.cpp:265
 msgctxt "@title:window"
 msgid "Low disk space"
 msgstr "Espace disque faible"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:253
+#: utils/qapt-gst-helper/PluginHelper.cpp:269
 msgctxt "@label"
 msgid "Could not download packages"
-msgstr "Impossible de télécharger des paquetages"
+msgstr "Impossible de télécharger des paquets"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:254
+#: utils/qapt-gst-helper/PluginHelper.cpp:270
 msgctxt "@title:window"
 msgid "Download failed"
 msgstr "Le téléchargement a échoué"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:262
+#: utils/qapt-gst-helper/PluginHelper.cpp:275
+msgctxt "@label"
+msgid "An error occurred while applying changes:"
+msgstr "Une erreur est survenue lors de l'application des modifications :"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:276
+msgctxt "@title:window"
+msgid "Commit Error"
+msgstr "Erreur de validation"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:282
 msgctxt "@label"
 msgid ""
 "This operation cannot continue since proper authorization was not provided"
 msgstr ""
-"Impossible de poursuivre cette opéraion car aucune autorisation correcte n'a "
-"été fournie"
+"Impossible de poursuivre cette opération car aucune autorisation correcte "
+"n'a été fournie"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:264
+#: utils/qapt-gst-helper/PluginHelper.cpp:284
 msgctxt "@title:window"
 msgid "Authentication error"
 msgstr "Erreur d'authentification"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:268
+#: utils/qapt-gst-helper/PluginHelper.cpp:288
 msgctxt "@label"
 msgid ""
 "It appears that the QApt worker has either crashed or disappeared. Please "
 "report a bug to the QApt maintainers"
 msgstr ""
-"Il semble que l'outil QApt s'est arrêté de façon anormale ou a disparu. "
-"Veuillez envoyer un rapport de bogue aux mainteneurs de QApt"
+"L'outil « QApt » semble s'être arrêté de façon anormale ou avoir disparu. "
+"Veuillez envoyer un rapport de bogue aux mainteneurs de « QApt »"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:270
+#: utils/qapt-gst-helper/PluginHelper.cpp:290
 msgctxt "@title:window"
 msgid "Unexpected Error"
 msgstr "Erreur inattendue"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:278
+#: utils/qapt-gst-helper/PluginHelper.cpp:298
 msgctxt "@label"
 msgid ""
 "The following package has not been verified by its author. Downloading "
@@ -212,61 +246,50 @@ msgid_plural ""
 "The following packages have not been verified by their authors. Downloading "
 "untrusted packages has been disallowed by your current configuration."
 msgstr[0] ""
-"Le paquetage suivant n'a pas été vérifié par son auteur. Le téléchargement "
-"de paquetages non sécurisés a été désactivé par votre configuration actuelle."
+"Le paquet suivant n'a pas été vérifié par son auteur. Le téléchargement de "
+"paquets non sécurisés a été désactivé par votre configuration actuelle."
 msgstr[1] ""
-"Les paquetages suivants n'ont pas été vérifiés par leurs auteurs. Le "
-"téléchargement de paquetages non sécurisés a été désactivé par votre "
+"Les paquets suivants n'ont pas été vérifiés par leurs auteurs. Le "
+"téléchargement de paquets non sécurisés a été désactivé par votre "
 "configuration actuelle."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:287
+#: utils/qapt-gst-helper/PluginHelper.cpp:307
 msgctxt "@title:window"
 msgid "Untrusted Packages"
-msgstr "Paquetages non sécurisés"
+msgstr "Paquets non sécurisés"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:295
+#: utils/qapt-gst-helper/PluginHelper.cpp:314
 #, kde-format
 msgctxt "@label"
 msgid ""
 "The package \"%1\" has not been found among your software sources. "
 "Therefore, it cannot be installed. "
 msgstr ""
-"Le paquetage « %1 » est introuvable parmi vos sources de logiciels. Donc, il "
-"est impossible de l'installer. "
+"Le paquet « %1 » est introuvable dans vos sources de logiciels. Par "
+"conséquent, il est impossible de l'installer. "
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:298
+#: utils/qapt-gst-helper/PluginHelper.cpp:317
 msgctxt "@title:window"
 msgid "Package Not Found"
-msgstr "Paquetage introuvable"
+msgstr "Paquet introuvable"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:319
-msgctxt "@label"
-msgid "The size of the downloaded items did not equal the expected size."
-msgstr ""
-"La taille des éléments téléchargés n'est pas égale à la taille attendue."
-
-#: utils/qapt-gst-helper/PluginHelper.cpp:321
-msgctxt "@title:window"
-msgid "Size Mismatch"
-msgstr "Discordance de taille"
-
-#: utils/qapt-gst-helper/PluginHelper.cpp:345
+#: utils/qapt-gst-helper/PluginHelper.cpp:331
 msgctxt "@title:window"
 msgid "Media Change Required"
 msgstr "Changement de média nécessaire"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:346
+#: utils/qapt-gst-helper/PluginHelper.cpp:332
 #, kde-format
 msgctxt "@label"
 msgid "Please insert %1 into <filename>%2</filename>"
 msgstr "Veuillez insérer %1 dans <filename>%2</filename>"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:355
+#: utils/qapt-gst-helper/PluginHelper.cpp:341
 msgctxt "@title:window"
 msgid "Warning - Unverified Software"
 msgstr "Avertissement - Logiciel non vérifié"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:357
+#: utils/qapt-gst-helper/PluginHelper.cpp:343
 msgctxt "@label"
 msgid ""
 "The following piece of software cannot be verified. <warning>Installing "
@@ -279,15 +302,40 @@ msgid_plural ""
 "presence of unverifiable software can be a sign of tampering.</warning> Do "
 "you wish to continue?"
 msgstr[0] ""
-"Impossible d'authentifier le logiciel suivant. <warning>Installer un "
-"logiciel non vérifié représente un risque en matière de sécurité, car la "
+"Impossible d'authentifier le logiciel suivant. <warning>L'installation d'un "
+"logiciel non vérifié représente un risque en matière de sécurité car la "
 "présence de logiciels invérifiables peut être un signe de falsification.</"
-"warning> Souhaitez-vous continuer ?"
+"warning> Voulez-vous continuer ?"
 msgstr[1] ""
-"Impossible d'authentifier les logiciels suivants. <warning>Installer des "
-"logiciels non vérifiés représente un risque en matière de sécurité, car la "
+"Impossible d'authentifier les logiciels suivants. <warning>L'installation de "
+"logiciels non vérifiés représente un risque en matière de sécurité car la "
 "présence de logiciels invérifiables peut être un signe de falsification. </"
 "warning> Voulez-vous continuer ?"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:372
+msgctxt "@label Progress bar label when waiting to start"
+msgid "Waiting to start."
+msgstr "En attente de démarrage."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:377
+msgctxt "@label Status label when waiting for a password"
+msgid "Waiting for authentication."
+msgstr "En attente d'authentification."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:382
+msgctxt "@label Status label when waiting for a CD-ROM"
+msgid "Waiting for required media."
+msgstr "En attente des média requis."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:387
+msgctxt "@label Status label"
+msgid "Waiting for other package managers to quit."
+msgstr "En attente de la fermeture d'autres gestionnaires de paquets."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:395
+msgctxt "@label Status label"
+msgid "Loading package cache."
+msgstr "Chargement du cache de paquets."
 
 #: utils/qapt-gst-helper/PluginHelper.cpp:398
 msgctxt "@title:window"
@@ -299,74 +347,47 @@ msgctxt "@info:status"
 msgid "Downloading codecs"
 msgstr "Téléchargement de codecs"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:406
+#: utils/qapt-gst-helper/PluginHelper.cpp:402
 msgctxt "@title:window"
-msgid "Installing Codecs"
+msgid "Installing"
+msgstr "Installation"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:403
+msgctxt "@info:status"
+msgid "Installing codecs"
 msgstr "Installation de codecs"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:418
-msgctxt "@title:window"
-msgid "Installation Complete"
-msgstr "Installation terminée"
-
-#: utils/qapt-gst-helper/PluginHelper.cpp:422
+#: utils/qapt-gst-helper/PluginHelper.cpp:409
 msgctxt "@label"
 msgid "Package installation finished with errors."
-msgstr "L'installation des paquetages s'est terminée avec des erreurs."
+msgstr "L'installation des paquets s'est terminée avec des erreurs."
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:425
+#: utils/qapt-gst-helper/PluginHelper.cpp:410
+msgctxt "@title:window"
+msgid "Installation Failed"
+msgstr "L'installation a échoué"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:412
 msgctxt "@label"
 msgid "Codecs successfully installed"
 msgstr "Codecs installés avec succès"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:439
-msgctxt "@label"
-msgid "Unable to download the following packages:"
-msgstr "Impossible de télécharger les paquetages suivants :"
-
-#: utils/qapt-gst-helper/PluginHelper.cpp:444
-#, kde-format
-msgctxt "@label"
-msgid ""
-"Failed to download %1\n"
-"%2\n"
-"\n"
-msgstr ""
-"Impossible de télécharger %1\n"
-"%2\n"
-"\n"
-
-#: utils/qapt-gst-helper/PluginHelper.cpp:447
+#: utils/qapt-gst-helper/PluginHelper.cpp:413
 msgctxt "@title:window"
-msgid "Some Packages Could not be Downloaded"
-msgstr "Impossible de télécharger certains paquetages"
+msgid "Installation Complete"
+msgstr "Installation terminée"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:454
-msgctxt "@label"
-msgid "An error occurred while applying changes:"
-msgid_plural "The following errors occurred while applying changes:"
-msgstr[0] "Une erreur est survenue lors de l'application des changements :"
-msgstr[1] ""
-"Les erreurs suivantes sont survenus lors de l'application des changements :"
+#: utils/qapt-gst-helper/PluginHelper.cpp:449
+msgctxt "@info"
+msgid "No plugins could be found"
+msgstr "Aucun module externe n'a été trouvé"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:458
-#, kde-format
-msgctxt "@label Shows which package failed"
-msgid "Package: %1"
-msgstr "Paquetage : %1"
+#: utils/qapt-gst-helper/PluginHelper.cpp:450
+msgctxt "@title"
+msgid "Plugins Not Found"
+msgstr "Impossible de trouver des modules externes"
 
-#: utils/qapt-gst-helper/PluginHelper.cpp:459
-#, kde-format
-msgctxt "@label Shows the error"
-msgid "Error: %1"
-msgstr "Erreur : %1"
-
-#: utils/qapt-gst-helper/PluginHelper.cpp:463
-msgctxt "@title:window"
-msgid "Commit error"
-msgstr "Erreur de validation"
-
-#: utils/qapt-gst-helper/PluginHelper.cpp:513
+#: utils/qapt-gst-helper/PluginHelper.cpp:512
 msgctxt "@label Progress bar label when waiting to start"
 msgid "Waiting"
 msgstr "En attente"

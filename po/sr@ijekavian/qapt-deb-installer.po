@@ -1,12 +1,12 @@
 # Translation of qapt-deb-installer.po into Serbian.
 # Dalibor Djuric <daliborddjuric@gmail.com>, 2011.
-# Chusslove Illich <caslav.ilic@gmx.net>, 2011, 2012.
+# Chusslove Illich <caslav.ilic@gmx.net>, 2011, 2012, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: qapt-deb-installer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-21 18:19+0100\n"
-"PO-Revision-Date: 2012-07-22 22:37+0200\n"
+"POT-Creation-Date: 2014-12-14 07:45+0000\n"
+"PO-Revision-Date: 2014-12-14 13:00+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
 "Language: sr@ijekavian\n"
@@ -20,19 +20,107 @@ msgstr ""
 "X-Environment: kde\n"
 "X-Generator: Lokalize 1.1\n"
 
-#: utils/qapt-deb-installer/DebCommitWidget.cpp:42
+#: utils/qapt-deb-installer/ChangesDialog.cpp:37
+msgctxt "@title:window"
+msgid "Confirm Additional Changes"
+msgstr "Потврда допунских измена"
+
+#: utils/qapt-deb-installer/ChangesDialog.cpp:42
+msgctxt "@info"
+msgid "<h2>Additional Changes</h2>"
+msgstr "<h2>Допунске измене</h2>"
+
+#: utils/qapt-deb-installer/ChangesDialog.cpp:46
+msgid "This action requires a change to another package:"
+msgid_plural "This action requires changes to other packages:"
+msgstr[0] "Ова радња захтева измене других пакета:"
+msgstr[1] "Ова радња захтева измене других пакета:"
+msgstr[2] "Ова радња захтева измене других пакета:"
+msgstr[3] "Ова радња захтева измену другог пакета:"
+
+#: utils/qapt-deb-installer/ChangesDialog.cpp:86
+#: utils/qapt-deb-installer/ChangesDialog.cpp:87
+msgctxt "@info:status Requested action"
+msgid "Install"
+msgstr "Инсталирај"
+
+#: utils/qapt-deb-installer/ChangesDialog.cpp:88
+msgctxt "@info:status Requested action"
+msgid "Remove"
+msgstr "Уклони"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:49
 msgctxt "@info The widget's header label"
 msgid "<title>Installing</title>"
 msgstr "<title>Инсталирам</title>"
 
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:105
+msgctxt "@info Status information, widget title"
+msgid "<title>Starting</title>"
+msgstr "<title>Започињем</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:112
+msgctxt "@info Status information, widget title"
+msgid "<title>Waiting</title>"
+msgstr "<title>Чекам</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:120
+msgctxt "@info Status info"
+msgid "<title>Loading Software List</title>"
+msgstr "<title>Учитавам листу софтвера</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:125
+msgctxt "@info Status information, widget title"
+msgid "<title>Downloading Packages</title>"
+msgstr "<title>Преузимам пакете</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:130
+msgctxt "@info Status information, widget title"
+msgid "<title>Committing Changes</title>"
+msgstr "<title>Предајем измјене</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:136
+msgctxt "@label Message that the install is done"
+msgid "Done"
+msgstr "Готово"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:138
+msgctxt "@info Header label used when the install is done"
+msgid "<title>Done</title>"
+msgstr "<title>Готово</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:155
+#: utils/qapt-deb-installer/DebInstaller.cpp:72
+msgctxt "@label"
+msgid ""
+"The package system could not be initialized, your configuration may be "
+"broken."
+msgstr "Пакетни систем не може да се припреми, можда је постава искварена."
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:157
+#: utils/qapt-deb-installer/DebInstaller.cpp:74
+msgctxt "@title:window"
+msgid "Initialization error"
+msgstr "Грешка у припремању"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:164
+msgctxt "@label"
+msgid "This package is incompatible with your computer."
+msgstr "Овај пакет не одговара вашем рачунару."
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:165
+msgctxt "@title:window"
+msgid "Incompatible Package"
+msgstr "Несагласни пакет"
+
 # >> @action:button
-#: utils/qapt-deb-installer/DebInstaller.cpp:68
+#: utils/qapt-deb-installer/DebInstaller.cpp:83
 msgctxt "@label"
 msgid "Install Package"
 msgstr "Инсталирај пакет"
 
 # >> @info
-#: utils/qapt-deb-installer/DebInstaller.cpp:82
+#: utils/qapt-deb-installer/DebInstaller.cpp:107
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -42,67 +130,30 @@ msgstr ""
 "Не могу да отворим <filename>%1</filename>. Изгледа да није исправан фајл "
 "Дебијановог пакета."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:90
+#: utils/qapt-deb-installer/DebInstaller.cpp:115
 #, kde-format
 msgctxt "@title:window"
 msgid "Package Installer - %1"
 msgstr "Инсталатер пакета — %1"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:113
-msgctxt "@info Header label used when packages are downloading"
-msgid "<title>Downloading Dependencies</title>"
-msgstr "<title>Преузимам зависности</title>"
-
-#: utils/qapt-deb-installer/DebInstaller.cpp:128
-msgctxt "@info Header label used when packages are installing"
-msgid "<title>Installing Dependencies</title>"
-msgstr "<title>Инсталирам зависности</title>"
-
-#: utils/qapt-deb-installer/DebInstaller.cpp:153
-msgctxt "@label Message that the install is done"
-msgid "Done"
-msgstr "Готово"
-
-#: utils/qapt-deb-installer/DebInstaller.cpp:155
-msgctxt "@info Header label used when the install is done"
-msgid "<title>Done</title>"
-msgstr "<title>Готово</title>"
-
-#: utils/qapt-deb-installer/DebInstaller.cpp:174
-msgctxt "@label"
-msgid ""
-"The package system could not be initialized, your configuration may be "
-"broken."
-msgstr "Пакетни систем не може да се припреми, можда је постава искварена."
-
-#: utils/qapt-deb-installer/DebInstaller.cpp:176
-msgctxt "@title:window"
-msgid "Initialization error"
-msgstr "Грешка у припремању"
-
-#: utils/qapt-deb-installer/DebInstaller.cpp:184
-msgctxt "@label"
-msgid "This package is incompatible with your computer."
-msgstr "Овај пакет не одговара вашем рачунару."
-
-#: utils/qapt-deb-installer/DebInstaller.cpp:230
+#: utils/qapt-deb-installer/DebInstaller.cpp:214
 #, kde-format
 msgctxt "@info"
 msgid "Error: Wrong architecture '%1'"
 msgstr "Грешка: погрешна архитектура „%1“"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:246
+#: utils/qapt-deb-installer/DebInstaller.cpp:234
 #, kde-format
 msgctxt "@info Error string when installing would break an existing package"
 msgid "Error: Breaks the existing package \"%1\""
 msgstr "Грешка: нарушава постојећи пакет „%1“"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:255
+#: utils/qapt-deb-installer/DebInstaller.cpp:243
 msgctxt "@info"
 msgid "Error: Cannot satisfy dependencies"
 msgstr "Грешка: незадовољене зависности"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:264
+#: utils/qapt-deb-installer/DebInstaller.cpp:253
 #, kde-format
 msgctxt "@label A note saying that additional packages are needed"
 msgid "Requires the installation of %1 additional package."
@@ -112,27 +163,27 @@ msgstr[1] "Захтијева инсталирање %1 додатна паке�
 msgstr[2] "Захтијева инсталирање %1 додатних пакета"
 msgstr[3] "Захтијева инсталирање %1 додатног пакета"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:268
+#: utils/qapt-deb-installer/DebInstaller.cpp:257
 msgctxt "@info"
 msgid "All dependencies are satisfied."
 msgstr "Све зависности су задовољене."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:287
+#: utils/qapt-deb-installer/DebInstaller.cpp:276
 msgctxt "@info"
 msgid "The same version is available in a software channel."
 msgstr "Иста верзија је доступна преко софтверских канала."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:288
+#: utils/qapt-deb-installer/DebInstaller.cpp:277
 msgctxt "@info"
 msgid "It is recommended to install the software from the channel instead"
 msgstr "Препоручује се да инсталирате првенствено преко софтверских канала."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:290
+#: utils/qapt-deb-installer/DebInstaller.cpp:279
 msgctxt "@info"
 msgid "An older version is available in a software channel."
 msgstr "Старија верзија је доступна преко софтверских канала."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:291
+#: utils/qapt-deb-installer/DebInstaller.cpp:280
 msgctxt "@info"
 msgid ""
 "It is recommended to install the version from the software channel, since it "
@@ -141,12 +192,12 @@ msgstr ""
 "Препоручује се да инсталирате верзију из софтверских канала, пошто су оне "
 "обично боље подржане."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:294
+#: utils/qapt-deb-installer/DebInstaller.cpp:283
 msgctxt "@info"
 msgid "A newer version is available in a software channel."
 msgstr "Новија верзија је доступна преко софтверских канала."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:295
+#: utils/qapt-deb-installer/DebInstaller.cpp:284
 msgctxt "@info"
 msgid ""
 "It is strongly advised to install the version from the software channel, "
@@ -155,78 +206,93 @@ msgstr ""
 "Јако се препоручује да инсталирате верзију из софтверских канала, пошто су "
 "оне обично боље подржане."
 
-#: utils/qapt-deb-installer/DebViewer.cpp:65
+#: utils/qapt-deb-installer/DebViewer.cpp:71
 msgctxt "@label Label preceding the package name"
 msgid "Package:"
 msgstr "Пакет:"
 
-#: utils/qapt-deb-installer/DebViewer.cpp:73
+#: utils/qapt-deb-installer/DebViewer.cpp:79
 msgctxt "@label Label preceding the package status"
 msgid "Status:"
 msgstr "Стање:"
 
-#: utils/qapt-deb-installer/DebViewer.cpp:118
+#: utils/qapt-deb-installer/DebViewer.cpp:81
+msgctxt "@label"
+msgid "Details..."
+msgstr "Детаљи..."
+
+#: utils/qapt-deb-installer/DebViewer.cpp:132
 msgctxt "@label Label preceding the package version"
 msgid "Version:"
 msgstr "Верзија:"
 
-#: utils/qapt-deb-installer/DebViewer.cpp:125
+#: utils/qapt-deb-installer/DebViewer.cpp:139
 msgctxt "@label Label preceding the package size"
 msgid "Installed Size:"
 msgstr "Величина инсталације:"
 
-#: utils/qapt-deb-installer/DebViewer.cpp:132
+#: utils/qapt-deb-installer/DebViewer.cpp:146
 msgctxt "@label Label preceding the package maintainer"
 msgid "Maintainer:"
 msgstr "Одржавалац:"
 
-#: utils/qapt-deb-installer/DebViewer.cpp:139
+#: utils/qapt-deb-installer/DebViewer.cpp:153
 msgctxt "@label Label preceding the package category"
 msgid "Category:"
 msgstr "Категорија: "
 
-#: utils/qapt-deb-installer/DebViewer.cpp:146
+#: utils/qapt-deb-installer/DebViewer.cpp:160
 msgctxt "@label Label preceding the package homepage"
 msgid "Homepage:"
 msgstr "Домаћа страница:"
 
-#: utils/qapt-deb-installer/DebViewer.cpp:158
+#: utils/qapt-deb-installer/DebViewer.cpp:174
 msgctxt "@title:tab"
 msgid "Description"
 msgstr "Опис"
 
-#: utils/qapt-deb-installer/DebViewer.cpp:159
+#: utils/qapt-deb-installer/DebViewer.cpp:175
 msgctxt "@title:tab"
 msgid "Details"
 msgstr "Детаљи"
 
-#: utils/qapt-deb-installer/DebViewer.cpp:160
+#: utils/qapt-deb-installer/DebViewer.cpp:176
 msgctxt "@title:tab"
 msgid "Included Files"
 msgstr "Садржани фајлови"
 
-#: utils/qapt-deb-installer/main.cpp:29
+#: utils/qapt-deb-installer/main.cpp:32
 msgctxt "@info"
 msgid "A Debian package installer"
 msgstr "Инсталатер Дебијанових пакета"
 
 # rewrite-msgid: /Package Installer//
-#: utils/qapt-deb-installer/main.cpp:35
+#: utils/qapt-deb-installer/main.cpp:42
 msgctxt "@title"
 msgid "QApt Package Installer"
 msgstr "Ку‑апт"
 
-#: utils/qapt-deb-installer/main.cpp:36
+#: utils/qapt-deb-installer/main.cpp:46
 msgctxt "@info:credit"
 msgid "(C) 2011 Jonathan Thomas"
 msgstr "© 2011, Џонатан Томас"
 
-#: utils/qapt-deb-installer/main.cpp:37
+#: utils/qapt-deb-installer/main.cpp:48
 msgctxt "@info:credit"
 msgid "Jonathan Thomas"
 msgstr "Џонатан Томас"
 
-#: utils/qapt-deb-installer/main.cpp:42
-msgctxt "@info:shell"
+#: utils/qapt-deb-installer/main.cpp:51
+msgctxt "@info:credit"
+msgid "Harald Sitter"
+msgstr "Харалд Ситер"
+
+#: utils/qapt-deb-installer/main.cpp:52
+msgctxt "@info:credit"
+msgid "Qt 5 port"
+msgstr "Пренос на КуТ‑5"
+
+#: utils/qapt-deb-installer/main.cpp:60
+msgctxt "@info:shell argument"
 msgid ".deb file"
 msgstr ".deb фајл"

@@ -1,0 +1,357 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Ni Hui <shuizhuyuanluo@126.com>, 2011.
+# FengChao <rainofchaos@gmail.com>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-12-14 07:45+0000\n"
+"PO-Revision-Date: 2013-07-21 13:06+0800\n"
+"Last-Translator: FengChao <rainofchaos@gmail.com>\n"
+"Language-Team: Chinese Simplified <kde-china@kde.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: utils/qapt-batch/detailswidget.cpp:51
+msgctxt "@label Remaining time"
+msgid "Remaining Time:"
+msgstr "剩余时间："
+
+#: utils/qapt-batch/detailswidget.cpp:56
+msgctxt "@label Download Rate"
+msgid "Speed:"
+msgstr "速度："
+
+#: utils/qapt-batch/detailswidget.cpp:107
+msgctxt "@info:progress Remaining time"
+msgid "Unknown"
+msgstr "未知"
+
+#: utils/qapt-batch/detailswidget.cpp:116
+#, kde-format
+msgctxt "@info:progress Download rate"
+msgid "%1/s"
+msgstr "%1/秒 "
+
+#: utils/qapt-batch/main.cpp:33
+msgctxt "@info"
+msgid "A batch installer using QApt"
+msgstr "使用 QApt 的批量安装器"
+
+#: utils/qapt-batch/main.cpp:43
+msgctxt "@title"
+msgid "QApt Batch Installer"
+msgstr "QApt 批量安装器"
+
+#: utils/qapt-batch/main.cpp:47
+msgctxt "@info:credit"
+msgid "(C) 2010 Jonathan Thomas"
+msgstr "(C) 2010 Jonathan Thomas"
+
+#: utils/qapt-batch/main.cpp:49
+msgctxt "@info:credit"
+msgid "Jonathan Thomas"
+msgstr "Jonathan Thomas"
+
+#: utils/qapt-batch/main.cpp:52
+msgctxt "@info:credit"
+msgid "Harald Sitter"
+msgstr ""
+
+#: utils/qapt-batch/main.cpp:53
+msgctxt "@info:credit"
+msgid "Qt 5 port"
+msgstr ""
+
+#: utils/qapt-batch/main.cpp:61
+msgctxt "@info:shell"
+msgid "Attaches the window to an X app specified by winid"
+msgstr "将窗口附到以 winid 指定的 X 应用程序"
+
+#: utils/qapt-batch/main.cpp:62
+msgctxt "@info:shell value name"
+msgid "winid"
+msgstr ""
+
+#: utils/qapt-batch/main.cpp:66
+msgctxt "@info:shell"
+msgid "Install a package"
+msgstr "安装软件包"
+
+#: utils/qapt-batch/main.cpp:69
+msgctxt "@info:shell"
+msgid "Remove a package"
+msgstr "移队软件包"
+
+#: utils/qapt-batch/main.cpp:72
+msgctxt "@info:shell"
+msgid "Update the package cache"
+msgstr "更新软件包缓存"
+
+#: utils/qapt-batch/main.cpp:75
+msgctxt "@info:shell"
+msgid "Packages to be operated upon"
+msgstr "要操作的软件包"
+
+#: utils/qapt-batch/main.cpp:85
+msgctxt "@info:shell error"
+msgid "Only one operation mode may be defined."
+msgstr ""
+
+#: utils/qapt-batch/main.cpp:96
+msgctxt "@info:shell error"
+msgid "No operation mode defined."
+msgstr ""
+
+#: utils/qapt-batch/qaptbatch.cpp:66
+msgctxt "@label"
+msgid "Waiting for authorization"
+msgstr "正在等待认证"
+
+#: utils/qapt-batch/qaptbatch.cpp:101 utils/qapt-batch/qaptbatch.cpp:181
+msgctxt "@label"
+msgid ""
+"The package system could not be initialized, your configuration may be "
+"broken."
+msgstr "软件包管理系统无法初始化，您的配置可能已损坏。"
+
+#: utils/qapt-batch/qaptbatch.cpp:103 utils/qapt-batch/qaptbatch.cpp:183
+msgctxt "@title:window"
+msgid "Initialization error"
+msgstr "初始化出错"
+
+#: utils/qapt-batch/qaptbatch.cpp:128 utils/qapt-batch/qaptbatch.cpp:249
+#, kde-format
+msgctxt "@label"
+msgid ""
+"The package \"%1\" has not been found among your software sources. "
+"Therefore, it cannot be installed. "
+msgstr "在您的软件源中未找到“%1”这个软件包。因此，无法安装它。"
+
+#: utils/qapt-batch/qaptbatch.cpp:131 utils/qapt-batch/qaptbatch.cpp:252
+msgctxt "@title:window"
+msgid "Package Not Found"
+msgstr "软件包未找到"
+
+#: utils/qapt-batch/qaptbatch.cpp:190
+msgctxt "@label"
+msgid ""
+"Another application seems to be using the package system at this time. You "
+"must close all other package managers before you will be able to install or "
+"remove any packages."
+msgstr ""
+"另一个应用程序似乎正在使用软件包系统。您必须关闭所有其他的软件包管理器老师安"
+"装或移除软件包。"
+
+#: utils/qapt-batch/qaptbatch.cpp:194
+msgctxt "@title:window"
+msgid "Unable to obtain package system lock"
+msgstr "无法获取软件包系统锁"
+
+#: utils/qapt-batch/qaptbatch.cpp:199
+#, kde-format
+msgctxt "@label"
+msgid ""
+"You do not have enough disk space in the directory at %1 to continue with "
+"this operation."
+msgstr "%1 处目录中的磁盘空间不足，操作无法继续。"
+
+#: utils/qapt-batch/qaptbatch.cpp:201
+msgctxt "@title:window"
+msgid "Low disk space"
+msgstr "磁盘空间低"
+
+#: utils/qapt-batch/qaptbatch.cpp:206
+msgctxt "@label"
+msgid "Could not download packages"
+msgstr "无法下载软件包"
+
+#: utils/qapt-batch/qaptbatch.cpp:207
+msgctxt "@title:window"
+msgid "Download failed"
+msgstr "下载失败"
+
+#: utils/qapt-batch/qaptbatch.cpp:211
+msgctxt "@label"
+msgid "An error occurred while applying changes:"
+msgstr "应用更改时发生了错误："
+
+#: utils/qapt-batch/qaptbatch.cpp:212
+msgctxt "@title:window"
+msgid "Commit error"
+msgstr "提交出错"
+
+#: utils/qapt-batch/qaptbatch.cpp:217
+msgctxt "@label"
+msgid ""
+"This operation cannot continue since proper authorization was not provided"
+msgstr "操作无法继续，因为没有提供合法的认证"
+
+#: utils/qapt-batch/qaptbatch.cpp:219
+msgctxt "@title:window"
+msgid "Authentication error"
+msgstr "验证错误"
+
+#: utils/qapt-batch/qaptbatch.cpp:223
+msgctxt "@label"
+msgid ""
+"It appears that the QApt worker has either crashed or disappeared. Please "
+"report a bug to the QApt maintainers"
+msgstr "QApt worker (工具) 似乎已崩溃或消失。请向 QApt 维护者报告这一错误。"
+
+#: utils/qapt-batch/qaptbatch.cpp:225
+msgctxt "@title:window"
+msgid "Unexpected Error"
+msgstr "意外错误"
+
+#: utils/qapt-batch/qaptbatch.cpp:233
+msgctxt "@label"
+msgid ""
+"The following package has not been verified by its author. Downloading "
+"untrusted packages has been disallowed by your current configuration."
+msgid_plural ""
+"The following packages have not been verified by their authors. Downloading "
+"untrusted packages has been disallowed by your current configuration."
+msgstr[0] ""
+"以下软件包未经它们作者验证。您当前的配置不允许下载这些不信任的软件包。"
+
+#: utils/qapt-batch/qaptbatch.cpp:242
+msgctxt "@title:window"
+msgid "Untrusted Packages"
+msgstr "不可信的软件包"
+
+#: utils/qapt-batch/qaptbatch.cpp:265
+msgctxt "@title:window"
+msgid "Media Change Required"
+msgstr "需要更改媒体"
+
+#: utils/qapt-batch/qaptbatch.cpp:266
+#, kde-format
+msgctxt "@label"
+msgid "Please insert %1 into <filename>%2</filename>"
+msgstr "请将 %1 插入 <filename>%2</filename>"
+
+#: utils/qapt-batch/qaptbatch.cpp:274
+msgctxt "@title:window"
+msgid "Warning - Unverified Software"
+msgstr "警告 - 软件未经验证"
+
+#: utils/qapt-batch/qaptbatch.cpp:276
+msgctxt "@label"
+msgid ""
+"The following piece of software cannot be verified. <warning>Installing "
+"unverified software represents a security risk, as the presence of "
+"unverifiable software can be a sign of tampering.</warning> Do you wish to "
+"continue?"
+msgid_plural ""
+"The following pieces of software cannot be authenticated. "
+"<warning>Installing unverified software represents a security risk, as the "
+"presence of unverifiable software can be a sign of tampering.</warning> Do "
+"you wish to continue?"
+msgstr[0] ""
+"以下软件组件无法认证。<warning>安装未验证软件是一种安全风险，因为无法验证可能"
+"表示软件被篡改。</warning>您想继续吗？"
+
+#: utils/qapt-batch/qaptbatch.cpp:311
+msgctxt "@label Progress bar label when waiting to start"
+msgid "Waiting to start."
+msgstr "正在等待启动。"
+
+#: utils/qapt-batch/qaptbatch.cpp:316
+msgctxt "@label Status label when waiting for a password"
+msgid "Waiting for authentication."
+msgstr "正在等待认证。"
+
+#: utils/qapt-batch/qaptbatch.cpp:320
+msgctxt "@label Status label when waiting for a CD-ROM"
+msgid "Waiting for required media."
+msgstr "正在等待需要的媒体。"
+
+#: utils/qapt-batch/qaptbatch.cpp:325
+msgctxt "@label Status label"
+msgid "Waiting for other package managers to quit."
+msgstr "正在等待其他包管理器退出。"
+
+#: utils/qapt-batch/qaptbatch.cpp:333
+msgctxt "@label Status label"
+msgid "Loading package cache."
+msgstr "正在加载软件包缓存。"
+
+#: utils/qapt-batch/qaptbatch.cpp:337
+msgctxt "@title:window"
+msgid "Refreshing Package Information"
+msgstr "刷新软件包信息"
+
+#: utils/qapt-batch/qaptbatch.cpp:338
+msgctxt "@info:status"
+msgid "Checking for new, removed or upgradeable packages"
+msgstr "检查新的、已移除的或可更新的软件包"
+
+#: utils/qapt-batch/qaptbatch.cpp:340
+msgctxt "@title:window"
+msgid "Downloading"
+msgstr "正在下载"
+
+#: utils/qapt-batch/qaptbatch.cpp:342
+msgctxt "@info:status"
+msgid "Downloading package file"
+msgid_plural "Downloading package files"
+msgstr[0] "正在下载软件包文件"
+
+#: utils/qapt-batch/qaptbatch.cpp:352
+msgctxt "@title:window"
+msgid "Installing Packages"
+msgstr "正在安装软件包"
+
+#: utils/qapt-batch/qaptbatch.cpp:358
+msgctxt "@title:window"
+msgid "Installation Complete"
+msgstr "安装完成"
+
+#: utils/qapt-batch/qaptbatch.cpp:362
+msgctxt "@label"
+msgid "Package installation failed."
+msgstr "软件包安装失败。"
+
+#: utils/qapt-batch/qaptbatch.cpp:365
+msgctxt "@label"
+msgid "Package successfully installed."
+msgid_plural "Packages successfully installed."
+msgstr[0] "软件包安装成功。"
+
+#: utils/qapt-batch/qaptbatch.cpp:369
+msgctxt "@title:window"
+msgid "Removal Complete"
+msgstr "移除完成"
+
+#: utils/qapt-batch/qaptbatch.cpp:373
+msgctxt "@label"
+msgid "Package removal failed."
+msgstr "软件包移除失败。"
+
+#: utils/qapt-batch/qaptbatch.cpp:377
+msgctxt "@label"
+msgid "Package successfully uninstalled."
+msgid_plural "Packages successfully uninstalled."
+msgstr[0] "软件包卸载成功。"
+
+#: utils/qapt-batch/qaptbatch.cpp:381
+msgctxt "@title:window"
+msgid "Refresh Complete"
+msgstr "刷新完成"
+
+#: utils/qapt-batch/qaptbatch.cpp:384
+msgctxt "@info:status"
+msgid "Refresh failed."
+msgstr "刷新失败。"
+
+#: utils/qapt-batch/qaptbatch.cpp:386
+msgctxt "@label"
+msgid "Package information successfully refreshed."
+msgstr "软件包信息刷新成功。"
