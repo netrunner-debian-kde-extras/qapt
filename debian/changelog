@@ -1,3 +1,20 @@
+qapt (2.2.0-1) experimental; urgency=low
+
+  [ Sune Vuorela ]
+  * Add me to uploaders
+  * Remove Jose Manuel Santamaria Lema from uploaders.
+  * Remove the unused DMUA-field.
+
+  [ Floris-Andrei Stoica-Marcu ]
+  * New Upstream Release
+  * Updated package structure, now it is unmerged
+  * Bumped up version of libqapt-runtime
+  * Added new symbol file for qapt-dbg
+  * Disabled tests that broke build
+  * Updated dependencies
+
+ -- Sune Vuorela <sune@debian.org>  Wed, 03 Sep 2014 14:19:55 +0200
+
 qapt (1.4.1-0r1) UNRELEASED; urgency=low
 
   * New upstream release.
