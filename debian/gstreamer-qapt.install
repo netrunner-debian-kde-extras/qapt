@@ -1,0 +1,3 @@
+usr/lib/*/libexec/qapt-gst-helper
+usr/share/locale/*/LC_MESSAGES/qapt-gst-helper.mo
+usr/share/locale/*/LC_MESSAGES/qapt-gst-helper.qm

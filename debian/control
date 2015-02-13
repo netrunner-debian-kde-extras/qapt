@@ -1,29 +1,43 @@
-Source: qapt
+Source: libqapt
 Section: kde
 Priority: optional
-Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
+Maintainer: Debian/Kubuntu KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
 Uploaders: Sune Vuorela <sune@debian.org>,
  Kai Wasserbäch <curan@debian.org>,
- Floris-Andrei Stoica-Marcu <floris.sm@gmail.com>
-Build-Depends: debhelper (>= 9),
- pkg-kde-tools (>= 0.5.0),
- cmake (>= 2.8.4+dfsg.1-3),
- pkg-config,
- kdelibs5-dev,
- libapt-pkg-dev (>= 0.8.0),
- libxapian-dev,
- libpolkit-qt-1-dev,
- libgstreamer1.0-dev,
- libgstreamer-plugins-base1.0-dev,
- libdebconf-kde-dev
+ Floris-Andrei Stoica-Marcu <floris.sm@gmail.com>,
+ José Manuel Santamaría Lema <panfaust@gmail.com>
 Standards-Version: 3.9.5
+Build-Depends: cmake (>= 2.8.4+dfsg.1-3),
+               debhelper (>= 9),
+               extra-cmake-modules,
+               kio-dev,
+               libapt-pkg-dev (>= 0.8.0),
+               libdebconf-kde-dev (>= 1.0.0),
+               libglib2.0-dev,
+               libgstreamer-plugins-base1.0-dev,
+               libgstreamer1.0-dev,
+               libkf5auth-dev,
+               libkf5coreaddons-dev,
+               libkf5i18n-dev,
+               libkf5runner-dev,
+               libkf5textwidgets-dev,
+               libkf5widgetsaddons-dev,
+               libkf5windowsystem-dev,
+               libpolkit-qt5-1-dev,
+               libxapian-dev,
+               pkg-config,
+               pkg-kde-tools (>> 0.15.15),
+               plasma-framework-dev,
+               qttools5-dev,
+               qttools5-dev-tools
 Homepage: https://projects.kde.org/projects/extragear/sysadmin/libqapt/
 Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-extras/qapt.git
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-extras/qapt.git;a=summary
+Vcs-Browser: http://anonscm.debian.org/cgit/pkg-kde/kde-extras/qapt
 
-Package: libqapt2
+Package: libqapt3
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Recommends: libqapt3-runtime
 Description: QApt library package
  LibQApt is a Qt wrapper around the libapt-pkg library as well as an APT
  implementation using libapt-pkg. The aim is to provide a sane API for
@@ -35,7 +49,7 @@ Description: QApt library package
 Package: libqapt-dev
 Section: libdevel
 Architecture: any
-Depends: ${misc:Depends}, libqapt2 (= ${binary:Version}), libapt-pkg-dev
+Depends: libapt-pkg-dev, libqapt3 (= ${binary:Version}), ${misc:Depends}
 Description: Development headers for the QApt library
  LibQApt is a Qt wrapper around the libapt-pkg library as well as an APT
  implementation using libapt-pkg. The aim is to provide a sane API for
@@ -44,10 +58,11 @@ Description: Development headers for the QApt library
  .
  This package contains the development headers for the QApt library
 
-Package: libqapt2-runtime
+Package: libqapt3-runtime
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: apt-listchanges (<< 2.85.12~), libdebconf-kde0 (<< 0.3~)
+Depends: polkit-kde-agent-1 | policykit-1-gnome,
+         ${misc:Depends},
+         ${shlibs:Depends}
 Description: Runtime components for the QApt library
  LibQApt is a Qt wrapper around the libapt-pkg library as well as an APT
  implementation using libapt-pkg. The aim is to provide a sane API for
@@ -59,9 +74,12 @@ Description: Runtime components for the QApt library
 
 Package: qapt-utils
 Architecture: any
-Depends: ${misc:Depends}, qapt-batch, qapt-deb-installer,
- plasma-runner-installer, kde-thumbnailer-deb
-Recommends: gstreamer1.0-qapt
+Depends: kde-thumbnailer-deb,
+         plasma-runner-installer,
+         qapt-batch,
+         qapt-deb-installer,
+         ${misc:Depends}
+Recommends: gstreamer-qapt
 Description: complete collection of QApt package management utilities
  QApt is a collection of tools and a library providing a wrapper around
  APT. The intention is to ease the use of APT in Qt-based programs.
@@ -71,7 +89,7 @@ Description: complete collection of QApt package management utilities
 
 Package: qapt-batch
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libqapt2-runtime
+Depends: libqapt3-runtime, ${misc:Depends}, ${shlibs:Depends}
 Description: Batch package manager for KDE
  QApt is a collection of tools and a library providing a wrapper around
  APT. The intention is to ease the use of APT in Qt-based programs.
@@ -84,7 +102,7 @@ Description: Batch package manager for KDE
 
 Package: qapt-deb-installer
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libqapt2-runtime
+Depends: libqapt3-runtime, ${misc:Depends}, ${shlibs:Depends}
 Description: tool for installing deb files
  QApt is a collection of tools and a library providing a wrapper around
  APT. The intention is to ease the use of APT in Qt-based programs.
@@ -95,7 +113,7 @@ Description: tool for installing deb files
 
 Package: plasma-runner-installer
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, command-not-found, qapt-batch
+Depends: command-not-found, qapt-batch, ${misc:Depends}, ${shlibs:Depends}
 Description: KRunner plugin for installing packages
  QApt is a collection of tools and a library providing a wrapper around
  APT. The intention is to ease the use of APT in Qt-based programs.
@@ -106,7 +124,7 @@ Description: KRunner plugin for installing packages
 
 Package: kde-thumbnailer-deb
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Enhances: dolphin, konqueror
 Description: KDE plugin to show thumbnails of Debian package files
  QApt is a collection of tools and a library providing a wrapper around
@@ -115,9 +133,11 @@ Description: KDE plugin to show thumbnails of Debian package files
  A plugin for KDE file managers (Dolphin and Konqueror) to preview Debian
  packages (.deb files) as thumbnails.
 
-Package: gstreamer1.0-qapt
+Package: gstreamer-qapt
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libqapt2-runtime
+Depends: libqapt3-runtime, ${misc:Depends}, ${shlibs:Depends}
+Replaces: gstreamer0.10-qapt (<< 2.1.70-0ubuntu5~)
+Breaks: gstreamer0.10-qapt (<< 2.1.70-0ubuntu5~)
 Description: GStreamer plugin to install codecs using QApt
  QApt is a collection of tools and a library providing a wrapper around
  APT. The intention is to ease the use of APT in Qt-based programs.
@@ -125,12 +145,18 @@ Description: GStreamer plugin to install codecs using QApt
  This package provides a plugin for the GStreamer multimedia framework
  to search and to install audio and video codecs.
 
+Package: gstreamer0.10-qapt
+Depends: gstreamer-qapt, ${misc:Depends}
+Architecture: all
+Section: oldlibs
+Description: transitional dummy package
+ This is a transitional dummy package. It can safely be removed.
+
 Package: qapt-dbg
 Section: debug
 Architecture: any
 Priority: extra
-Depends: ${misc:Depends}, libqapt2(= ${binary:Version})
-Recommends: kdelibs5-dbg
+Depends: libqapt3 (= ${binary:Version}), ${misc:Depends}
 Description: QApt debugging symbols
  QApt is a collection of tools and a library providing a wrapper around
  APT. The intention is to ease the use of APT in Qt-based programs.

@@ -1,2 +1,2 @@
-usr/lib/kde4/debthumbnailer.so
-usr/share/kde4/services/debthumbnailer.desktop
+usr/lib/*/qt5/plugins/debthumbnailer.so
+usr/share/kservices5/debthumbnailer.desktop
