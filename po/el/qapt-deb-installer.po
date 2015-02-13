@@ -1,0 +1,296 @@
+# el translation of qapt-deb-installer.po
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+#
+# Stelios <sstavra@gmail.com>, 2011, 2012.
+# Dimitrios Glentadakis <dglent@gmail.com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: qapt-deb-installer\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-12-14 07:45+0000\n"
+"PO-Revision-Date: 2012-10-18 21:00+0300\n"
+"Last-Translator: Stelios <sstavra@gmail.com>\n"
+"Language-Team: Greek <kde-i18n-el@kde.org>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.4\n"
+
+#: utils/qapt-deb-installer/ChangesDialog.cpp:37
+msgctxt "@title:window"
+msgid "Confirm Additional Changes"
+msgstr "Επιβεβαίωση πρόσθετων αλλαγών"
+
+#: utils/qapt-deb-installer/ChangesDialog.cpp:42
+msgctxt "@info"
+msgid "<h2>Additional Changes</h2>"
+msgstr "<h2>Πρόσθετες αλλαγές</h2>"
+
+#: utils/qapt-deb-installer/ChangesDialog.cpp:46
+msgid "This action requires a change to another package:"
+msgid_plural "This action requires changes to other packages:"
+msgstr[0] "Η ενέργεια αυτή απαιτεί αλλαγή σε άλλο πακέτο:"
+msgstr[1] "Η ενέργεια αυτή απαιτεί αλλαγές σε άλλα πακέτα:"
+
+#: utils/qapt-deb-installer/ChangesDialog.cpp:86
+#: utils/qapt-deb-installer/ChangesDialog.cpp:87
+msgctxt "@info:status Requested action"
+msgid "Install"
+msgstr "Εγκατάσταση"
+
+#: utils/qapt-deb-installer/ChangesDialog.cpp:88
+msgctxt "@info:status Requested action"
+msgid "Remove"
+msgstr "Αφαίρεση"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:49
+msgctxt "@info The widget's header label"
+msgid "<title>Installing</title>"
+msgstr "<title>Εγκατάσταση</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:105
+msgctxt "@info Status information, widget title"
+msgid "<title>Starting</title>"
+msgstr "<title>Έναρξη</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:112
+msgctxt "@info Status information, widget title"
+msgid "<title>Waiting</title>"
+msgstr "<title>Αναμονή</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:120
+msgctxt "@info Status info"
+msgid "<title>Loading Software List</title>"
+msgstr "<title>Φορτώνεται η λίστα λογισμικού</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:125
+msgctxt "@info Status information, widget title"
+msgid "<title>Downloading Packages</title>"
+msgstr "<title>Γίνεται λήψη πακέτων</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:130
+msgctxt "@info Status information, widget title"
+msgid "<title>Committing Changes</title>"
+msgstr "<title>Γίνεται commit των αλλαγών</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:136
+msgctxt "@label Message that the install is done"
+msgid "Done"
+msgstr "Ολοκληρώθηκε"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:138
+msgctxt "@info Header label used when the install is done"
+msgid "<title>Done</title>"
+msgstr "<title>Ολοκληρώθηκε</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:155
+#: utils/qapt-deb-installer/DebInstaller.cpp:72
+msgctxt "@label"
+msgid ""
+"The package system could not be initialized, your configuration may be "
+"broken."
+msgstr ""
+"Αδυναμία αρχικοποίησης του συστήματος πακέτων, η διαμόρφωσή σας ίσως είναι "
+"κατεστραμμένη."
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:157
+#: utils/qapt-deb-installer/DebInstaller.cpp:74
+msgctxt "@title:window"
+msgid "Initialization error"
+msgstr "Σφάλμα αρχικοποίησης"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:164
+msgctxt "@label"
+msgid "This package is incompatible with your computer."
+msgstr "Το πακέτο αυτό δεν είναι συμβατό με τον υπολογιστή σας."
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:165
+msgctxt "@title:window"
+msgid "Incompatible Package"
+msgstr "Ασύμβατο πακέτο"
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:83
+msgctxt "@label"
+msgid "Install Package"
+msgstr "Εγκατάσταση πακέτου"
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:107
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Could not open <filename>%1</filename>. It does not appear to be a valid "
+"Debian package file."
+msgstr ""
+"Αδυναμία ανοίγματος του <filename>%1</filename>. Δεν φαίνεται να είναι ένα "
+"έγκυρο αρχείο πακέτου Debian."
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:115
+#, kde-format
+msgctxt "@title:window"
+msgid "Package Installer - %1"
+msgstr "Πρόγραμμα εγκατάστασης πακέτων - %1"
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:214
+#, kde-format
+msgctxt "@info"
+msgid "Error: Wrong architecture '%1'"
+msgstr "Σφάλμα: Λανθασμένη αρχιτεκτονική '%1'"
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:234
+#, kde-format
+msgctxt "@info Error string when installing would break an existing package"
+msgid "Error: Breaks the existing package \"%1\""
+msgstr "Σφάλμα: καταστρέφει το υφιστάμενο πακέτο «%1»"
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:243
+msgctxt "@info"
+msgid "Error: Cannot satisfy dependencies"
+msgstr "Σφάλμα: δεν ικανοποιεί τις εξαρτήσεις"
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:253
+#, kde-format
+msgctxt "@label A note saying that additional packages are needed"
+msgid "Requires the installation of %1 additional package."
+msgid_plural "Requires the installation of %1 additional packages"
+msgstr[0] "Απαιτεί την εγκατάσταση %1 πρόσθετου πακέτου"
+msgstr[1] "Απαιτεί την εγκατάσταση %1 πρόσθετων πακέτων"
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:257
+msgctxt "@info"
+msgid "All dependencies are satisfied."
+msgstr "Όλες οι εξαρτήσεις ικανοποιούνται."
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:276
+msgctxt "@info"
+msgid "The same version is available in a software channel."
+msgstr "Η ίδια έκδοση είναι διαθέσιμη σε κανάλι λογισμικού."
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:277
+msgctxt "@info"
+msgid "It is recommended to install the software from the channel instead"
+msgstr "Συνιστάται η εγκατάσταση του λογισμικού από το κανάλι"
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:279
+msgctxt "@info"
+msgid "An older version is available in a software channel."
+msgstr "Μια παλαιότερη έκδοση είναι διαθέσιμη σε κανάλι λογισμικού."
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:280
+msgctxt "@info"
+msgid ""
+"It is recommended to install the version from the software channel, since it "
+"usually has more support."
+msgstr ""
+"Συνιστάται η εγκατάσταση της έκδοσης από το κανάλι λογισμικού, επειδή "
+"συνήθως από εκεί υπάρχει καλύτερη υποστήριξη."
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:283
+msgctxt "@info"
+msgid "A newer version is available in a software channel."
+msgstr "Μια νεότερη έκδοση είναι διαθέσιμη σε κανάλι λογισμικού."
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:284
+msgctxt "@info"
+msgid ""
+"It is strongly advised to install the version from the software channel, "
+"since it usually has more support."
+msgstr ""
+"Συνιστάται έντονα η εγκατάσταση της έκδοσης από το κανάλι λογισμικού, επειδή "
+"συνήθως από εκεί υπάρχει καλύτερη υποστήριξη."
+
+#: utils/qapt-deb-installer/DebViewer.cpp:71
+msgctxt "@label Label preceding the package name"
+msgid "Package:"
+msgstr "Πακέτο:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:79
+msgctxt "@label Label preceding the package status"
+msgid "Status:"
+msgstr "Κατάσταση:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:81
+msgctxt "@label"
+msgid "Details..."
+msgstr "Λεπτομέρειες..."
+
+#: utils/qapt-deb-installer/DebViewer.cpp:132
+msgctxt "@label Label preceding the package version"
+msgid "Version:"
+msgstr "Έκδοση:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:139
+msgctxt "@label Label preceding the package size"
+msgid "Installed Size:"
+msgstr "Μέγεθος εγκατεστημένου:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:146
+msgctxt "@label Label preceding the package maintainer"
+msgid "Maintainer:"
+msgstr "Συντηρητής:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:153
+msgctxt "@label Label preceding the package category"
+msgid "Category:"
+msgstr "Κατηγορία:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:160
+msgctxt "@label Label preceding the package homepage"
+msgid "Homepage:"
+msgstr "Ιστοσελίδα:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:174
+msgctxt "@title:tab"
+msgid "Description"
+msgstr "Περιγραφή"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:175
+msgctxt "@title:tab"
+msgid "Details"
+msgstr "Λεπτομέρειες"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:176
+msgctxt "@title:tab"
+msgid "Included Files"
+msgstr "Συμπεριλαμβανόμενα αρχεία"
+
+#: utils/qapt-deb-installer/main.cpp:32
+msgctxt "@info"
+msgid "A Debian package installer"
+msgstr "Ένα πρόγραμμα εγκατάστασης πακέτων Debian"
+
+#: utils/qapt-deb-installer/main.cpp:42
+msgctxt "@title"
+msgid "QApt Package Installer"
+msgstr "QApt Package Installer"
+
+#: utils/qapt-deb-installer/main.cpp:46
+msgctxt "@info:credit"
+msgid "(C) 2011 Jonathan Thomas"
+msgstr "(C) 2011 Jonathan Thomas"
+
+#: utils/qapt-deb-installer/main.cpp:48
+msgctxt "@info:credit"
+msgid "Jonathan Thomas"
+msgstr "Jonathan Thomas"
+
+#: utils/qapt-deb-installer/main.cpp:51
+msgctxt "@info:credit"
+msgid "Harald Sitter"
+msgstr ""
+
+#: utils/qapt-deb-installer/main.cpp:52
+msgctxt "@info:credit"
+msgid "Qt 5 port"
+msgstr ""
+
+#: utils/qapt-deb-installer/main.cpp:60
+#, fuzzy
+#| msgctxt "@info:shell"
+#| msgid ".deb file"
+msgctxt "@info:shell argument"
+msgid ".deb file"
+msgstr ".deb αρχείο"

@@ -1,0 +1,372 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Chetan Khona <chetan@kompkin.com>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-12-14 07:45+0000\n"
+"PO-Revision-Date: 2013-04-13 16:05+0530\n"
+"Last-Translator: Chetan Khona <chetan@kompkin.com>\n"
+"Language-Team: Marathi <kde-i18n-doc@kde.org>\n"
+"Language: mr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: utils/qapt-batch/detailswidget.cpp:51
+msgctxt "@label Remaining time"
+msgid "Remaining Time:"
+msgstr "उर्वरीत वेळ :"
+
+#: utils/qapt-batch/detailswidget.cpp:56
+msgctxt "@label Download Rate"
+msgid "Speed:"
+msgstr "वेग :"
+
+#: utils/qapt-batch/detailswidget.cpp:107
+msgctxt "@info:progress Remaining time"
+msgid "Unknown"
+msgstr "अपरिचीत"
+
+#: utils/qapt-batch/detailswidget.cpp:116
+#, kde-format
+msgctxt "@info:progress Download rate"
+msgid "%1/s"
+msgstr "%1/s"
+
+#: utils/qapt-batch/main.cpp:33
+msgctxt "@info"
+msgid "A batch installer using QApt"
+msgstr "क्यू-एप्ट वापरणारा बेच प्रतिष्ठापक"
+
+#: utils/qapt-batch/main.cpp:43
+msgctxt "@title"
+msgid "QApt Batch Installer"
+msgstr "क्यू-एप्ट बेच प्रतिष्ठापक"
+
+#: utils/qapt-batch/main.cpp:47
+msgctxt "@info:credit"
+msgid "(C) 2010 Jonathan Thomas"
+msgstr "(C) 2010 जोनाथन थोमस"
+
+#: utils/qapt-batch/main.cpp:49
+msgctxt "@info:credit"
+msgid "Jonathan Thomas"
+msgstr "जोनाथन थोमस"
+
+#: utils/qapt-batch/main.cpp:52
+msgctxt "@info:credit"
+msgid "Harald Sitter"
+msgstr ""
+
+#: utils/qapt-batch/main.cpp:53
+msgctxt "@info:credit"
+msgid "Qt 5 port"
+msgstr ""
+
+#: utils/qapt-batch/main.cpp:61
+msgctxt "@info:shell"
+msgid "Attaches the window to an X app specified by winid"
+msgstr "winid ने निर्देशीत केल्या प्रमाणे चौकट X अनुप्रयोगास जोडतो"
+
+#: utils/qapt-batch/main.cpp:62
+msgctxt "@info:shell value name"
+msgid "winid"
+msgstr ""
+
+#: utils/qapt-batch/main.cpp:66
+msgctxt "@info:shell"
+msgid "Install a package"
+msgstr "पॅकेज प्रतिष्ठापीत करा"
+
+#: utils/qapt-batch/main.cpp:69
+msgctxt "@info:shell"
+msgid "Remove a package"
+msgstr "पॅकेज काढून टाका"
+
+#: utils/qapt-batch/main.cpp:72
+msgctxt "@info:shell"
+msgid "Update the package cache"
+msgstr "पॅकेज कॅशे अद्ययावत करा"
+
+#: utils/qapt-batch/main.cpp:75
+msgctxt "@info:shell"
+msgid "Packages to be operated upon"
+msgstr "ज्यावर क्रिया करायची ते पॅकेजेस"
+
+#: utils/qapt-batch/main.cpp:85
+msgctxt "@info:shell error"
+msgid "Only one operation mode may be defined."
+msgstr ""
+
+#: utils/qapt-batch/main.cpp:96
+msgctxt "@info:shell error"
+msgid "No operation mode defined."
+msgstr ""
+
+#: utils/qapt-batch/qaptbatch.cpp:66
+msgctxt "@label"
+msgid "Waiting for authorization"
+msgstr "अधिप्रमाणाची वाट पाहत आहे"
+
+#: utils/qapt-batch/qaptbatch.cpp:101 utils/qapt-batch/qaptbatch.cpp:181
+msgctxt "@label"
+msgid ""
+"The package system could not be initialized, your configuration may be "
+"broken."
+msgstr "पॅकेज प्रणाली सुरु होऊ शकत नाही, तुमची संयोजना तुटलेली असू शकते."
+
+#: utils/qapt-batch/qaptbatch.cpp:103 utils/qapt-batch/qaptbatch.cpp:183
+msgctxt "@title:window"
+msgid "Initialization error"
+msgstr "प्रारंभ करताना त्रुटी"
+
+#: utils/qapt-batch/qaptbatch.cpp:128 utils/qapt-batch/qaptbatch.cpp:249
+#, kde-format
+msgctxt "@label"
+msgid ""
+"The package \"%1\" has not been found among your software sources. "
+"Therefore, it cannot be installed. "
+msgstr ""
+"\"%1\" हे पॅकेज तुमच्या सॉफ़्टवेअर मार्गांवर सापडले नाही. त्यामुळे ते प्रतिष्ठापीत करू शकत "
+"नाही. "
+
+#: utils/qapt-batch/qaptbatch.cpp:131 utils/qapt-batch/qaptbatch.cpp:252
+msgctxt "@title:window"
+msgid "Package Not Found"
+msgstr "पॅकेजसापडले नाही"
+
+#: utils/qapt-batch/qaptbatch.cpp:190
+msgctxt "@label"
+msgid ""
+"Another application seems to be using the package system at this time. You "
+"must close all other package managers before you will be able to install or "
+"remove any packages."
+msgstr ""
+"पॅकेज प्रणाली यावेळेस दुसऱ्या अनुप्रयोगाद्वारे वापरली जात आहे असे वाटते. तुम्हाला पॅकेजेस "
+"प्रतिष्ठापन किंवा काढून टाकण्याकरिता इतर पॅकेज व्यवस्थापक बंद करावे लागतील."
+
+#: utils/qapt-batch/qaptbatch.cpp:194
+msgctxt "@title:window"
+msgid "Unable to obtain package system lock"
+msgstr "पॅकेज प्रणाली कुलूप उघडु शकत नाही"
+
+#: utils/qapt-batch/qaptbatch.cpp:199
+#, kde-format
+msgctxt "@label"
+msgid ""
+"You do not have enough disk space in the directory at %1 to continue with "
+"this operation."
+msgstr "हि क्रिया चालू ठेवण्याकरिता %1 या संचयीकेत पुरेशी जागा नाही."
+
+#: utils/qapt-batch/qaptbatch.cpp:201
+msgctxt "@title:window"
+msgid "Low disk space"
+msgstr "डिस्कवर कमी जागा शिल्लक आहे"
+
+#: utils/qapt-batch/qaptbatch.cpp:206
+msgctxt "@label"
+msgid "Could not download packages"
+msgstr "पॅकेज डाउनलोड करू शकत नाही"
+
+#: utils/qapt-batch/qaptbatch.cpp:207
+msgctxt "@title:window"
+msgid "Download failed"
+msgstr "डाउनलोड अपयशी"
+
+#: utils/qapt-batch/qaptbatch.cpp:211
+msgctxt "@label"
+msgid "An error occurred while applying changes:"
+msgstr "बदल लागू करताना त्रुटी आढळली :"
+
+#: utils/qapt-batch/qaptbatch.cpp:212
+msgctxt "@title:window"
+msgid "Commit error"
+msgstr "सादर करताना त्रुटी"
+
+#: utils/qapt-batch/qaptbatch.cpp:217
+msgctxt "@label"
+msgid ""
+"This operation cannot continue since proper authorization was not provided"
+msgstr "योग्य अधिप्रमाणन न पुरविल्याने हि क्रिया पुढे जाउ शकत नाही"
+
+#: utils/qapt-batch/qaptbatch.cpp:219
+msgctxt "@title:window"
+msgid "Authentication error"
+msgstr "परवानगी विषयक त्रुटी"
+
+#: utils/qapt-batch/qaptbatch.cpp:223
+msgctxt "@label"
+msgid ""
+"It appears that the QApt worker has either crashed or disappeared. Please "
+"report a bug to the QApt maintainers"
+msgstr ""
+"असे वाटते कि क्यु-एप्ट कामगार तुटला आहे किंवा हरवला आहे. कृपया क्यु-एप्ट नियंत्रकांकडे बग "
+"अहवाल दाखल करा"
+
+#: utils/qapt-batch/qaptbatch.cpp:225
+msgctxt "@title:window"
+msgid "Unexpected Error"
+msgstr "अनपेक्षीत त्रुटी"
+
+#: utils/qapt-batch/qaptbatch.cpp:233
+msgctxt "@label"
+msgid ""
+"The following package has not been verified by its author. Downloading "
+"untrusted packages has been disallowed by your current configuration."
+msgid_plural ""
+"The following packages have not been verified by their authors. Downloading "
+"untrusted packages has been disallowed by your current configuration."
+msgstr[0] ""
+"पुढील पॅकेज त्याच्या लेखकाने तपासलेले नाही. अविश्वासार्ह पॅकेजेस डाउनलोड करण्याची परवानगी "
+"तुमच्या वर्तमान संयोजनेत नाही."
+msgstr[1] ""
+"पुढील पॅकेजेस त्याच्या लेखकाने तपासलेले नाहीत. अविश्वासार्ह पॅकेजेस डाउनलोड करण्याची परवानगी "
+"तुमच्या वर्तमान संयोजनेत नाही."
+
+#: utils/qapt-batch/qaptbatch.cpp:242
+msgctxt "@title:window"
+msgid "Untrusted Packages"
+msgstr "अविश्वासर्ह पॅकेजेस"
+
+#: utils/qapt-batch/qaptbatch.cpp:265
+msgctxt "@title:window"
+msgid "Media Change Required"
+msgstr "मीडिया बदल आवश्यक"
+
+#: utils/qapt-batch/qaptbatch.cpp:266
+#, kde-format
+msgctxt "@label"
+msgid "Please insert %1 into <filename>%2</filename>"
+msgstr "कृपया %1 हे <filename>%2</filename> यात अंतर्भूत करा"
+
+#: utils/qapt-batch/qaptbatch.cpp:274
+msgctxt "@title:window"
+msgid "Warning - Unverified Software"
+msgstr "इशारा - न तपासलेले सॉफ़्टवेअर"
+
+#: utils/qapt-batch/qaptbatch.cpp:276
+msgctxt "@label"
+msgid ""
+"The following piece of software cannot be verified. <warning>Installing "
+"unverified software represents a security risk, as the presence of "
+"unverifiable software can be a sign of tampering.</warning> Do you wish to "
+"continue?"
+msgid_plural ""
+"The following pieces of software cannot be authenticated. "
+"<warning>Installing unverified software represents a security risk, as the "
+"presence of unverifiable software can be a sign of tampering.</warning> Do "
+"you wish to continue?"
+msgstr[0] ""
+"पुढील सॉफ़्टवेअर तपासता येत नाही. <warning>न तपासलेले सॉफ़्टवेअर सुरक्षेकरिता धोका ठरू "
+"शकते, कारण न तपासलेल्या सॉफ़्टवेअरची उपस्थिती ही छेडछाड केल्याची खूण आहे.</warning> "
+"तुम्हाला पुढे जायचे आहे का?"
+msgstr[1] ""
+"पुढील सॉफ़्टवेअर तपासता येत नाही <warning>न तपासलेले सॉफ़्टवेअर सुरक्षेकरिता धोका ठरू शकते, "
+"कारण न तपासलेल्या सॉफ़्टवेअरची उपस्थिती ही छेडछाड केल्याची खूण आहे.</warning> तुम्हाला पुढे "
+"जायचे आहे का?"
+
+#: utils/qapt-batch/qaptbatch.cpp:311
+msgctxt "@label Progress bar label when waiting to start"
+msgid "Waiting to start."
+msgstr "सुरु करण्याची वाट पाहत आहे."
+
+#: utils/qapt-batch/qaptbatch.cpp:316
+msgctxt "@label Status label when waiting for a password"
+msgid "Waiting for authentication."
+msgstr "अधिप्रमाणनाची वाट पाहत आहे."
+
+#: utils/qapt-batch/qaptbatch.cpp:320
+msgctxt "@label Status label when waiting for a CD-ROM"
+msgid "Waiting for required media."
+msgstr "गरजेच्या माध्यमाची वाट पाहत आहे."
+
+#: utils/qapt-batch/qaptbatch.cpp:325
+msgctxt "@label Status label"
+msgid "Waiting for other package managers to quit."
+msgstr "इतर सॉफ़्टवेअर व्यवस्थापकाने बाहेर पडण्याची वाट पाहत आहे."
+
+#: utils/qapt-batch/qaptbatch.cpp:333
+msgctxt "@label Status label"
+msgid "Loading package cache."
+msgstr "पॅकेज कॅशे दाखल करत आहे."
+
+#: utils/qapt-batch/qaptbatch.cpp:337
+msgctxt "@title:window"
+msgid "Refreshing Package Information"
+msgstr "पॅकेज माहिती परत ताजी करत आहे"
+
+#: utils/qapt-batch/qaptbatch.cpp:338
+msgctxt "@info:status"
+msgid "Checking for new, removed or upgradeable packages"
+msgstr "नवीन, काढून टाकलेले किंवा अद्ययावत करण्यायोग्य पॅकेजेस तपासत आहे"
+
+#: utils/qapt-batch/qaptbatch.cpp:340
+msgctxt "@title:window"
+msgid "Downloading"
+msgstr "डाउनलोड करत आहे"
+
+#: utils/qapt-batch/qaptbatch.cpp:342
+msgctxt "@info:status"
+msgid "Downloading package file"
+msgid_plural "Downloading package files"
+msgstr[0] "पॅकेज फाईल डाउनलोड करत आहे"
+msgstr[1] "पॅकेज फाईल्स डाउनलोड करत आहे"
+
+#: utils/qapt-batch/qaptbatch.cpp:352
+msgctxt "@title:window"
+msgid "Installing Packages"
+msgstr "पॅकेजेस प्रतिष्ठापन करत आहे"
+
+#: utils/qapt-batch/qaptbatch.cpp:358
+msgctxt "@title:window"
+msgid "Installation Complete"
+msgstr "प्रतिष्ठापना पूर्ण"
+
+#: utils/qapt-batch/qaptbatch.cpp:362
+msgctxt "@label"
+msgid "Package installation failed."
+msgstr "पॅकेजची प्रतिष्ठापना करण्यास अपयश."
+
+#: utils/qapt-batch/qaptbatch.cpp:365
+msgctxt "@label"
+msgid "Package successfully installed."
+msgid_plural "Packages successfully installed."
+msgstr[0] "पॅकेज यशस्वीरित्या प्रतिष्ठापीत केले."
+msgstr[1] "पॅकेजेस यशस्वीरित्या प्रतिष्ठापीत केले."
+
+#: utils/qapt-batch/qaptbatch.cpp:369
+msgctxt "@title:window"
+msgid "Removal Complete"
+msgstr "काढून टाकणे पूर्ण"
+
+#: utils/qapt-batch/qaptbatch.cpp:373
+msgctxt "@label"
+msgid "Package removal failed."
+msgstr "पॅकेज काढून टाकण्यात अपयश."
+
+#: utils/qapt-batch/qaptbatch.cpp:377
+msgctxt "@label"
+msgid "Package successfully uninstalled."
+msgid_plural "Packages successfully uninstalled."
+msgstr[0] "पॅकेज यशस्वीरित्या अप्रतिष्ठापीत केले."
+msgstr[1] "पॅकेजेस यशस्वीरित्या अप्रतिष्ठापीत केले."
+
+#: utils/qapt-batch/qaptbatch.cpp:381
+msgctxt "@title:window"
+msgid "Refresh Complete"
+msgstr "ताजे करणे पूर्ण"
+
+#: utils/qapt-batch/qaptbatch.cpp:384
+msgctxt "@info:status"
+msgid "Refresh failed."
+msgstr "ताजे करणे अपयशी."
+
+#: utils/qapt-batch/qaptbatch.cpp:386
+msgctxt "@label"
+msgid "Package information successfully refreshed."
+msgstr "पॅकेज माहिती यशस्वीपूर्वक ताजी केली."

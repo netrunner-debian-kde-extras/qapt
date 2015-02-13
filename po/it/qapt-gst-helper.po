@@ -1,0 +1,382 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Federico Zenith <federico.zenith@member.fsf.org>, 2011, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: qapt-gst-helper\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-12-14 07:45+0000\n"
+"PO-Revision-Date: 2012-10-28 11:19+0100\n"
+"Last-Translator: Federico Zenith <federico.zenith@member.fsf.org>\n"
+"Language-Team: Italian <kde-i18n-it@kde.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: utils/qapt-gst-helper/main.cpp:33
+msgctxt "@info"
+msgid "A GStreamer codec installer using QApt"
+msgstr "Un installatore di codec di GStreamer con QApt"
+
+#: utils/qapt-gst-helper/main.cpp:43
+msgctxt "@title"
+msgid "QApt Codec Searcher"
+msgstr "Ricerca di codec con QApt"
+
+#: utils/qapt-gst-helper/main.cpp:47
+msgctxt "@info:credit"
+msgid "(C) 2011 Jonathan Thomas"
+msgstr "© 2011 Jonathan Thomas"
+
+#: utils/qapt-gst-helper/main.cpp:49
+msgctxt "@info:credit"
+msgid "Jonathan Thomas"
+msgstr "Jonathan Thomas"
+
+#: utils/qapt-gst-helper/main.cpp:52
+msgctxt "@info:credit"
+msgid "Harald Sitter"
+msgstr ""
+
+#: utils/qapt-gst-helper/main.cpp:53
+msgctxt "@info:credit"
+msgid "Qt 5 port"
+msgstr ""
+
+#: utils/qapt-gst-helper/main.cpp:61
+msgctxt "@info:shell"
+msgid "Attaches the window to an X app specified by winid"
+msgstr "Associa la finestra a un'applicazione X specificata per winid"
+
+#: utils/qapt-gst-helper/main.cpp:62
+msgctxt "@info:shell value name"
+msgid "winid"
+msgstr ""
+
+#: utils/qapt-gst-helper/main.cpp:66
+msgctxt "@info:shell"
+msgid "GStreamer install info"
+msgstr "Informazioni di installazione di GStreamer"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:86
+msgctxt "@info Error message"
+msgid "No valid plugin info was provided, so no plugins could be found."
+msgstr ""
+"Non sono state date informazioni valide per l'estensione, quindi non è stato "
+"possibile trovarne."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:89
+msgctxt "@title:window"
+msgid "Couldn't Find Plugins"
+msgstr "Impossibile trovare estensioni"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:95
+msgctxt "@info:progress"
+msgid "Looking for plugins"
+msgstr "Ricerca di estensioni"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:129
+#: utils/qapt-gst-helper/PluginHelper.cpp:244
+msgctxt "@label"
+msgid ""
+"The package system could not be initialized, your configuration may be "
+"broken."
+msgstr ""
+"Impossibile inizializzare il sistema dei pacchetti, la configurazione "
+"potrebbe essere danneggiata."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:131
+#: utils/qapt-gst-helper/PluginHelper.cpp:246
+msgctxt "@title:window"
+msgid "Initialization error"
+msgstr "Errore di inizializzazione"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:146
+#, kde-format
+msgid ""
+"The following plugin is required: <ul><li>%2</li></ul>Do you want to search "
+"for this now?"
+msgid_plural ""
+"The following plugins are required: <ul><li>%2</li></ul>Do you want to "
+"search for these now?"
+msgstr[0] ""
+"È richiesta la seguente estensione: <ul><li>%2</li></ul>Vuoi cercarla adesso?"
+msgstr[1] ""
+"Sono richieste la seguenti estensioni: <ul><li>%2</li></ul>Vuoi cercarle "
+"adesso?"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:158
+msgctxt "A program for which we have no name"
+msgid "A program"
+msgstr "Un programma"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:165
+#, kde-format
+msgid "%2 requires an additional plugin to encode this file"
+msgid_plural "%2 requires additional plugins to encode this file"
+msgstr[0] "%2 richiede un'estensione aggiuntiva per codificare questo file"
+msgstr[1] "%2 richiede estensioni aggiuntive per codificare questo file"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:171
+#, kde-format
+msgid "%2 requires an additional plugin to decode this file"
+msgid_plural "%2 requires additional plugins to decode this file"
+msgstr[0] "%2 richiede un'estensione aggiuntiva per decodificare questo file"
+msgstr[1] "%2 richiede estensioni aggiuntive per decodificare questo file"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:183
+msgctxt "Search for packages"
+msgid "Search"
+msgstr "Cerca"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:209
+msgid "Confirm Changes"
+msgstr "Conferma le modifiche"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:210
+msgid "Install the following package?"
+msgid_plural "Install the following packages?"
+msgstr[0] "Installare il pacchetto seguente?"
+msgstr[1] "Installare i pacchetti seguenti?"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:215
+msgctxt "Install packages"
+msgid "Install"
+msgstr "Installa"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:254
+msgctxt "@label"
+msgid ""
+"Another application seems to be using the package system at this time. You "
+"must close all other package managers before you will be able to install or "
+"remove any packages."
+msgstr ""
+"Sembra che il sistema dei pacchetti sia al momento utilizzato da un'altra "
+"applicazione. Per poter installare o rimuovere pacchetti, devi chiudere "
+"tutti gli altri gestori di pacchetti."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:258
+msgctxt "@title:window"
+msgid "Unable to obtain package system lock"
+msgstr "Impossibile ottenere il blocco del sistema dei pacchetti"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:263
+#, kde-format
+msgctxt "@label"
+msgid ""
+"You do not have enough disk space in the directory at %1 to continue with "
+"this operation."
+msgstr ""
+"Non hai abbastanza spazio su disco nella cartella %1 per continuare con "
+"questa operazione."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:265
+msgctxt "@title:window"
+msgid "Low disk space"
+msgstr "Spazio su disco insufficiente"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:269
+msgctxt "@label"
+msgid "Could not download packages"
+msgstr "Impossibile scaricare i pacchetti"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:270
+msgctxt "@title:window"
+msgid "Download failed"
+msgstr "Scaricamento non riuscito"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:275
+msgctxt "@label"
+msgid "An error occurred while applying changes:"
+msgstr "Si è verificato un errore nell'applicazione delle modifiche:"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:276
+msgctxt "@title:window"
+msgid "Commit Error"
+msgstr "Errore di deposito"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:282
+msgctxt "@label"
+msgid ""
+"This operation cannot continue since proper authorization was not provided"
+msgstr ""
+"Impossibile continuare questa operazione poiché non è stata fornita la "
+"corretta autorizzazione"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:284
+msgctxt "@title:window"
+msgid "Authentication error"
+msgstr "Errore di autenticazione"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:288
+msgctxt "@label"
+msgid ""
+"It appears that the QApt worker has either crashed or disappeared. Please "
+"report a bug to the QApt maintainers"
+msgstr ""
+"Sembra che l'esecutore QApt sia andato in crash o scomparso. Per piacere "
+"segnala l'errore ai responsabili di QApt"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:290
+msgctxt "@title:window"
+msgid "Unexpected Error"
+msgstr "Errore inatteso"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:298
+msgctxt "@label"
+msgid ""
+"The following package has not been verified by its author. Downloading "
+"untrusted packages has been disallowed by your current configuration."
+msgid_plural ""
+"The following packages have not been verified by their authors. Downloading "
+"untrusted packages has been disallowed by your current configuration."
+msgstr[0] ""
+"Il pacchetto seguente non è stato verificato dal suo autore. La "
+"configurazione attuale non permette lo scaricamento di pacchetti non "
+"affidabili."
+msgstr[1] ""
+"I pacchetti seguenti non sono stati verificati dagli autori. La "
+"configurazione attuale non permette lo scaricamento di pacchetti non "
+"affidabili."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:307
+msgctxt "@title:window"
+msgid "Untrusted Packages"
+msgstr "Pacchetti non affidabili"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:314
+#, kde-format
+msgctxt "@label"
+msgid ""
+"The package \"%1\" has not been found among your software sources. "
+"Therefore, it cannot be installed. "
+msgstr ""
+"Il pacchetto «%1» non è stato trovato tra le fonti di software. Pertanto, "
+"non può essere installato. "
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:317
+msgctxt "@title:window"
+msgid "Package Not Found"
+msgstr "Pacchetto non trovato"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:331
+msgctxt "@title:window"
+msgid "Media Change Required"
+msgstr "È necessario un cambio del supporto"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:332
+#, kde-format
+msgctxt "@label"
+msgid "Please insert %1 into <filename>%2</filename>"
+msgstr "Inserisci %1 nel <filename>%2</filename>"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:341
+msgctxt "@title:window"
+msgid "Warning - Unverified Software"
+msgstr "Attenzione - Software non verificato"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:343
+msgctxt "@label"
+msgid ""
+"The following piece of software cannot be verified. <warning>Installing "
+"unverified software represents a security risk, as the presence of "
+"unverifiable software can be a sign of tampering.</warning> Do you wish to "
+"continue?"
+msgid_plural ""
+"The following pieces of software cannot be authenticated. "
+"<warning>Installing unverified software represents a security risk, as the "
+"presence of unverifiable software can be a sign of tampering.</warning> Do "
+"you wish to continue?"
+msgstr[0] ""
+"Impossibile verificare la seguente parte di software. "
+"<warning>L'installazione di software non verificato rappresenta un rischio "
+"per la sicurezza, dato che la sua presenza può essere indice di manomissione."
+"</warning> Vuoi continuare?"
+msgstr[1] ""
+"Impossibile autenticare le seguenti parti di software. "
+"<warning>L'installazione di software non verificato rappresenta un rischio "
+"per la sicurezza, dato che la sua presenza può essere indice di manomissione."
+"</warning> Vuoi continuare?"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:372
+msgctxt "@label Progress bar label when waiting to start"
+msgid "Waiting to start."
+msgstr "In attesa dell'avvio."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:377
+msgctxt "@label Status label when waiting for a password"
+msgid "Waiting for authentication."
+msgstr "In attesa dell'autenticazione."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:382
+msgctxt "@label Status label when waiting for a CD-ROM"
+msgid "Waiting for required media."
+msgstr "In attesa dei supporti richiesti."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:387
+msgctxt "@label Status label"
+msgid "Waiting for other package managers to quit."
+msgstr "In attesa che gli altri gestori di pacchetti siano chiusi."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:395
+msgctxt "@label Status label"
+msgid "Loading package cache."
+msgstr "Caricamento della cache dei pacchetti."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:398
+msgctxt "@title:window"
+msgid "Downloading"
+msgstr "Scaricamento"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:399
+msgctxt "@info:status"
+msgid "Downloading codecs"
+msgstr "Scaricamento dei codec"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:402
+msgctxt "@title:window"
+msgid "Installing"
+msgstr "Installazione"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:403
+msgctxt "@info:status"
+msgid "Installing codecs"
+msgstr "Installazione dei codec"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:409
+msgctxt "@label"
+msgid "Package installation finished with errors."
+msgstr "L'installazione dei pacchetti si è conclusa con degli errori."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:410
+msgctxt "@title:window"
+msgid "Installation Failed"
+msgstr "Installazione non riuscita"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:412
+msgctxt "@label"
+msgid "Codecs successfully installed"
+msgstr "Codec installati correttamente"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:413
+msgctxt "@title:window"
+msgid "Installation Complete"
+msgstr "Installazione completata"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:449
+msgctxt "@info"
+msgid "No plugins could be found"
+msgstr "Nessuna estensione trovata"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:450
+msgctxt "@title"
+msgid "Plugins Not Found"
+msgstr "Estensioni non trovate"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:512
+msgctxt "@label Progress bar label when waiting to start"
+msgid "Waiting"
+msgstr "Attesa"

@@ -1,0 +1,301 @@
+# Lithuanian translations for l package.
+# Copyright (C) 2011 This_file_is_part_of_KDE
+# This file is distributed under the same license as the l package.
+#
+# Automatically generated, 2011.
+# Liudas Ališauskas <liudas.alisauskas@gmail.com>, 2011.
+# Liudas Alisauskas <liudas@akmc.lt>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: qapt-deb-installer\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-12-14 07:45+0000\n"
+"PO-Revision-Date: 2013-04-16 21:41+0300\n"
+"Last-Translator: Liudas Alisauskas <liudas@akmc.lt>\n"
+"Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
+"Language: lt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
+"%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: utils/qapt-deb-installer/ChangesDialog.cpp:37
+msgctxt "@title:window"
+msgid "Confirm Additional Changes"
+msgstr "Patvirtinkite papildomus pakeitimus"
+
+#: utils/qapt-deb-installer/ChangesDialog.cpp:42
+msgctxt "@info"
+msgid "<h2>Additional Changes</h2>"
+msgstr "<h2>Papildomi pakeitimai</h2>"
+
+#: utils/qapt-deb-installer/ChangesDialog.cpp:46
+msgid "This action requires a change to another package:"
+msgid_plural "This action requires changes to other packages:"
+msgstr[0] "Šis veiksmas reikalauja pokyčių kitam paketui:"
+msgstr[1] "Šis veiksmas reikalauja pokyčių kitiems paketams:"
+msgstr[2] "Šis veiksmas reikalauja pokyčių kitiems paketams:"
+msgstr[3] "Šis veiksmas reikalauja pokyčių kitiems paketams:"
+
+#: utils/qapt-deb-installer/ChangesDialog.cpp:86
+#: utils/qapt-deb-installer/ChangesDialog.cpp:87
+msgctxt "@info:status Requested action"
+msgid "Install"
+msgstr "Įdiegti"
+
+#: utils/qapt-deb-installer/ChangesDialog.cpp:88
+msgctxt "@info:status Requested action"
+msgid "Remove"
+msgstr "Pašalinti"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:49
+msgctxt "@info The widget's header label"
+msgid "<title>Installing</title>"
+msgstr "<title>Diegiama</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:105
+msgctxt "@info Status information, widget title"
+msgid "<title>Starting</title>"
+msgstr "<title>Pradedama</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:112
+msgctxt "@info Status information, widget title"
+msgid "<title>Waiting</title>"
+msgstr "<title>Laukiama</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:120
+msgctxt "@info Status info"
+msgid "<title>Loading Software List</title>"
+msgstr "<title>Įkeliamas programinės įrangos sąrašas</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:125
+msgctxt "@info Status information, widget title"
+msgid "<title>Downloading Packages</title>"
+msgstr "<title>Atsisiunčiami paketai</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:130
+msgctxt "@info Status information, widget title"
+msgid "<title>Committing Changes</title>"
+msgstr "<title>Taikomi pakeitimai</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:136
+msgctxt "@label Message that the install is done"
+msgid "Done"
+msgstr "Atlikta"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:138
+msgctxt "@info Header label used when the install is done"
+msgid "<title>Done</title>"
+msgstr "<title>Atlikta</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:155
+#: utils/qapt-deb-installer/DebInstaller.cpp:72
+msgctxt "@label"
+msgid ""
+"The package system could not be initialized, your configuration may be "
+"broken."
+msgstr ""
+"Paketų sistema negalėjo būti inicializuota, Jūsų konfigūracija gali būti "
+"sugadinta."
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:157
+#: utils/qapt-deb-installer/DebInstaller.cpp:74
+msgctxt "@title:window"
+msgid "Initialization error"
+msgstr "Inicializacijos klaida"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:164
+msgctxt "@label"
+msgid "This package is incompatible with your computer."
+msgstr "Paketas nesuderinamas su jūsų kompiuteriu."
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:165
+msgctxt "@title:window"
+msgid "Incompatible Package"
+msgstr "Diegti paketą"
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:83
+msgctxt "@label"
+msgid "Install Package"
+msgstr "Diegti paketą"
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:107
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Could not open <filename>%1</filename>. It does not appear to be a valid "
+"Debian package file."
+msgstr ""
+"Nepavyko atverti failo <filename>%1</filename>. Tai nėra tinkamas Debian "
+"paketinis failas."
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:115
+#, kde-format
+msgctxt "@title:window"
+msgid "Package Installer - %1"
+msgstr "Paketų diegimo programa - %1"
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:214
+#, kde-format
+msgctxt "@info"
+msgid "Error: Wrong architecture '%1'"
+msgstr "Klaida: Bloga architektūra „%1“"
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:234
+#, kde-format
+msgctxt "@info Error string when installing would break an existing package"
+msgid "Error: Breaks the existing package \"%1\""
+msgstr "Klaida: Sugadina esantį paketą „%1“"
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:243
+msgctxt "@info"
+msgid "Error: Cannot satisfy dependencies"
+msgstr "Klaida: Negali patenkinti priklausomybės"
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:253
+#, kde-format
+msgctxt "@label A note saying that additional packages are needed"
+msgid "Requires the installation of %1 additional package."
+msgid_plural "Requires the installation of %1 additional packages"
+msgstr[0] "Reikalauja įdiegti %1 papildomą paketą."
+msgstr[1] "Reikalauja įdiegti %1 papildomus paketus."
+msgstr[2] "Reikalauja įdiegti %1 papildomų paketų."
+msgstr[3] "Reikalauja įdiegti %1 papildomą paketą."
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:257
+msgctxt "@info"
+msgid "All dependencies are satisfied."
+msgstr "Visos priklausomybės yra patenkintos."
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:276
+msgctxt "@info"
+msgid "The same version is available in a software channel."
+msgstr "Ta pati versija yra pasiekiama programinės įrangos kanale."
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:277
+msgctxt "@info"
+msgid "It is recommended to install the software from the channel instead"
+msgstr "Yra rekomenduojama įdiegti programinę įrangą iš kanalo"
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:279
+msgctxt "@info"
+msgid "An older version is available in a software channel."
+msgstr "Senesnė versija yra pasiekiama programinės įrangos kanale."
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:280
+msgctxt "@info"
+msgid ""
+"It is recommended to install the version from the software channel, since it "
+"usually has more support."
+msgstr ""
+"Yra rekomenduojama įdiegti programinę įrangą iš kanalo, kadangi ji "
+"dažniausiai turi didesnį palaikymą."
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:283
+msgctxt "@info"
+msgid "A newer version is available in a software channel."
+msgstr "Naujesnė versija yra pasiekiama programinės įrangos kanale."
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:284
+msgctxt "@info"
+msgid ""
+"It is strongly advised to install the version from the software channel, "
+"since it usually has more support."
+msgstr ""
+"Yra stipriai patariama įdiegti programinę įrangą iš kanalo, kadangi ji "
+"dažniausiai turi didesnį palaikymą."
+
+#: utils/qapt-deb-installer/DebViewer.cpp:71
+msgctxt "@label Label preceding the package name"
+msgid "Package:"
+msgstr "Paketas:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:79
+msgctxt "@label Label preceding the package status"
+msgid "Status:"
+msgstr "Būsena:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:81
+msgctxt "@label"
+msgid "Details..."
+msgstr "Išsamiau..."
+
+#: utils/qapt-deb-installer/DebViewer.cpp:132
+msgctxt "@label Label preceding the package version"
+msgid "Version:"
+msgstr "Versija:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:139
+msgctxt "@label Label preceding the package size"
+msgid "Installed Size:"
+msgstr "Įdiegus dydis:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:146
+msgctxt "@label Label preceding the package maintainer"
+msgid "Maintainer:"
+msgstr "Prižiūrėtojas:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:153
+msgctxt "@label Label preceding the package category"
+msgid "Category:"
+msgstr "Kategorija:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:160
+msgctxt "@label Label preceding the package homepage"
+msgid "Homepage:"
+msgstr "Namų puslapis:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:174
+msgctxt "@title:tab"
+msgid "Description"
+msgstr "Aprašymas"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:175
+msgctxt "@title:tab"
+msgid "Details"
+msgstr "Išsamiau"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:176
+msgctxt "@title:tab"
+msgid "Included Files"
+msgstr "Įtraukti failai"
+
+#: utils/qapt-deb-installer/main.cpp:32
+msgctxt "@info"
+msgid "A Debian package installer"
+msgstr "Debian paketų diegimo programa"
+
+#: utils/qapt-deb-installer/main.cpp:42
+msgctxt "@title"
+msgid "QApt Package Installer"
+msgstr "QApt paketų diegimo programa"
+
+#: utils/qapt-deb-installer/main.cpp:46
+msgctxt "@info:credit"
+msgid "(C) 2011 Jonathan Thomas"
+msgstr "(C) 2011 Jonathan Thomas"
+
+#: utils/qapt-deb-installer/main.cpp:48
+msgctxt "@info:credit"
+msgid "Jonathan Thomas"
+msgstr "Jonathan Thomas"
+
+#: utils/qapt-deb-installer/main.cpp:51
+msgctxt "@info:credit"
+msgid "Harald Sitter"
+msgstr ""
+
+#: utils/qapt-deb-installer/main.cpp:52
+msgctxt "@info:credit"
+msgid "Qt 5 port"
+msgstr ""
+
+#: utils/qapt-deb-installer/main.cpp:60
+#, fuzzy
+#| msgctxt "@info:shell"
+#| msgid ".deb file"
+msgctxt "@info:shell argument"
+msgid ".deb file"
+msgstr ".deb failas"
