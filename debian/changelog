@@ -21,6 +21,7 @@ libqapt (3.0.0-1~) UNRELEASED; urgency=medium
   * Update copyright information.
   * Update build dependencies to build against experimental and to
     follow cmake.
+  * Remove patch: remove_tests.diff
 
  -- Maximiliano Curia <maxy@debian.org>  Fri, 13 Feb 2015 22:05:40 +0100
 
