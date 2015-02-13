@@ -1,16 +1,17 @@
 set(qaptbatch_SRCS
     main.cpp
     qaptbatch.cpp
-    detailswidget.cpp)
+    detailswidget.cpp
+)
 
-qt4_add_dbus_interface(qaptbatch_SRCS
-                       ../../src/worker/org.kubuntu.qaptworker.xml
-                       workerdbus)
+add_executable(qapt-batch ${qaptbatch_SRCS})
 
-include_directories(${KDE4_INCLUDES} ${QT_INCLUDES})
-
-kde4_add_executable(qapt-batch ${qaptbatch_SRCS})
-
-target_link_libraries(qapt-batch ${KDE4_KDEUI_LIBS} qapt)
+target_link_libraries(qapt-batch
+    KF5::CoreAddons
+    KF5::I18n
+    KF5::KIOCore
+    KF5::WidgetsAddons
+    KF5::WindowSystem
+    QApt::Main)
 
 install(TARGETS qapt-batch ${INSTALL_TARGETS_DEFAULT_ARGS})

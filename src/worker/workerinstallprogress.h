@@ -1,5 +1,6 @@
 /***************************************************************************
- *   Copyright © 2010 Jonathan Thomas <echidnaman@kubuntu.org>             *
+ *   Copyright © 2010-2012 Jonathan Thomas <echidnaman@kubuntu.org>        *
+ *   Copyright © 2004 Canonical <mvo@debian.org>                           *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or         *
  *   modify it under the terms of the GNU General Public License as        *
@@ -21,40 +22,27 @@
 #ifndef WORKERINSTALLPROGRESS_H
 #define WORKERINSTALLPROGRESS_H
 
-#include <QtCore/QVariantMap>
-
 #include <apt-pkg/packagemanager.h>
 
-class QEventLoop;
+class Transaction;
 
-class QAptWorker;
-
-class WorkerInstallProgress : public QObject
+class WorkerInstallProgress
 {
-    Q_OBJECT
 public:
-    WorkerInstallProgress(QAptWorker *parent);
-    ~WorkerInstallProgress();
+    explicit WorkerInstallProgress(int begin = 0, int end = 100);
 
+    void setTransaction(Transaction *trans);
     pkgPackageManager::OrderResult start(pkgPackageManager *pm);
 
 private:
+    Transaction *m_trans;
+
     pid_t m_child_id;
-    QAptWorker *m_worker;
-    QEventLoop *m_questionBlock;
-    QVariantMap m_questionResponse;
     bool m_startCounting;
+    int m_progressBegin;
+    int m_progressEnd;
 
     void updateInterface(int fd, int writeFd);
-    QVariantMap askQuestion(int questionCode, const QVariantMap &args);
-
-private Q_SLOTS:
-    void setAnswer(const QVariantMap &response);
-
-signals:
-    void workerQuestion(int questionCode, const QVariantMap &args);
-    void commitProgress(QString status, int percentage);
-    void commitError(int code, const QVariantMap &details);
 };
 
 #endif

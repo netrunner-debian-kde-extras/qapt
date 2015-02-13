@@ -5,15 +5,19 @@ set(qapt-gst-helper_SRCS
     PluginHelper.cpp
     PluginInfo.cpp)
 
-include_directories(${KDE4_INCLUDES}
-                    ${QT_INCLUDES}
-                    ${QTGSTREAMER_INCLUDE_DIR})
+include_directories(${GSTREAMER_INCLUDE_DIR}
+    ${GLIB2_INCLUDE_DIR})
 
-kde4_add_executable(qapt-gst-helper ${qapt-gst-helper_SRCS})
+add_executable(qapt-gst-helper ${qapt-gst-helper_SRCS})
 
 target_link_libraries(qapt-gst-helper
-                      ${KDE4_KDEUI_LIBS}
-                      ${QTGSTREAMER_LIBRARY}
-                      qapt)
+    ${GSTREAMER_LIBRARIES}
+    ${GLIB2_LIBRARIES}
+    KF5::CoreAddons
+    KF5::I18n
+    KF5::KIOCore
+    KF5::WidgetsAddons
+    KF5::WindowSystem
+    QApt::Main)
 
 install(TARGETS qapt-gst-helper DESTINATION ${LIBEXEC_INSTALL_DIR})

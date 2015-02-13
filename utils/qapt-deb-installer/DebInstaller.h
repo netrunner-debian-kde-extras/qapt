@@ -21,41 +21,43 @@
 #ifndef DEBINSTALLER_H
 #define DEBINSTALLER_H
 
-#include <QtCore/QStringList>
+#include <QDialog>
+#include <QStringList>
 
-#include <KDialog>
+#include <QApt/DebFile>
+#include <QApt/Globals>
 
-#include "../../src/debfile.h"
-#include "../../src/globals.h"
-
+class QDialogButtonBox;
 class QStackedWidget;
 
 namespace QApt {
     class Backend;
+    class Transaction;
 }
 
 class DebCommitWidget;
 class DebViewer;
 
-class DebInstaller : public KDialog
+class DebInstaller : public QDialog
 {
     Q_OBJECT
 public:
     explicit DebInstaller(QWidget *parent, const QString &debFile);
-    ~DebInstaller();
 
 private:
     // Backend stuff
     QApt::Backend *m_backend;
     QApt::DebFile *m_debFile;
+    QApt::Transaction *m_trans;
     QString m_foreignArch;
 
     // GUI
     QStackedWidget *m_stack;
     DebViewer *m_debViewer;
     DebCommitWidget *m_commitWidget;
-    KPushButton *m_applyButton;
-    KPushButton *m_cancelButton;
+    QPushButton *m_applyButton;
+    QPushButton *m_cancelButton;
+    QDialogButtonBox *m_buttonBox;
 
     //Misc
     QString m_statusString;
@@ -64,6 +66,7 @@ private:
     QString m_versionInfo;
 
     // Functions
+    void initError();
     bool checkDeb();
     void compareDebWithCache();
     QString maybeAppendArchSuffix(const QString& pkgName, bool checkingConflicts = false);
@@ -74,11 +77,11 @@ private:
 private Q_SLOTS:
     void initGUI();
 
-    void workerEvent(QApt::WorkerEvent event);
-    void errorOccurred(QApt::ErrorCode error, const QVariantMap &details);
+    void transactionStatusChanged(QApt::TransactionStatus status);
+    void errorOccurred(QApt::ErrorCode error);
 
+    void setupTransaction(QApt::Transaction *trans);
     void installDebFile();
-    void initCommitWidget();
 };
 
 #endif

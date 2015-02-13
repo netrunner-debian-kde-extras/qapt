@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Sergiu Bivol <sergiu@ase.md>, 2011.
+# Sergiu Bivol <sergiu@ase.md>, 2011, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-21 18:19+0100\n"
-"PO-Revision-Date: 2011-01-13 23:04+0200\n"
+"POT-Creation-Date: 2014-12-14 07:45+0000\n"
+"PO-Revision-Date: 2012-12-26 13:47+0200\n"
 "Last-Translator: Sergiu Bivol <sergiu@ase.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
 "Language: ro\n"
@@ -16,69 +16,105 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Lokalize 1.1\n"
+"X-Generator: Lokalize 1.5\n"
 
-#: utils/qapt-batch/detailswidget.cpp:44
+#: utils/qapt-batch/detailswidget.cpp:51
 msgctxt "@label Remaining time"
 msgid "Remaining Time:"
 msgstr "Timp rămas:"
 
-#: utils/qapt-batch/detailswidget.cpp:48
+#: utils/qapt-batch/detailswidget.cpp:56
 msgctxt "@label Download Rate"
 msgid "Speed:"
 msgstr "Viteză:"
 
-#: utils/qapt-batch/main.cpp:28
+#: utils/qapt-batch/detailswidget.cpp:107
+msgctxt "@info:progress Remaining time"
+msgid "Unknown"
+msgstr "Necunoscut"
+
+#: utils/qapt-batch/detailswidget.cpp:116
+#, kde-format
+msgctxt "@info:progress Download rate"
+msgid "%1/s"
+msgstr "%1/s"
+
+#: utils/qapt-batch/main.cpp:33
 msgctxt "@info"
 msgid "A batch installer using QApt"
 msgstr "Instalator în serie folosind QApt"
 
-#: utils/qapt-batch/main.cpp:34
+#: utils/qapt-batch/main.cpp:43
 msgctxt "@title"
 msgid "QApt Batch Installer"
 msgstr "Instalator în serie QApt"
 
-#: utils/qapt-batch/main.cpp:35
+#: utils/qapt-batch/main.cpp:47
 msgctxt "@info:credit"
 msgid "(C) 2010 Jonathan Thomas"
 msgstr "(C) 2010 Jonathan Thomas"
 
-#: utils/qapt-batch/main.cpp:36
+#: utils/qapt-batch/main.cpp:49
 msgctxt "@info:credit"
 msgid "Jonathan Thomas"
 msgstr "Jonathan Thomas"
 
-#: utils/qapt-batch/main.cpp:41
+#: utils/qapt-batch/main.cpp:52
+msgctxt "@info:credit"
+msgid "Harald Sitter"
+msgstr ""
+
+#: utils/qapt-batch/main.cpp:53
+msgctxt "@info:credit"
+msgid "Qt 5 port"
+msgstr ""
+
+#: utils/qapt-batch/main.cpp:61
 msgctxt "@info:shell"
 msgid "Attaches the window to an X app specified by winid"
 msgstr "Atașează fereastra la o aplicație X specificată de „winid”"
 
-#: utils/qapt-batch/main.cpp:42
+#: utils/qapt-batch/main.cpp:62
+msgctxt "@info:shell value name"
+msgid "winid"
+msgstr ""
+
+#: utils/qapt-batch/main.cpp:66
 msgctxt "@info:shell"
 msgid "Install a package"
 msgstr "Instalează un pachet"
 
-#: utils/qapt-batch/main.cpp:43
+#: utils/qapt-batch/main.cpp:69
 msgctxt "@info:shell"
 msgid "Remove a package"
 msgstr "Elimină un pachet"
 
-#: utils/qapt-batch/main.cpp:44
+#: utils/qapt-batch/main.cpp:72
 msgctxt "@info:shell"
 msgid "Update the package cache"
 msgstr "Actualizează cache-ul de pachete"
 
-#: utils/qapt-batch/main.cpp:45
+#: utils/qapt-batch/main.cpp:75
 msgctxt "@info:shell"
 msgid "Packages to be operated upon"
 msgstr "Pachete pe care se operează"
 
-#: utils/qapt-batch/qaptbatch.cpp:70
+#: utils/qapt-batch/main.cpp:85
+msgctxt "@info:shell error"
+msgid "Only one operation mode may be defined."
+msgstr ""
+
+#: utils/qapt-batch/main.cpp:96
+msgctxt "@info:shell error"
+msgid "No operation mode defined."
+msgstr ""
+
+#: utils/qapt-batch/qaptbatch.cpp:66
 msgctxt "@label"
 msgid "Waiting for authorization"
 msgstr "Se așteaptă autorizarea"
 
-#: utils/qapt-batch/qaptbatch.cpp:141
+#: utils/qapt-batch/qaptbatch.cpp:101 utils/qapt-batch/qaptbatch.cpp:181
 msgctxt "@label"
 msgid ""
 "The package system could not be initialized, your configuration may be "
@@ -87,12 +123,27 @@ msgstr ""
 "Sistemul de pachete nu a putut fi inițializat. Configurația dumneavoastră "
 "poate fi deteriorată."
 
-#: utils/qapt-batch/qaptbatch.cpp:143
+#: utils/qapt-batch/qaptbatch.cpp:103 utils/qapt-batch/qaptbatch.cpp:183
 msgctxt "@title:window"
 msgid "Initialization error"
 msgstr "Eroare de inițializare"
 
-#: utils/qapt-batch/qaptbatch.cpp:151
+#: utils/qapt-batch/qaptbatch.cpp:128 utils/qapt-batch/qaptbatch.cpp:249
+#, kde-format
+msgctxt "@label"
+msgid ""
+"The package \"%1\" has not been found among your software sources. "
+"Therefore, it cannot be installed. "
+msgstr ""
+"Pachetul „%1” nu a fost găsit printre sursele dumneavoastră de programe. De "
+"aceea, nu poate fi instalat. "
+
+#: utils/qapt-batch/qaptbatch.cpp:131 utils/qapt-batch/qaptbatch.cpp:252
+msgctxt "@title:window"
+msgid "Package Not Found"
+msgstr "Pachetul nu a fost găsit"
+
+#: utils/qapt-batch/qaptbatch.cpp:190
 msgctxt "@label"
 msgid ""
 "Another application seems to be using the package system at this time. You "
@@ -103,12 +154,12 @@ msgstr ""
 "Trebuie să închideți toți ceilalți administratori de pachete înainte să "
 "puteți adăuga sau elimina vreun pachet."
 
-#: utils/qapt-batch/qaptbatch.cpp:155
+#: utils/qapt-batch/qaptbatch.cpp:194
 msgctxt "@title:window"
 msgid "Unable to obtain package system lock"
 msgstr "Nu se poate obține blocarea sistemului de pachete"
 
-#: utils/qapt-batch/qaptbatch.cpp:161
+#: utils/qapt-batch/qaptbatch.cpp:199
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -118,22 +169,32 @@ msgstr ""
 "Nu aveți destul spațiu disponibil în dosarul din %1 pentru a continua "
 "această operație."
 
-#: utils/qapt-batch/qaptbatch.cpp:163
+#: utils/qapt-batch/qaptbatch.cpp:201
 msgctxt "@title:window"
 msgid "Low disk space"
 msgstr "Spațiu insuficient"
 
-#: utils/qapt-batch/qaptbatch.cpp:168
+#: utils/qapt-batch/qaptbatch.cpp:206
 msgctxt "@label"
 msgid "Could not download packages"
 msgstr "Pachetele nu au putut fi descărcate"
 
-#: utils/qapt-batch/qaptbatch.cpp:169
+#: utils/qapt-batch/qaptbatch.cpp:207
 msgctxt "@title:window"
 msgid "Download failed"
 msgstr "Descărcare eșuată"
 
-#: utils/qapt-batch/qaptbatch.cpp:177
+#: utils/qapt-batch/qaptbatch.cpp:211
+msgctxt "@label"
+msgid "An error occurred while applying changes:"
+msgstr "A intervenit o eroare în timpul aplicării modificărilor:"
+
+#: utils/qapt-batch/qaptbatch.cpp:212
+msgctxt "@title:window"
+msgid "Commit error"
+msgstr "Eroare comitere"
+
+#: utils/qapt-batch/qaptbatch.cpp:217
 msgctxt "@label"
 msgid ""
 "This operation cannot continue since proper authorization was not provided"
@@ -141,12 +202,12 @@ msgstr ""
 "Această operație nu poate continua deoarece nu au fost furnizate "
 "autorizările necesare"
 
-#: utils/qapt-batch/qaptbatch.cpp:179
+#: utils/qapt-batch/qaptbatch.cpp:219
 msgctxt "@title:window"
 msgid "Authentication error"
 msgstr "Eroare de autentificare"
 
-#: utils/qapt-batch/qaptbatch.cpp:183 utils/qapt-batch/qaptbatch.cpp:414
+#: utils/qapt-batch/qaptbatch.cpp:223
 msgctxt "@label"
 msgid ""
 "It appears that the QApt worker has either crashed or disappeared. Please "
@@ -155,12 +216,12 @@ msgstr ""
 "Se pare că lucrătoarea QApt s-a blocat sau a dispărut. Raportați o eroare "
 "către dezvoltatorii QApt."
 
-#: utils/qapt-batch/qaptbatch.cpp:185 utils/qapt-batch/qaptbatch.cpp:416
+#: utils/qapt-batch/qaptbatch.cpp:225
 msgctxt "@title:window"
 msgid "Unexpected Error"
 msgstr "Eroare neașteptată"
 
-#: utils/qapt-batch/qaptbatch.cpp:193
+#: utils/qapt-batch/qaptbatch.cpp:233
 msgctxt "@label"
 msgid ""
 "The following package has not been verified by its author. Downloading "
@@ -178,53 +239,28 @@ msgstr[2] ""
 "Următoarele pachete nu au fost verificate de către autorul lor. Descărcarea "
 "pachetelor nesigure a fost interzisă de configurația dumneavoastră actuală."
 
-#: utils/qapt-batch/qaptbatch.cpp:202
+#: utils/qapt-batch/qaptbatch.cpp:242
 msgctxt "@title:window"
 msgid "Untrusted Packages"
 msgstr "Pachete nesigure"
 
-#: utils/qapt-batch/qaptbatch.cpp:210
-#, kde-format
-msgctxt "@label"
-msgid ""
-"The package \"%1\" has not been found among your software sources. "
-"Therefore, it cannot be installed. "
-msgstr ""
-"Pachetul „%1” nu a fost găsit printre sursele dumneavoastră de programe. De "
-"aceea, nu poate fi instalat. "
-
-#: utils/qapt-batch/qaptbatch.cpp:213
-msgctxt "@title:window"
-msgid "Package Not Found"
-msgstr "Pachetul nu a fost găsit"
-
-#: utils/qapt-batch/qaptbatch.cpp:231
-msgctxt "@label"
-msgid "The size of the downloaded items did not equal the expected size."
-msgstr "Dimensiunea elementelor descărcate nu coincide cu cea așteptată."
-
-#: utils/qapt-batch/qaptbatch.cpp:233
-msgctxt "@title:window"
-msgid "Size Mismatch"
-msgstr "Nepotrivire dimensiuni"
-
-#: utils/qapt-batch/qaptbatch.cpp:259
+#: utils/qapt-batch/qaptbatch.cpp:265
 msgctxt "@title:window"
 msgid "Media Change Required"
 msgstr "Este necesară schimbarea mediului"
 
-#: utils/qapt-batch/qaptbatch.cpp:260
+#: utils/qapt-batch/qaptbatch.cpp:266
 #, kde-format
 msgctxt "@label"
 msgid "Please insert %1 into <filename>%2</filename>"
 msgstr "Introduceți %1 în <filename>%2</filename>"
 
-#: utils/qapt-batch/qaptbatch.cpp:269
+#: utils/qapt-batch/qaptbatch.cpp:274
 msgctxt "@title:window"
 msgid "Warning - Unverified Software"
 msgstr "Atenție - Programe neverificate"
 
-#: utils/qapt-batch/qaptbatch.cpp:271
+#: utils/qapt-batch/qaptbatch.cpp:276
 msgctxt "@label"
 msgid ""
 "The following piece of software cannot be verified. <warning>Installing "
@@ -252,37 +288,47 @@ msgstr[2] ""
 "programelor ce nu pot fi verificate poate fi un semn de corupere.</warning> "
 "Doriți să continuați?"
 
-#: utils/qapt-batch/qaptbatch.cpp:306
+#: utils/qapt-batch/qaptbatch.cpp:311
+msgctxt "@label Progress bar label when waiting to start"
+msgid "Waiting to start."
+msgstr "Se așteaptă pornirea."
+
+#: utils/qapt-batch/qaptbatch.cpp:316
+msgctxt "@label Status label when waiting for a password"
+msgid "Waiting for authentication."
+msgstr "Se așteaptă autentificarea."
+
+#: utils/qapt-batch/qaptbatch.cpp:320
+msgctxt "@label Status label when waiting for a CD-ROM"
+msgid "Waiting for required media."
+msgstr "Se așteaptă suportul cerut."
+
+#: utils/qapt-batch/qaptbatch.cpp:325
+msgctxt "@label Status label"
+msgid "Waiting for other package managers to quit."
+msgstr "Se așteaptă închiderea altor administratori de pachete."
+
+#: utils/qapt-batch/qaptbatch.cpp:333
+msgctxt "@label Status label"
+msgid "Loading package cache."
+msgstr "Se încarcă cache-ul de pachete."
+
+#: utils/qapt-batch/qaptbatch.cpp:337
 msgctxt "@title:window"
 msgid "Refreshing Package Information"
 msgstr "Se împrospătează informații despre pachet"
 
-#: utils/qapt-batch/qaptbatch.cpp:307
+#: utils/qapt-batch/qaptbatch.cpp:338
 msgctxt "@info:status"
 msgid "Checking for new, removed or upgradeable packages"
 msgstr "Se verifică pentru pachete noi, eliminate sau actualizabile"
 
-#: utils/qapt-batch/qaptbatch.cpp:313
-msgctxt "@title:window"
-msgid "Refresh Complete"
-msgstr "Împrospătare încheiată"
-
-#: utils/qapt-batch/qaptbatch.cpp:322
-msgctxt "@info:status"
-msgid "Refresh completed with errors"
-msgstr "Împrospătare încheiată fără erori"
-
-#: utils/qapt-batch/qaptbatch.cpp:324
-msgctxt "@label"
-msgid "Package information successfully refreshed"
-msgstr "Informațiile despre pachete au fost împrospătate cu succes"
-
-#: utils/qapt-batch/qaptbatch.cpp:334
+#: utils/qapt-batch/qaptbatch.cpp:340
 msgctxt "@title:window"
 msgid "Downloading"
 msgstr "Se descarcă"
 
-#: utils/qapt-batch/qaptbatch.cpp:336
+#: utils/qapt-batch/qaptbatch.cpp:342
 msgctxt "@info:status"
 msgid "Downloading package file"
 msgid_plural "Downloading package files"
@@ -290,106 +336,58 @@ msgstr[0] "Se descarcă fișierul pachetului"
 msgstr[1] "Se descarcă fișierele pachetului"
 msgstr[2] "Se descarcă fișierele pachetului"
 
-#: utils/qapt-batch/qaptbatch.cpp:348
+#: utils/qapt-batch/qaptbatch.cpp:352
 msgctxt "@title:window"
 msgid "Installing Packages"
 msgstr "Se instalează pachete"
 
-#: utils/qapt-batch/qaptbatch.cpp:362
+#: utils/qapt-batch/qaptbatch.cpp:358
 msgctxt "@title:window"
 msgid "Installation Complete"
 msgstr "Instalare încheiată"
 
-#: utils/qapt-batch/qaptbatch.cpp:366
+#: utils/qapt-batch/qaptbatch.cpp:362
 msgctxt "@label"
-msgid "Package installation finished with errors."
-msgstr "Instalarea pachetelor s-a încheiat fără erori."
+msgid "Package installation failed."
+msgstr "Instalarea pachetelor a eșuat."
+
+#: utils/qapt-batch/qaptbatch.cpp:365
+msgctxt "@label"
+msgid "Package successfully installed."
+msgid_plural "Packages successfully installed."
+msgstr[0] "Pachet instalat cu succes."
+msgstr[1] "Pachete instalate cu succes."
+msgstr[2] "Pachete instalate cu succes."
 
 #: utils/qapt-batch/qaptbatch.cpp:369
-msgctxt "@label"
-msgid "Package successfully installed"
-msgid_plural "Packages successfully installed"
-msgstr[0] "Pachet instalat cu succes"
-msgstr[1] "Pachete instalate cu succes"
-msgstr[2] "Pachete instalate cu succes"
-
-#: utils/qapt-batch/qaptbatch.cpp:373
 msgctxt "@title:window"
 msgid "Removal Complete"
 msgstr "Eliminare încheiată"
 
+#: utils/qapt-batch/qaptbatch.cpp:373
+msgctxt "@label"
+msgid "Package removal failed."
+msgstr "Eliminarea pachetelor a eșuat."
+
 #: utils/qapt-batch/qaptbatch.cpp:377
 msgctxt "@label"
-msgid "Package removal finished with errors."
-msgstr "Eliminarea pachetelor s-a încheiat fără erori."
+msgid "Package successfully uninstalled."
+msgid_plural "Packages successfully uninstalled."
+msgstr[0] "Pachet dezinstalat cu succes."
+msgstr[1] "Pachete dezinstalate cu succes."
+msgstr[2] "Pachete dezinstalate cu succes."
 
-#: utils/qapt-batch/qaptbatch.cpp:380
-msgctxt "@label"
-msgid "Package successfully uninstalled"
-msgid_plural "Packages successfully uninstalled"
-msgstr[0] "Pachet dezinstalat cu succes"
-msgstr[1] "Pachete dezinstalate cu succes"
-msgstr[2] "Pachete dezinstalate cu succes"
-
-#: utils/qapt-batch/qaptbatch.cpp:431
-msgctxt "@info:progress Remaining time"
-msgid "Unknown"
-msgstr "Necunoscut"
-
-#: utils/qapt-batch/qaptbatch.cpp:436
-msgctxt "@info:progress Download rate"
-msgid "Unknown"
-msgstr "Necunoscută"
-
-#: utils/qapt-batch/qaptbatch.cpp:439
-#, kde-format
-msgctxt "@info:progress Download rate"
-msgid "%1/s"
-msgstr "%1/s"
-
-#: utils/qapt-batch/qaptbatch.cpp:462
-msgctxt "@label"
-msgid "Unable to download the following packages:"
-msgstr "Următoarele pachete nu pot fi descărcate:"
-
-#: utils/qapt-batch/qaptbatch.cpp:467
-#, kde-format
-msgctxt "@label"
-msgid ""
-"Failed to download %1\n"
-"%2\n"
-"\n"
-msgstr ""
-"Descărcarea %1 a eșuat\n"
-"%2\n"
-"\n"
-
-#: utils/qapt-batch/qaptbatch.cpp:470
+#: utils/qapt-batch/qaptbatch.cpp:381
 msgctxt "@title:window"
-msgid "Some Packages Could not be Downloaded"
-msgstr "Unele pachete nu au putut fi descărcate"
+msgid "Refresh Complete"
+msgstr "Împrospătare încheiată"
 
-#: utils/qapt-batch/qaptbatch.cpp:477
+#: utils/qapt-batch/qaptbatch.cpp:384
+msgctxt "@info:status"
+msgid "Refresh failed."
+msgstr "Împrospătare eșuată."
+
+#: utils/qapt-batch/qaptbatch.cpp:386
 msgctxt "@label"
-msgid "An error occurred while applying changes:"
-msgid_plural "The following errors occurred while applying changes:"
-msgstr[0] "A intervenit o eroare la aplicarea modificărilor:"
-msgstr[1] "Au intervenit următoarele erori la aplicarea modificărilor:"
-msgstr[2] "Au intervenit următoarele erori la aplicarea modificărilor:"
-
-#: utils/qapt-batch/qaptbatch.cpp:481
-#, kde-format
-msgctxt "@label Shows which package failed"
-msgid "Package: %1"
-msgstr "Pachet: %1"
-
-#: utils/qapt-batch/qaptbatch.cpp:482
-#, kde-format
-msgctxt "@label Shows the error"
-msgid "Error: %1"
-msgstr "Eroare: %1"
-
-#: utils/qapt-batch/qaptbatch.cpp:486
-msgctxt "@title:window"
-msgid "Commit error"
-msgstr "Eroare comitere"
+msgid "Package information successfully refreshed."
+msgstr "Informațiile despre pachete au fost împrospătate cu succes."

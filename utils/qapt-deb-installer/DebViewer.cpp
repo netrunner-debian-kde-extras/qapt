@@ -20,23 +20,23 @@
 
 #include "DebViewer.h"
 
-#include <QtCore/QDir>
-#include <QtCore/QFile>
-#include <QtCore/QStringBuilder>
-#include <QtGui/QLabel>
-#include <QtGui/QPushButton>
-#include <QtGui/QVBoxLayout>
+#include <QDebug>
+#include <QDir>
+#include <QFile>
+#include <QIcon>
+#include <QLabel>
+#include <QPointer>
+#include <QPushButton>
+#include <QStringBuilder>
+#include <QTabWidget>
+#include <QTextBrowser>
+#include <QVBoxLayout>
 
-#include <KGlobal>
-#include <KIcon>
-#include <KLocale>
-#include <KTabWidget>
-#include <KTextBrowser>
-#include <KVBox>
-#include <KDebug>
+#include <KFormat>
+#include <KLocalizedString>
 
-#include "../../src/backend.h"
-#include "../../src/debfile.h"
+#include <QApt/Backend>
+#include <QApt/DebFile>
 
 #include "ChangesDialog.h"
 
@@ -46,11 +46,13 @@ DebViewer::DebViewer(QWidget *parent)
     , m_debFile(nullptr)
 {
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
+    mainLayout->setMargin(0);
     setLayout(mainLayout);
 
     // Header
     QWidget *headerWidget = new QWidget(this);
     QHBoxLayout *headerLayout = new QHBoxLayout(headerWidget);
+    headerLayout->setMargin(0);
     headerWidget->setLayout(headerLayout);
 
     m_iconLabel = new QLabel(headerWidget);
@@ -94,11 +96,14 @@ DebViewer::DebViewer(QWidget *parent)
     m_versionInfoWidget->setLayout(versionInfoLayout);
 
     QLabel *infoIcon = new QLabel(m_versionInfoWidget);
-    infoIcon->setPixmap(KIcon("dialog-information").pixmap(32, 32));
+    infoIcon->setPixmap(QIcon::fromTheme("dialog-information").pixmap(32, 32));
 
-    KVBox *verInfoBox = new KVBox(m_versionInfoWidget);
+    QWidget *verInfoBox = new QWidget(m_versionInfoWidget);
+    verInfoBox->setLayout(new QVBoxLayout);
     m_versionTitleLabel = new QLabel(verInfoBox);
     m_versionInfoLabel = new QLabel(verInfoBox);
+    verInfoBox->layout()->addWidget(m_versionTitleLabel);
+    verInfoBox->layout()->addWidget(m_versionInfoLabel);
 
     QWidget *versionSpacer = new QWidget(m_versionInfoWidget);
     versionSpacer->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Minimum);
@@ -110,10 +115,12 @@ DebViewer::DebViewer(QWidget *parent)
 
 
     // Details tab widget
-    KTabWidget *detailsWidget = new KTabWidget(this);
+    QTabWidget *detailsWidget = new QTabWidget(this);
 
-    KVBox *descriptionTab = new KVBox(detailsWidget);
-    m_descriptionWidget = new KTextBrowser(descriptionTab);
+    QWidget *descriptionTab = new QWidget(detailsWidget);
+    descriptionTab->setLayout(new QVBoxLayout);
+    m_descriptionWidget = new QTextBrowser(descriptionTab);
+    descriptionTab->layout()->addWidget(m_descriptionWidget);
 
     QWidget *detailsTab = new QWidget(detailsWidget);
     QGridLayout *detailsGrid = new QGridLayout(detailsTab);
@@ -158,8 +165,10 @@ DebViewer::DebViewer(QWidget *parent)
     detailsGrid->setColumnStretch(1, 1);
     detailsGrid->setRowStretch(5, 1);
 
-    KVBox *fileTab = new KVBox(detailsWidget);
-    m_fileWidget = new KTextBrowser(fileTab);
+    QWidget *fileTab = new QWidget(detailsWidget);
+    fileTab->setLayout(new QVBoxLayout);
+    m_fileWidget = new QTextBrowser(fileTab);
+    fileTab->layout()->addWidget(m_fileWidget);
 
 
     detailsWidget->addTab(descriptionTab, i18nc("@title:tab", "Description"));
@@ -208,7 +217,7 @@ void DebViewer::setDebFile(QApt::DebFile *debFile)
     }
 
     if (iconPath.isEmpty()) {
-        icon = KIcon("application-x-deb");
+        icon = QIcon::fromTheme("application-x-deb");
     }
 
     m_iconLabel->setPixmap(icon.pixmap(48,48));
@@ -225,7 +234,7 @@ void DebViewer::setDebFile(QApt::DebFile *debFile)
     m_descriptionWidget->append(shortDesc + longDesc);
 
     m_versionLabel->setText(debFile->version());
-    m_sizeLabel->setText(KGlobal::locale()->formatByteSize(debFile->installedSize() * 1024));
+    m_sizeLabel->setText(KFormat().formatByteSize(debFile->installedSize() * 1024));
     m_maintainerLabel->setText(debFile->maintainer());
     m_sectionLabel->setText(debFile->section());
     m_homepageLabel->setText(debFile->homepage());
@@ -274,9 +283,10 @@ void DebViewer::detailsButtonClicked()
     excluded.append(m_backend->package(m_debFile->packageName()));
     auto changes = m_backend->stateChanges(m_oldCacheState, excluded);
 
-    if (changes.isEmpty())
+    if (changes.isEmpty()) {
         return;
+    }
 
-    ChangesDialog *dialog = new ChangesDialog(this, changes);
+    QPointer<ChangesDialog> dialog = new ChangesDialog(this, changes);
     dialog->exec();
 }

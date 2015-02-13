@@ -22,10 +22,8 @@
 #ifndef GSTMATCHER_H
 #define GSTMATCHER_H
 
-#include <QtCore/QVector>
-#include <QtCore/QStringList>
-
-#include <QGst/Caps>
+#include <QVector>
+#include <QStringList>
 
 class PluginInfo;
 
@@ -36,7 +34,7 @@ namespace QApt {
 class GstMatcher
 {
 public:
-    GstMatcher(const PluginInfo *info);
+    explicit GstMatcher(const PluginInfo *info);
     ~GstMatcher();
 
     bool matches(QApt::Package *package);

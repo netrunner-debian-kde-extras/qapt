@@ -1,0 +1,355 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Park Shinjo <peremen@gmail.com>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-12-14 07:45+0000\n"
+"PO-Revision-Date: 2013-08-06 02:13+0900\n"
+"Last-Translator: Park Shinjo <peremen@gmail.com>\n"
+"Language-Team: Korean <kde@peremen.name>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: utils/qapt-gst-helper/main.cpp:33
+msgctxt "@info"
+msgid "A GStreamer codec installer using QApt"
+msgstr "QApt를 사용하는 GStreamer 코덱 설치기"
+
+#: utils/qapt-gst-helper/main.cpp:43
+msgctxt "@title"
+msgid "QApt Codec Searcher"
+msgstr "QApt 코덱 검색"
+
+#: utils/qapt-gst-helper/main.cpp:47
+msgctxt "@info:credit"
+msgid "(C) 2011 Jonathan Thomas"
+msgstr "(C) 2011 Jonathan Thomas"
+
+#: utils/qapt-gst-helper/main.cpp:49
+msgctxt "@info:credit"
+msgid "Jonathan Thomas"
+msgstr "Jonathan Thomas"
+
+#: utils/qapt-gst-helper/main.cpp:52
+msgctxt "@info:credit"
+msgid "Harald Sitter"
+msgstr ""
+
+#: utils/qapt-gst-helper/main.cpp:53
+msgctxt "@info:credit"
+msgid "Qt 5 port"
+msgstr ""
+
+#: utils/qapt-gst-helper/main.cpp:61
+msgctxt "@info:shell"
+msgid "Attaches the window to an X app specified by winid"
+msgstr "winid로 지정한 X 프로그램에 창 부착"
+
+#: utils/qapt-gst-helper/main.cpp:62
+msgctxt "@info:shell value name"
+msgid "winid"
+msgstr ""
+
+#: utils/qapt-gst-helper/main.cpp:66
+msgctxt "@info:shell"
+msgid "GStreamer install info"
+msgstr "GStreamer 설치 정보"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:86
+msgctxt "@info Error message"
+msgid "No valid plugin info was provided, so no plugins could be found."
+msgstr "플러그인 정보가 없어서 플러그인을 찾을 수 없습니다."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:89
+msgctxt "@title:window"
+msgid "Couldn't Find Plugins"
+msgstr "플러그인을 찾을 수 없음"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:95
+msgctxt "@info:progress"
+msgid "Looking for plugins"
+msgstr "플러그인 찾는 중"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:129
+#: utils/qapt-gst-helper/PluginHelper.cpp:244
+msgctxt "@label"
+msgid ""
+"The package system could not be initialized, your configuration may be "
+"broken."
+msgstr ""
+"패키지 시스템을 초기화할 수 없습니다. 설정 파일이 깨졌을 수도 있습니다."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:131
+#: utils/qapt-gst-helper/PluginHelper.cpp:246
+msgctxt "@title:window"
+msgid "Initialization error"
+msgstr "초기화 오류"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:146
+#, kde-format
+msgid ""
+"The following plugin is required: <ul><li>%2</li></ul>Do you want to search "
+"for this now?"
+msgid_plural ""
+"The following plugins are required: <ul><li>%2</li></ul>Do you want to "
+"search for these now?"
+msgstr[0] "다음 플러그인이 필요합니다: <ul><li>%2</li></ul>검색하시겠습니까?"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:158
+msgctxt "A program for which we have no name"
+msgid "A program"
+msgstr "한 프로그램"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:165
+#, kde-format
+msgid "%2 requires an additional plugin to encode this file"
+msgid_plural "%2 requires additional plugins to encode this file"
+msgstr[0] "%2에서 이 파일을 인코딩하려면 추가 플러그인이 필요함"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:171
+#, kde-format
+msgid "%2 requires an additional plugin to decode this file"
+msgid_plural "%2 requires additional plugins to decode this file"
+msgstr[0] "%2에서 이 파일을 디코딩하려면 추가 플러그인이 필요함"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:183
+msgctxt "Search for packages"
+msgid "Search"
+msgstr "검색"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:209
+msgid "Confirm Changes"
+msgstr "변경 사항 확인"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:210
+msgid "Install the following package?"
+msgid_plural "Install the following packages?"
+msgstr[0] "다음 패키지를 설치하시겠습니까?"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:215
+msgctxt "Install packages"
+msgid "Install"
+msgstr "설치"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:254
+msgctxt "@label"
+msgid ""
+"Another application seems to be using the package system at this time. You "
+"must close all other package managers before you will be able to install or "
+"remove any packages."
+msgstr ""
+"다른 프로그램이 현재 패키지 시스템을 사용 중인 것 같습니다. 패키지를 설치하거"
+"나 삭제하기 전에 다른 모든 패키지 관리자를 닫아야 합니다."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:258
+msgctxt "@title:window"
+msgid "Unable to obtain package system lock"
+msgstr "패키지 시스템을 잠글 수 없음"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:263
+#, kde-format
+msgctxt "@label"
+msgid ""
+"You do not have enough disk space in the directory at %1 to continue with "
+"this operation."
+msgstr "이 작업을 수행하기 위한 디렉터리 %1에 남아 있는 공간이 부족합니다."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:265
+msgctxt "@title:window"
+msgid "Low disk space"
+msgstr "디스크 공간 부족"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:269
+msgctxt "@label"
+msgid "Could not download packages"
+msgstr "패키지를 다운로드할 수 없음"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:270
+msgctxt "@title:window"
+msgid "Download failed"
+msgstr "다운로드 실패"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:275
+msgctxt "@label"
+msgid "An error occurred while applying changes:"
+msgstr "변경 사항을 적용하는 중 오류 발생:"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:276
+msgctxt "@title:window"
+msgid "Commit Error"
+msgstr "적용 오류"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:282
+msgctxt "@label"
+msgid ""
+"This operation cannot continue since proper authorization was not provided"
+msgstr "인증하지 않았기 때문에 이 작업을 진행할 수 없습니다"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:284
+msgctxt "@title:window"
+msgid "Authentication error"
+msgstr "인증 오류"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:288
+msgctxt "@label"
+msgid ""
+"It appears that the QApt worker has either crashed or disappeared. Please "
+"report a bug to the QApt maintainers"
+msgstr ""
+"QApt 작업자가 충돌하였거나 사라졌습니다. QApt 관리자에게 버그를 보고해 주십시"
+"오."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:290
+msgctxt "@title:window"
+msgid "Unexpected Error"
+msgstr "예상하지 못한 오류"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:298
+msgctxt "@label"
+msgid ""
+"The following package has not been verified by its author. Downloading "
+"untrusted packages has been disallowed by your current configuration."
+msgid_plural ""
+"The following packages have not been verified by their authors. Downloading "
+"untrusted packages has been disallowed by your current configuration."
+msgstr[0] ""
+"다음 패키지는 작성자가 서명하지 않았습니다. 현재 설정에 따라 신뢰할 수 없는 "
+"패키지를 다운로드할 수 없습니다."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:307
+msgctxt "@title:window"
+msgid "Untrusted Packages"
+msgstr "신뢰할 수 없는 패키지"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:314
+#, kde-format
+msgctxt "@label"
+msgid ""
+"The package \"%1\" has not been found among your software sources. "
+"Therefore, it cannot be installed. "
+msgstr ""
+"소프트웨어 원본에서 패키지 \"%1\"을(를) 찾을 수 없습니다. 설치할 수 없습니다."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:317
+msgctxt "@title:window"
+msgid "Package Not Found"
+msgstr "패키지를 찾을 수 없음"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:331
+msgctxt "@title:window"
+msgid "Media Change Required"
+msgstr "미디어 변경 필요함"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:332
+#, kde-format
+msgctxt "@label"
+msgid "Please insert %1 into <filename>%2</filename>"
+msgstr "%1을(를) <filename>%2</filename>에 넣으십시오"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:341
+msgctxt "@title:window"
+msgid "Warning - Unverified Software"
+msgstr "경고 - 확인되지 않은 소프트웨어"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:343
+msgctxt "@label"
+msgid ""
+"The following piece of software cannot be verified. <warning>Installing "
+"unverified software represents a security risk, as the presence of "
+"unverifiable software can be a sign of tampering.</warning> Do you wish to "
+"continue?"
+msgid_plural ""
+"The following pieces of software cannot be authenticated. "
+"<warning>Installing unverified software represents a security risk, as the "
+"presence of unverifiable software can be a sign of tampering.</warning> Do "
+"you wish to continue?"
+msgstr[0] ""
+"다음 소프트웨어를 확인할 수 없습니다 <warning>서명이 없다는 것은 훼손되었음"
+"을 뜻할 수도 있으므로 확인되지 않은 소프트웨어를 설치하는 것은 위험할 수도 있"
+"습니다.</warning> 계속 진행하시겠습니까?"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:372
+msgctxt "@label Progress bar label when waiting to start"
+msgid "Waiting to start."
+msgstr "시작 대기 중."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:377
+msgctxt "@label Status label when waiting for a password"
+msgid "Waiting for authentication."
+msgstr "인증 대기 중."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:382
+msgctxt "@label Status label when waiting for a CD-ROM"
+msgid "Waiting for required media."
+msgstr "필요한 미디어 대기 중."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:387
+msgctxt "@label Status label"
+msgid "Waiting for other package managers to quit."
+msgstr "다른 패키지 관리자 종료 대기 중."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:395
+msgctxt "@label Status label"
+msgid "Loading package cache."
+msgstr "패키지 캐시 불러오는 중."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:398
+msgctxt "@title:window"
+msgid "Downloading"
+msgstr "다운로드 중"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:399
+msgctxt "@info:status"
+msgid "Downloading codecs"
+msgstr "코덱 다운로드 중"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:402
+msgctxt "@title:window"
+msgid "Installing"
+msgstr "설치 중"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:403
+msgctxt "@info:status"
+msgid "Installing codecs"
+msgstr "코덱 설치 중"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:409
+msgctxt "@label"
+msgid "Package installation finished with errors."
+msgstr "패키지 설치가 성공하였습니다."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:410
+msgctxt "@title:window"
+msgid "Installation Failed"
+msgstr "설치 실패"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:412
+msgctxt "@label"
+msgid "Codecs successfully installed"
+msgstr "코덱이 성공적으로 설치됨"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:413
+msgctxt "@title:window"
+msgid "Installation Complete"
+msgstr "설치 완료"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:449
+msgctxt "@info"
+msgid "No plugins could be found"
+msgstr "플러그인을 찾을 수 없음"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:450
+msgctxt "@title"
+msgid "Plugins Not Found"
+msgstr "플러그인을 찾을 수 없음"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:512
+msgctxt "@label Progress bar label when waiting to start"
+msgid "Waiting"
+msgstr "대기 중"

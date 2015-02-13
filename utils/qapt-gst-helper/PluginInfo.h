@@ -21,9 +21,12 @@
 #ifndef PLUGININFO_H
 #define PLUGININFO_H
 
-#include <QtCore/QString>
+#include <QString>
 
-#include <QGst/Structure>
+// Apt and Gst both define FLAG, forcefully undef the Apt def and hope nothing
+// breaks :/
+#undef FLAG
+#include <gst/gst.h>
 
 class PluginInfo
 {
@@ -56,7 +59,7 @@ private:
     QString m_name;
     QString m_typeName;
     QString m_capsInfo;
-    QGst::Structure m_structure;
+    GstStructure *m_structure;
     int m_pluginType;
     QString m_data;
 

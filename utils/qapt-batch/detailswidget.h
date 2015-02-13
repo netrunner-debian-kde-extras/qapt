@@ -21,24 +21,35 @@
 #ifndef DETAILSWIDGET_H
 #define DETAILSWIDGET_H
 
-#include <QtGui/QWidget>
+#include <QWidget>
+
+#include <QApt/Globals>
 
 class QLabel;
+
+namespace QApt {
+    class Transaction;
+}
 
 class DetailsWidget : public QWidget
 {
     Q_OBJECT
 public:
     explicit DetailsWidget(QWidget *parent);
-    ~DetailsWidget();
 
-    void setTimeText(const QString &text);
-    void setSpeedText(const QString &text);
+    void setTransaction(QApt::Transaction *trans);
 
 private:
+    QApt::Transaction *m_trans;
+
     QLabel *m_timeLabel;
     QLabel *m_speedLabel;
     QLabel *m_speedDescriptor;
+
+private slots:
+    void updateTimeText(quint64 eta);
+    void updateSpeedText(quint64 speed);
+    void transactionStatusChanged(QApt::TransactionStatus status);
 };
 
 #endif

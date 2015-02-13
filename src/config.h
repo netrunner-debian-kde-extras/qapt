@@ -59,8 +59,7 @@ public:
      /**
       * Default destructor
       */
-    // TODO: QApt2: no virtual destructor
-    virtual ~Config();
+    ~Config();
 
     /**
      * Reads the value of an entry specified by @p key
@@ -88,7 +87,7 @@ public:
      * location of apt.conf (usually /etc/apt/apt.conf)
      *
      * @param key the key to search for
-     * @param default the directory to use as default if the key isn't found
+     * @param defaultValue the directory to use as default if the key isn't found
      *
      * @return the location of the config key, or the default if the key
      * is not found
@@ -119,7 +118,7 @@ public:
      * sources.list file (usually /etc/apt/sources.list)
      *
      * @param key the key to search for
-     * @param default the directory to use as default if the key isn't found
+     * @param defaultValue the directory to use as default if the key isn't found
      *
      * @return the location of the config key, or the default if the key
      * is not found

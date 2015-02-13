@@ -21,16 +21,16 @@
 #ifndef PLUGINHELPER_H
 #define PLUGINHELPER_H
 
-#include <QtCore/QStringList>
+#include <QProgressDialog>
+#include <QStringList>
 
-#include <KProgressDialog>
-
-#include <../../src/globals.h>
+#include <QApt/Globals>
 
 class QThread;
 
 namespace QApt {
     class Backend;
+    class Transaction;
 }
 
 class PluginFinder;
@@ -41,17 +41,17 @@ class PluginInfo;
 #define ERR_PARTIAL_SUCCESS 3
 #define ERR_CANCEL 4
 
-class PluginHelper : public KProgressDialog
+class PluginHelper : public QProgressDialog
 {
     Q_OBJECT
 public:
-    explicit PluginHelper(QWidget *parent, const QStringList &details, int winId);
-    ~PluginHelper();
+    PluginHelper(QWidget *parent, const QStringList &details, int winId);
 
     void run();
 
 private:
     QApt::Backend *m_backend;
+    QApt::Transaction *m_trans;
     int m_winId;
     bool m_partialFound;
     bool m_done;
@@ -59,32 +59,33 @@ private:
     QStringList m_details;
     QList<PluginInfo *> m_searchList;
     QList<QApt::Package *> m_foundCodecs;
-    QList<QVariantMap> m_warningStack;
-    QList<QVariantMap> m_errorStack;
 
     QThread *m_finderThread;
     PluginFinder *m_finder;
 
+    void setCloseButton();
+
 private Q_SLOTS:
+    void initError();
     void canSearch();
     void offerInstallPackages();
-    void errorOccurred(QApt::ErrorCode code, const QVariantMap &args);
-    void warningOccurred(QApt::WarningCode code, const QVariantMap &args);
-    void questionOccurred(QApt::WorkerQuestion question, const QVariantMap &args);
-    void showQueuedWarnings();
-    void showQueuedErrors();
+    void cancellableChanged(bool cancellable);
+
+    void transactionErrorOccurred(QApt::ErrorCode error);
+    void transactionStatusChanged(QApt::TransactionStatus status);
+    void provideMedium(const QString &label, const QString &mountPoint);
+    void untrustedPrompt(const QStringList &untrustedPackages);
     void raiseErrorMessage(const QString &text, const QString &title);
-    void workerEvent(QApt::WorkerEvent event);
     void foundCodec(QApt::Package *);
     void notFound();
     void notFoundError();
     void incrementProgress();
     void install();
 
-    void updateDownloadProgress(int percentage, int speed, int ETA);
-    void updateCommitProgress(const QString& message, int percentage);
+    void updateProgress(int percentage);
+    void updateCommitStatus(const QString& message);
 
-    virtual void reject();
+    void reject();
 };
 
 #endif

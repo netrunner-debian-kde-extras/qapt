@@ -41,20 +41,48 @@ class ChangelogPrivate;
 class Q_DECL_EXPORT ChangelogEntry
 {
 public:
-    explicit ChangelogEntry(const QString &entryData, const QString &sourcePackage);
+    /**
+     * Constructs a Debian changelog entry with the provided entry data for
+     * the specified source package
+     *
+     * @param entryData The raw changelog entry
+     * @param sourcePackage The source package the changelog entry is for
+     */
+    ChangelogEntry(const QString &entryData, const QString &sourcePackage);
+
+    /// Copy constructor
     ChangelogEntry(const ChangelogEntry &other);
+
+    /// Destructor
     ~ChangelogEntry();
+
+    /// Assignment operator
     ChangelogEntry &operator=(const ChangelogEntry &rhs);
 
+    /// Returns the raw text that makes up the changelog entry
     QString entryText() const;
+
+    /// Returns the version of the source package that this changelog entry is for.
     QString version() const;
+
+    /// Returns the timestamp of the changelog entry.
     QDateTime issueDateTime() const;
+
+    /**
+     * Returns the description portion of the changelog entry, minus any formatting
+     * data such as source package, version, issue time, etc.
+     */
     QString description() const;
 
+    /**
+     * Returns a list of URLs to webpages providing descriptions of Common
+     * Vulnerabilities and Exposures that the version of a package that this
+     * changelog entry describes fixes.
+     */
+    QStringList CVEUrls() const;
+
 private:
-    QT_END_NAMESPACE
     QSharedDataPointer<ChangelogEntryPrivate> d;
-    QT_BEGIN_NAMESPACE
 };
 
 typedef QList<ChangelogEntry> ChangelogEntryList;
@@ -70,24 +98,42 @@ typedef QList<ChangelogEntry> ChangelogEntryList;
 class Q_DECL_EXPORT Changelog
 {
 public:
-     /**
-      * Default constructor
-      */
-    explicit Changelog(const QString &data, const QString &sourcePackage);
+    /**
+     * Constructor
+     *
+     * @param data The full contents of a Debian changelog file
+     * @param sourcePackage The source package the changelog file is for
+     */
+    Changelog(const QString &data, const QString &sourcePackage);
+
+    /// Copy constructor
     Changelog(const Changelog &other);
+
+    /// Destructor
     ~Changelog();
+
+    /// Assignment operator
     Changelog &operator=(const Changelog &rhs);
 
+    /// Returns the full changelog as a string
     QString text() const;
+
+    /// Returns a list of parsed individual changelog entries
     ChangelogEntryList entries() const;
+
+    /**
+     * Returns a list of parsed individual changelog entries that have been
+     * made since the specified version.
+     */
     ChangelogEntryList newEntriesSince(const QString &version) const;
 
 private:
-    QT_END_NAMESPACE
     QSharedDataPointer<ChangelogPrivate> d;
-    QT_BEGIN_NAMESPACE
 };
 
 }
+
+Q_DECLARE_TYPEINFO(QApt::ChangelogEntry, Q_MOVABLE_TYPE);
+Q_DECLARE_TYPEINFO(QApt::Changelog, Q_MOVABLE_TYPE);
 
 #endif

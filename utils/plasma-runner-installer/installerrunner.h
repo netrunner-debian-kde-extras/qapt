@@ -21,7 +21,7 @@
 #ifndef INSTALLERRUNNER_H
 #define INSTALLERRUNNER_H
 
-#include <Plasma/AbstractRunner>
+#include <KRunner/AbstractRunner>
 
 /**
  * This runner checks if the query exists as an executable in the normal paths
@@ -42,8 +42,6 @@ public:
 protected:
     void setupMatch(const QString &package, const QString &term, Plasma::QueryMatch &action);
 };
-
-K_EXPORT_PLASMA_RUNNER(installer, InstallerRunner)
 
 #endif
 
