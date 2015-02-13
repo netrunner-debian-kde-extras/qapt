@@ -16,6 +16,7 @@ libqapt (3.0.0-1~) UNRELEASED; urgency=medium
 
   [ Maximiliano Curia ]
   * Prepare experimental version.
+  * Add myself as Uploader.
 
  -- Maximiliano Curia <maxy@debian.org>  Fri, 13 Feb 2015 22:05:40 +0100
 
