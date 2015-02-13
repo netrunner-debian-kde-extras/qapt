@@ -18,6 +18,7 @@ libqapt (3.0.0-1~) UNRELEASED; urgency=medium
   * Prepare experimental version.
   * Add myself as Uploader.
   * Bump Standards-Version to 3.9.6, no changes needed.
+  * Update copyright information.
 
  -- Maximiliano Curia <maxy@debian.org>  Fri, 13 Feb 2015 22:05:40 +0100
 
