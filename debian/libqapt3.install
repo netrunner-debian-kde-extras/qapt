@@ -1,1 +1,2 @@
-usr/lib/*/libQApt.so.3*
+usr/lib/*/libQApt.so.3
+usr/lib/*/libQApt.so.3.*
