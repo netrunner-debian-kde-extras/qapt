@@ -1,5 +1,6 @@
-libqapt (3.0.0-0ubuntu3) UNRELEASED; urgency=medium
+libqapt (3.0.0-1~) UNRELEASED; urgency=medium
 
+  [ José Manuel Santamaría Lema ]
   * Update watch file.
   * Build depend on pkg-kde-tools to (>> 0.15.15) so we make sure we are
     building against a pkg-kde-tools which provides the kde frameworks
@@ -13,7 +14,10 @@ libqapt (3.0.0-0ubuntu3) UNRELEASED; urgency=medium
     branches, for instance if you have an 'experimental' branch with the latest
     version of the software it will commit to the master branch anyway.
 
- -- José Manuel Santamaría Lema <panfaust@gmail.com>  Tue, 10 Feb 2015 15:06:04 +0100
+  [ Maximiliano Curia ]
+  * Prepare experimental version.
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 13 Feb 2015 22:05:40 +0100
 
 libqapt (3.0.0-0ubuntu2) vivid; urgency=medium
 
