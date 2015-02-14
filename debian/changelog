@@ -1,4 +1,4 @@
-libqapt (3.0.0-1~) UNRELEASED; urgency=medium
+libqapt (3.0.0-1) experimental; urgency=medium
 
   [ José Manuel Santamaría Lema ]
   * Update watch file.
@@ -24,7 +24,7 @@ libqapt (3.0.0-1~) UNRELEASED; urgency=medium
   * Remove patch: remove_tests.diff
   * Add basic autopkgtests support.
 
- -- Maximiliano Curia <maxy@debian.org>  Fri, 13 Feb 2015 22:05:40 +0100
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 14 Feb 2015 09:28:30 +0100
 
 libqapt (3.0.0-0ubuntu2) vivid; urgency=medium
 
