@@ -1,9 +1,13 @@
 libqapt (3.0.0-0ubuntu3) UNRELEASED; urgency=medium
 
+  [ José Manuel Santamaría Lema ]
   * Update watch file.
   * Build depend on pkg-kde-tools to (>> 0.15.15) so we make sure we are
     building against a pkg-kde-tools which provides the kde frameworks
     module.
+
+  [ Dmitry Shachnev ]
+  * Export QT_SELECT=qt5 in debian/rules to make lconvert call succeed.
 
  -- José Manuel Santamaría Lema <panfaust@gmail.com>  Tue, 10 Feb 2015 15:06:04 +0100
 
