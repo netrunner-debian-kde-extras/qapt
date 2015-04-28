@@ -1,0 +1,59 @@
+From: Harald Sitter <sitter@kde.org>
+Date: Fri, 24 Apr 2015 11:50:51 +0000
+Subject: warn about state changes we cannot represent and exclude them from list
+X-Git-Url: http://quickgit.kde.org/?p=libqapt.git&a=commitdiff&h=9b134aed5d09731f914195f4c04c34d53e4b4098
+---
+warn about state changes we cannot represent and exclude them from list
+
+if a package changed state such that ToFoo nor Held are set we'd get
+an empty standardized status we can't do anything with. so instead warn
+and do not include this package in the list of changes. as far as changing
+things goes having no ToFoo nor Held means whatever the state change
+was, it is no-op anyway so reporting it as a change has no impact on
+anything.
+
+this presently happens with kubuntu ci where bluedevil cannot be installed
+because one of its dependencies cannot be met.
+when bluedevil however is already installed from the archive it is
+originally upgradable and held but after marking it for dist-upgrade it
+will simple be marked keep and not held. this is consistent with apt-get
+and apt so apparently this is by design.
+
+eitherway, in the event that a package changed state in an unexpected way
+print a warning and its flags for possible inspection.
+---
+
+
+--- a/src/backend.cpp
++++ b/src/backend.cpp
+@@ -766,6 +766,29 @@
+                    Package::ToDowngrade |
+                    Package::ToRemove);
+ 
++        if (status == 0) {
++            qWarning() << "Package" << pkg->name() << "had a state change,"
++                       << "it can however not be presented as a unique state."
++                       << "This is often an indication that the package is"
++                       << "supposed to be upgraded but can't because its"
++                       << "dependencies are not satisfied. This is not"
++                       << "considered a held package unless its upgrade is"
++                       << "necessary or causing breakage. A simple unsatisfied"
++                       << "dependency without the need to upgrade is not"
++                       << "considered an issue and thus not reported.\n"
++                       << "States were:"
++                       << (Package::States)oldState.at(i)
++                       << "->"
++                       << (Package::States)pkg->state();
++            // Apt pretends packages like this are not held (which is reflected)
++            // in the state loss. Whether or not this is intentional is not
++            // obvious at the time of writing in case it isn't the states
++            // here would add up again and the package rightfully would be
++            // reported as held. So we would never get here.
++            // Until then ignore these packages as we cannot serialize their
++            // state anyway.
++            continue;
++        }
+         // Add this package/status pair to the changes hash
+         PackageList list = changes.value((Package::State)status);
+         list.append(pkg);
+

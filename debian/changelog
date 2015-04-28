@@ -1,11 +1,18 @@
-libqapt (3.0.0-0ubuntu3) UNRELEASED; urgency=medium
+libqapt (3.0.0-0ubuntu2.2) vivid; urgency=medium
 
-  * Update watch file.
-  * Build depend on pkg-kde-tools to (>> 0.15.15) so we make sure we are
-    building against a pkg-kde-tools which provides the kde frameworks
-    module.
+  * Add upstream_cmake-configure-kf5iconthemes.diff to fix compile
 
- -- José Manuel Santamaría Lema <panfaust@gmail.com>  Tue, 10 Feb 2015 15:06:04 +0100
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 28 Apr 2015 13:49:23 +0200
+
+libqapt (3.0.0-0ubuntu2.1) vivid; urgency=medium
+
+  * SRU two fixes LP: #1448929
+   - make sure that the changesdialog in muon apps shows the right
+    packages with the right states
+   - upstream_fix-heldness-state.diff
+   - upstream_exclude-broken-state-changes.diff
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 27 Apr 2015 10:38:24 +0200
 
 libqapt (3.0.0-0ubuntu2) vivid; urgency=medium
 
