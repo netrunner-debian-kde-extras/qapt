@@ -1,0 +1,64 @@
+From: Harald Sitter <sitter@kde.org>
+Date: Fri, 24 Apr 2015 11:43:18 +0000
+Subject: fix heldness state
+X-Git-Url: http://quickgit.kde.org/?p=libqapt.git&a=commitdiff&h=06fc79d435c3d906d651a60005f0a8f5572b696a
+---
+fix heldness state
+
+a) the initStaticState function is wrong in assuming that Held is a static
+state. notably static states are those that only change through a cache
+reload. heldness however (along with keepness and the ToFoo states) can
+change on marking the cache for upgrade or distupgrade. those actions
+do not require a reload so heldness would incorrectly not be reported
+on upgrades. so move heldness into the ::state function for consistent
+re-evaluation.
+b) heldness is a sub-state of keepness. particularly heldness is a
+composition of keepness and actual status (what we can do). a package
+is only considered held iff its status!=0 (i.e. there is something
+else available) and it is being kept (i.e. not changed). this is
+actual internal apt-pkg logic so technically we could evaluate held()
+regardless of keep() as held entails keep anyway, so we might as well
+only do it on keep==true
+c) heldness *is not* a state related to upgradable. a package that wants to
+downgrade but can't is just as held as a package that wants to upgrade
+but can't. trying to compose heldness conditionally is utterly useless
+optimization that is wrong on top of everything else since Upgradable()
+even is implemented as condition Status!=0 (i.e. package should be
+changed in some form or fashion). detangle the two indirectly as
+held also is non-static while upgradable isn't.
+---
+
+
+Index: libqapt-3.0.0/src/package.cpp
+===================================================================
+--- libqapt-3.0.0.orig/src/package.cpp
++++ libqapt-3.0.0/src/package.cpp
+@@ -149,16 +149,14 @@ void PackagePrivate::initStaticState(con
+     int packageState = 0;
+ 
+     if (!ver.end()) {
+-        // Set flags exclusive to installed packages
+         packageState |= QApt::Package::Installed;
+ 
+         if (stateCache.CandidateVer && stateCache.Upgradable()) {
+             packageState |= QApt::Package::Upgradeable;
+-            if (stateCache.Keep())
+-                packageState |= QApt::Package::Held;
+         }
+-    } else
++    } else {
+         packageState |= QApt::Package::NotInstalled;
++    }
+ 
+     // Broken/garbage statuses are constant until a cache reload
+     if (stateCache.NowBroken()) {
+@@ -745,6 +743,9 @@ int Package::state() const
+         }
+     } else if (stateCache.Keep()) {
+         packageState |= ToKeep;
++        if (stateCache.Held()) {
++            packageState |= QApt::Package::Held;
++        }
+     }
+ 
+    return packageState | d->state;

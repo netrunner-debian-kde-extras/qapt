@@ -1,0 +1,3 @@
+upstream_exclude-broken-state-changes.diff
+upstream_fix-heldness-state.diff
+upstream_cmake-configure-kf5iconthemes.diff
