@@ -1,0 +1,13 @@
+Index: qapt/CMakeLists.txt
+===================================================================
+--- qapt.orig/CMakeLists.txt	2015-06-30 11:15:48.484922939 +0200
++++ qapt/CMakeLists.txt	2015-06-30 11:39:36.788005922 +0200
+@@ -76,6 +76,8 @@
+ find_package(KF5WidgetsAddons ${KF5_DEP_VERSION})
+ find_package(KF5WindowSystem ${KF5_DEP_VERSION})
+ 
++find_package(KF5IconThemes ${KF5_DEP_VERSION})
++
+ find_package(DebconfKDE)
+ find_package(GStreamer)
+ find_package(GLIB2)
