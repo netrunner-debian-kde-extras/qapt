@@ -150,8 +150,8 @@ Architecture: any
 Depends: libqapt3-runtime (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
-Replaces: gstreamer0.10-qapt (<< 2.1.70-0ubuntu5~)
-Breaks: gstreamer0.10-qapt (<< 2.1.70-0ubuntu5~)
+Replaces: gstreamer0.10-qapt (<< 3~)
+Breaks: gstreamer0.10-qapt (<< 3~)
 Description: GStreamer plugin to install codecs using QApt
  QApt is a collection of tools and a library providing a wrapper around
  APT. The intention is to ease the use of APT in Qt-based programs.
