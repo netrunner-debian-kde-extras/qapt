@@ -33,7 +33,6 @@ Build-Depends: cmake (>= 2.8.12),
                qttools5-dev,
                qttools5-dev-tools
 Standards-Version: 3.9.6
-XS-Testsuite: autopkgtest
 Homepage: https://projects.kde.org/projects/extragear/sysadmin/libqapt/
 Vcs-Browser: http://anonscm.debian.org/cgit/pkg-kde/kde-extras/qapt
 Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-extras/qapt.git
