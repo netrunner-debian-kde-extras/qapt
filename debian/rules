@@ -1,6 +1,6 @@
 #!/usr/bin/make -f
 
-export QT_SELECT := qt5
+export QT_SELECT=qt5
 
 %:
 	dh $@ --with kf5 --parallel --dbg-package=qapt-dbg
@@ -9,5 +9,5 @@ override_dh_install:
 	dh_install --fail-missing
 
 override_dh_auto_test:
-
-.PHONY: override_dh_install override_dh_auto_test
+	# Disable dh_auto_test
+	:

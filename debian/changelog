@@ -1,4 +1,30 @@
-libqapt (3.0.0-0ubuntu3) UNRELEASED; urgency=medium
+libqapt (3.0.0-4) unstable; urgency=medium
+
+  * Team upload.
+  * Add gstreamer-qapt Breaks/Replaces for gstreamer1.0-qapt (Closes: #791833)
+    again, Thanks to Andreas Beckman for the corrected solution
+
+ -- Scott Kitterman <scott@kitterman.com>  Thu, 23 Jul 2015 16:40:44 -0400
+
+libqapt (3.0.0-3) unstable; urgency=medium
+
+  * Update copyright information.
+  * Add Breaks/Replaces for gstreamer0.10-qapt. (Closes: #791833) Thanks to
+    Andreas Beckman.
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 20 Jul 2015 09:43:39 +0200
+
+libqapt (3.0.0-2) unstable; urgency=medium
+
+  [ Debian/Kubuntu KDE Extras Team ]
+  * Prepare release to unstable.
+
+  [ Maximiliano Curia ]
+  * New patch: add_kf5iconthemes
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 30 Jun 2015 11:54:53 +0200
+
+libqapt (3.0.0-1) experimental; urgency=medium
 
   [ José Manuel Santamaría Lema ]
   * Update watch file.
@@ -8,8 +34,26 @@ libqapt (3.0.0-0ubuntu3) UNRELEASED; urgency=medium
 
   [ Dmitry Shachnev ]
   * Export QT_SELECT=qt5 in debian/rules to make lconvert call succeed.
+  * Drop freeze_with_apt-listbugs_and_apt-listchanges.diff, applied upstream.
+  * In libqapt-runtime add Breaks/Replaces against libdebconf-kde0 (<< 0.3~)
+    because the patch freeze_with_apt-listbugs_and_apt-listchanges.diff in this
+    package and apt-listbugs hang debconf-kde because some debconf commands were
+    not implemented in debconf-kde.
+  * Don't call git-import-orig in debian/watch, it doesn't work properly with
+    branches, for instance if you have an 'experimental' branch with the latest
+    version of the software it will commit to the master branch anyway.
 
- -- José Manuel Santamaría Lema <panfaust@gmail.com>  Tue, 10 Feb 2015 15:06:04 +0100
+  [ Maximiliano Curia ]
+  * Prepare experimental version.
+  * Add myself as Uploader.
+  * Bump Standards-Version to 3.9.6, no changes needed.
+  * Update copyright information.
+  * Update build dependencies to build against experimental and to
+    follow cmake.
+  * Remove patch: remove_tests.diff
+  * Add basic autopkgtests support.
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 14 Feb 2015 09:28:30 +0100
 
 libqapt (3.0.0-0ubuntu2.2) vivid; urgency=medium
 
@@ -39,6 +83,23 @@ libqapt (3.0.0-0ubuntu1) vivid; urgency=medium
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 20 Jan 2015 12:13:04 +0100
 
+qapt (2.2.0-1) experimental; urgency=low
+
+  [ Sune Vuorela ]
+  * Add me to uploaders
+  * Remove Jose Manuel Santamaria Lema from uploaders.
+  * Remove the unused DMUA-field.
+
+  [ Floris-Andrei Stoica-Marcu ]
+  * New Upstream Release
+  * Updated package structure, now it is unmerged
+  * Bumped up version of libqapt-runtime
+  * Added new symbol file for qapt-dbg
+  * Disabled tests that broke build
+  * Updated dependencies
+
+ -- Sune Vuorela <sune@debian.org>  Wed, 03 Sep 2014 14:19:55 +0200
+
 libqapt (2.2.0+qt5+20140826-0ubuntu1) utopic; urgency=medium
 
   * New upstream snapshot
@@ -64,7 +125,7 @@ libqapt (2.1.70-0ubuntu6) utopic; urgency=medium
       gstreamer0.10-qapt versions
     + Renamed .install, postinst, prerm accordingly
     + Removed crap comments from maintainer scripts
-    LP: #1313066 
+    LP: #1313066
 
  -- Harald Sitter <apachelogger@kubuntu.org>  Mon, 28 Apr 2014 12:11:00 +0200
 
@@ -204,6 +265,16 @@ qapt (1.4.1-0ubuntu1) quantal; urgency=low
   * New upstream bugfix release
 
  -- Jonathan Thomas <echidnaman@kubuntu.org>  Sat, 29 Sep 2012 14:34:43 -0400
+
+qapt (1.4.0-1) experimental; urgency=low
+
+  * New upstream release.
+  * Remove upstream_directly-include-declaration-of-MD5Summation.patch, applied
+    upstream.
+  * Add freeze_with_apt-listbugs_and_apt-listchanges.diff.
+  * Sync debian/copyright file with Ubuntu, fixes a lintian warning.
+
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Tue, 11 Sep 2012 22:42:03 +0200
 
 qapt (1.4.0-0ubuntu1) quantal; urgency=low
 
@@ -519,7 +590,7 @@ qapt (1.0.3-0ubuntu2) maverick; urgency=low
 qapt (1.0.3-0ubuntu1) maverick; urgency=low
 
   * New upstream bugfix-only release, fixing a silent error when encountering
-    total-system APT locks. 
+    total-system APT locks.
     (http://websvn.kde.org/?view=revision&revision=1180714)
 
  -- Jonathan Thomas <echidnaman@kubuntu.org>  Tue, 28 Sep 2010 17:30:05 -0400

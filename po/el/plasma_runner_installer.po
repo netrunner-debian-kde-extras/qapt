@@ -1,0 +1,33 @@
+# el translation of plasma-runner-installer.po
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+#
+# Stelios <sstavra@gmail.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-runner-installer\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-12-12 01:57+0000\n"
+"PO-Revision-Date: 2011-07-21 22:23+0300\n"
+"Last-Translator: Stelios <sstavra@gmail.com>\n"
+"Language-Team: Greek <kde-i18n-el@kde.org>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: utils/plasma-runner-installer/installerrunner.cpp:42
+msgid "Suggests the installation of applications if :q: is not found"
+msgstr "Προτείνει την εγκατάσταση εφαρμογών αν το :q: δεν βρέθηκε"
+
+#: utils/plasma-runner-installer/installerrunner.cpp:114
+#, kde-format
+msgid "Install %1"
+msgstr "Εγκατάσταση %1"
+
+#: utils/plasma-runner-installer/installerrunner.cpp:117
+#, kde-format
+msgid "The \"%1\" package contains %2"
+msgstr "Το πακέτο «%1» περιέχει %2"
