@@ -232,8 +232,8 @@ libQApt.so.3 libqapt3 #MINVER#
  _ZN4QApt9ChangelogD1Ev@Base 3.0.0
  _ZN4QApt9ChangelogD2Ev@Base 3.0.0
  _ZN4QApt9ChangelogaSERKS0_@Base 3.0.0
- _ZN6Xapian5ErrorD1Ev@Base 3.0.0
- _ZN6Xapian5ErrorD2Ev@Base 3.0.0
+ (optional)_ZN6Xapian5ErrorD1Ev@Base 3.0.0
+ (optional)_ZN6Xapian5ErrorD2Ev@Base 3.0.0
  _ZNK4QApt11HistoryItem11errorStringEv@Base 3.0.0
  _ZNK4QApt11HistoryItem14purgedPackagesEv@Base 3.0.0
  _ZNK4QApt11HistoryItem15removedPackagesEv@Base 3.0.0
