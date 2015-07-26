@@ -1,4 +1,4 @@
-libqapt (3.0.0-4ubuntu1) UNRELEASED; urgency=medium
+libqapt (3.0.0-4ubuntu1) wily; urgency=medium
 
   * Mark as optional a couple of symbols gone after building with gcc 5.
 
