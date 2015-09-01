@@ -1,8 +1,8 @@
-libqapt (3.0.0-5~) UNRELEASED; urgency=medium
+libqapt (3.0.0-5) unstable; urgency=medium
 
   * Update symbols file.
 
- -- Maximiliano Curia <maxy@debian.org>  Wed, 05 Aug 2015 15:21:27 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 01 Sep 2015 22:17:00 +0200
 
 libqapt (3.0.0-4) unstable; urgency=medium
 
