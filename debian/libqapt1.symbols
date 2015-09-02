@@ -129,8 +129,8 @@ libqapt.so.1 libqapt1 #MINVER#
  _ZN4QApt9ChangelogaSERKS0_@Base 1.3.0
  _ZN6Xapian20DatabaseOpeningErrorC1ERKS0_@Base 1.4.0
  _ZN6Xapian20DatabaseOpeningErrorC2ERKS0_@Base 1.4.0
- _ZN6Xapian5ErrorD1Ev@Base 1.4.0
- _ZN6Xapian5ErrorD2Ev@Base 1.4.0
+ _ZN6Xapian5ErrorD1Ev@Base 1.3.0
+ _ZN6Xapian5ErrorD2Ev@Base 1.3.0
  _ZNK4QApt11HistoryItem11errorStringEv@Base 1.0.80
  _ZNK4QApt11HistoryItem14purgedPackagesEv@Base 1.0.80
  _ZNK4QApt11HistoryItem15removedPackagesEv@Base 1.0.80
