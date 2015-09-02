@@ -330,6 +330,13 @@ qapt (1.3.1-0ubuntu1) precise; urgency=low
 
  -- Jonathan Thomas <echidnaman@kubuntu.org>  Sun, 01 Apr 2012 12:24:05 -0400
 
+qapt (1.3.0-2.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Update the symbols file (Xilin Sun). Closes: #746894, #746263.
+
+ -- Matthias Klose <doko@debian.org>  Sat, 09 Aug 2014 12:39:10 +0200
+
 qapt (1.3.0-1) unstable; urgency=low
 
   [ Kai Wasserbäch ]
