@@ -17,6 +17,6 @@ usr/include/libqapt/globals.h
 usr/include/libqapt/history.h
 usr/include/libqapt/package.h
 usr/include/libqapt/qaptversion.h
+usr/lib/cmake/QApt/QAptConfig.cmake
 usr/lib/libqapt.so
 usr/lib/pkgconfig/libqapt.pc
-usr/lib/cmake/QApt/QAptConfig.cmake
