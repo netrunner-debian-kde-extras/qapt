@@ -1,6 +1,6 @@
 libqapt (3.0.0-6~) UNRELEASED; urgency=medium
 
-  * 
+  * Add support for APT 1.1. (Closes: #798705) Thanks to Julian Andres Klode
 
  -- Maximiliano Curia <maxy@debian.org>  Mon, 14 Sep 2015 01:18:39 +0200
 
