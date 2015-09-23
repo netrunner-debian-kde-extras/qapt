@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 3.0.0 amd64
+# SymbolsHelper-Confirmed: 3.0.1+git20150923.1058+15.10 amd64 i386
 libQApt.so.3 libqapt3 #MINVER#
  _ZN4QApt11HistoryItemC1ERK7QString@Base 3.0.0
  _ZN4QApt11HistoryItemC1ERKS0_@Base 3.0.0
@@ -232,8 +232,8 @@ libQApt.so.3 libqapt3 #MINVER#
  _ZN4QApt9ChangelogD1Ev@Base 3.0.0
  _ZN4QApt9ChangelogD2Ev@Base 3.0.0
  _ZN4QApt9ChangelogaSERKS0_@Base 3.0.0
- (optional)_ZN6Xapian5ErrorD1Ev@Base 3.0.0
- (optional)_ZN6Xapian5ErrorD2Ev@Base 3.0.0
+#MISSING: 3.0.1+git20150923.1058+15.10# (optional)_ZN6Xapian5ErrorD1Ev@Base 3.0.0
+#MISSING: 3.0.1+git20150923.1058+15.10# (optional)_ZN6Xapian5ErrorD2Ev@Base 3.0.0
  _ZNK4QApt11HistoryItem11errorStringEv@Base 3.0.0
  _ZNK4QApt11HistoryItem14purgedPackagesEv@Base 3.0.0
  _ZNK4QApt11HistoryItem15removedPackagesEv@Base 3.0.0
@@ -291,6 +291,7 @@ libQApt.so.3 libqapt3 #MINVER#
  _ZNK4QApt14DependencyInfo12relationTypeEv@Base 3.0.0
  _ZNK4QApt14DependencyInfo14dependencyTypeEv@Base 3.0.0
  _ZNK4QApt14DependencyInfo14packageVersionEv@Base 3.0.0
+ _ZNK4QApt14DependencyInfo19multiArchAnnotationEv@Base 3.0.1+git20150923.1058+15.10
  _ZNK4QApt16DownloadProgress11fetchedSizeEv@Base 3.0.0
  _ZNK4QApt16DownloadProgress13statusMessageEv@Base 3.0.0
  _ZNK4QApt16DownloadProgress16shortDescriptionEv@Base 3.0.0
@@ -406,6 +407,7 @@ libQApt.so.3 libqapt3 #MINVER#
  _ZNK4QApt7Package14recommendsListEv@Base 3.0.0
  _ZNK4QApt7Package14requiredByListEv@Base 3.0.0
  _ZNK4QApt7Package14supportedUntilEv@Base 3.0.0
+ _ZNK4QApt7Package15isInUpdatePhaseEv@Base 3.0.1+git20150923.1058+15.10
  _ZNK4QApt7Package15longDescriptionEv@Base 3.0.0
  _ZNK4QApt7Package15packageIteratorEv@Base 3.0.0
  _ZNK4QApt7Package15upstreamVersionEv@Base 3.0.0
@@ -420,6 +422,7 @@ libQApt.so.3 libqapt3 #MINVER#
  _ZNK4QApt7Package22availableInstalledSizeEv@Base 3.0.0
  _ZNK4QApt7Package2idEv@Base 3.0.0
  _ZNK4QApt7Package4nameEv@Base 3.0.0
+ _ZNK4QApt7Package4siteEv@Base 3.0.1+git20150923.1058+15.10
  _ZNK4QApt7Package5stateEv@Base 3.0.0
  _ZNK4QApt7Package6breaksEv@Base 3.0.0
  _ZNK4QApt7Package6md5SumEv@Base 3.0.0
@@ -440,6 +443,7 @@ libQApt.so.3 libqapt3 #MINVER#
  _ZNK4QApt9Changelog15newEntriesSinceERK7QString@Base 3.0.0
  _ZNK4QApt9Changelog4textEv@Base 3.0.0
  _ZNK4QApt9Changelog7entriesEv@Base 3.0.0
+ (optional=templinst|subst)_ZNSt24uniform_int_distributionIiEclISt26linear_congruential_engineI{size_t}L{size_t}16807EL{size_t}0EL{size_t}2147483647EEEEiRT_RKNS0_10param_typeE@Base 3.0.1+git20150923.1058+15.10
  _ZTIN4QApt11SourcesListE@Base 3.0.0
  _ZTIN4QApt11TransactionE@Base 3.0.0
  _ZTIN4QApt6ConfigE@Base 3.0.0
