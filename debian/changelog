@@ -1,3 +1,10 @@
+libqapt (3.0.1-0ubuntu1) wily; urgency=medium
+
+  * New upstream bugfix release.
+  * Drop all patches since all are upstreamed
+
+ -- Harald Sitter <sitter@kde.org>  Wed, 23 Sep 2015 12:29:49 +0200
+
 libqapt (3.0.0-4ubuntu1) wily; urgency=medium
 
   * Mark as optional a couple of symbols gone after building with gcc 5.

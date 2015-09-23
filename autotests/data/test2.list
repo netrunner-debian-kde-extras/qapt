@@ -1,3 +1,0 @@
-## Some explanatory comments here...
-deb http://apttest2/ubuntu saucy universe
-deb-src http://apttest2/ubuntu saucy universe
