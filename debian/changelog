@@ -1,3 +1,9 @@
+libqapt (3.0.1-1~) UNRELEASED; urgency=medium
+
+  * New upstream release (3.0.1).
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 26 Sep 2015 07:35:16 +0200
+
 libqapt (3.0.0-6) unstable; urgency=medium
 
   * Add support for APT 1.1. (Closes: #798705) Thanks to Julian Andres Klode
