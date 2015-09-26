@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qapt-gst-helper.po\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-12-14 07:45+0000\n"
-"PO-Revision-Date: 2013-10-18 20:28+0000\n"
+"POT-Creation-Date: 2014-12-23 09:33+0000\n"
+"PO-Revision-Date: 2015-02-04 14:28+0000\n"
 "Last-Translator: Samir Ribić <Unknown>\n"
 "Language-Team: bs <bs@kde.org>\n"
 "Language: \n"
@@ -17,50 +17,50 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2013-10-19 05:22+0000\n"
-"X-Generator: Launchpad (build 16807)\n"
+"X-Launchpad-Export-Date: 2015-02-05 06:38+0000\n"
+"X-Generator: Launchpad (build 17331)\n"
 
-#: utils/qapt-gst-helper/main.cpp:33
+#: utils/qapt-gst-helper/main.cpp:34
 msgctxt "@info"
 msgid "A GStreamer codec installer using QApt"
 msgstr "GStreamer instaler kodeka koristeći QApt"
 
-#: utils/qapt-gst-helper/main.cpp:43
+#: utils/qapt-gst-helper/main.cpp:46
 msgctxt "@title"
 msgid "QApt Codec Searcher"
 msgstr "QApt tragač za kodecima"
 
-#: utils/qapt-gst-helper/main.cpp:47
+#: utils/qapt-gst-helper/main.cpp:50
 msgctxt "@info:credit"
 msgid "(C) 2011 Jonathan Thomas"
 msgstr "(C) 2011 Jonathan Thomas"
 
-#: utils/qapt-gst-helper/main.cpp:49
+#: utils/qapt-gst-helper/main.cpp:52
 msgctxt "@info:credit"
 msgid "Jonathan Thomas"
 msgstr "Jonathan Thomas"
 
-#: utils/qapt-gst-helper/main.cpp:52
+#: utils/qapt-gst-helper/main.cpp:55
 msgctxt "@info:credit"
 msgid "Harald Sitter"
 msgstr ""
 
-#: utils/qapt-gst-helper/main.cpp:53
+#: utils/qapt-gst-helper/main.cpp:56
 msgctxt "@info:credit"
 msgid "Qt 5 port"
 msgstr ""
 
-#: utils/qapt-gst-helper/main.cpp:61
+#: utils/qapt-gst-helper/main.cpp:64
 msgctxt "@info:shell"
 msgid "Attaches the window to an X app specified by winid"
 msgstr "Pridaje prozor X app određenu s winid"
 
-#: utils/qapt-gst-helper/main.cpp:62
+#: utils/qapt-gst-helper/main.cpp:65
 msgctxt "@info:shell value name"
 msgid "winid"
 msgstr ""
 
-#: utils/qapt-gst-helper/main.cpp:66
+#: utils/qapt-gst-helper/main.cpp:69
 msgctxt "@info:shell"
 msgid "GStreamer install info"
 msgstr "GStreamer instalacijske informacije"
@@ -68,7 +68,7 @@ msgstr "GStreamer instalacijske informacije"
 #: utils/qapt-gst-helper/PluginHelper.cpp:86
 msgctxt "@info Error message"
 msgid "No valid plugin info was provided, so no plugins could be found."
-msgstr "Nema važećih informacija o priključcima, pa se oni ne mogu učitati"
+msgstr "Nema važećih informacija o priključcima, pa se oni ne mogu učitati."
 
 #: utils/qapt-gst-helper/PluginHelper.cpp:89
 msgctxt "@title:window"
@@ -360,7 +360,7 @@ msgstr "Instaliram kodeke"
 #: utils/qapt-gst-helper/PluginHelper.cpp:409
 msgctxt "@label"
 msgid "Package installation finished with errors."
-msgstr "Instalacija paketa završena s greškama"
+msgstr "Instalacija paketa završena s greškama."
 
 #: utils/qapt-gst-helper/PluginHelper.cpp:410
 msgctxt "@title:window"

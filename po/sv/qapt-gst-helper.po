@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Stefan Asserhall <stefan.asserhall@bredband.net>, 2011, 2012.
+# Stefan Asserhall <stefan.asserhall@bredband.net>, 2011, 2012, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-12-14 07:45+0000\n"
-"PO-Revision-Date: 2012-10-19 18:20+0200\n"
+"POT-Creation-Date: 2014-12-23 09:33+0000\n"
+"PO-Revision-Date: 2014-12-30 09:05+0100\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -15,49 +15,49 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 1.4\n"
+"X-Generator: Lokalize 1.5\n"
 
-#: utils/qapt-gst-helper/main.cpp:33
+#: utils/qapt-gst-helper/main.cpp:34
 msgctxt "@info"
 msgid "A GStreamer codec installer using QApt"
 msgstr "En Gstreamer-avkodare installerad med hjälp av Qapt"
 
-#: utils/qapt-gst-helper/main.cpp:43
+#: utils/qapt-gst-helper/main.cpp:46
 msgctxt "@title"
 msgid "QApt Codec Searcher"
 msgstr "Qapt-avkodarsökning"
 
-#: utils/qapt-gst-helper/main.cpp:47
+#: utils/qapt-gst-helper/main.cpp:50
 msgctxt "@info:credit"
 msgid "(C) 2011 Jonathan Thomas"
 msgstr "© 2011 Jonathan Thomas"
 
-#: utils/qapt-gst-helper/main.cpp:49
+#: utils/qapt-gst-helper/main.cpp:52
 msgctxt "@info:credit"
 msgid "Jonathan Thomas"
 msgstr "Jonathan Thomas"
 
-#: utils/qapt-gst-helper/main.cpp:52
+#: utils/qapt-gst-helper/main.cpp:55
 msgctxt "@info:credit"
 msgid "Harald Sitter"
-msgstr ""
+msgstr "Harald Sitter"
 
-#: utils/qapt-gst-helper/main.cpp:53
+#: utils/qapt-gst-helper/main.cpp:56
 msgctxt "@info:credit"
 msgid "Qt 5 port"
-msgstr ""
+msgstr "Konvertering till Qt-5"
 
-#: utils/qapt-gst-helper/main.cpp:61
+#: utils/qapt-gst-helper/main.cpp:64
 msgctxt "@info:shell"
 msgid "Attaches the window to an X app specified by winid"
 msgstr "Ansluter fönstret till ett X-program angivet av winid"
 
-#: utils/qapt-gst-helper/main.cpp:62
+#: utils/qapt-gst-helper/main.cpp:65
 msgctxt "@info:shell value name"
 msgid "winid"
-msgstr ""
+msgstr "fönster-id"
 
-#: utils/qapt-gst-helper/main.cpp:66
+#: utils/qapt-gst-helper/main.cpp:69
 msgctxt "@info:shell"
 msgid "GStreamer install info"
 msgstr "Gstreamer-installationsinformation"

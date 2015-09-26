@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-12-14 07:45+0000\n"
+"POT-Creation-Date: 2014-12-23 09:33+0000\n"
 "PO-Revision-Date: 2014-08-25 11:26+0200\n"
 "Last-Translator: Vít Pelčák <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -44,77 +44,77 @@ msgctxt "@info"
 msgid "A batch installer using QApt"
 msgstr "Dávkový instalátor používající QApt"
 
-#: utils/qapt-batch/main.cpp:43
+#: utils/qapt-batch/main.cpp:45
 msgctxt "@title"
 msgid "QApt Batch Installer"
 msgstr "Dávkový instalátor QApt"
 
-#: utils/qapt-batch/main.cpp:47
+#: utils/qapt-batch/main.cpp:49
 msgctxt "@info:credit"
 msgid "(C) 2010 Jonathan Thomas"
 msgstr "(C) 2010 Jonathan Thomas"
 
-#: utils/qapt-batch/main.cpp:49
+#: utils/qapt-batch/main.cpp:51
 msgctxt "@info:credit"
 msgid "Jonathan Thomas"
 msgstr "Jonathan Thomas"
 
-#: utils/qapt-batch/main.cpp:52
+#: utils/qapt-batch/main.cpp:54
 msgctxt "@info:credit"
 msgid "Harald Sitter"
 msgstr ""
 
-#: utils/qapt-batch/main.cpp:53
+#: utils/qapt-batch/main.cpp:55
 msgctxt "@info:credit"
 msgid "Qt 5 port"
 msgstr ""
 
-#: utils/qapt-batch/main.cpp:61
+#: utils/qapt-batch/main.cpp:63
 msgctxt "@info:shell"
 msgid "Attaches the window to an X app specified by winid"
 msgstr "Přiřadí okno X-aplikaci určené winid"
 
-#: utils/qapt-batch/main.cpp:62
+#: utils/qapt-batch/main.cpp:64
 msgctxt "@info:shell value name"
 msgid "winid"
 msgstr ""
 
-#: utils/qapt-batch/main.cpp:66
+#: utils/qapt-batch/main.cpp:68
 msgctxt "@info:shell"
 msgid "Install a package"
 msgstr "Nainstalovat balíček"
 
-#: utils/qapt-batch/main.cpp:69
+#: utils/qapt-batch/main.cpp:71
 msgctxt "@info:shell"
 msgid "Remove a package"
 msgstr "Odstranit balíček"
 
-#: utils/qapt-batch/main.cpp:72
+#: utils/qapt-batch/main.cpp:74
 msgctxt "@info:shell"
 msgid "Update the package cache"
 msgstr "Obnovit mezipaměť balíčků"
 
-#: utils/qapt-batch/main.cpp:75
+#: utils/qapt-batch/main.cpp:77
 msgctxt "@info:shell"
 msgid "Packages to be operated upon"
 msgstr "Balíčky se kterými se bude pracovat"
 
-#: utils/qapt-batch/main.cpp:85
+#: utils/qapt-batch/main.cpp:87
 msgctxt "@info:shell error"
 msgid "Only one operation mode may be defined."
 msgstr ""
 
-#: utils/qapt-batch/main.cpp:96
+#: utils/qapt-batch/main.cpp:98
 msgctxt "@info:shell error"
 msgid "No operation mode defined."
 msgstr ""
 
-#: utils/qapt-batch/qaptbatch.cpp:66
+#: utils/qapt-batch/qaptbatch.cpp:65
 msgctxt "@label"
 msgid "Waiting for authorization"
 msgstr "Čeká se na udělení oprávnění"
 
-#: utils/qapt-batch/qaptbatch.cpp:101 utils/qapt-batch/qaptbatch.cpp:181
+#: utils/qapt-batch/qaptbatch.cpp:100 utils/qapt-batch/qaptbatch.cpp:186
 msgctxt "@label"
 msgid ""
 "The package system could not be initialized, your configuration may be "
@@ -122,12 +122,12 @@ msgid ""
 msgstr ""
 "Systém pro práci s balíčky nemohl být spuštěn. Možná má vadné nastavení."
 
-#: utils/qapt-batch/qaptbatch.cpp:103 utils/qapt-batch/qaptbatch.cpp:183
+#: utils/qapt-batch/qaptbatch.cpp:102 utils/qapt-batch/qaptbatch.cpp:188
 msgctxt "@title:window"
 msgid "Initialization error"
 msgstr "Chyba inicializace"
 
-#: utils/qapt-batch/qaptbatch.cpp:128 utils/qapt-batch/qaptbatch.cpp:249
+#: utils/qapt-batch/qaptbatch.cpp:127 utils/qapt-batch/qaptbatch.cpp:254
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -137,12 +137,12 @@ msgstr ""
 "Balíček \"%1\" nebyl ve zdrojích softwaru nalezen. Tudíž nemůže být "
 "nainstalován. "
 
-#: utils/qapt-batch/qaptbatch.cpp:131 utils/qapt-batch/qaptbatch.cpp:252
+#: utils/qapt-batch/qaptbatch.cpp:130 utils/qapt-batch/qaptbatch.cpp:257
 msgctxt "@title:window"
 msgid "Package Not Found"
 msgstr "Balíček nebyl nalezen"
 
-#: utils/qapt-batch/qaptbatch.cpp:190
+#: utils/qapt-batch/qaptbatch.cpp:195
 msgctxt "@label"
 msgid ""
 "Another application seems to be using the package system at this time. You "
@@ -152,12 +152,12 @@ msgstr ""
 "Jiná aplikace právě používá balíčkovací systém. Musíte zavřít všechny "
 "ostatní správce balíčků před započetím manipulací s balíčky."
 
-#: utils/qapt-batch/qaptbatch.cpp:194
+#: utils/qapt-batch/qaptbatch.cpp:199
 msgctxt "@title:window"
 msgid "Unable to obtain package system lock"
 msgstr "Nelze získat zámek balíčkovacího systému"
 
-#: utils/qapt-batch/qaptbatch.cpp:199
+#: utils/qapt-batch/qaptbatch.cpp:204
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -166,44 +166,44 @@ msgid ""
 msgstr ""
 "Pro pokračování této operace nemáte dostatek volného místa v adresáři %1."
 
-#: utils/qapt-batch/qaptbatch.cpp:201
+#: utils/qapt-batch/qaptbatch.cpp:206
 msgctxt "@title:window"
 msgid "Low disk space"
 msgstr "Málo místa na disku"
 
-#: utils/qapt-batch/qaptbatch.cpp:206
+#: utils/qapt-batch/qaptbatch.cpp:211
 msgctxt "@label"
 msgid "Could not download packages"
 msgstr "Nepovedlo se stáhnout balíčky"
 
-#: utils/qapt-batch/qaptbatch.cpp:207
+#: utils/qapt-batch/qaptbatch.cpp:212
 msgctxt "@title:window"
 msgid "Download failed"
 msgstr "Stažení bylo neúspěšné"
 
-#: utils/qapt-batch/qaptbatch.cpp:211
+#: utils/qapt-batch/qaptbatch.cpp:216
 msgctxt "@label"
 msgid "An error occurred while applying changes:"
 msgstr "Při provádění změn došlo k chybě:"
 
-#: utils/qapt-batch/qaptbatch.cpp:212
+#: utils/qapt-batch/qaptbatch.cpp:217
 msgctxt "@title:window"
 msgid "Commit error"
 msgstr ""
 
-#: utils/qapt-batch/qaptbatch.cpp:217
+#: utils/qapt-batch/qaptbatch.cpp:222
 msgctxt "@label"
 msgid ""
 "This operation cannot continue since proper authorization was not provided"
 msgstr ""
 "Tato operace nemůže pokračovat protože nebylo provedeno udělení oprávnění"
 
-#: utils/qapt-batch/qaptbatch.cpp:219
+#: utils/qapt-batch/qaptbatch.cpp:224
 msgctxt "@title:window"
 msgid "Authentication error"
 msgstr "Chyba ověření"
 
-#: utils/qapt-batch/qaptbatch.cpp:223
+#: utils/qapt-batch/qaptbatch.cpp:228
 msgctxt "@label"
 msgid ""
 "It appears that the QApt worker has either crashed or disappeared. Please "
@@ -212,12 +212,12 @@ msgstr ""
 "Zdá se, že QApt zmizel nebo spadl. Prosím, pošlete chybové hlášení správcům "
 "QApt"
 
-#: utils/qapt-batch/qaptbatch.cpp:225
+#: utils/qapt-batch/qaptbatch.cpp:230
 msgctxt "@title:window"
 msgid "Unexpected Error"
 msgstr "Neočekávaná chyba"
 
-#: utils/qapt-batch/qaptbatch.cpp:233
+#: utils/qapt-batch/qaptbatch.cpp:238
 msgctxt "@label"
 msgid ""
 "The following package has not been verified by its author. Downloading "
@@ -235,28 +235,28 @@ msgstr[2] ""
 "Následující balíčky nebyly autorem podepsány. Stahování nedůvěryhodných "
 "balíčků není ve vašem nastavení povolené."
 
-#: utils/qapt-batch/qaptbatch.cpp:242
+#: utils/qapt-batch/qaptbatch.cpp:247
 msgctxt "@title:window"
 msgid "Untrusted Packages"
 msgstr "Nedůvěryhodné balíčky"
 
-#: utils/qapt-batch/qaptbatch.cpp:265
+#: utils/qapt-batch/qaptbatch.cpp:270
 msgctxt "@title:window"
 msgid "Media Change Required"
 msgstr "Je vyžadována změna média"
 
-#: utils/qapt-batch/qaptbatch.cpp:266
+#: utils/qapt-batch/qaptbatch.cpp:271
 #, kde-format
 msgctxt "@label"
 msgid "Please insert %1 into <filename>%2</filename>"
 msgstr "Prosím, vložte %1 do <filename>%2</filename>"
 
-#: utils/qapt-batch/qaptbatch.cpp:274
+#: utils/qapt-batch/qaptbatch.cpp:279
 msgctxt "@title:window"
 msgid "Warning - Unverified Software"
 msgstr "Varování - Neověřený software"
 
-#: utils/qapt-batch/qaptbatch.cpp:276
+#: utils/qapt-batch/qaptbatch.cpp:281
 msgctxt "@label"
 msgid ""
 "The following piece of software cannot be verified. <warning>Installing "
@@ -281,47 +281,47 @@ msgstr[2] ""
 "představuje bezpečnostní riziko, jelikož jeho přítomnost může být znamením "
 "něčeho nekalého.</warning> Přejete si pokračovat?"
 
-#: utils/qapt-batch/qaptbatch.cpp:311
+#: utils/qapt-batch/qaptbatch.cpp:316
 msgctxt "@label Progress bar label when waiting to start"
 msgid "Waiting to start."
 msgstr "Čeká se spuštění"
 
-#: utils/qapt-batch/qaptbatch.cpp:316
+#: utils/qapt-batch/qaptbatch.cpp:321
 msgctxt "@label Status label when waiting for a password"
 msgid "Waiting for authentication."
 msgstr "Čeká se na ověření."
 
-#: utils/qapt-batch/qaptbatch.cpp:320
+#: utils/qapt-batch/qaptbatch.cpp:325
 msgctxt "@label Status label when waiting for a CD-ROM"
 msgid "Waiting for required media."
 msgstr ""
 
-#: utils/qapt-batch/qaptbatch.cpp:325
+#: utils/qapt-batch/qaptbatch.cpp:330
 msgctxt "@label Status label"
 msgid "Waiting for other package managers to quit."
 msgstr ""
 
-#: utils/qapt-batch/qaptbatch.cpp:333
+#: utils/qapt-batch/qaptbatch.cpp:338
 msgctxt "@label Status label"
 msgid "Loading package cache."
 msgstr "Načítá se mezipaměť balíčků."
 
-#: utils/qapt-batch/qaptbatch.cpp:337
+#: utils/qapt-batch/qaptbatch.cpp:342
 msgctxt "@title:window"
 msgid "Refreshing Package Information"
 msgstr "Obnovuji informace o balíčcích"
 
-#: utils/qapt-batch/qaptbatch.cpp:338
+#: utils/qapt-batch/qaptbatch.cpp:343
 msgctxt "@info:status"
 msgid "Checking for new, removed or upgradeable packages"
 msgstr "Kontroluji nové, odstraněné nebo aktualizovatelné balíčky"
 
-#: utils/qapt-batch/qaptbatch.cpp:340
+#: utils/qapt-batch/qaptbatch.cpp:345
 msgctxt "@title:window"
 msgid "Downloading"
 msgstr "Stahuji"
 
-#: utils/qapt-batch/qaptbatch.cpp:342
+#: utils/qapt-batch/qaptbatch.cpp:347
 msgctxt "@info:status"
 msgid "Downloading package file"
 msgid_plural "Downloading package files"
@@ -329,22 +329,22 @@ msgstr[0] "Stahuji soubor balíčku"
 msgstr[1] "Stahuji soubory balíčku"
 msgstr[2] "Stahuji soubory balíčku"
 
-#: utils/qapt-batch/qaptbatch.cpp:352
+#: utils/qapt-batch/qaptbatch.cpp:355
 msgctxt "@title:window"
 msgid "Installing Packages"
 msgstr "Instalují se balíčky"
 
-#: utils/qapt-batch/qaptbatch.cpp:358
+#: utils/qapt-batch/qaptbatch.cpp:360
 msgctxt "@title:window"
 msgid "Installation Complete"
 msgstr "Instalace dokončena"
 
-#: utils/qapt-batch/qaptbatch.cpp:362
+#: utils/qapt-batch/qaptbatch.cpp:364
 msgctxt "@label"
 msgid "Package installation failed."
 msgstr "Instalace balíčku selhala."
 
-#: utils/qapt-batch/qaptbatch.cpp:365
+#: utils/qapt-batch/qaptbatch.cpp:367
 msgctxt "@label"
 msgid "Package successfully installed."
 msgid_plural "Packages successfully installed."
@@ -352,17 +352,17 @@ msgstr[0] "Balíček byl úspěšně nainstalován."
 msgstr[1] "Balíčky byly úspěšně nainstalovány."
 msgstr[2] "Balíčky byly úspěšně nainstalovány."
 
-#: utils/qapt-batch/qaptbatch.cpp:369
+#: utils/qapt-batch/qaptbatch.cpp:371
 msgctxt "@title:window"
 msgid "Removal Complete"
 msgstr "Odinstalace dokončena"
 
-#: utils/qapt-batch/qaptbatch.cpp:373
+#: utils/qapt-batch/qaptbatch.cpp:375
 msgctxt "@label"
 msgid "Package removal failed."
 msgstr "Odstranění balíčků selhalo."
 
-#: utils/qapt-batch/qaptbatch.cpp:377
+#: utils/qapt-batch/qaptbatch.cpp:379
 msgctxt "@label"
 msgid "Package successfully uninstalled."
 msgid_plural "Packages successfully uninstalled."
@@ -370,17 +370,17 @@ msgstr[0] "Balíček byl úspěšně odinstalován."
 msgstr[1] "Balíčky byly úspěšně odinstalovány."
 msgstr[2] "Balíčky byly úspěšně odinstalovány."
 
-#: utils/qapt-batch/qaptbatch.cpp:381
+#: utils/qapt-batch/qaptbatch.cpp:383
 msgctxt "@title:window"
 msgid "Refresh Complete"
 msgstr "Obnovení dokončeno"
 
-#: utils/qapt-batch/qaptbatch.cpp:384
+#: utils/qapt-batch/qaptbatch.cpp:386
 msgctxt "@info:status"
 msgid "Refresh failed."
 msgstr "Obnovení selhalo."
 
-#: utils/qapt-batch/qaptbatch.cpp:386
+#: utils/qapt-batch/qaptbatch.cpp:388
 msgctxt "@label"
 msgid "Package information successfully refreshed."
 msgstr "Informace o balíčcích byla úspěšně obnovena."

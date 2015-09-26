@@ -1,0 +1,411 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Safa Alfulaij <safa1996alfulaij@gmail.com>, 2015.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-12-23 09:33+0000\n"
+"PO-Revision-Date: 2015-01-09 03:40+0300\n"
+"Last-Translator: Safa Alfulaij <safa1996alfulaij@gmail.com>\n"
+"Language-Team: Arabic <doc@arabeyes.org>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: utils/qapt-gst-helper/main.cpp:34
+msgctxt "@info"
+msgid "A GStreamer codec installer using QApt"
+msgstr "مثبّت رماز جستريمر باستخدام كيو-آبت"
+
+#: utils/qapt-gst-helper/main.cpp:46
+msgctxt "@title"
+msgid "QApt Codec Searcher"
+msgstr "باحث كيو-آبت للرّمازات"
+
+#: utils/qapt-gst-helper/main.cpp:50
+msgctxt "@info:credit"
+msgid "(C) 2011 Jonathan Thomas"
+msgstr ""
+
+#: utils/qapt-gst-helper/main.cpp:52
+msgctxt "@info:credit"
+msgid "Jonathan Thomas"
+msgstr "جونَثِن توماس"
+
+#: utils/qapt-gst-helper/main.cpp:55
+msgctxt "@info:credit"
+msgid "Harald Sitter"
+msgstr "هارالد سِتِر"
+
+#: utils/qapt-gst-helper/main.cpp:56
+msgctxt "@info:credit"
+msgid "Qt 5 port"
+msgstr "النّقل إلى كيوت 5"
+
+#: utils/qapt-gst-helper/main.cpp:64
+msgctxt "@info:shell"
+msgid "Attaches the window to an X app specified by winid"
+msgstr "يرفق النّافذة إلى تطبيق س الذي يحدّده معرّف_النّافذة"
+
+#: utils/qapt-gst-helper/main.cpp:65
+msgctxt "@info:shell value name"
+msgid "winid"
+msgstr "معرّف_النّافذة"
+
+#: utils/qapt-gst-helper/main.cpp:69
+msgctxt "@info:shell"
+msgid "GStreamer install info"
+msgstr "معلومات تثبيت جستريمر"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:86
+msgctxt "@info Error message"
+msgid "No valid plugin info was provided, so no plugins could be found."
+msgstr "لم تُوفَّر معلومات ملحقة صالحة، لذا تعذّر العثور على ملحقات."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:89
+msgctxt "@title:window"
+msgid "Couldn't Find Plugins"
+msgstr "تعذّر العثور على ملحقات"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:95
+msgctxt "@info:progress"
+msgid "Looking for plugins"
+msgstr "يبحث عن حزم"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:129
+#: utils/qapt-gst-helper/PluginHelper.cpp:244
+msgctxt "@label"
+msgid ""
+"The package system could not be initialized, your configuration may be "
+"broken."
+msgstr "تعذّر تمهيد نظام الحزم، قد يكون الضّبط معطوبًا."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:131
+#: utils/qapt-gst-helper/PluginHelper.cpp:246
+msgctxt "@title:window"
+msgid "Initialization error"
+msgstr "خطأ تمهيد"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:146
+#, kde-format
+msgid ""
+"The following plugin is required: <ul><li>%2</li></ul>Do you want to search "
+"for this now?"
+msgid_plural ""
+"The following plugins are required: <ul><li>%2</li></ul>Do you want to "
+"search for these now?"
+msgstr[0] "الملحق الآتي غير مطلوب: <ul><li>%2</li></ul>أتريد البحث عنه الآن؟"
+msgstr[1] "الملحق الآتي مطلوب: <ul><li>%2</li></ul>أتريد البحث عنه الآن؟"
+msgstr[2] ""
+"الملحقان الآتيان مطلوبان: <ul><li>%2</li></ul>أتريد البحث عنهما الآن؟"
+msgstr[3] "الملحقات الآتية مطلوبة: <ul><li>%2</li></ul>أتريد البحث عنها الآن؟"
+msgstr[4] "الملحقات الآتية مطلوبة: <ul><li>%2</li></ul>أتريد البحث عنها الآن؟"
+msgstr[5] "الملحقات الآتية مطلوبة: <ul><li>%2</li></ul>أتريد البحث عنها الآن؟"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:158
+msgctxt "A program for which we have no name"
+msgid "A program"
+msgstr "برنامج"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:165
+#, kde-format
+msgid "%2 requires an additional plugin to encode this file"
+msgid_plural "%2 requires additional plugins to encode this file"
+msgstr[0] "لا يتطلّب %2 ملحقات إضافيّة لترميز هذا الملفّ"
+msgstr[1] "يتطلّب %2 ملحقًا إضافيًّا واحدًا لترميز هذا الملفّ"
+msgstr[2] "يتطلّب %2 ملحقان إضافيّان لترميز هذا الملفّ"
+msgstr[3] "يتطلّب %2 ملحقات إضافيّة لترميز هذا الملفّ"
+msgstr[4] "يتطلّب %2 ملحقات إضافيّة لترميز هذا الملفّ"
+msgstr[5] "يتطلّب %2 ملحقات إضافيّة لترميز هذا الملفّ"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:171
+#, kde-format
+msgid "%2 requires an additional plugin to decode this file"
+msgid_plural "%2 requires additional plugins to decode this file"
+msgstr[0] "لا يتطلّب %2 ملحقات إضافيّة لإزالة ترميز هذا الملفّ"
+msgstr[1] "يتطلّب %2 ملحق إضافيّ لإزالة ترميز هذا الملفّ"
+msgstr[2] "يتطلّب %2 ملحقان إضافيّان لإزالة ترميز هذا الملفّ"
+msgstr[3] "يتطلّب %2 ملحقات إضافيّة لإزالة ترميز هذا الملفّ"
+msgstr[4] "يتطلّب %2 ملحقات إضافيّة لإزالة ترميز هذا الملفّ"
+msgstr[5] "يتطلّب %2 ملحقات إضافيّة لإزالة ترميز هذا الملفّ"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:183
+msgctxt "Search for packages"
+msgid "Search"
+msgstr "ابحث"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:209
+msgid "Confirm Changes"
+msgstr "أكّد التّغييرات"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:210
+msgid "Install the following package?"
+msgid_plural "Install the following packages?"
+msgstr[0] "أأثبّت اللا حزم الآتية؟"
+msgstr[1] "أأثبّت الحزمة الآتية؟"
+msgstr[2] "أأثبّت الحزمتين الآتيتين؟"
+msgstr[3] "أأثبّت الحزم الآتية؟"
+msgstr[4] "أأثبّت الحزم الآتية؟"
+msgstr[5] "أأثبّت الحزم الآتية؟"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:215
+msgctxt "Install packages"
+msgid "Install"
+msgstr "ثبّت"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:254
+msgctxt "@label"
+msgid ""
+"Another application seems to be using the package system at this time. You "
+"must close all other package managers before you will be able to install or "
+"remove any packages."
+msgstr ""
+"يبدو أنّ تطبيقًا آخر يستخدم نظام الحزم الآن. عليك إغلاق كلّ مدراء الحزم الأخرى "
+"قبل أن تستطيع تثبيت أيّة حزم أو إزالتها."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:258
+msgctxt "@title:window"
+msgid "Unable to obtain package system lock"
+msgstr "تعذّر الحصول على قفل نظام الحزم"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:263
+#, kde-format
+msgctxt "@label"
+msgid ""
+"You do not have enough disk space in the directory at %1 to continue with "
+"this operation."
+msgstr "لا مساحة قرص كافية لديك في الدّليل %1 لمتابعة هذه العمليّة."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:265
+msgctxt "@title:window"
+msgid "Low disk space"
+msgstr "مساحة القرص منخفضة"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:269
+msgctxt "@label"
+msgid "Could not download packages"
+msgstr "تعذّر تنزيل الحزم"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:270
+msgctxt "@title:window"
+msgid "Download failed"
+msgstr "فشل التّنزيل"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:275
+msgctxt "@label"
+msgid "An error occurred while applying changes:"
+msgstr "حدث خطأ أثناء تطبيق التّغييرات:"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:276
+msgctxt "@title:window"
+msgid "Commit Error"
+msgstr "خطأ إيداع"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:282
+msgctxt "@label"
+msgid ""
+"This operation cannot continue since proper authorization was not provided"
+msgstr "لا يمكن متابعة هذه العمليّة حيث لم يُوفَّر الاستيثاق المناسب"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:284
+msgctxt "@title:window"
+msgid "Authentication error"
+msgstr "خطأ استيثاق"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:288
+msgctxt "@label"
+msgid ""
+"It appears that the QApt worker has either crashed or disappeared. Please "
+"report a bug to the QApt maintainers"
+msgstr ""
+"يبدو أنّ عامل (worker) كيو-آبت قد انهار أو اختفى. فضلًا بلّغ عن علّة إلى مصيني "
+"كيو-آبت"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:290
+msgctxt "@title:window"
+msgid "Unexpected Error"
+msgstr "خطأ غير متوقّع"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:298
+msgctxt "@label"
+msgid ""
+"The following package has not been verified by its author. Downloading "
+"untrusted packages has been disallowed by your current configuration."
+msgid_plural ""
+"The following packages have not been verified by their authors. Downloading "
+"untrusted packages has been disallowed by your current configuration."
+msgstr[0] ""
+"تحقّق المؤلّف من الحزمة الآتية. أُلغي السماح بتنزيل الحزم غير الموثوقة حسب ضبطك "
+"الحاليّ."
+msgstr[1] ""
+"لم يتحقّق المؤلّف من الحزمة الآتية. أُلغي السماح بتنزيل الحزم غير الموثوقة حسب "
+"ضبطك الحاليّ."
+msgstr[2] ""
+"لم يتحقّق المؤلّفين من الحزمتين الآتيتين. أُلغي السماح بتنزيل الحزم غير "
+"الموثوقة حسب ضبطك الحاليّ."
+msgstr[3] ""
+"لم يتحقّق المؤلّفون من الحزم الآتية. أُلغي السماح بتنزيل الحزم غير الموثوقة حسب "
+"ضبطك الحاليّ."
+msgstr[4] ""
+"لم يتحقّق المؤلّفون من الحزم الآتية. أُلغي السماح بتنزيل الحزم غير الموثوقة حسب "
+"ضبطك الحاليّ."
+msgstr[5] ""
+"لم يتحقّق المؤلّفون من الحزم الآتية. أُلغي السماح بتنزيل الحزم غير الموثوقة حسب "
+"ضبطك الحاليّ."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:307
+msgctxt "@title:window"
+msgid "Untrusted Packages"
+msgstr "حزم غير موثوقة"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:314
+#, kde-format
+msgctxt "@label"
+msgid ""
+"The package \"%1\" has not been found among your software sources. "
+"Therefore, it cannot be installed. "
+msgstr "لم يُعثر على الحزمة \"%1\" في مصادر برمجيّاتك. لذلك لا يمكن تثبيتها. "
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:317
+msgctxt "@title:window"
+msgid "Package Not Found"
+msgstr "لم يُعثر على الحزمة"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:331
+msgctxt "@title:window"
+msgid "Media Change Required"
+msgstr "تغيير الوسيط مطلوب"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:332
+#, kde-format
+msgctxt "@label"
+msgid "Please insert %1 into <filename>%2</filename>"
+msgstr "فضلًا أدرج %1 إلى <filename>%2</filename>"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:341
+msgctxt "@title:window"
+msgid "Warning - Unverified Software"
+msgstr "تحذير - حزم غير متحقّق منها"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:343
+msgctxt "@label"
+msgid ""
+"The following piece of software cannot be verified. <warning>Installing "
+"unverified software represents a security risk, as the presence of "
+"unverifiable software can be a sign of tampering.</warning> Do you wish to "
+"continue?"
+msgid_plural ""
+"The following pieces of software cannot be authenticated. "
+"<warning>Installing unverified software represents a security risk, as the "
+"presence of unverifiable software can be a sign of tampering.</warning> Do "
+"you wish to continue?"
+msgstr[0] ""
+"تعذّر التّحقّق من قطعة البرمجيّات هذه. <warning>تثبيت برمجيّات غير متحقّق منها "
+"يعتبر خطرًا أمنيًّا، إذ أنّ وجود برمجيّات لا يمكن التحقّق منها قد يعتبر علامة على "
+"العبث.</warning> أتودّ المتابعة؟"
+msgstr[1] ""
+"تعذّر الاستيثاق من قطعة البرمجيّات هذه. <warning>تثبيت برمجيّات غير متحقّق منها "
+"يعتبر خطرًا أمنيًّا، إذ أنّ وجود برمجيّات لا يمكن التحقّق منها قد يعتبر علامة على "
+"العبث.</warning> أتودّ المتابعة؟"
+msgstr[2] ""
+"تعذّر الاستيثاق من قطعتيّ البرمجيّات هاتين. <warning>تثبيت برمجيّات غير متحقّق "
+"منها يعتبر خطرًا أمنيًّا، إذ أنّ وجود برمجيّات لا يمكن التحقّق منها قد يعتبر علامة "
+"على العبث.</warning> أتودّ المتابعة؟"
+msgstr[3] ""
+"تعذّر الاستيثاق من قطع البرمجيّات هذه. <warning>تثبيت برمجيّات غير متحقّق منها "
+"يعتبر خطرًا أمنيًّا، إذ أنّ وجود برمجيّات لا يمكن التحقّق منها قد يعتبر علامة على "
+"العبث.</warning> أتودّ المتابعة؟"
+msgstr[4] ""
+"تعذّر الاستيثاق من قطع البرمجيّات هذه. <warning>تثبيت برمجيّات غير متحقّق منها "
+"يعتبر خطرًا أمنيًّا، إذ أنّ وجود برمجيّات لا يمكن التحقّق منها قد يعتبر علامة على "
+"العبث.</warning> أتودّ المتابعة؟"
+msgstr[5] ""
+"تعذّر الاستيثاق من قطع البرمجيّات هذه. <warning>تثبيت برمجيّات غير متحقّق منها "
+"يعتبر خطرًا أمنيًّا، إذ أنّ وجود برمجيّات لا يمكن التحقّق منها قد يعتبر علامة على "
+"العبث.</warning> أتودّ المتابعة؟"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:372
+msgctxt "@label Progress bar label when waiting to start"
+msgid "Waiting to start."
+msgstr "ينتظر البدء."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:377
+msgctxt "@label Status label when waiting for a password"
+msgid "Waiting for authentication."
+msgstr "ينتظر الاستيثاق."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:382
+msgctxt "@label Status label when waiting for a CD-ROM"
+msgid "Waiting for required media."
+msgstr "ينتظر الوسيط المطلوب."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:387
+msgctxt "@label Status label"
+msgid "Waiting for other package managers to quit."
+msgstr "ينتظر إنهاء مدراء الحزم الأخرى."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:395
+msgctxt "@label Status label"
+msgid "Loading package cache."
+msgstr "يحمّل خبيئة الحزم."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:398
+msgctxt "@title:window"
+msgid "Downloading"
+msgstr "ينزّل"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:399
+msgctxt "@info:status"
+msgid "Downloading codecs"
+msgstr "ينزّل الرّمازات"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:402
+msgctxt "@title:window"
+msgid "Installing"
+msgstr "يثبّت"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:403
+msgctxt "@info:status"
+msgid "Installing codecs"
+msgstr "يثبّت الرّمازات"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:409
+msgctxt "@label"
+msgid "Package installation finished with errors."
+msgstr "انتهى تثبيت الحزمة بأخطاء."
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:410
+msgctxt "@title:window"
+msgid "Installation Failed"
+msgstr "فشل التّثبيت"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:412
+msgctxt "@label"
+msgid "Codecs successfully installed"
+msgstr "ثُبِّتت الرّمازات بنجاح"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:413
+msgctxt "@title:window"
+msgid "Installation Complete"
+msgstr "اكتمل التّثبيت"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:449
+msgctxt "@info"
+msgid "No plugins could be found"
+msgstr "تعذّر العثور على ملحقات"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:450
+msgctxt "@title"
+msgid "Plugins Not Found"
+msgstr "لم يُعثر على ملحقات"
+
+#: utils/qapt-gst-helper/PluginHelper.cpp:512
+msgctxt "@label Progress bar label when waiting to start"
+msgid "Waiting"
+msgstr "ينتظر"

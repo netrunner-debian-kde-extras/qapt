@@ -3,14 +3,15 @@
 #
 # Miguel Branco, 2012, 2013.
 # Marce Villarino <mvillarino@kde-espana.es>, 2012, 2013.
+# Adrián Chaves Fernández <adriyetichaves@gmail.com>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-12-14 07:45+0000\n"
-"PO-Revision-Date: 2013-12-29 23:33+0100\n"
-"Last-Translator: Marce Villarino <mvillarino@kde-espana.org>\n"
-"Language-Team: Galician <proxecto@trasno.net>\n"
+"POT-Creation-Date: 2014-12-29 07:46+0000\n"
+"PO-Revision-Date: 2015-02-21 13:35+0100\n"
+"Last-Translator: Adrián Chaves Fernández <adriyetichaves@gmail.com>\n"
+"Language-Team: Galician <kde-i18n-doc@kde.org>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -135,24 +136,24 @@ msgctxt "@title:window"
 msgid "Package Installer - %1"
 msgstr "Instalador de paquetes - %1"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:214
+#: utils/qapt-deb-installer/DebInstaller.cpp:212
 #, kde-format
 msgctxt "@info"
 msgid "Error: Wrong architecture '%1'"
 msgstr "Erro: arquitectura incorrecta «%1»"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:234
+#: utils/qapt-deb-installer/DebInstaller.cpp:232
 #, kde-format
 msgctxt "@info Error string when installing would break an existing package"
 msgid "Error: Breaks the existing package \"%1\""
 msgstr "Erro: rompe o paquete xa existente «%1»"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:243
+#: utils/qapt-deb-installer/DebInstaller.cpp:241
 msgctxt "@info"
 msgid "Error: Cannot satisfy dependencies"
 msgstr "Erro: non cumpre correctamente as dependencias"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:253
+#: utils/qapt-deb-installer/DebInstaller.cpp:251
 #, kde-format
 msgctxt "@label A note saying that additional packages are needed"
 msgid "Requires the installation of %1 additional package."
@@ -160,27 +161,27 @@ msgid_plural "Requires the installation of %1 additional packages"
 msgstr[0] "Require a instalación de %1 paquete adicional"
 msgstr[1] "Require a instalación de %1 paquetes adicionais"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:257
+#: utils/qapt-deb-installer/DebInstaller.cpp:255
 msgctxt "@info"
 msgid "All dependencies are satisfied."
 msgstr "Cúmprense correctamente todas as dependencias."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:276
+#: utils/qapt-deb-installer/DebInstaller.cpp:274
 msgctxt "@info"
 msgid "The same version is available in a software channel."
 msgstr "A mesma versión está dispoñíbel nunha canle de software."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:277
+#: utils/qapt-deb-installer/DebInstaller.cpp:275
 msgctxt "@info"
 msgid "It is recommended to install the software from the channel instead"
 msgstr "Recoméndase instalar o software desde a canle"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:279
+#: utils/qapt-deb-installer/DebInstaller.cpp:277
 msgctxt "@info"
 msgid "An older version is available in a software channel."
 msgstr "Hai unha versión máis antiga dispoñíbel na canle de software."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:280
+#: utils/qapt-deb-installer/DebInstaller.cpp:278
 msgctxt "@info"
 msgid ""
 "It is recommended to install the version from the software channel, since it "
@@ -189,12 +190,12 @@ msgstr ""
 "Recoméndase instalar a versión da canle de software, xa que habitualmente "
 "ten máis soporte."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:283
+#: utils/qapt-deb-installer/DebInstaller.cpp:281
 msgctxt "@info"
 msgid "A newer version is available in a software channel."
 msgstr "Está dispoñíbel unha nova versión na canle de software."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:284
+#: utils/qapt-deb-installer/DebInstaller.cpp:282
 msgctxt "@info"
 msgid ""
 "It is strongly advised to install the version from the software channel, "
@@ -263,35 +264,32 @@ msgctxt "@info"
 msgid "A Debian package installer"
 msgstr "Un instalador de paquetes de Debian"
 
-#: utils/qapt-deb-installer/main.cpp:42
+#: utils/qapt-deb-installer/main.cpp:44
 msgctxt "@title"
 msgid "QApt Package Installer"
 msgstr "Instalador de paquetes QApt"
 
-#: utils/qapt-deb-installer/main.cpp:46
+#: utils/qapt-deb-installer/main.cpp:48
 msgctxt "@info:credit"
 msgid "(C) 2011 Jonathan Thomas"
 msgstr "(C) 2011 Jonathan Thomas"
 
-#: utils/qapt-deb-installer/main.cpp:48
+#: utils/qapt-deb-installer/main.cpp:50
 msgctxt "@info:credit"
 msgid "Jonathan Thomas"
 msgstr "Jonathan Thomas"
 
-#: utils/qapt-deb-installer/main.cpp:51
+#: utils/qapt-deb-installer/main.cpp:53
 msgctxt "@info:credit"
 msgid "Harald Sitter"
-msgstr ""
+msgstr "Harald Sitter"
 
-#: utils/qapt-deb-installer/main.cpp:52
+#: utils/qapt-deb-installer/main.cpp:54
 msgctxt "@info:credit"
 msgid "Qt 5 port"
-msgstr ""
+msgstr "Versión baseada en Qt 5"
 
-#: utils/qapt-deb-installer/main.cpp:60
-#, fuzzy
-#| msgctxt "@info:shell"
-#| msgid ".deb file"
+#: utils/qapt-deb-installer/main.cpp:62
 msgctxt "@info:shell argument"
 msgid ".deb file"
 msgstr "ficheiro .deb"

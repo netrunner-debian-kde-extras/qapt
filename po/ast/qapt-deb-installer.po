@@ -1,0 +1,289 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# enolp <enolp@softastur.org>, 2015.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-12-29 07:46+0000\n"
+"PO-Revision-Date: 2015-07-10 15:35+0100\n"
+"Last-Translator: enolp <enolp@softastur.org>\n"
+"Language-Team: Asturian <alminsitradores@softastur.org>\n"
+"Language: ast\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 2.0\n"
+
+#: utils/qapt-deb-installer/ChangesDialog.cpp:37
+msgctxt "@title:window"
+msgid "Confirm Additional Changes"
+msgstr "Confirmación de camudancies adicionales"
+
+#: utils/qapt-deb-installer/ChangesDialog.cpp:42
+msgctxt "@info"
+msgid "<h2>Additional Changes</h2>"
+msgstr "<h2>Camudancies adicionales</h2>"
+
+#: utils/qapt-deb-installer/ChangesDialog.cpp:46
+msgid "This action requires a change to another package:"
+msgid_plural "This action requires changes to other packages:"
+msgstr[0] "Esta aición rique'l cambéu d'otru paquete:"
+msgstr[1] "Esta aición rique'l cambéu d'otros paquetes:"
+
+#: utils/qapt-deb-installer/ChangesDialog.cpp:86
+#: utils/qapt-deb-installer/ChangesDialog.cpp:87
+msgctxt "@info:status Requested action"
+msgid "Install"
+msgstr "Instalar"
+
+#: utils/qapt-deb-installer/ChangesDialog.cpp:88
+msgctxt "@info:status Requested action"
+msgid "Remove"
+msgstr "Desaniciar"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:49
+msgctxt "@info The widget's header label"
+msgid "<title>Installing</title>"
+msgstr "<title>Instalando</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:105
+msgctxt "@info Status information, widget title"
+msgid "<title>Starting</title>"
+msgstr "<title>Aniciando</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:112
+msgctxt "@info Status information, widget title"
+msgid "<title>Waiting</title>"
+msgstr "<title>Esperando</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:120
+msgctxt "@info Status info"
+msgid "<title>Loading Software List</title>"
+msgstr "<title>Cargando'l llistáu de software</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:125
+msgctxt "@info Status information, widget title"
+msgid "<title>Downloading Packages</title>"
+msgstr "<title>Baxando paquetes</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:130
+msgctxt "@info Status information, widget title"
+msgid "<title>Committing Changes</title>"
+msgstr ""
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:136
+msgctxt "@label Message that the install is done"
+msgid "Done"
+msgstr "Fecho"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:138
+msgctxt "@info Header label used when the install is done"
+msgid "<title>Done</title>"
+msgstr "<title>Fecho</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:155
+#: utils/qapt-deb-installer/DebInstaller.cpp:72
+msgctxt "@label"
+msgid ""
+"The package system could not be initialized, your configuration may be "
+"broken."
+msgstr ""
+"Nun pudo aniciase'l paquete del sistema, la to configuración podría tar rota."
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:157
+#: utils/qapt-deb-installer/DebInstaller.cpp:74
+msgctxt "@title:window"
+msgid "Initialization error"
+msgstr "Fallu d'aniciación"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:164
+msgctxt "@label"
+msgid "This package is incompatible with your computer."
+msgstr "Esti paquete ye incompatible col to ordenador."
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:165
+msgctxt "@title:window"
+msgid "Incompatible Package"
+msgstr "Paquete incompatible"
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:83
+msgctxt "@label"
+msgid "Install Package"
+msgstr "Instalar paquete"
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:107
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Could not open <filename>%1</filename>. It does not appear to be a valid "
+"Debian package file."
+msgstr ""
+"Nun pudo abrise <filename>%1</filename>. Paez nun ser un paquete Debian "
+"válidu."
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:115
+#, kde-format
+msgctxt "@title:window"
+msgid "Package Installer - %1"
+msgstr "Instalador de paquetes - %1"
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:212
+#, kde-format
+msgctxt "@info"
+msgid "Error: Wrong architecture '%1'"
+msgstr "Fallu: Arquitectura incorreuta '%1'"
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:232
+#, kde-format
+msgctxt "@info Error string when installing would break an existing package"
+msgid "Error: Breaks the existing package \"%1\""
+msgstr "Fallu: Ruempe'l paquete esistente \"%1\""
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:241
+msgctxt "@info"
+msgid "Error: Cannot satisfy dependencies"
+msgstr "Fallu: Nun puen satisfacese les dependencies"
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:251
+#, kde-format
+msgctxt "@label A note saying that additional packages are needed"
+msgid "Requires the installation of %1 additional package."
+msgid_plural "Requires the installation of %1 additional packages"
+msgstr[0] "Rique la instalación d'un paquete adicional."
+msgstr[1] "Rique la instalación de %1 paquetes adicionales."
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:255
+msgctxt "@info"
+msgid "All dependencies are satisfied."
+msgstr "Satisfixéronse toles dependencies."
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:274
+msgctxt "@info"
+msgid "The same version is available in a software channel."
+msgstr "Ta disponible la mesma versión nun canal de software."
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:275
+msgctxt "@info"
+msgid "It is recommended to install the software from the channel instead"
+msgstr "Encamiéntase instalar el software d'una canal nel so llugar"
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:277
+msgctxt "@info"
+msgid "An older version is available in a software channel."
+msgstr "Ta disponible una versión más vieya na canal de software."
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:278
+msgctxt "@info"
+msgid ""
+"It is recommended to install the version from the software channel, since it "
+"usually has more support."
+msgstr ""
+"Aconséyase instalar la versión dende la canal de software, darréu que davezu "
+"tien más sofitu."
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:281
+msgctxt "@info"
+msgid "A newer version is available in a software channel."
+msgstr "Ta disponible una versión más nueva na canal de software."
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:282
+msgctxt "@info"
+msgid ""
+"It is strongly advised to install the version from the software channel, "
+"since it usually has more support."
+msgstr ""
+"Encamiéntase instalar la versión dende la canal de software, darréu que "
+"davezu tien más sofitu."
+
+#: utils/qapt-deb-installer/DebViewer.cpp:71
+msgctxt "@label Label preceding the package name"
+msgid "Package:"
+msgstr "Paquete:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:79
+msgctxt "@label Label preceding the package status"
+msgid "Status:"
+msgstr "Estáu:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:81
+msgctxt "@label"
+msgid "Details..."
+msgstr "Detalles..."
+
+#: utils/qapt-deb-installer/DebViewer.cpp:132
+msgctxt "@label Label preceding the package version"
+msgid "Version:"
+msgstr "Versión:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:139
+msgctxt "@label Label preceding the package size"
+msgid "Installed Size:"
+msgstr "Tamañu instaláu:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:146
+msgctxt "@label Label preceding the package maintainer"
+msgid "Maintainer:"
+msgstr "Caltenedor:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:153
+msgctxt "@label Label preceding the package category"
+msgid "Category:"
+msgstr "Estaya:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:160
+msgctxt "@label Label preceding the package homepage"
+msgid "Homepage:"
+msgstr "Páxina d'aniciu:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:174
+msgctxt "@title:tab"
+msgid "Description"
+msgstr "Descripción"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:175
+msgctxt "@title:tab"
+msgid "Details"
+msgstr "Detalles"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:176
+msgctxt "@title:tab"
+msgid "Included Files"
+msgstr "Ficheros incluyíos"
+
+#: utils/qapt-deb-installer/main.cpp:32
+msgctxt "@info"
+msgid "A Debian package installer"
+msgstr "Un instalador de paquetes Debian"
+
+#: utils/qapt-deb-installer/main.cpp:44
+msgctxt "@title"
+msgid "QApt Package Installer"
+msgstr "Instalador de paquetes QApt"
+
+#: utils/qapt-deb-installer/main.cpp:48
+msgctxt "@info:credit"
+msgid "(C) 2011 Jonathan Thomas"
+msgstr "(C) 2011 Jonathan Thomas"
+
+#: utils/qapt-deb-installer/main.cpp:50
+msgctxt "@info:credit"
+msgid "Jonathan Thomas"
+msgstr "Jonathan Thomas"
+
+#: utils/qapt-deb-installer/main.cpp:53
+msgctxt "@info:credit"
+msgid "Harald Sitter"
+msgstr "Harald Sitter"
+
+#: utils/qapt-deb-installer/main.cpp:54
+msgctxt "@info:credit"
+msgid "Qt 5 port"
+msgstr ""
+
+#: utils/qapt-deb-installer/main.cpp:62
+msgctxt "@info:shell argument"
+msgid ".deb file"
+msgstr "Ficheru .deb"

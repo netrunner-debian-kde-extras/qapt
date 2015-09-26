@@ -4,62 +4,63 @@
 #
 #
 # Stelios <sstavra@gmail.com>, 2011, 2012.
+# Dimitris Kardarakos <dimkard@gmail.com>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: qapt-gst-helper\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-12-14 07:45+0000\n"
-"PO-Revision-Date: 2012-10-18 21:05+0300\n"
-"Last-Translator: Stelios <sstavra@gmail.com>\n"
+"POT-Creation-Date: 2014-12-23 09:33+0000\n"
+"PO-Revision-Date: 2015-03-02 16:41+0200\n"
+"Last-Translator: Dimitris Kardarakos <dimkard@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 1.4\n"
+"X-Generator: Lokalize 1.5\n"
 
-#: utils/qapt-gst-helper/main.cpp:33
+#: utils/qapt-gst-helper/main.cpp:34
 msgctxt "@info"
 msgid "A GStreamer codec installer using QApt"
 msgstr "Ένα πρόγραμμα τύπου συμπίεσης GStreamer με χρήση QApt"
 
-#: utils/qapt-gst-helper/main.cpp:43
+#: utils/qapt-gst-helper/main.cpp:46
 msgctxt "@title"
 msgid "QApt Codec Searcher"
 msgstr "Πρόγραμμα αναζήτησης τύπου συμπίεσης QApt"
 
-#: utils/qapt-gst-helper/main.cpp:47
+#: utils/qapt-gst-helper/main.cpp:50
 msgctxt "@info:credit"
 msgid "(C) 2011 Jonathan Thomas"
 msgstr "(C) 2011 Jonathan Thomas"
 
-#: utils/qapt-gst-helper/main.cpp:49
+#: utils/qapt-gst-helper/main.cpp:52
 msgctxt "@info:credit"
 msgid "Jonathan Thomas"
 msgstr "Jonathan Thomas"
 
-#: utils/qapt-gst-helper/main.cpp:52
+#: utils/qapt-gst-helper/main.cpp:55
 msgctxt "@info:credit"
 msgid "Harald Sitter"
-msgstr ""
+msgstr "Harald Sitter"
 
-#: utils/qapt-gst-helper/main.cpp:53
+#: utils/qapt-gst-helper/main.cpp:56
 msgctxt "@info:credit"
 msgid "Qt 5 port"
-msgstr ""
+msgstr "Μεταφορά σε Qt 5"
 
-#: utils/qapt-gst-helper/main.cpp:61
+#: utils/qapt-gst-helper/main.cpp:64
 msgctxt "@info:shell"
 msgid "Attaches the window to an X app specified by winid"
 msgstr "Προσαρτά το παράθυρο σε μια εφαρμογή X που ορίζεται από το winid"
 
-#: utils/qapt-gst-helper/main.cpp:62
+#: utils/qapt-gst-helper/main.cpp:65
 msgctxt "@info:shell value name"
 msgid "winid"
-msgstr ""
+msgstr "winid"
 
-#: utils/qapt-gst-helper/main.cpp:66
+#: utils/qapt-gst-helper/main.cpp:69
 msgctxt "@info:shell"
 msgid "GStreamer install info"
 msgstr "Πληροφορίες εγκατάστασης GStreamer"

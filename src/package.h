@@ -204,6 +204,14 @@ public:
     QString origin() const;
 
    /**
+    * Returns the site the package comes from.
+    * (e.g. archive.ubuntu.com)
+    *
+    * \return The site the package originates from
+    */
+    QString site() const;
+
+   /**
     * Returns a list of archives that the candidate version of the package is
     * available from.
     * (E.g. oneiric, oneiric-updates, sid, etc)
@@ -279,7 +287,7 @@ public:
     * Returns the amount of hard drive space that the currently-installed
     * version of this package takes up.
     * This is human-unreadable, so KDE applications may wish to run this
-    * through the KGlobal::locale()->formatByteSize() function to get a
+    * through the KFormat().formatByteSize() function to get a
     * localized, human-readable number.
     *
     * Returns -1 on error.
@@ -292,7 +300,7 @@ public:
     * Returns the amount of hard drive space that this package will take up
     * once installed.
     * This is human-unreadable, so KDE applications may wish to run this
-    * through the KGlobal::locale()->formatByteSize() function to get a
+    * through the KFormat().formatByteSize() function to get a
     * localized, human-readable number.
     *
     * Returns -1 on error.
@@ -304,7 +312,7 @@ public:
    /**
     * Returns the download size of the package archive in bytes.
     * This is human-unreadable, so KDE applications may wish to run this
-    * through the KGlobal::locale()->formatByteSize() function to get a
+    * through the KFormat().formatByteSize() function to get a
     * localized, human-readable number.
     *
     * Returns -1 on error.
@@ -338,6 +346,25 @@ public:
     * Returns whether the package is supported by Canonical
     */
     bool isSupported() const;
+
+    /**
+     * Check whether the candidate version for an update should actually be
+     * installed. This is based on an optional Phased-Update-Percentage control
+     * field specifying a number between 0 and 100 indicating how many systems
+     * should get this update.
+     *
+     * Whether or not a system is in the update phase is determined by a
+     * repeatable discrete random number calculation.
+     *
+     * @returns @c false if a candidate definitely does not fall into the update
+     *          phase or there is no candidate. @c true is returned in all other cases.
+     *
+     * @warning this function uses statics and is not in the least way threadsafe
+     *          nor reentrant.
+     *
+     * @since 3.1
+     */
+    bool isInUpdatePhase() const;
 
    /**
     * A package prepared for MultiArch can have any of three MultiArch "states"

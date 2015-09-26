@@ -1,0 +1,294 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Safa Alfulaij <safa1996alfulaij@gmail.com>, 2015.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-12-29 07:46+0000\n"
+"PO-Revision-Date: 2015-01-09 03:35+0300\n"
+"Last-Translator: Safa Alfulaij <safa1996alfulaij@gmail.com>\n"
+"Language-Team: Arabic <doc@arabeyes.org>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: utils/qapt-deb-installer/ChangesDialog.cpp:37
+msgctxt "@title:window"
+msgid "Confirm Additional Changes"
+msgstr "أكّد التّغييرات الإضافيّة"
+
+#: utils/qapt-deb-installer/ChangesDialog.cpp:42
+msgctxt "@info"
+msgid "<h2>Additional Changes</h2>"
+msgstr "<h2>تغييرات إضافيّة</h2>"
+
+#: utils/qapt-deb-installer/ChangesDialog.cpp:46
+msgid "This action requires a change to another package:"
+msgid_plural "This action requires changes to other packages:"
+msgstr[0] "لا يتطلّب هذا الإجراء تغيير على أيّة حزمة أخرى:"
+msgstr[1] "يتطلّب هذا الإجراء تغييرًا على حزمة واحدة أخرى:"
+msgstr[2] "يتطلّب هذا الإجراء تغييرًا على حزمتين أخريين:"
+msgstr[3] "يتطلّب هذا الإجراء تغييرًا على حزم أخرى:"
+msgstr[4] "يتطلّب هذا الإجراء تغييرًا على حزم أخرى:"
+msgstr[5] "يتطلّب هذا الإجراء تغييرًا على حزم أخرى:"
+
+#: utils/qapt-deb-installer/ChangesDialog.cpp:86
+#: utils/qapt-deb-installer/ChangesDialog.cpp:87
+msgctxt "@info:status Requested action"
+msgid "Install"
+msgstr "للتّثبيت"
+
+#: utils/qapt-deb-installer/ChangesDialog.cpp:88
+msgctxt "@info:status Requested action"
+msgid "Remove"
+msgstr "للإزالة"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:49
+msgctxt "@info The widget's header label"
+msgid "<title>Installing</title>"
+msgstr "<title>يثبّت</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:105
+msgctxt "@info Status information, widget title"
+msgid "<title>Starting</title>"
+msgstr "<title>يبدأ</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:112
+msgctxt "@info Status information, widget title"
+msgid "<title>Waiting</title>"
+msgstr "<title>ينتظر</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:120
+msgctxt "@info Status info"
+msgid "<title>Loading Software List</title>"
+msgstr "<title>يحمّل قائمة البرمجيّات</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:125
+msgctxt "@info Status information, widget title"
+msgid "<title>Downloading Packages</title>"
+msgstr "<title>ينزّل الحزم</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:130
+msgctxt "@info Status information, widget title"
+msgid "<title>Committing Changes</title>"
+msgstr "<title>يودع التّغييرات</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:136
+msgctxt "@label Message that the install is done"
+msgid "Done"
+msgstr "تمّ"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:138
+msgctxt "@info Header label used when the install is done"
+msgid "<title>Done</title>"
+msgstr "<title>تمّ</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:155
+#: utils/qapt-deb-installer/DebInstaller.cpp:72
+msgctxt "@label"
+msgid ""
+"The package system could not be initialized, your configuration may be "
+"broken."
+msgstr "تعذّر تمهيد نظام الحزم، قد يكون الضبط معطوبًا."
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:157
+#: utils/qapt-deb-installer/DebInstaller.cpp:74
+msgctxt "@title:window"
+msgid "Initialization error"
+msgstr "خطأ تمهيد"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:164
+msgctxt "@label"
+msgid "This package is incompatible with your computer."
+msgstr "الحزمة غير متوافقة مع حاسوبك."
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:165
+msgctxt "@title:window"
+msgid "Incompatible Package"
+msgstr "حزمة غير متوافقة"
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:83
+msgctxt "@label"
+msgid "Install Package"
+msgstr "ثبّت الحزمة"
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:107
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Could not open <filename>%1</filename>. It does not appear to be a valid "
+"Debian package file."
+msgstr "تعذّر فتح <filename>%1</filename>. لا يبدو أنّه ملفّ حزمة دبيانيّة."
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:115
+#, kde-format
+msgctxt "@title:window"
+msgid "Package Installer - %1"
+msgstr "مثبّت الحزم - %1"
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:212
+#, kde-format
+msgctxt "@info"
+msgid "Error: Wrong architecture '%1'"
+msgstr "خطأ: المعماريّة '%1' خاطئة"
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:232
+#, kde-format
+msgctxt "@info Error string when installing would break an existing package"
+msgid "Error: Breaks the existing package \"%1\""
+msgstr "خطأ: يكسر الحزمة \"%1\" الموجودة"
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:241
+msgctxt "@info"
+msgid "Error: Cannot satisfy dependencies"
+msgstr "خطأ: تعذّر استيفاء الاعتماديّات"
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:251
+#, kde-format
+msgctxt "@label A note saying that additional packages are needed"
+msgid "Requires the installation of %1 additional package."
+msgid_plural "Requires the installation of %1 additional packages"
+msgstr[0] "لا يتطلّب تثبيت أيّة حزم إضافيّة."
+msgstr[1] "يتطلّب تثبيت حزمة إضافيّة واحدة."
+msgstr[2] "يتطلّب تثبيت حزمتين إضافيّتين."
+msgstr[3] "يتطلّب تثبيت %1 حزم إضافيّة."
+msgstr[4] "يتطلّب تثبيت %1 حزمةً إضافيّةً."
+msgstr[5] "يتطلّب تثبيت %1 حزمة إضافيّة."
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:255
+msgctxt "@info"
+msgid "All dependencies are satisfied."
+msgstr "كلّ الاعتماديّات مستوفاة."
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:274
+msgctxt "@info"
+msgid "The same version is available in a software channel."
+msgstr "نفس الإصدار متوفّر في قناة البرمجيّات."
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:275
+msgctxt "@info"
+msgid "It is recommended to install the software from the channel instead"
+msgstr "من المستحسن تثبيت البرمجيّة من القناة بدل هذا"
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:277
+msgctxt "@info"
+msgid "An older version is available in a software channel."
+msgstr "إصدار أقدم متوفّر في قناة البرمجيّات."
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:278
+msgctxt "@info"
+msgid ""
+"It is recommended to install the version from the software channel, since it "
+"usually has more support."
+msgstr ""
+"من المستحسن تثبيت هذا الإصدار من قناة البرمجيّات حيث تقدّم عادةً دعمًا أفضل."
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:281
+msgctxt "@info"
+msgid "A newer version is available in a software channel."
+msgstr "إصدار أحدث متوفّر في قناة البرمجيّات."
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:282
+msgctxt "@info"
+msgid ""
+"It is strongly advised to install the version from the software channel, "
+"since it usually has more support."
+msgstr ""
+"من المستحسن وبقوّة تثبيت هذا الإصدار من قناة البرمجيّات حيث تقدّم عادةً دعمًا "
+"أفضل."
+
+#: utils/qapt-deb-installer/DebViewer.cpp:71
+msgctxt "@label Label preceding the package name"
+msgid "Package:"
+msgstr "الحزمة:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:79
+msgctxt "@label Label preceding the package status"
+msgid "Status:"
+msgstr "الحالة:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:81
+msgctxt "@label"
+msgid "Details..."
+msgstr "تفاصيل..."
+
+#: utils/qapt-deb-installer/DebViewer.cpp:132
+msgctxt "@label Label preceding the package version"
+msgid "Version:"
+msgstr "الإصدار:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:139
+msgctxt "@label Label preceding the package size"
+msgid "Installed Size:"
+msgstr "الحجم المثبّت:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:146
+msgctxt "@label Label preceding the package maintainer"
+msgid "Maintainer:"
+msgstr "المصين:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:153
+msgctxt "@label Label preceding the package category"
+msgid "Category:"
+msgstr "الفئة:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:160
+msgctxt "@label Label preceding the package homepage"
+msgid "Homepage:"
+msgstr "الصّفحة الرّئيسيّة:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:174
+msgctxt "@title:tab"
+msgid "Description"
+msgstr "الوصف"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:175
+msgctxt "@title:tab"
+msgid "Details"
+msgstr "تفاصيل"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:176
+msgctxt "@title:tab"
+msgid "Included Files"
+msgstr "الملفّات المضمّنة"
+
+#: utils/qapt-deb-installer/main.cpp:32
+msgctxt "@info"
+msgid "A Debian package installer"
+msgstr "مثبّت حزم دبيانيّة"
+
+#: utils/qapt-deb-installer/main.cpp:44
+msgctxt "@title"
+msgid "QApt Package Installer"
+msgstr "مثبّت الحزم كيو-آبت"
+
+#: utils/qapt-deb-installer/main.cpp:48
+msgctxt "@info:credit"
+msgid "(C) 2011 Jonathan Thomas"
+msgstr ""
+
+#: utils/qapt-deb-installer/main.cpp:50
+msgctxt "@info:credit"
+msgid "Jonathan Thomas"
+msgstr "جونَثِن توماس"
+
+#: utils/qapt-deb-installer/main.cpp:53
+msgctxt "@info:credit"
+msgid "Harald Sitter"
+msgstr "هارالد سِتِر"
+
+#: utils/qapt-deb-installer/main.cpp:54
+msgctxt "@info:credit"
+msgid "Qt 5 port"
+msgstr "النّقل إلى كيوت 5"
+
+#: utils/qapt-deb-installer/main.cpp:62
+msgctxt "@info:shell argument"
+msgid ".deb file"
+msgstr "ملفّ ‎.deb"

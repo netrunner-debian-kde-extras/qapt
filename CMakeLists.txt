@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 2.8.12)
 
 set(PROJECT_VERSION_MAJOR 3)
 set(PROJECT_VERSION_MINOR 0)
-set(PROJECT_VERSION_PATCH 0)
+set(PROJECT_VERSION_PATCH 1)
 set(PROJECT_VERSION "${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJECT_VERSION_PATCH}" )
 set(PROJECT_SOVERSION ${PROJECT_VERSION_MAJOR})
 
@@ -32,8 +32,7 @@ find_package(Qt5 ${REQUIRED_QT_VERSION} CONFIG REQUIRED DBus Widgets)
 find_package(Xapian REQUIRED)
 find_package(AptPkg REQUIRED)
 
-set(POLKITQT5-1_MIN_VERSION "0.112")
-find_package(PolkitQt5-1 REQUIRED)
+find_package(PolkitQt5-1 0.112 REQUIRED)
 
 # Find the required Libaries
 include_directories(
@@ -75,10 +74,11 @@ find_package(KF5Runner ${KF5_DEP_VERSION})
 find_package(KF5TextWidgets ${KF5_DEP_VERSION})
 find_package(KF5WidgetsAddons ${KF5_DEP_VERSION})
 find_package(KF5WindowSystem ${KF5_DEP_VERSION})
+find_package(KF5IconThemes ${KF5_DEP_VERSION})
 
-find_package(DebconfKDE)
-find_package(GStreamer)
-find_package(GLIB2)
+find_package(DebconfKDE 1.0)
+find_package(GStreamer 1.0)
+find_package(GLIB2 2.0)
 
 if (KF5CoreAddons_FOUND
         AND KF5I18n_FOUND
@@ -87,12 +87,14 @@ if (KF5CoreAddons_FOUND
         AND KF5TextWidgets_FOUND
         AND KF5WidgetsAddons_FOUND
         AND KF5WindowSystem_FOUND
+        AND KF5IconThemes_FOUND
         AND DebconfKDE_FOUND)
     set(WITH_UTILS true)
 endif()
 
 if (WITH_UTILS AND GSTREAMER_FOUND AND GLIB2_FOUND)
     set(WITH_GSTREAMER true)
+    add_definitions(${GSTREAMER_DEFINITIONS})
 endif()
 
 add_feature_info(qapt-utils WITH_UTILS "Runtime utilities using KDE frameworks")

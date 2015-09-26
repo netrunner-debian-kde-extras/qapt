@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the extragear-sysadmin package.
 # Sasu Karttunen <sasu.karttunen@tpnet.fi>, 2011.
 # Jiri Grönroos <jiri.gronroos@iki.fi>, 2012.
-# Lasse Liehu <lasse.liehu@gmail.com>, 2012, 2013, 2014.
+# Lasse Liehu <lasse.liehu@gmail.com>, 2012, 2013, 2014, 2015.
 # Tommi Nieminen <translator@legisign.org>, 2012.
 #
 # KDE Finnish translation sprint participants:
@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qapt-deb-installer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-12-14 07:45+0000\n"
-"PO-Revision-Date: 2014-12-17 15:33+0200\n"
+"POT-Creation-Date: 2014-12-29 07:46+0000\n"
+"PO-Revision-Date: 2015-04-08 17:10+0200\n"
 "Last-Translator: Lasse Liehu <lasse.liehu@gmail.com>\n"
 "Language-Team: Finnish <lokalisointi@lists.coss.fi>\n"
 "Language: fi\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-POT-Import-Date: 2012-12-01 22:21:42+0000\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 2.0\n"
 
 #: utils/qapt-deb-installer/ChangesDialog.cpp:37
 msgctxt "@title:window"
@@ -97,8 +97,7 @@ msgctxt "@label"
 msgid ""
 "The package system could not be initialized, your configuration may be "
 "broken."
-msgstr ""
-"Pakettijärjestelmää ei voitu valmistella. Asetukset voivat olla virheellisiä."
+msgstr "Pakettijärjestelmää ei voitu valmistella. Asennus saattaa olla rikki."
 
 #: utils/qapt-deb-installer/DebCommitWidget.cpp:157
 #: utils/qapt-deb-installer/DebInstaller.cpp:74
@@ -137,24 +136,24 @@ msgctxt "@title:window"
 msgid "Package Installer - %1"
 msgstr "Pakettien asennusohjelma – %1"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:214
+#: utils/qapt-deb-installer/DebInstaller.cpp:212
 #, kde-format
 msgctxt "@info"
 msgid "Error: Wrong architecture '%1'"
 msgstr "Virhe: Väärä arkkitehtuuri ”%1”"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:234
+#: utils/qapt-deb-installer/DebInstaller.cpp:232
 #, kde-format
 msgctxt "@info Error string when installing would break an existing package"
 msgid "Error: Breaks the existing package \"%1\""
 msgstr "Virhe: Rikkoo jo asennetun paketin ”%1”"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:243
+#: utils/qapt-deb-installer/DebInstaller.cpp:241
 msgctxt "@info"
 msgid "Error: Cannot satisfy dependencies"
 msgstr "Virhe: Riippuvuuksien täyttäminen epäonnistui"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:253
+#: utils/qapt-deb-installer/DebInstaller.cpp:251
 #, kde-format
 msgctxt "@label A note saying that additional packages are needed"
 msgid "Requires the installation of %1 additional package."
@@ -162,27 +161,27 @@ msgid_plural "Requires the installation of %1 additional packages"
 msgstr[0] "Vaatii %1 ylimääräisen paketin asentamista."
 msgstr[1] "Vaatii %1 ylimääräisen paketin asentamista."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:257
+#: utils/qapt-deb-installer/DebInstaller.cpp:255
 msgctxt "@info"
 msgid "All dependencies are satisfied."
 msgstr "Kaikki riippuvuudet on täytetty."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:276
+#: utils/qapt-deb-installer/DebInstaller.cpp:274
 msgctxt "@info"
 msgid "The same version is available in a software channel."
 msgstr "Sama versio ohjelmasta on saatavilla ohjelmalähteistä."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:277
+#: utils/qapt-deb-installer/DebInstaller.cpp:275
 msgctxt "@info"
 msgid "It is recommended to install the software from the channel instead"
 msgstr "On suositeltavaa asentaa paketti ohjelmalähteistä."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:279
+#: utils/qapt-deb-installer/DebInstaller.cpp:277
 msgctxt "@info"
 msgid "An older version is available in a software channel."
 msgstr "Vanhempi versio paketista on saatavilla ohjelmistolähteistä."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:280
+#: utils/qapt-deb-installer/DebInstaller.cpp:278
 msgctxt "@info"
 msgid ""
 "It is recommended to install the version from the software channel, since it "
@@ -191,12 +190,12 @@ msgstr ""
 "On suositeltavaa asentaa ohjelmistolähteistä löytyvä versio, sillä yleensä "
 "sille saa enemmän tukea."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:283
+#: utils/qapt-deb-installer/DebInstaller.cpp:281
 msgctxt "@info"
 msgid "A newer version is available in a software channel."
 msgstr "Uudempi versio paketista on saatavilla ohjelmalähteistä."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:284
+#: utils/qapt-deb-installer/DebInstaller.cpp:282
 msgctxt "@info"
 msgid ""
 "It is strongly advised to install the version from the software channel, "
@@ -265,32 +264,32 @@ msgctxt "@info"
 msgid "A Debian package installer"
 msgstr "Debian-pakettien asennusohjelma"
 
-#: utils/qapt-deb-installer/main.cpp:42
+#: utils/qapt-deb-installer/main.cpp:44
 msgctxt "@title"
 msgid "QApt Package Installer"
 msgstr "QApt – pakettien asennusohjelma"
 
-#: utils/qapt-deb-installer/main.cpp:46
+#: utils/qapt-deb-installer/main.cpp:48
 msgctxt "@info:credit"
 msgid "(C) 2011 Jonathan Thomas"
 msgstr "© 2011 Jonathan Thomas"
 
-#: utils/qapt-deb-installer/main.cpp:48
+#: utils/qapt-deb-installer/main.cpp:50
 msgctxt "@info:credit"
 msgid "Jonathan Thomas"
 msgstr "Jonathan Thomas"
 
-#: utils/qapt-deb-installer/main.cpp:51
+#: utils/qapt-deb-installer/main.cpp:53
 msgctxt "@info:credit"
 msgid "Harald Sitter"
 msgstr "Harald Sitter"
 
-#: utils/qapt-deb-installer/main.cpp:52
+#: utils/qapt-deb-installer/main.cpp:54
 msgctxt "@info:credit"
 msgid "Qt 5 port"
 msgstr "Qt 5 -sovitus"
 
-#: utils/qapt-deb-installer/main.cpp:60
+#: utils/qapt-deb-installer/main.cpp:62
 msgctxt "@info:shell argument"
 msgid ".deb file"
 msgstr ".deb-tiedosto"

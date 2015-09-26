@@ -1,62 +1,63 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
+# Federico Zenith <federico.zenith@member.fsf.org>, 2011, 2012, 2014.
 #
-# Federico Zenith <federico.zenith@member.fsf.org>, 2011, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: qapt-gst-helper\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-12-14 07:45+0000\n"
-"PO-Revision-Date: 2012-10-28 11:19+0100\n"
-"Last-Translator: Federico Zenith <federico.zenith@member.fsf.org>\n"
+"POT-Creation-Date: 2014-12-23 09:33+0000\n"
+"PO-Revision-Date: 2014-12-17 19:55+0100\n"
+"Last-Translator: Federico Zenith <zenith.federico@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
 
-#: utils/qapt-gst-helper/main.cpp:33
+#: utils/qapt-gst-helper/main.cpp:34
 msgctxt "@info"
 msgid "A GStreamer codec installer using QApt"
 msgstr "Un installatore di codec di GStreamer con QApt"
 
-#: utils/qapt-gst-helper/main.cpp:43
+#: utils/qapt-gst-helper/main.cpp:46
 msgctxt "@title"
 msgid "QApt Codec Searcher"
 msgstr "Ricerca di codec con QApt"
 
-#: utils/qapt-gst-helper/main.cpp:47
+#: utils/qapt-gst-helper/main.cpp:50
 msgctxt "@info:credit"
 msgid "(C) 2011 Jonathan Thomas"
 msgstr "© 2011 Jonathan Thomas"
 
-#: utils/qapt-gst-helper/main.cpp:49
+#: utils/qapt-gst-helper/main.cpp:52
 msgctxt "@info:credit"
 msgid "Jonathan Thomas"
 msgstr "Jonathan Thomas"
 
-#: utils/qapt-gst-helper/main.cpp:52
+#: utils/qapt-gst-helper/main.cpp:55
 msgctxt "@info:credit"
 msgid "Harald Sitter"
-msgstr ""
+msgstr "Harald Sitter"
 
-#: utils/qapt-gst-helper/main.cpp:53
+#: utils/qapt-gst-helper/main.cpp:56
 msgctxt "@info:credit"
 msgid "Qt 5 port"
-msgstr ""
+msgstr "Trasferimento a Qt 5"
 
-#: utils/qapt-gst-helper/main.cpp:61
+#: utils/qapt-gst-helper/main.cpp:64
 msgctxt "@info:shell"
 msgid "Attaches the window to an X app specified by winid"
 msgstr "Associa la finestra a un'applicazione X specificata per winid"
 
-#: utils/qapt-gst-helper/main.cpp:62
+#: utils/qapt-gst-helper/main.cpp:65
 msgctxt "@info:shell value name"
 msgid "winid"
-msgstr ""
+msgstr "winid"
 
-#: utils/qapt-gst-helper/main.cpp:66
+#: utils/qapt-gst-helper/main.cpp:69
 msgctxt "@info:shell"
 msgid "GStreamer install info"
 msgstr "Informazioni di installazione di GStreamer"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-12-14 07:45+0000\n"
+"POT-Creation-Date: 2014-12-29 07:46+0000\n"
 "PO-Revision-Date: 2013-01-13 22:47+0200\n"
 "Last-Translator: Sergiu Bivol <sergiu@ase.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
@@ -133,24 +133,24 @@ msgctxt "@title:window"
 msgid "Package Installer - %1"
 msgstr "Instalator de pachete - %1"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:214
+#: utils/qapt-deb-installer/DebInstaller.cpp:212
 #, kde-format
 msgctxt "@info"
 msgid "Error: Wrong architecture '%1'"
 msgstr "Eroare: Arhitectură greșită „%1”"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:234
+#: utils/qapt-deb-installer/DebInstaller.cpp:232
 #, kde-format
 msgctxt "@info Error string when installing would break an existing package"
 msgid "Error: Breaks the existing package \"%1\""
 msgstr "Eroare: Deteriorează pachetul existent „%1”"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:243
+#: utils/qapt-deb-installer/DebInstaller.cpp:241
 msgctxt "@info"
 msgid "Error: Cannot satisfy dependencies"
 msgstr "Eroare: Nu se pot satisface dependențele"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:253
+#: utils/qapt-deb-installer/DebInstaller.cpp:251
 #, kde-format
 msgctxt "@label A note saying that additional packages are needed"
 msgid "Requires the installation of %1 additional package."
@@ -159,27 +159,27 @@ msgstr[0] "Necesită instalarea a %1 pachet suplimentar"
 msgstr[1] "Necesită instalarea a %1 pachete suplimentare"
 msgstr[2] "Necesită instalarea a %1 de pachete suplimentare"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:257
+#: utils/qapt-deb-installer/DebInstaller.cpp:255
 msgctxt "@info"
 msgid "All dependencies are satisfied."
 msgstr "Toate dependențele sînt satisfăcute."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:276
+#: utils/qapt-deb-installer/DebInstaller.cpp:274
 msgctxt "@info"
 msgid "The same version is available in a software channel."
 msgstr "Aceeași versiune este disponibilă într-un canal de programe."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:277
+#: utils/qapt-deb-installer/DebInstaller.cpp:275
 msgctxt "@info"
 msgid "It is recommended to install the software from the channel instead"
 msgstr "Se recomandă să instalați aplicația din canalul de programe"
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:279
+#: utils/qapt-deb-installer/DebInstaller.cpp:277
 msgctxt "@info"
 msgid "An older version is available in a software channel."
 msgstr "O versiune mai veche este disponibilă într-un canal de programe."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:280
+#: utils/qapt-deb-installer/DebInstaller.cpp:278
 msgctxt "@info"
 msgid ""
 "It is recommended to install the version from the software channel, since it "
@@ -188,12 +188,12 @@ msgstr ""
 "Se recomandă să instalați versiunea din canalul de programe, deoarece aceea "
 "are de obicei mai mult suport."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:283
+#: utils/qapt-deb-installer/DebInstaller.cpp:281
 msgctxt "@info"
 msgid "A newer version is available in a software channel."
 msgstr "O versiune mai nouă este disponibilă într-un canal de programe."
 
-#: utils/qapt-deb-installer/DebInstaller.cpp:284
+#: utils/qapt-deb-installer/DebInstaller.cpp:282
 msgctxt "@info"
 msgid ""
 "It is strongly advised to install the version from the software channel, "
@@ -262,32 +262,32 @@ msgctxt "@info"
 msgid "A Debian package installer"
 msgstr "Instalator de pachete Debian"
 
-#: utils/qapt-deb-installer/main.cpp:42
+#: utils/qapt-deb-installer/main.cpp:44
 msgctxt "@title"
 msgid "QApt Package Installer"
 msgstr "Instalator de pachete QApt"
 
-#: utils/qapt-deb-installer/main.cpp:46
+#: utils/qapt-deb-installer/main.cpp:48
 msgctxt "@info:credit"
 msgid "(C) 2011 Jonathan Thomas"
 msgstr "(C) 2011 Jonathan Thomas"
 
-#: utils/qapt-deb-installer/main.cpp:48
+#: utils/qapt-deb-installer/main.cpp:50
 msgctxt "@info:credit"
 msgid "Jonathan Thomas"
 msgstr "Jonathan Thomas"
 
-#: utils/qapt-deb-installer/main.cpp:51
+#: utils/qapt-deb-installer/main.cpp:53
 msgctxt "@info:credit"
 msgid "Harald Sitter"
 msgstr ""
 
-#: utils/qapt-deb-installer/main.cpp:52
+#: utils/qapt-deb-installer/main.cpp:54
 msgctxt "@info:credit"
 msgid "Qt 5 port"
 msgstr ""
 
-#: utils/qapt-deb-installer/main.cpp:60
+#: utils/qapt-deb-installer/main.cpp:62
 #, fuzzy
 #| msgctxt "@info:shell"
 #| msgid ".deb file"

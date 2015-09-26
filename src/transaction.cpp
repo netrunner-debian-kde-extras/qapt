@@ -370,7 +370,10 @@ int Transaction::progress() const
 
 void Transaction::updateProgress(int progress)
 {
-    d->progress = progress;
+    if (d->progress != progress) {
+        d->progress = progress;
+        emit progressChanged(d->progress);
+    }
 }
 
 DownloadProgress Transaction::downloadProgress() const
@@ -541,6 +544,11 @@ void Transaction::onCallFinished(QDBusPendingCallWatcher *watcher)
             emit errorOccurred(QApt::AuthError);
             qWarning() << "auth error reply!";
             break;
+        case QDBusError::NoReply:
+            updateError(QApt::AuthError);
+            emit errorOccurred(QApt::AuthError);
+            qWarning() << "No reply error!";
+            break;
         default:
             break;
         }
@@ -664,7 +672,6 @@ void Transaction::updateProperty(int type, const QDBusVariant &variant)
         break;
     case ProgressProperty:
         updateProgress(variant.variant().toInt());
-        emit progressChanged(progress());
         break;
     case DownloadProgressProperty: {
         QApt::DownloadProgress prog;

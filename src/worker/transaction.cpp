@@ -486,7 +486,6 @@ int Transaction::frontendCaps() const
 
 void Transaction::run()
 {
-    setDelayedReply(true);
     if (isForeignUser() || !authorizeRun()) {
         sendErrorReply(QDBusError::AccessDenied);
         return;
@@ -557,6 +556,7 @@ void Transaction::setProperty(int property, QDBusVariant value)
         break;
     case QApt::FrontendCapsProperty:
         setFrontendCaps(value.variant().toInt());
+        break;
     default:
         sendErrorReply(QDBusError::InvalidArgs);
         break;

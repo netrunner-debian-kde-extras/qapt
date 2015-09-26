@@ -1,0 +1,377 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# enolp <enolp@softastur.org>, 2015.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-12-23 09:33+0000\n"
+"PO-Revision-Date: 2015-07-30 22:16+0100\n"
+"Last-Translator: enolp <enolp@softastur.org>\n"
+"Language-Team: Asturian <alminsitradores@softastur.org>\n"
+"Language: ast\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 2.0\n"
+
+#: utils/qapt-batch/detailswidget.cpp:51
+msgctxt "@label Remaining time"
+msgid "Remaining Time:"
+msgstr "Tiempu faltante:"
+
+#: utils/qapt-batch/detailswidget.cpp:56
+msgctxt "@label Download Rate"
+msgid "Speed:"
+msgstr "Velocidá:"
+
+#: utils/qapt-batch/detailswidget.cpp:107
+msgctxt "@info:progress Remaining time"
+msgid "Unknown"
+msgstr "Desconocíu"
+
+#: utils/qapt-batch/detailswidget.cpp:116
+#, kde-format
+msgctxt "@info:progress Download rate"
+msgid "%1/s"
+msgstr "%1/s"
+
+#: utils/qapt-batch/main.cpp:33
+msgctxt "@info"
+msgid "A batch installer using QApt"
+msgstr ""
+
+#: utils/qapt-batch/main.cpp:45
+msgctxt "@title"
+msgid "QApt Batch Installer"
+msgstr ""
+
+#: utils/qapt-batch/main.cpp:49
+msgctxt "@info:credit"
+msgid "(C) 2010 Jonathan Thomas"
+msgstr "(C) 2010 Jonathan Thomas"
+
+#: utils/qapt-batch/main.cpp:51
+msgctxt "@info:credit"
+msgid "Jonathan Thomas"
+msgstr "Jonathan Thomas"
+
+#: utils/qapt-batch/main.cpp:54
+msgctxt "@info:credit"
+msgid "Harald Sitter"
+msgstr "Harald Sitter"
+
+#: utils/qapt-batch/main.cpp:55
+msgctxt "@info:credit"
+msgid "Qt 5 port"
+msgstr ""
+
+#: utils/qapt-batch/main.cpp:63
+msgctxt "@info:shell"
+msgid "Attaches the window to an X app specified by winid"
+msgstr ""
+
+#: utils/qapt-batch/main.cpp:64
+msgctxt "@info:shell value name"
+msgid "winid"
+msgstr ""
+
+#: utils/qapt-batch/main.cpp:68
+msgctxt "@info:shell"
+msgid "Install a package"
+msgstr ""
+
+#: utils/qapt-batch/main.cpp:71
+msgctxt "@info:shell"
+msgid "Remove a package"
+msgstr "Desanicia un paquete"
+
+#: utils/qapt-batch/main.cpp:74
+msgctxt "@info:shell"
+msgid "Update the package cache"
+msgstr ""
+
+#: utils/qapt-batch/main.cpp:77
+msgctxt "@info:shell"
+msgid "Packages to be operated upon"
+msgstr ""
+
+#: utils/qapt-batch/main.cpp:87
+msgctxt "@info:shell error"
+msgid "Only one operation mode may be defined."
+msgstr ""
+
+#: utils/qapt-batch/main.cpp:98
+msgctxt "@info:shell error"
+msgid "No operation mode defined."
+msgstr "Nun se definió dal mou d'operación."
+
+#: utils/qapt-batch/qaptbatch.cpp:65
+msgctxt "@label"
+msgid "Waiting for authorization"
+msgstr "Esperando autorización"
+
+#: utils/qapt-batch/qaptbatch.cpp:100 utils/qapt-batch/qaptbatch.cpp:186
+msgctxt "@label"
+msgid ""
+"The package system could not be initialized, your configuration may be "
+"broken."
+msgstr ""
+"Nun pudo aniciase'l sistema de paquetes, la to configuración quiciabes tea "
+"rota"
+
+#: utils/qapt-batch/qaptbatch.cpp:102 utils/qapt-batch/qaptbatch.cpp:188
+msgctxt "@title:window"
+msgid "Initialization error"
+msgstr "Fallu d'iniciación"
+
+#: utils/qapt-batch/qaptbatch.cpp:127 utils/qapt-batch/qaptbatch.cpp:254
+#, kde-format
+msgctxt "@label"
+msgid ""
+"The package \"%1\" has not been found among your software sources. "
+"Therefore, it cannot be installed. "
+msgstr ""
+"Nun s'alcontró'l paquete «%1» ente toles tos fontes de software. Polo tanto, "
+"nun pue intalase."
+
+#: utils/qapt-batch/qaptbatch.cpp:130 utils/qapt-batch/qaptbatch.cpp:257
+msgctxt "@title:window"
+msgid "Package Not Found"
+msgstr "Nun s'alcontró'l paquete"
+
+#: utils/qapt-batch/qaptbatch.cpp:195
+msgctxt "@label"
+msgid ""
+"Another application seems to be using the package system at this time. You "
+"must close all other package managers before you will be able to install or "
+"remove any packages."
+msgstr ""
+"Otra aplicación paez tar usando'l sistema de paquetes nesti momentu. Tienes "
+"de zarar tolos otros xestores de paquetes enantes que pueas instalar o "
+"desaniciar cualesquier paquete."
+
+#: utils/qapt-batch/qaptbatch.cpp:199
+msgctxt "@title:window"
+msgid "Unable to obtain package system lock"
+msgstr "Nun pue consiguise'l bloquéu del sistema de paquetes"
+
+#: utils/qapt-batch/qaptbatch.cpp:204
+#, kde-format
+msgctxt "@label"
+msgid ""
+"You do not have enough disk space in the directory at %1 to continue with "
+"this operation."
+msgstr ""
+
+#: utils/qapt-batch/qaptbatch.cpp:206
+msgctxt "@title:window"
+msgid "Low disk space"
+msgstr "Espaciu baxu nel discu"
+
+#: utils/qapt-batch/qaptbatch.cpp:211
+msgctxt "@label"
+msgid "Could not download packages"
+msgstr "Nun pudieron baxase los paquetes"
+
+#: utils/qapt-batch/qaptbatch.cpp:212
+msgctxt "@title:window"
+msgid "Download failed"
+msgstr "Falló la descarga"
+
+#: utils/qapt-batch/qaptbatch.cpp:216
+msgctxt "@label"
+msgid "An error occurred while applying changes:"
+msgstr "Asocedió un fallu entrín s'aplicaben les camudancies:"
+
+#: utils/qapt-batch/qaptbatch.cpp:217
+msgctxt "@title:window"
+msgid "Commit error"
+msgstr ""
+
+#: utils/qapt-batch/qaptbatch.cpp:222
+msgctxt "@label"
+msgid ""
+"This operation cannot continue since proper authorization was not provided"
+msgstr ""
+"Esta operación nun pue siguir darréu que nun s'apurrió l'autorización "
+"afayadiza"
+
+#: utils/qapt-batch/qaptbatch.cpp:224
+msgctxt "@title:window"
+msgid "Authentication error"
+msgstr "Fallu d'autenticación"
+
+#: utils/qapt-batch/qaptbatch.cpp:228
+msgctxt "@label"
+msgid ""
+"It appears that the QApt worker has either crashed or disappeared. Please "
+"report a bug to the QApt maintainers"
+msgstr ""
+
+#: utils/qapt-batch/qaptbatch.cpp:230
+msgctxt "@title:window"
+msgid "Unexpected Error"
+msgstr "Fallu inesperáu"
+
+#: utils/qapt-batch/qaptbatch.cpp:238
+msgctxt "@label"
+msgid ""
+"The following package has not been verified by its author. Downloading "
+"untrusted packages has been disallowed by your current configuration."
+msgid_plural ""
+"The following packages have not been verified by their authors. Downloading "
+"untrusted packages has been disallowed by your current configuration."
+msgstr[0] ""
+"El paquete de darréu nun ta verificáu pol so autor. Baxar paquetes non "
+"confiaos deshabilitóse pola to configuración actual."
+msgstr[1] ""
+"Los paquetes de darréu nun tán verificaos pol so autor. Baxar paquetes non "
+"confiaos deshabilitóse pola to configuración actual."
+
+#: utils/qapt-batch/qaptbatch.cpp:247
+msgctxt "@title:window"
+msgid "Untrusted Packages"
+msgstr ""
+
+#: utils/qapt-batch/qaptbatch.cpp:270
+msgctxt "@title:window"
+msgid "Media Change Required"
+msgstr "Riquese'l cambu de medios"
+
+#: utils/qapt-batch/qaptbatch.cpp:271
+#, kde-format
+msgctxt "@label"
+msgid "Please insert %1 into <filename>%2</filename>"
+msgstr "Por favor, inxerta %1 en <filename>%2</filename>"
+
+#: utils/qapt-batch/qaptbatch.cpp:279
+msgctxt "@title:window"
+msgid "Warning - Unverified Software"
+msgstr "Avisu - Software ensin verificar"
+
+#: utils/qapt-batch/qaptbatch.cpp:281
+msgctxt "@label"
+msgid ""
+"The following piece of software cannot be verified. <warning>Installing "
+"unverified software represents a security risk, as the presence of "
+"unverifiable software can be a sign of tampering.</warning> Do you wish to "
+"continue?"
+msgid_plural ""
+"The following pieces of software cannot be authenticated. "
+"<warning>Installing unverified software represents a security risk, as the "
+"presence of unverifiable software can be a sign of tampering.</warning> Do "
+"you wish to continue?"
+msgstr[0] ""
+"Nun pue verificase la pieza de software de darréu. <warning>Instalar "
+"software ensin verificar representa un riesgu pa la seguranza, darréu que la "
+"presencia de software que nun pue verificase pue ser seña de manipulación.</"
+"warning> ¿Deseyes siguir?"
+msgstr[1] ""
+"Nun puen autenticase les pieces de software de darréu. <warning>Instalar "
+"software ensin verificar representa un riesgu pa la seguranza, darréu que la "
+"presencia de software que nun pue verificase pue ser seña de manipulación.</"
+"warning> ¿Deseyes siguir?"
+
+#: utils/qapt-batch/qaptbatch.cpp:316
+msgctxt "@label Progress bar label when waiting to start"
+msgid "Waiting to start."
+msgstr "Esperando pa entamar."
+
+#: utils/qapt-batch/qaptbatch.cpp:321
+msgctxt "@label Status label when waiting for a password"
+msgid "Waiting for authentication."
+msgstr "Esperando l'autenticación."
+
+#: utils/qapt-batch/qaptbatch.cpp:325
+msgctxt "@label Status label when waiting for a CD-ROM"
+msgid "Waiting for required media."
+msgstr "Esperando polos medios riquíos."
+
+#: utils/qapt-batch/qaptbatch.cpp:330
+msgctxt "@label Status label"
+msgid "Waiting for other package managers to quit."
+msgstr "Esperando polos otros xestores de paquetes pa que colen."
+
+#: utils/qapt-batch/qaptbatch.cpp:338
+msgctxt "@label Status label"
+msgid "Loading package cache."
+msgstr "Cargando caché de paquetes."
+
+#: utils/qapt-batch/qaptbatch.cpp:342
+msgctxt "@title:window"
+msgid "Refreshing Package Information"
+msgstr "Refrescando información de paquetes"
+
+#: utils/qapt-batch/qaptbatch.cpp:343
+msgctxt "@info:status"
+msgid "Checking for new, removed or upgradeable packages"
+msgstr "Comprobando paquetes nuevos, desaniciaos o anovables"
+
+#: utils/qapt-batch/qaptbatch.cpp:345
+msgctxt "@title:window"
+msgid "Downloading"
+msgstr "Baxando"
+
+#: utils/qapt-batch/qaptbatch.cpp:347
+msgctxt "@info:status"
+msgid "Downloading package file"
+msgid_plural "Downloading package files"
+msgstr[0] "Baxando ficheru de paquete"
+msgstr[1] "Baxando ficheros de paquete"
+
+#: utils/qapt-batch/qaptbatch.cpp:355
+msgctxt "@title:window"
+msgid "Installing Packages"
+msgstr "Instalando paquetes"
+
+#: utils/qapt-batch/qaptbatch.cpp:360
+msgctxt "@title:window"
+msgid "Installation Complete"
+msgstr "Instalación completada"
+
+#: utils/qapt-batch/qaptbatch.cpp:364
+msgctxt "@label"
+msgid "Package installation failed."
+msgstr "Falló la instalación del paquete."
+
+#: utils/qapt-batch/qaptbatch.cpp:367
+msgctxt "@label"
+msgid "Package successfully installed."
+msgid_plural "Packages successfully installed."
+msgstr[0] "Instalóse con ésitu'l paquete."
+msgstr[1] "Instaláronse con ésitu los paquetes."
+
+#: utils/qapt-batch/qaptbatch.cpp:371
+msgctxt "@title:window"
+msgid "Removal Complete"
+msgstr "Desaniciu completu"
+
+#: utils/qapt-batch/qaptbatch.cpp:375
+msgctxt "@label"
+msgid "Package removal failed."
+msgstr "Falló'l desaniciu de paquetes."
+
+#: utils/qapt-batch/qaptbatch.cpp:379
+msgctxt "@label"
+msgid "Package successfully uninstalled."
+msgid_plural "Packages successfully uninstalled."
+msgstr[0] "Desinstalóse'l paquete con ésitu."
+msgstr[1] "Desinstaláronse los paquetes con ésitu\t"
+
+#: utils/qapt-batch/qaptbatch.cpp:383
+msgctxt "@title:window"
+msgid "Refresh Complete"
+msgstr "Refrescu completu"
+
+#: utils/qapt-batch/qaptbatch.cpp:386
+msgctxt "@info:status"
+msgid "Refresh failed."
+msgstr "Falló'l refrescu."
+
+#: utils/qapt-batch/qaptbatch.cpp:388
+msgctxt "@label"
+msgid "Package information successfully refreshed."
+msgstr "Resfrescóse con ésitu la información de paquetes."

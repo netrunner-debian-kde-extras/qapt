@@ -1,14 +1,14 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Park Shinjo <peremen@gmail.com>, 2014.
+# Shinjo Park <kde@peremen.name>, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-12 01:57+0000\n"
 "PO-Revision-Date: 2014-03-09 03:37+0900\n"
-"Last-Translator: Park Shinjo <peremen@gmail.com>\n"
+"Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde@peremen.name>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"

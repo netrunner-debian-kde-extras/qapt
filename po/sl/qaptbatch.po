@@ -2,13 +2,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Jure Repinc <jlp@holodeck1.com>, 2010.
-# Andrej Mernik <andrejm@ubuntu.si>, 2012, 2013.
+# Andrej Mernik <andrejm@ubuntu.si>, 2012, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-12-14 07:45+0000\n"
-"PO-Revision-Date: 2013-11-26 18:11+0100\n"
+"POT-Creation-Date: 2014-12-23 09:33+0000\n"
+"PO-Revision-Date: 2014-12-28 11:39+0100\n"
 "Last-Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -45,77 +45,77 @@ msgctxt "@info"
 msgid "A batch installer using QApt"
 msgstr "Paketni namestilnik, ki uporablja QApt"
 
-#: utils/qapt-batch/main.cpp:43
+#: utils/qapt-batch/main.cpp:45
 msgctxt "@title"
 msgid "QApt Batch Installer"
 msgstr "Paketni namestilnik QApt"
 
-#: utils/qapt-batch/main.cpp:47
+#: utils/qapt-batch/main.cpp:49
 msgctxt "@info:credit"
 msgid "(C) 2010 Jonathan Thomas"
 msgstr "© 2010 Jonathan Thomas"
 
-#: utils/qapt-batch/main.cpp:49
+#: utils/qapt-batch/main.cpp:51
 msgctxt "@info:credit"
 msgid "Jonathan Thomas"
 msgstr "Jonathan Thomas"
 
-#: utils/qapt-batch/main.cpp:52
+#: utils/qapt-batch/main.cpp:54
 msgctxt "@info:credit"
 msgid "Harald Sitter"
-msgstr ""
+msgstr "Harald Sitter"
 
-#: utils/qapt-batch/main.cpp:53
+#: utils/qapt-batch/main.cpp:55
 msgctxt "@info:credit"
 msgid "Qt 5 port"
-msgstr ""
+msgstr "Predelava za Qt 5"
 
-#: utils/qapt-batch/main.cpp:61
+#: utils/qapt-batch/main.cpp:63
 msgctxt "@info:shell"
 msgid "Attaches the window to an X app specified by winid"
 msgstr "Pripne okno na program X, določen z winid"
 
-#: utils/qapt-batch/main.cpp:62
+#: utils/qapt-batch/main.cpp:64
 msgctxt "@info:shell value name"
 msgid "winid"
-msgstr ""
+msgstr "winid"
 
-#: utils/qapt-batch/main.cpp:66
+#: utils/qapt-batch/main.cpp:68
 msgctxt "@info:shell"
 msgid "Install a package"
 msgstr "Namesti paket"
 
-#: utils/qapt-batch/main.cpp:69
+#: utils/qapt-batch/main.cpp:71
 msgctxt "@info:shell"
 msgid "Remove a package"
 msgstr "Odstrani paket"
 
-#: utils/qapt-batch/main.cpp:72
+#: utils/qapt-batch/main.cpp:74
 msgctxt "@info:shell"
 msgid "Update the package cache"
 msgstr "Posodobi predpomnilnik paketov"
 
-#: utils/qapt-batch/main.cpp:75
+#: utils/qapt-batch/main.cpp:77
 msgctxt "@info:shell"
 msgid "Packages to be operated upon"
 msgstr "Paketi, nad katerimi se bo izvedlo dejanje"
 
-#: utils/qapt-batch/main.cpp:85
+#: utils/qapt-batch/main.cpp:87
 msgctxt "@info:shell error"
 msgid "Only one operation mode may be defined."
-msgstr ""
+msgstr "Določite lahko samo en opravilni način."
 
-#: utils/qapt-batch/main.cpp:96
+#: utils/qapt-batch/main.cpp:98
 msgctxt "@info:shell error"
 msgid "No operation mode defined."
-msgstr ""
+msgstr "Ni določenega opravilnega načina."
 
-#: utils/qapt-batch/qaptbatch.cpp:66
+#: utils/qapt-batch/qaptbatch.cpp:65
 msgctxt "@label"
 msgid "Waiting for authorization"
 msgstr "Čakanje na pooblastitev"
 
-#: utils/qapt-batch/qaptbatch.cpp:101 utils/qapt-batch/qaptbatch.cpp:181
+#: utils/qapt-batch/qaptbatch.cpp:100 utils/qapt-batch/qaptbatch.cpp:186
 msgctxt "@label"
 msgid ""
 "The package system could not be initialized, your configuration may be "
@@ -123,12 +123,12 @@ msgid ""
 msgstr ""
 "Sistema za pakete ni bilo mogoče začeti. Morda so nastavitve pokvarjene."
 
-#: utils/qapt-batch/qaptbatch.cpp:103 utils/qapt-batch/qaptbatch.cpp:183
+#: utils/qapt-batch/qaptbatch.cpp:102 utils/qapt-batch/qaptbatch.cpp:188
 msgctxt "@title:window"
 msgid "Initialization error"
 msgstr "Napaka med začenjanjem"
 
-#: utils/qapt-batch/qaptbatch.cpp:128 utils/qapt-batch/qaptbatch.cpp:249
+#: utils/qapt-batch/qaptbatch.cpp:127 utils/qapt-batch/qaptbatch.cpp:254
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -138,12 +138,12 @@ msgstr ""
 "Paketa »%1« v virih programov ni bilo mogoče najti in ga zato ni mogoče "
 "namestiti. "
 
-#: utils/qapt-batch/qaptbatch.cpp:131 utils/qapt-batch/qaptbatch.cpp:252
+#: utils/qapt-batch/qaptbatch.cpp:130 utils/qapt-batch/qaptbatch.cpp:257
 msgctxt "@title:window"
 msgid "Package Not Found"
 msgstr "Paket ni bil najden"
 
-#: utils/qapt-batch/qaptbatch.cpp:190
+#: utils/qapt-batch/qaptbatch.cpp:195
 msgctxt "@label"
 msgid ""
 "Another application seems to be using the package system at this time. You "
@@ -154,12 +154,12 @@ msgstr ""
 "Preden lahko namestite ali odstranite pakete morate zapreti vse druge "
 "upravljalnike paketov."
 
-#: utils/qapt-batch/qaptbatch.cpp:194
+#: utils/qapt-batch/qaptbatch.cpp:199
 msgctxt "@title:window"
 msgid "Unable to obtain package system lock"
 msgstr "Ni mogoče zakleniti sistema za pakete"
 
-#: utils/qapt-batch/qaptbatch.cpp:199
+#: utils/qapt-batch/qaptbatch.cpp:204
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -167,32 +167,32 @@ msgid ""
 "this operation."
 msgstr "Za nadaljevanje tega dejanja ni na voljo dovolj prostora v mapi %1."
 
-#: utils/qapt-batch/qaptbatch.cpp:201
+#: utils/qapt-batch/qaptbatch.cpp:206
 msgctxt "@title:window"
 msgid "Low disk space"
 msgstr "Prostora na disku je malo"
 
-#: utils/qapt-batch/qaptbatch.cpp:206
+#: utils/qapt-batch/qaptbatch.cpp:211
 msgctxt "@label"
 msgid "Could not download packages"
 msgstr "Paketov ni bilo mogoče prejeti"
 
-#: utils/qapt-batch/qaptbatch.cpp:207
+#: utils/qapt-batch/qaptbatch.cpp:212
 msgctxt "@title:window"
 msgid "Download failed"
 msgstr "Prejemanje ni uspelo"
 
-#: utils/qapt-batch/qaptbatch.cpp:211
+#: utils/qapt-batch/qaptbatch.cpp:216
 msgctxt "@label"
 msgid "An error occurred while applying changes:"
 msgstr "Med uveljavljanjem sprememb je prišlo do napake:"
 
-#: utils/qapt-batch/qaptbatch.cpp:212
+#: utils/qapt-batch/qaptbatch.cpp:217
 msgctxt "@title:window"
 msgid "Commit error"
 msgstr "Napaka uveljavljanja"
 
-#: utils/qapt-batch/qaptbatch.cpp:217
+#: utils/qapt-batch/qaptbatch.cpp:222
 msgctxt "@label"
 msgid ""
 "This operation cannot continue since proper authorization was not provided"
@@ -200,12 +200,12 @@ msgstr ""
 "Tega dejanja ni mogoče nadaljevati saj ni bila pridobljena ustrezna "
 "pooblastitev"
 
-#: utils/qapt-batch/qaptbatch.cpp:219
+#: utils/qapt-batch/qaptbatch.cpp:224
 msgctxt "@title:window"
 msgid "Authentication error"
 msgstr "Napaka med overitvijo"
 
-#: utils/qapt-batch/qaptbatch.cpp:223
+#: utils/qapt-batch/qaptbatch.cpp:228
 msgctxt "@label"
 msgid ""
 "It appears that the QApt worker has either crashed or disappeared. Please "
@@ -214,12 +214,12 @@ msgstr ""
 "Kot kaže se je proces QApt sesul ali pa je izginil. O tej napaki obvestite "
 "razvijalce QApt."
 
-#: utils/qapt-batch/qaptbatch.cpp:225
+#: utils/qapt-batch/qaptbatch.cpp:230
 msgctxt "@title:window"
 msgid "Unexpected Error"
 msgstr "Nepričakovana napaka"
 
-#: utils/qapt-batch/qaptbatch.cpp:233
+#: utils/qapt-batch/qaptbatch.cpp:238
 msgctxt "@label"
 msgid ""
 "The following package has not been verified by its author. Downloading "
@@ -240,28 +240,28 @@ msgstr[3] ""
 "Naslednji paketi nimajo potrdil svojih avtorjev. Glede na trenutne "
 "nastavitve je prejemanje paketov, ki niso zaupanja vredni, prepovedano."
 
-#: utils/qapt-batch/qaptbatch.cpp:242
+#: utils/qapt-batch/qaptbatch.cpp:247
 msgctxt "@title:window"
 msgid "Untrusted Packages"
 msgstr "Paketi, ki niso zaupanja vredni"
 
-#: utils/qapt-batch/qaptbatch.cpp:265
+#: utils/qapt-batch/qaptbatch.cpp:270
 msgctxt "@title:window"
 msgid "Media Change Required"
 msgstr "Zahtevana je zamenjava nosilca"
 
-#: utils/qapt-batch/qaptbatch.cpp:266
+#: utils/qapt-batch/qaptbatch.cpp:271
 #, kde-format
 msgctxt "@label"
 msgid "Please insert %1 into <filename>%2</filename>"
 msgstr "V <filename>%2</filename> vstavite %1"
 
-#: utils/qapt-batch/qaptbatch.cpp:274
+#: utils/qapt-batch/qaptbatch.cpp:279
 msgctxt "@title:window"
 msgid "Warning - Unverified Software"
 msgstr "Opozorilo – nepreverjena programska oprema"
 
-#: utils/qapt-batch/qaptbatch.cpp:276
+#: utils/qapt-batch/qaptbatch.cpp:281
 msgctxt "@label"
 msgid ""
 "The following piece of software cannot be verified. <warning>Installing "
@@ -290,47 +290,47 @@ msgstr[3] ""
 "paketov predstavlja varnostno tveganje, saj lahko nepreverljivost kaže na "
 "znake nedovoljenega spreminjanja.</warning> Ali želite nadaljevati?"
 
-#: utils/qapt-batch/qaptbatch.cpp:311
+#: utils/qapt-batch/qaptbatch.cpp:316
 msgctxt "@label Progress bar label when waiting to start"
 msgid "Waiting to start."
 msgstr "Čakanje na začetek."
 
-#: utils/qapt-batch/qaptbatch.cpp:316
+#: utils/qapt-batch/qaptbatch.cpp:321
 msgctxt "@label Status label when waiting for a password"
 msgid "Waiting for authentication."
 msgstr "Čakanje na overitev."
 
-#: utils/qapt-batch/qaptbatch.cpp:320
+#: utils/qapt-batch/qaptbatch.cpp:325
 msgctxt "@label Status label when waiting for a CD-ROM"
 msgid "Waiting for required media."
 msgstr "Čakanje na zahtevan nosilec."
 
-#: utils/qapt-batch/qaptbatch.cpp:325
+#: utils/qapt-batch/qaptbatch.cpp:330
 msgctxt "@label Status label"
 msgid "Waiting for other package managers to quit."
 msgstr "Čakanje, da se drugi upravljalniki paketov končajo."
 
-#: utils/qapt-batch/qaptbatch.cpp:333
+#: utils/qapt-batch/qaptbatch.cpp:338
 msgctxt "@label Status label"
 msgid "Loading package cache."
 msgstr "Nalaganje predpomnilnika paketov."
 
-#: utils/qapt-batch/qaptbatch.cpp:337
+#: utils/qapt-batch/qaptbatch.cpp:342
 msgctxt "@title:window"
 msgid "Refreshing Package Information"
 msgstr "Osveževanje podatkov o paketih"
 
-#: utils/qapt-batch/qaptbatch.cpp:338
+#: utils/qapt-batch/qaptbatch.cpp:343
 msgctxt "@info:status"
 msgid "Checking for new, removed or upgradeable packages"
 msgstr "Iskanje novih, odstranjenih paketov ali paketov z nadgradnjami"
 
-#: utils/qapt-batch/qaptbatch.cpp:340
+#: utils/qapt-batch/qaptbatch.cpp:345
 msgctxt "@title:window"
 msgid "Downloading"
 msgstr "Prejemanje"
 
-#: utils/qapt-batch/qaptbatch.cpp:342
+#: utils/qapt-batch/qaptbatch.cpp:347
 msgctxt "@info:status"
 msgid "Downloading package file"
 msgid_plural "Downloading package files"
@@ -339,22 +339,22 @@ msgstr[1] "Prejemanje datoteke paketa"
 msgstr[2] "Prejemanje datotek paketov"
 msgstr[3] "Prejemanje datotek paketov"
 
-#: utils/qapt-batch/qaptbatch.cpp:352
+#: utils/qapt-batch/qaptbatch.cpp:355
 msgctxt "@title:window"
 msgid "Installing Packages"
 msgstr "Nameščanje paketov"
 
-#: utils/qapt-batch/qaptbatch.cpp:358
+#: utils/qapt-batch/qaptbatch.cpp:360
 msgctxt "@title:window"
 msgid "Installation Complete"
 msgstr "Namestitev zaključena"
 
-#: utils/qapt-batch/qaptbatch.cpp:362
+#: utils/qapt-batch/qaptbatch.cpp:364
 msgctxt "@label"
 msgid "Package installation failed."
 msgstr "Namestitev paketov ni uspela."
 
-#: utils/qapt-batch/qaptbatch.cpp:365
+#: utils/qapt-batch/qaptbatch.cpp:367
 msgctxt "@label"
 msgid "Package successfully installed."
 msgid_plural "Packages successfully installed."
@@ -363,17 +363,17 @@ msgstr[1] "Paket je bil uspešno nameščen."
 msgstr[2] "Paketa sta bila uspešno nameščena."
 msgstr[3] "Paketi so bili uspešno nameščeni."
 
-#: utils/qapt-batch/qaptbatch.cpp:369
+#: utils/qapt-batch/qaptbatch.cpp:371
 msgctxt "@title:window"
 msgid "Removal Complete"
 msgstr "Odstranitev zaključena"
 
-#: utils/qapt-batch/qaptbatch.cpp:373
+#: utils/qapt-batch/qaptbatch.cpp:375
 msgctxt "@label"
 msgid "Package removal failed."
 msgstr "Odstranitev paketa je spodletela."
 
-#: utils/qapt-batch/qaptbatch.cpp:377
+#: utils/qapt-batch/qaptbatch.cpp:379
 msgctxt "@label"
 msgid "Package successfully uninstalled."
 msgid_plural "Packages successfully uninstalled."
@@ -382,17 +382,17 @@ msgstr[1] "Paket je bil uspešno odstranjen."
 msgstr[2] "Paketa sta bila uspešno odstranjena."
 msgstr[3] "Paketi so bili uspešno odstranjeni."
 
-#: utils/qapt-batch/qaptbatch.cpp:381
+#: utils/qapt-batch/qaptbatch.cpp:383
 msgctxt "@title:window"
 msgid "Refresh Complete"
 msgstr "Osvežitev zaključena"
 
-#: utils/qapt-batch/qaptbatch.cpp:384
+#: utils/qapt-batch/qaptbatch.cpp:386
 msgctxt "@info:status"
 msgid "Refresh failed."
 msgstr "Osvežitev je spodletela."
 
-#: utils/qapt-batch/qaptbatch.cpp:386
+#: utils/qapt-batch/qaptbatch.cpp:388
 msgctxt "@label"
 msgid "Package information successfully refreshed."
 msgstr "Podatki o paketih so bili uspešno osveženi."

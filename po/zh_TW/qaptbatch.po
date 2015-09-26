@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-12-14 07:45+0000\n"
+"POT-Creation-Date: 2014-12-23 09:33+0000\n"
 "PO-Revision-Date: 2013-01-23 10:50+0800\n"
 "Last-Translator: Franklin Weng <franklin at goodhorse dot idv dot tw>\n"
 "Language-Team: Chinese Traditional <kde-tw@googlegroups.com>\n"
@@ -43,89 +43,89 @@ msgctxt "@info"
 msgid "A batch installer using QApt"
 msgstr "使用 QApt 的批次安裝器"
 
-#: utils/qapt-batch/main.cpp:43
+#: utils/qapt-batch/main.cpp:45
 msgctxt "@title"
 msgid "QApt Batch Installer"
 msgstr "QApt 批次安裝器"
 
-#: utils/qapt-batch/main.cpp:47
+#: utils/qapt-batch/main.cpp:49
 msgctxt "@info:credit"
 msgid "(C) 2010 Jonathan Thomas"
 msgstr "(C) 2010 Jonathan Thomas"
 
-#: utils/qapt-batch/main.cpp:49
+#: utils/qapt-batch/main.cpp:51
 msgctxt "@info:credit"
 msgid "Jonathan Thomas"
 msgstr "Jonathan Thomas"
 
-#: utils/qapt-batch/main.cpp:52
+#: utils/qapt-batch/main.cpp:54
 msgctxt "@info:credit"
 msgid "Harald Sitter"
 msgstr ""
 
-#: utils/qapt-batch/main.cpp:53
+#: utils/qapt-batch/main.cpp:55
 msgctxt "@info:credit"
 msgid "Qt 5 port"
 msgstr ""
 
-#: utils/qapt-batch/main.cpp:61
+#: utils/qapt-batch/main.cpp:63
 msgctxt "@info:shell"
 msgid "Attaches the window to an X app specified by winid"
 msgstr "將視窗附加到 winid 指定的 X 應用程式"
 
-#: utils/qapt-batch/main.cpp:62
+#: utils/qapt-batch/main.cpp:64
 msgctxt "@info:shell value name"
 msgid "winid"
 msgstr ""
 
-#: utils/qapt-batch/main.cpp:66
+#: utils/qapt-batch/main.cpp:68
 msgctxt "@info:shell"
 msgid "Install a package"
 msgstr "安裝套件"
 
-#: utils/qapt-batch/main.cpp:69
+#: utils/qapt-batch/main.cpp:71
 msgctxt "@info:shell"
 msgid "Remove a package"
 msgstr "移除套件"
 
-#: utils/qapt-batch/main.cpp:72
+#: utils/qapt-batch/main.cpp:74
 msgctxt "@info:shell"
 msgid "Update the package cache"
 msgstr "更新套件快取"
 
-#: utils/qapt-batch/main.cpp:75
+#: utils/qapt-batch/main.cpp:77
 msgctxt "@info:shell"
 msgid "Packages to be operated upon"
 msgstr "要被操作的套件"
 
-#: utils/qapt-batch/main.cpp:85
+#: utils/qapt-batch/main.cpp:87
 msgctxt "@info:shell error"
 msgid "Only one operation mode may be defined."
 msgstr ""
 
-#: utils/qapt-batch/main.cpp:96
+#: utils/qapt-batch/main.cpp:98
 msgctxt "@info:shell error"
 msgid "No operation mode defined."
 msgstr ""
 
-#: utils/qapt-batch/qaptbatch.cpp:66
+#: utils/qapt-batch/qaptbatch.cpp:65
 msgctxt "@label"
 msgid "Waiting for authorization"
 msgstr "等待認證"
 
-#: utils/qapt-batch/qaptbatch.cpp:101 utils/qapt-batch/qaptbatch.cpp:181
+#: utils/qapt-batch/qaptbatch.cpp:100 utils/qapt-batch/qaptbatch.cpp:186
 msgctxt "@label"
 msgid ""
 "The package system could not be initialized, your configuration may be "
 "broken."
 msgstr "套件系統無法被初始化，您的設定可能有問題。"
 
-#: utils/qapt-batch/qaptbatch.cpp:103 utils/qapt-batch/qaptbatch.cpp:183
+#: utils/qapt-batch/qaptbatch.cpp:102 utils/qapt-batch/qaptbatch.cpp:188
 msgctxt "@title:window"
 msgid "Initialization error"
 msgstr "初始化錯誤"
 
-#: utils/qapt-batch/qaptbatch.cpp:128 utils/qapt-batch/qaptbatch.cpp:249
+#: utils/qapt-batch/qaptbatch.cpp:127 utils/qapt-batch/qaptbatch.cpp:254
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -133,12 +133,12 @@ msgid ""
 "Therefore, it cannot be installed. "
 msgstr "套件 %1 並未在您的軟體來源中找到。因此無法安裝。"
 
-#: utils/qapt-batch/qaptbatch.cpp:131 utils/qapt-batch/qaptbatch.cpp:252
+#: utils/qapt-batch/qaptbatch.cpp:130 utils/qapt-batch/qaptbatch.cpp:257
 msgctxt "@title:window"
 msgid "Package Not Found"
 msgstr "找不到套件"
 
-#: utils/qapt-batch/qaptbatch.cpp:190
+#: utils/qapt-batch/qaptbatch.cpp:195
 msgctxt "@label"
 msgid ""
 "Another application seems to be using the package system at this time. You "
@@ -148,12 +148,12 @@ msgstr ""
 "另一個應用程式似乎正在使用套件系統。您必須關閉另一個套件管理程式，才能繼續安"
 "裝或移除套件。"
 
-#: utils/qapt-batch/qaptbatch.cpp:194
+#: utils/qapt-batch/qaptbatch.cpp:199
 msgctxt "@title:window"
 msgid "Unable to obtain package system lock"
 msgstr "無法鎖定套件系統"
 
-#: utils/qapt-batch/qaptbatch.cpp:199
+#: utils/qapt-batch/qaptbatch.cpp:204
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -161,55 +161,55 @@ msgid ""
 "this operation."
 msgstr "您在 %1 沒有足夠的磁碟空間來繼續此操作。"
 
-#: utils/qapt-batch/qaptbatch.cpp:201
+#: utils/qapt-batch/qaptbatch.cpp:206
 msgctxt "@title:window"
 msgid "Low disk space"
 msgstr "磁碟空間過低"
 
-#: utils/qapt-batch/qaptbatch.cpp:206
+#: utils/qapt-batch/qaptbatch.cpp:211
 msgctxt "@label"
 msgid "Could not download packages"
 msgstr "無法下載套件"
 
-#: utils/qapt-batch/qaptbatch.cpp:207
+#: utils/qapt-batch/qaptbatch.cpp:212
 msgctxt "@title:window"
 msgid "Download failed"
 msgstr "下載失敗"
 
-#: utils/qapt-batch/qaptbatch.cpp:211
+#: utils/qapt-batch/qaptbatch.cpp:216
 msgctxt "@label"
 msgid "An error occurred while applying changes:"
 msgstr "套用變更時發生錯誤："
 
-#: utils/qapt-batch/qaptbatch.cpp:212
+#: utils/qapt-batch/qaptbatch.cpp:217
 msgctxt "@title:window"
 msgid "Commit error"
 msgstr "提交錯誤"
 
-#: utils/qapt-batch/qaptbatch.cpp:217
+#: utils/qapt-batch/qaptbatch.cpp:222
 msgctxt "@label"
 msgid ""
 "This operation cannot continue since proper authorization was not provided"
 msgstr "此操作無法繼續，因為無法提供適當的認證"
 
-#: utils/qapt-batch/qaptbatch.cpp:219
+#: utils/qapt-batch/qaptbatch.cpp:224
 msgctxt "@title:window"
 msgid "Authentication error"
 msgstr "認證錯誤"
 
-#: utils/qapt-batch/qaptbatch.cpp:223
+#: utils/qapt-batch/qaptbatch.cpp:228
 msgctxt "@label"
 msgid ""
 "It appears that the QApt worker has either crashed or disappeared. Please "
 "report a bug to the QApt maintainers"
 msgstr "似乎 QApt worker 已崩潰，或是已消失。請回報此問題到 QApt 維護者。"
 
-#: utils/qapt-batch/qaptbatch.cpp:225
+#: utils/qapt-batch/qaptbatch.cpp:230
 msgctxt "@title:window"
 msgid "Unexpected Error"
 msgstr "未預期的錯誤"
 
-#: utils/qapt-batch/qaptbatch.cpp:233
+#: utils/qapt-batch/qaptbatch.cpp:238
 msgctxt "@label"
 msgid ""
 "The following package has not been verified by its author. Downloading "
@@ -219,28 +219,28 @@ msgid_plural ""
 "untrusted packages has been disallowed by your current configuration."
 msgstr[0] "以下的套件尚未經過作者檢查。您目前的設定不允許下載不受信任的套件。"
 
-#: utils/qapt-batch/qaptbatch.cpp:242
+#: utils/qapt-batch/qaptbatch.cpp:247
 msgctxt "@title:window"
 msgid "Untrusted Packages"
 msgstr "未受信任的套件"
 
-#: utils/qapt-batch/qaptbatch.cpp:265
+#: utils/qapt-batch/qaptbatch.cpp:270
 msgctxt "@title:window"
 msgid "Media Change Required"
 msgstr "需要變更媒體"
 
-#: utils/qapt-batch/qaptbatch.cpp:266
+#: utils/qapt-batch/qaptbatch.cpp:271
 #, kde-format
 msgctxt "@label"
 msgid "Please insert %1 into <filename>%2</filename>"
 msgstr "請插入 %1 到 <filename>%2</filename>"
 
-#: utils/qapt-batch/qaptbatch.cpp:274
+#: utils/qapt-batch/qaptbatch.cpp:279
 msgctxt "@title:window"
 msgid "Warning - Unverified Software"
 msgstr "警告 - 未確認的軟體"
 
-#: utils/qapt-batch/qaptbatch.cpp:276
+#: utils/qapt-batch/qaptbatch.cpp:281
 msgctxt "@label"
 msgid ""
 "The following piece of software cannot be verified. <warning>Installing "
@@ -256,100 +256,100 @@ msgstr[0] ""
 "以下的軟體尚未經過確認。 <warning>安裝未被確認過的軟體可能有安全性上的風險，"
 "有可能是惡意第三方所提供。</warning>您確定要繼續嗎？"
 
-#: utils/qapt-batch/qaptbatch.cpp:311
+#: utils/qapt-batch/qaptbatch.cpp:316
 msgctxt "@label Progress bar label when waiting to start"
 msgid "Waiting to start."
 msgstr "等待啟動中。"
 
-#: utils/qapt-batch/qaptbatch.cpp:316
+#: utils/qapt-batch/qaptbatch.cpp:321
 msgctxt "@label Status label when waiting for a password"
 msgid "Waiting for authentication."
 msgstr "等待認證中。"
 
-#: utils/qapt-batch/qaptbatch.cpp:320
+#: utils/qapt-batch/qaptbatch.cpp:325
 msgctxt "@label Status label when waiting for a CD-ROM"
 msgid "Waiting for required media."
 msgstr "等待請求的媒體中。"
 
-#: utils/qapt-batch/qaptbatch.cpp:325
+#: utils/qapt-batch/qaptbatch.cpp:330
 msgctxt "@label Status label"
 msgid "Waiting for other package managers to quit."
 msgstr "等待其他的套件管理員離開中。"
 
-#: utils/qapt-batch/qaptbatch.cpp:333
+#: utils/qapt-batch/qaptbatch.cpp:338
 msgctxt "@label Status label"
 msgid "Loading package cache."
 msgstr "載入套件快取中。"
 
-#: utils/qapt-batch/qaptbatch.cpp:337
+#: utils/qapt-batch/qaptbatch.cpp:342
 msgctxt "@title:window"
 msgid "Refreshing Package Information"
 msgstr "刷新套件資訊"
 
-#: utils/qapt-batch/qaptbatch.cpp:338
+#: utils/qapt-batch/qaptbatch.cpp:343
 msgctxt "@info:status"
 msgid "Checking for new, removed or upgradeable packages"
 msgstr "檢查新的、已移除的或可更新的套件"
 
-#: utils/qapt-batch/qaptbatch.cpp:340
+#: utils/qapt-batch/qaptbatch.cpp:345
 msgctxt "@title:window"
 msgid "Downloading"
 msgstr "下載中"
 
-#: utils/qapt-batch/qaptbatch.cpp:342
+#: utils/qapt-batch/qaptbatch.cpp:347
 msgctxt "@info:status"
 msgid "Downloading package file"
 msgid_plural "Downloading package files"
 msgstr[0] "下載套件檔中"
 
-#: utils/qapt-batch/qaptbatch.cpp:352
+#: utils/qapt-batch/qaptbatch.cpp:355
 msgctxt "@title:window"
 msgid "Installing Packages"
 msgstr "安裝套件"
 
-#: utils/qapt-batch/qaptbatch.cpp:358
+#: utils/qapt-batch/qaptbatch.cpp:360
 msgctxt "@title:window"
 msgid "Installation Complete"
 msgstr "安裝完成"
 
-#: utils/qapt-batch/qaptbatch.cpp:362
+#: utils/qapt-batch/qaptbatch.cpp:364
 msgctxt "@label"
 msgid "Package installation failed."
 msgstr "套件安裝失敗。"
 
-#: utils/qapt-batch/qaptbatch.cpp:365
+#: utils/qapt-batch/qaptbatch.cpp:367
 msgctxt "@label"
 msgid "Package successfully installed."
 msgid_plural "Packages successfully installed."
 msgstr[0] "套件已成功安裝。"
 
-#: utils/qapt-batch/qaptbatch.cpp:369
+#: utils/qapt-batch/qaptbatch.cpp:371
 msgctxt "@title:window"
 msgid "Removal Complete"
 msgstr "移除完成"
 
-#: utils/qapt-batch/qaptbatch.cpp:373
+#: utils/qapt-batch/qaptbatch.cpp:375
 msgctxt "@label"
 msgid "Package removal failed."
 msgstr "移除套件失敗。"
 
-#: utils/qapt-batch/qaptbatch.cpp:377
+#: utils/qapt-batch/qaptbatch.cpp:379
 msgctxt "@label"
 msgid "Package successfully uninstalled."
 msgid_plural "Packages successfully uninstalled."
 msgstr[0] "套件已成功移除。"
 
-#: utils/qapt-batch/qaptbatch.cpp:381
+#: utils/qapt-batch/qaptbatch.cpp:383
 msgctxt "@title:window"
 msgid "Refresh Complete"
 msgstr "刷新完成"
 
-#: utils/qapt-batch/qaptbatch.cpp:384
+#: utils/qapt-batch/qaptbatch.cpp:386
 msgctxt "@info:status"
 msgid "Refresh failed."
 msgstr "刷新失敗。"
 
-#: utils/qapt-batch/qaptbatch.cpp:386
+#: utils/qapt-batch/qaptbatch.cpp:388
 msgctxt "@label"
 msgid "Package information successfully refreshed."
 msgstr "套件資訊已成功刷新。"
