@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qaptbatch\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-12-14 07:45+0000\n"
-"PO-Revision-Date: 2014-09-01 20:16+0200\n"
+"POT-Creation-Date: 2014-12-23 09:33+0000\n"
+"PO-Revision-Date: 2014-12-13 23:11+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128@baslug.org>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -17,6 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
 
 #: utils/qapt-batch/detailswidget.cpp:51
 msgctxt "@label Remaining time"
@@ -44,77 +45,77 @@ msgctxt "@info"
 msgid "A batch installer using QApt"
 msgstr "Un installatore sequenziale che usa QApt"
 
-#: utils/qapt-batch/main.cpp:43
+#: utils/qapt-batch/main.cpp:45
 msgctxt "@title"
 msgid "QApt Batch Installer"
 msgstr "Installatore sequenziale QApt"
 
-#: utils/qapt-batch/main.cpp:47
+#: utils/qapt-batch/main.cpp:49
 msgctxt "@info:credit"
 msgid "(C) 2010 Jonathan Thomas"
 msgstr "© 2010 Jonathan Thomas"
 
-#: utils/qapt-batch/main.cpp:49
+#: utils/qapt-batch/main.cpp:51
 msgctxt "@info:credit"
 msgid "Jonathan Thomas"
 msgstr "Jonathan Thomas"
 
-#: utils/qapt-batch/main.cpp:52
+#: utils/qapt-batch/main.cpp:54
 msgctxt "@info:credit"
 msgid "Harald Sitter"
-msgstr ""
+msgstr "Harald Sitter"
 
-#: utils/qapt-batch/main.cpp:53
+#: utils/qapt-batch/main.cpp:55
 msgctxt "@info:credit"
 msgid "Qt 5 port"
-msgstr ""
+msgstr "Conversione Qt 5"
 
-#: utils/qapt-batch/main.cpp:61
+#: utils/qapt-batch/main.cpp:63
 msgctxt "@info:shell"
 msgid "Attaches the window to an X app specified by winid"
 msgstr "Associa la finestra a un'applicazione X specificata per winid"
 
-#: utils/qapt-batch/main.cpp:62
+#: utils/qapt-batch/main.cpp:64
 msgctxt "@info:shell value name"
 msgid "winid"
-msgstr ""
+msgstr "winid"
 
-#: utils/qapt-batch/main.cpp:66
+#: utils/qapt-batch/main.cpp:68
 msgctxt "@info:shell"
 msgid "Install a package"
 msgstr "Installa un pacchetto"
 
-#: utils/qapt-batch/main.cpp:69
+#: utils/qapt-batch/main.cpp:71
 msgctxt "@info:shell"
 msgid "Remove a package"
 msgstr "Rimuovi un pacchetto"
 
-#: utils/qapt-batch/main.cpp:72
+#: utils/qapt-batch/main.cpp:74
 msgctxt "@info:shell"
 msgid "Update the package cache"
 msgstr "Aggiorna la cache dei pacchetti"
 
-#: utils/qapt-batch/main.cpp:75
+#: utils/qapt-batch/main.cpp:77
 msgctxt "@info:shell"
 msgid "Packages to be operated upon"
 msgstr "Pacchetti che stanno per essere gestiti"
 
-#: utils/qapt-batch/main.cpp:85
+#: utils/qapt-batch/main.cpp:87
 msgctxt "@info:shell error"
 msgid "Only one operation mode may be defined."
-msgstr ""
+msgstr "Può essere definita solo una modalità operativa."
 
-#: utils/qapt-batch/main.cpp:96
+#: utils/qapt-batch/main.cpp:98
 msgctxt "@info:shell error"
 msgid "No operation mode defined."
-msgstr ""
+msgstr "Nessuna modalità operativa definita."
 
-#: utils/qapt-batch/qaptbatch.cpp:66
+#: utils/qapt-batch/qaptbatch.cpp:65
 msgctxt "@label"
 msgid "Waiting for authorization"
 msgstr "In attesa di autorizzazione"
 
-#: utils/qapt-batch/qaptbatch.cpp:101 utils/qapt-batch/qaptbatch.cpp:181
+#: utils/qapt-batch/qaptbatch.cpp:100 utils/qapt-batch/qaptbatch.cpp:186
 msgctxt "@label"
 msgid ""
 "The package system could not be initialized, your configuration may be "
@@ -123,12 +124,12 @@ msgstr ""
 "Il sistema di pacchetti non può essere inizializzato, la tua configurazione "
 "potrebbe essere danneggiata."
 
-#: utils/qapt-batch/qaptbatch.cpp:103 utils/qapt-batch/qaptbatch.cpp:183
+#: utils/qapt-batch/qaptbatch.cpp:102 utils/qapt-batch/qaptbatch.cpp:188
 msgctxt "@title:window"
 msgid "Initialization error"
 msgstr "Errore di inizializzazione"
 
-#: utils/qapt-batch/qaptbatch.cpp:128 utils/qapt-batch/qaptbatch.cpp:249
+#: utils/qapt-batch/qaptbatch.cpp:127 utils/qapt-batch/qaptbatch.cpp:254
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -138,12 +139,12 @@ msgstr ""
 "Il pacchetto «%1» non è stato trovato tra le fonti software. Pertanto, non "
 "può essere installato. "
 
-#: utils/qapt-batch/qaptbatch.cpp:131 utils/qapt-batch/qaptbatch.cpp:252
+#: utils/qapt-batch/qaptbatch.cpp:130 utils/qapt-batch/qaptbatch.cpp:257
 msgctxt "@title:window"
 msgid "Package Not Found"
 msgstr "Pacchetto non trovato"
 
-#: utils/qapt-batch/qaptbatch.cpp:190
+#: utils/qapt-batch/qaptbatch.cpp:195
 msgctxt "@label"
 msgid ""
 "Another application seems to be using the package system at this time. You "
@@ -154,12 +155,12 @@ msgstr ""
 "momento. Devi chiudere tutti gli altri gestori di pacchetti prima di poter "
 "installare o rimuovere eventuali pacchetti."
 
-#: utils/qapt-batch/qaptbatch.cpp:194
+#: utils/qapt-batch/qaptbatch.cpp:199
 msgctxt "@title:window"
 msgid "Unable to obtain package system lock"
 msgstr "Impossibile ottenere il blocco del sistema dei pacchetti"
 
-#: utils/qapt-batch/qaptbatch.cpp:199
+#: utils/qapt-batch/qaptbatch.cpp:204
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -169,32 +170,32 @@ msgstr ""
 "Non hai sufficiente spazio su disco nella cartella %1 per continuare con "
 "questa operazione."
 
-#: utils/qapt-batch/qaptbatch.cpp:201
+#: utils/qapt-batch/qaptbatch.cpp:206
 msgctxt "@title:window"
 msgid "Low disk space"
 msgstr "Spazio su disco insufficiente"
 
-#: utils/qapt-batch/qaptbatch.cpp:206
+#: utils/qapt-batch/qaptbatch.cpp:211
 msgctxt "@label"
 msgid "Could not download packages"
 msgstr "Impossibile scaricare i pacchetti"
 
-#: utils/qapt-batch/qaptbatch.cpp:207
+#: utils/qapt-batch/qaptbatch.cpp:212
 msgctxt "@title:window"
 msgid "Download failed"
 msgstr "Scaricamento non riuscito"
 
-#: utils/qapt-batch/qaptbatch.cpp:211
+#: utils/qapt-batch/qaptbatch.cpp:216
 msgctxt "@label"
 msgid "An error occurred while applying changes:"
 msgstr "Si è verificato un errore durante l'applicazione delle modifiche:"
 
-#: utils/qapt-batch/qaptbatch.cpp:212
+#: utils/qapt-batch/qaptbatch.cpp:217
 msgctxt "@title:window"
 msgid "Commit error"
 msgstr "Errore di deposito"
 
-#: utils/qapt-batch/qaptbatch.cpp:217
+#: utils/qapt-batch/qaptbatch.cpp:222
 msgctxt "@label"
 msgid ""
 "This operation cannot continue since proper authorization was not provided"
@@ -202,12 +203,12 @@ msgstr ""
 "Questa operazione non può continuare poiché non è stata fornita la corretta "
 "autorizzazione"
 
-#: utils/qapt-batch/qaptbatch.cpp:219
+#: utils/qapt-batch/qaptbatch.cpp:224
 msgctxt "@title:window"
 msgid "Authentication error"
 msgstr "Errore di autenticazione"
 
-#: utils/qapt-batch/qaptbatch.cpp:223
+#: utils/qapt-batch/qaptbatch.cpp:228
 msgctxt "@label"
 msgid ""
 "It appears that the QApt worker has either crashed or disappeared. Please "
@@ -216,12 +217,12 @@ msgstr ""
 "Sembra che l'esecutore QApt è andato in crash o è scomparso. Segnala un bug "
 "al responsabile di QApt"
 
-#: utils/qapt-batch/qaptbatch.cpp:225
+#: utils/qapt-batch/qaptbatch.cpp:230
 msgctxt "@title:window"
 msgid "Unexpected Error"
 msgstr "Errore inatteso"
 
-#: utils/qapt-batch/qaptbatch.cpp:233
+#: utils/qapt-batch/qaptbatch.cpp:238
 msgctxt "@label"
 msgid ""
 "The following package has not been verified by its author. Downloading "
@@ -236,28 +237,28 @@ msgstr[1] ""
 "I seguenti pacchetti non sono stati autenticati dai suoi autori. Nella tua "
 "attuale configurazione non è ammesso scaricare pacchetti non autenticati."
 
-#: utils/qapt-batch/qaptbatch.cpp:242
+#: utils/qapt-batch/qaptbatch.cpp:247
 msgctxt "@title:window"
 msgid "Untrusted Packages"
 msgstr "Pacchetti non autenticati"
 
-#: utils/qapt-batch/qaptbatch.cpp:265
+#: utils/qapt-batch/qaptbatch.cpp:270
 msgctxt "@title:window"
 msgid "Media Change Required"
 msgstr "È necessario un cambio di supporto"
 
-#: utils/qapt-batch/qaptbatch.cpp:266
+#: utils/qapt-batch/qaptbatch.cpp:271
 #, kde-format
 msgctxt "@label"
 msgid "Please insert %1 into <filename>%2</filename>"
 msgstr "Inserisci %1 nel <filename>%2</filename>"
 
-#: utils/qapt-batch/qaptbatch.cpp:274
+#: utils/qapt-batch/qaptbatch.cpp:279
 msgctxt "@title:window"
 msgid "Warning - Unverified Software"
 msgstr "Attenzione - Software non verificato"
 
-#: utils/qapt-batch/qaptbatch.cpp:276
+#: utils/qapt-batch/qaptbatch.cpp:281
 msgctxt "@label"
 msgid ""
 "The following piece of software cannot be verified. <warning>Installing "
@@ -280,103 +281,103 @@ msgstr[1] ""
 "di software non verificato può essere un segno di manomissione. </warning> "
 "Desideri continuare?"
 
-#: utils/qapt-batch/qaptbatch.cpp:311
+#: utils/qapt-batch/qaptbatch.cpp:316
 msgctxt "@label Progress bar label when waiting to start"
 msgid "Waiting to start."
 msgstr "In attesa di avvio."
 
-#: utils/qapt-batch/qaptbatch.cpp:316
+#: utils/qapt-batch/qaptbatch.cpp:321
 msgctxt "@label Status label when waiting for a password"
 msgid "Waiting for authentication."
 msgstr "In attesa di autenticazione."
 
-#: utils/qapt-batch/qaptbatch.cpp:320
+#: utils/qapt-batch/qaptbatch.cpp:325
 msgctxt "@label Status label when waiting for a CD-ROM"
 msgid "Waiting for required media."
 msgstr "In attesa del supporto richiesto."
 
-#: utils/qapt-batch/qaptbatch.cpp:325
+#: utils/qapt-batch/qaptbatch.cpp:330
 msgctxt "@label Status label"
 msgid "Waiting for other package managers to quit."
 msgstr "In attesa della chiusura di altri gestori di pacchetti."
 
-#: utils/qapt-batch/qaptbatch.cpp:333
+#: utils/qapt-batch/qaptbatch.cpp:338
 msgctxt "@label Status label"
 msgid "Loading package cache."
 msgstr "Caricamento della cache dei pacchetti."
 
-#: utils/qapt-batch/qaptbatch.cpp:337
+#: utils/qapt-batch/qaptbatch.cpp:342
 msgctxt "@title:window"
 msgid "Refreshing Package Information"
 msgstr "Aggiornamento delle informazioni dei pacchetti"
 
-#: utils/qapt-batch/qaptbatch.cpp:338
+#: utils/qapt-batch/qaptbatch.cpp:343
 msgctxt "@info:status"
 msgid "Checking for new, removed or upgradeable packages"
 msgstr "Controllo per pacchetti nuovi, rimossi o aggiornabili"
 
-#: utils/qapt-batch/qaptbatch.cpp:340
+#: utils/qapt-batch/qaptbatch.cpp:345
 msgctxt "@title:window"
 msgid "Downloading"
 msgstr "Scaricamento"
 
-#: utils/qapt-batch/qaptbatch.cpp:342
+#: utils/qapt-batch/qaptbatch.cpp:347
 msgctxt "@info:status"
 msgid "Downloading package file"
 msgid_plural "Downloading package files"
 msgstr[0] "Scaricamento file del pacchetto"
 msgstr[1] "Scaricamento file del pacchetto"
 
-#: utils/qapt-batch/qaptbatch.cpp:352
+#: utils/qapt-batch/qaptbatch.cpp:355
 msgctxt "@title:window"
 msgid "Installing Packages"
 msgstr "Installazione pacchetti"
 
-#: utils/qapt-batch/qaptbatch.cpp:358
+#: utils/qapt-batch/qaptbatch.cpp:360
 msgctxt "@title:window"
 msgid "Installation Complete"
 msgstr "Installazione completata"
 
-#: utils/qapt-batch/qaptbatch.cpp:362
+#: utils/qapt-batch/qaptbatch.cpp:364
 msgctxt "@label"
 msgid "Package installation failed."
 msgstr "L'installazione del pacchetto non è riuscita."
 
-#: utils/qapt-batch/qaptbatch.cpp:365
+#: utils/qapt-batch/qaptbatch.cpp:367
 msgctxt "@label"
 msgid "Package successfully installed."
 msgid_plural "Packages successfully installed."
 msgstr[0] "Pacchetto installato correttamente."
 msgstr[1] "Pacchetti installati correttamente"
 
-#: utils/qapt-batch/qaptbatch.cpp:369
+#: utils/qapt-batch/qaptbatch.cpp:371
 msgctxt "@title:window"
 msgid "Removal Complete"
 msgstr "Rimozione completata"
 
-#: utils/qapt-batch/qaptbatch.cpp:373
+#: utils/qapt-batch/qaptbatch.cpp:375
 msgctxt "@label"
 msgid "Package removal failed."
 msgstr "La rimozione del pacchetto non è riuscita."
 
-#: utils/qapt-batch/qaptbatch.cpp:377
+#: utils/qapt-batch/qaptbatch.cpp:379
 msgctxt "@label"
 msgid "Package successfully uninstalled."
 msgid_plural "Packages successfully uninstalled."
 msgstr[0] "Pacchetto disinstallato correttamente."
 msgstr[1] "Pacchetti disinstallati correttamente."
 
-#: utils/qapt-batch/qaptbatch.cpp:381
+#: utils/qapt-batch/qaptbatch.cpp:383
 msgctxt "@title:window"
 msgid "Refresh Complete"
 msgstr "Aggiornamento completato"
 
-#: utils/qapt-batch/qaptbatch.cpp:384
+#: utils/qapt-batch/qaptbatch.cpp:386
 msgctxt "@info:status"
 msgid "Refresh failed."
 msgstr "Aggiornamento non riuscito."
 
-#: utils/qapt-batch/qaptbatch.cpp:386
+#: utils/qapt-batch/qaptbatch.cpp:388
 msgctxt "@label"
 msgid "Package information successfully refreshed."
 msgstr "Informazioni dei pacchetti aggiornate correttamente."

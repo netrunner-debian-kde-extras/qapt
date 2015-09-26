@@ -1,11 +1,9 @@
-# Translation of plasma_runner_installer to Norwegian Bokmål
-#
 # Bjørn Steensrud <bjornst@skogkatt.homelinux.org>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-21 01:45+0000\n"
+"POT-Creation-Date: 2014-12-12 01:57+0000\n"
 "PO-Revision-Date: 2011-02-25 18:50+0100\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
@@ -19,16 +17,16 @@ msgstr ""
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
 
-#: utils/plasma-runner-installer/installerrunner.cpp:43
+#: utils/plasma-runner-installer/installerrunner.cpp:42
 msgid "Suggests the installation of applications if :q: is not found"
 msgstr "Foreslår programmer som kan installeres hvis :q: ikke finnes"
 
-#: utils/plasma-runner-installer/installerrunner.cpp:115
+#: utils/plasma-runner-installer/installerrunner.cpp:114
 #, kde-format
 msgid "Install %1"
 msgstr "Installer %1"
 
-#: utils/plasma-runner-installer/installerrunner.cpp:118
+#: utils/plasma-runner-installer/installerrunner.cpp:117
 #, kde-format
 msgid "The \"%1\" package contains %2"
 msgstr "Pakka «%1» inneholder %2"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-12-14 07:45+0000\n"
+"POT-Creation-Date: 2014-12-23 09:33+0000\n"
 "PO-Revision-Date: 2014-12-13 04:06+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -18,47 +18,47 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2);\n"
 "X-Generator: Lokalize 1.5\n"
 
-#: utils/qapt-gst-helper/main.cpp:33
+#: utils/qapt-gst-helper/main.cpp:34
 msgctxt "@info"
 msgid "A GStreamer codec installer using QApt"
 msgstr "Instalator kodeków GStreamer używający QApt"
 
-#: utils/qapt-gst-helper/main.cpp:43
+#: utils/qapt-gst-helper/main.cpp:46
 msgctxt "@title"
 msgid "QApt Codec Searcher"
 msgstr "Znajdowanie kodeków dla QApt"
 
-#: utils/qapt-gst-helper/main.cpp:47
+#: utils/qapt-gst-helper/main.cpp:50
 msgctxt "@info:credit"
 msgid "(C) 2011 Jonathan Thomas"
 msgstr "(C) 2011 Jonathan Thomas"
 
-#: utils/qapt-gst-helper/main.cpp:49
+#: utils/qapt-gst-helper/main.cpp:52
 msgctxt "@info:credit"
 msgid "Jonathan Thomas"
 msgstr "Jonathan Thomas"
 
-#: utils/qapt-gst-helper/main.cpp:52
+#: utils/qapt-gst-helper/main.cpp:55
 msgctxt "@info:credit"
 msgid "Harald Sitter"
 msgstr "Harald Sitter"
 
-#: utils/qapt-gst-helper/main.cpp:53
+#: utils/qapt-gst-helper/main.cpp:56
 msgctxt "@info:credit"
 msgid "Qt 5 port"
 msgstr "Przystosowanie do Qt 5"
 
-#: utils/qapt-gst-helper/main.cpp:61
+#: utils/qapt-gst-helper/main.cpp:64
 msgctxt "@info:shell"
 msgid "Attaches the window to an X app specified by winid"
 msgstr "Przytwierdza okno do programu X określonego przez winid"
 
-#: utils/qapt-gst-helper/main.cpp:62
+#: utils/qapt-gst-helper/main.cpp:65
 msgctxt "@info:shell value name"
 msgid "winid"
 msgstr "winid"
 
-#: utils/qapt-gst-helper/main.cpp:66
+#: utils/qapt-gst-helper/main.cpp:69
 msgctxt "@info:shell"
 msgid "GStreamer install info"
 msgstr "Informacja o instalacji GStreamer"

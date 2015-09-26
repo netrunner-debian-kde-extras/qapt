@@ -1,4 +1,5 @@
 /***************************************************************************
+ *   Copyright © 2014 Harald Sitter <sitter@kde.org>                       *
  *   Copyright © 2011 Jonathan Thomas <echidnaman@kubuntu.org>             *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or         *
@@ -27,32 +28,41 @@
 
 namespace QApt {
 
-class DependencyInfoPrivate : public QSharedData {
+class DependencyInfoPrivate : public QSharedData
+{
 public:
     DependencyInfoPrivate()
         : QSharedData()
         , relationType(NoOperand)
-        , dependencyType(InvalidType) {}
+        , dependencyType(InvalidType)
+        , multiArchAnnotation()
+    {}
 
-    DependencyInfoPrivate(const QString &package, const QString &version,
-                          RelationType rType, DependencyType dType)
+    DependencyInfoPrivate(const QString &package,
+                          const QString &version,
+                          RelationType rType,
+                          DependencyType dType)
         : QSharedData()
         , packageName(package)
         , packageVersion(version)
         , relationType(rType)
-        , dependencyType(dType) {}
-
-    DependencyInfoPrivate(const DependencyInfoPrivate &other)
-        : QSharedData(other)
-        , packageName(other.packageName)
-        , packageVersion(other.packageVersion)
-        , relationType(other.relationType)
-        , dependencyType(other.dependencyType) {}
+        , dependencyType(dType)
+        , multiArchAnnotation()
+    {
+        // Check for Multiarch annotation.
+        QStringList parts = package.split(':');
+        Q_ASSERT(parts.size() <= 2);
+        if (parts.size() >= 2) {
+            packageName = parts.takeFirst();
+            multiArchAnnotation = parts.takeFirst();
+        }
+    }
 
     QString packageName;
     QString packageVersion;
     RelationType relationType;
     DependencyType dependencyType;
+    QString multiArchAnnotation;
 };
 
 DependencyInfo::DependencyInfo()
@@ -60,9 +70,14 @@ DependencyInfo::DependencyInfo()
 {
 }
 
-DependencyInfo::DependencyInfo(const QString &package, const QString &version,
-                               RelationType rType, DependencyType dType)
-    : d(new DependencyInfoPrivate(package, version, rType, dType))
+DependencyInfo::DependencyInfo(const QString &package,
+                               const QString &version,
+                               RelationType rType,
+                               DependencyType dType)
+    : d(new DependencyInfoPrivate(package,
+                                  version,
+                                  rType,
+                                  dType))
 {
 }
 
@@ -102,8 +117,23 @@ QList<DependencyItem> DependencyInfo::parseDepends(const QString &field, Depende
     while (start != stop) {
         DependencyItem depItem;
 
-        start = debListParser::ParseDepends(start, stop, package, version, op,
-                                            false);
+        // Random documentatin because apt-pkg isn't big on documentation:
+        //  - ParseArchFlags is on whether or not the parser should pay attention
+        //    to an architecture flag such that "foo [ !amd64 ]" will return empty
+        //    package string iff the system is amd64.
+        //  - StripMultiArch is whether or not the multiarch tag "foo:any" should
+        //    be stripped from the resulting 'package' string or not.
+        //  - ParseRestrcitionList is whether a restriction "foo <!stage1>" should
+        //    return a nullptr if the apt config "APT::Build-Profiles" is
+        //    set to that restriction.
+        start = debListParser::ParseDepends(start,
+                                            stop,
+                                            package,
+                                            version,
+                                            op,
+                                            true /* ParseArchFlags */,
+                                            false /* StripMultiArch */,
+                                            true /* ParseRestrictionsList */);
 
         if (!start) {
             // Parsing error
@@ -111,8 +141,7 @@ QList<DependencyItem> DependencyInfo::parseDepends(const QString &field, Depende
         }
 
         if (hadOr) {
-            depItem = depends.last();
-            depends.removeLast();
+            depItem = depends.takeLast();
         }
 
         if (op & pkgCache::Dep::Or) {
@@ -125,7 +154,8 @@ QList<DependencyItem> DependencyInfo::parseDepends(const QString &field, Depende
 
         DependencyInfo info(QString::fromStdString(package),
                             QString::fromStdString(version),
-                            (RelationType)op, type);
+                            (RelationType)op,
+                            type);
         depItem.append(info);
 
         depends.append(depItem);
@@ -154,9 +184,14 @@ DependencyType DependencyInfo::dependencyType() const
     return d->dependencyType;
 }
 
+QString DependencyInfo::multiArchAnnotation() const
+{
+    return d->multiArchAnnotation;
+}
+
 QString DependencyInfo::typeName(DependencyType type)
 {
-    return QLatin1String(pkgCache::DepType(type));
+    return QString::fromUtf8(pkgCache::DepType(type));
 }
 
 }

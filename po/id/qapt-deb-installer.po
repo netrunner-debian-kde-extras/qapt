@@ -1,0 +1,287 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# wantoyo <wantoyo@yahoo.com>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: qapt-deb-installer 0001\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-12-29 07:46+0000\n"
+"PO-Revision-Date: 2014-12-14 21:28+0700\n"
+"Last-Translator: wantoyo <wantoyo@yahoo.com>\n"
+"Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: utils/qapt-deb-installer/ChangesDialog.cpp:37
+msgctxt "@title:window"
+msgid "Confirm Additional Changes"
+msgstr "Konfirmasi Perubahan Tambahan"
+
+#: utils/qapt-deb-installer/ChangesDialog.cpp:42
+msgctxt "@info"
+msgid "<h2>Additional Changes</h2>"
+msgstr "<h2>Perubahan Tambahan</h2>"
+
+#: utils/qapt-deb-installer/ChangesDialog.cpp:46
+msgid "This action requires a change to another package:"
+msgid_plural "This action requires changes to other packages:"
+msgstr[0] "Tindakan ini memerlukan sebuah perubahan ke paket yang lain:"
+
+#: utils/qapt-deb-installer/ChangesDialog.cpp:86
+#: utils/qapt-deb-installer/ChangesDialog.cpp:87
+msgctxt "@info:status Requested action"
+msgid "Install"
+msgstr "Pasang"
+
+#: utils/qapt-deb-installer/ChangesDialog.cpp:88
+msgctxt "@info:status Requested action"
+msgid "Remove"
+msgstr "Buang"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:49
+msgctxt "@info The widget's header label"
+msgid "<title>Installing</title>"
+msgstr "<title>Memasang</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:105
+msgctxt "@info Status information, widget title"
+msgid "<title>Starting</title>"
+msgstr "<title>Mulai</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:112
+msgctxt "@info Status information, widget title"
+msgid "<title>Waiting</title>"
+msgstr "<title>Menunggu</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:120
+msgctxt "@info Status info"
+msgid "<title>Loading Software List</title>"
+msgstr "<title>Memuat Daftar Perangkat Lunak</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:125
+msgctxt "@info Status information, widget title"
+msgid "<title>Downloading Packages</title>"
+msgstr "<title>Mengunduh Paket-paket</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:130
+msgctxt "@info Status information, widget title"
+msgid "<title>Committing Changes</title>"
+msgstr "<title>Melakukan Perubahan</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:136
+msgctxt "@label Message that the install is done"
+msgid "Done"
+msgstr "Selesai"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:138
+msgctxt "@info Header label used when the install is done"
+msgid "<title>Done</title>"
+msgstr "<title>Selesai</title>"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:155
+#: utils/qapt-deb-installer/DebInstaller.cpp:72
+msgctxt "@label"
+msgid ""
+"The package system could not be initialized, your configuration may be "
+"broken."
+msgstr ""
+"Sistem paket tidak bisa diinisialisasi, konfigurasi anda mungkin rusak."
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:157
+#: utils/qapt-deb-installer/DebInstaller.cpp:74
+msgctxt "@title:window"
+msgid "Initialization error"
+msgstr "Galat menginisialisasi"
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:164
+msgctxt "@label"
+msgid "This package is incompatible with your computer."
+msgstr "Paket ini tidak cocok dengan komputer anda."
+
+#: utils/qapt-deb-installer/DebCommitWidget.cpp:165
+msgctxt "@title:window"
+msgid "Incompatible Package"
+msgstr "Paket Tidak Cocok"
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:83
+msgctxt "@label"
+msgid "Install Package"
+msgstr "Pasang Paket"
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:107
+#, kde-format
+msgctxt "@label"
+msgid ""
+"Could not open <filename>%1</filename>. It does not appear to be a valid "
+"Debian package file."
+msgstr ""
+"Tidak bisa membuka <filename>%1</filename>. Itu tidak nampak untuk menjadi "
+"berkas paket Debian yang berlaku."
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:115
+#, kde-format
+msgctxt "@title:window"
+msgid "Package Installer - %1"
+msgstr "Pemasang Paket - %1"
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:212
+#, kde-format
+msgctxt "@info"
+msgid "Error: Wrong architecture '%1'"
+msgstr "Galat: Arsitektur keliru '%1'"
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:232
+#, kde-format
+msgctxt "@info Error string when installing would break an existing package"
+msgid "Error: Breaks the existing package \"%1\""
+msgstr "Galat: Kerusakan paket yang ada \"%1\""
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:241
+msgctxt "@info"
+msgid "Error: Cannot satisfy dependencies"
+msgstr "Galat: Tidak bisa memenuhi ketergantungan"
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:251
+#, kde-format
+msgctxt "@label A note saying that additional packages are needed"
+msgid "Requires the installation of %1 additional package."
+msgid_plural "Requires the installation of %1 additional packages"
+msgstr[0] "Membutuhkan pemasangan %1 paket tambahan."
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:255
+msgctxt "@info"
+msgid "All dependencies are satisfied."
+msgstr "Semua ketergantungan telah tercukupi."
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:274
+msgctxt "@info"
+msgid "The same version is available in a software channel."
+msgstr "Versi yang sama tersedia di kanal perangkat lunak."
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:275
+msgctxt "@info"
+msgid "It is recommended to install the software from the channel instead"
+msgstr "Disarankan untuk memasang perangkat lunak dari kanal sebagai gantinya"
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:277
+msgctxt "@info"
+msgid "An older version is available in a software channel."
+msgstr "Sebuah versi lebih tua tersedia di kanal perangkat lunak."
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:278
+msgctxt "@info"
+msgid ""
+"It is recommended to install the version from the software channel, since it "
+"usually has more support."
+msgstr ""
+"Disarankan untuk memasang versi dari kanal perangkat lunak, karena biasanya "
+"memiliki lebih banyak dukungan."
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:281
+msgctxt "@info"
+msgid "A newer version is available in a software channel."
+msgstr "Sebuah versi lebih baru tersedia di kanal perangkat lunak."
+
+#: utils/qapt-deb-installer/DebInstaller.cpp:282
+msgctxt "@info"
+msgid ""
+"It is strongly advised to install the version from the software channel, "
+"since it usually has more support."
+msgstr ""
+"Hal ini sangat disarankan untuk memasang versi dari kanal perangkat lunak, "
+"karena biasanya memiliki lebih banyak dukungan."
+
+#: utils/qapt-deb-installer/DebViewer.cpp:71
+msgctxt "@label Label preceding the package name"
+msgid "Package:"
+msgstr "Paket:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:79
+msgctxt "@label Label preceding the package status"
+msgid "Status:"
+msgstr "Status:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:81
+msgctxt "@label"
+msgid "Details..."
+msgstr "Rincian..."
+
+#: utils/qapt-deb-installer/DebViewer.cpp:132
+msgctxt "@label Label preceding the package version"
+msgid "Version:"
+msgstr "Versi:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:139
+msgctxt "@label Label preceding the package size"
+msgid "Installed Size:"
+msgstr "Ukuran Terpasang:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:146
+msgctxt "@label Label preceding the package maintainer"
+msgid "Maintainer:"
+msgstr "Pengelola:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:153
+msgctxt "@label Label preceding the package category"
+msgid "Category:"
+msgstr "Kategori:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:160
+msgctxt "@label Label preceding the package homepage"
+msgid "Homepage:"
+msgstr "Beranda:"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:174
+msgctxt "@title:tab"
+msgid "Description"
+msgstr "Keterangan"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:175
+msgctxt "@title:tab"
+msgid "Details"
+msgstr "Rincian"
+
+#: utils/qapt-deb-installer/DebViewer.cpp:176
+msgctxt "@title:tab"
+msgid "Included Files"
+msgstr "Berkas-berkas tercantum"
+
+#: utils/qapt-deb-installer/main.cpp:32
+msgctxt "@info"
+msgid "A Debian package installer"
+msgstr "Sebuah pemasang paket Debian"
+
+#: utils/qapt-deb-installer/main.cpp:44
+msgctxt "@title"
+msgid "QApt Package Installer"
+msgstr "Pemasang Paket QApt"
+
+#: utils/qapt-deb-installer/main.cpp:48
+msgctxt "@info:credit"
+msgid "(C) 2011 Jonathan Thomas"
+msgstr "(C) 2011 Jonathan Thomas"
+
+#: utils/qapt-deb-installer/main.cpp:50
+msgctxt "@info:credit"
+msgid "Jonathan Thomas"
+msgstr "Jonathan Thomas"
+
+#: utils/qapt-deb-installer/main.cpp:53
+msgctxt "@info:credit"
+msgid "Harald Sitter"
+msgstr "Harald Sitter"
+
+#: utils/qapt-deb-installer/main.cpp:54
+msgctxt "@info:credit"
+msgid "Qt 5 port"
+msgstr "port Qt 5"
+
+#: utils/qapt-deb-installer/main.cpp:62
+msgctxt "@info:shell argument"
+msgid ".deb file"
+msgstr "berkas .deb"

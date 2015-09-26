@@ -4,7 +4,7 @@
 # Sasu Karttunen <sasu.karttunen@tpnet.fi>, 2011.
 # Jiri Grönroos <jiri.gronroos@iki.fi>, 2012.
 # Tommi Nieminen <translator@legisign.org>, 2012.
-# Lasse Liehu <lasse.liehu@gmail.com>, 2013, 2014.
+# Lasse Liehu <lasse.liehu@gmail.com>, 2013, 2014, 2015.
 #
 # KDE Finnish translation sprint participants:
 # Author: Artnay
@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qapt-gst-helper\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-12-14 07:45+0000\n"
-"PO-Revision-Date: 2014-12-17 15:50+0200\n"
+"POT-Creation-Date: 2014-12-23 09:33+0000\n"
+"PO-Revision-Date: 2015-04-08 17:55+0200\n"
 "Last-Translator: Lasse Liehu <lasse.liehu@gmail.com>\n"
 "Language-Team: Finnish <lokalisointi@lists.coss.fi>\n"
 "Language: fi\n"
@@ -22,49 +22,49 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-POT-Import-Date: 2012-12-01 22:21:42+0000\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 2.0\n"
 
-#: utils/qapt-gst-helper/main.cpp:33
+#: utils/qapt-gst-helper/main.cpp:34
 msgctxt "@info"
 msgid "A GStreamer codec installer using QApt"
 msgstr "GStreamer-koodekkiasennin käyttäen QAptia"
 
-#: utils/qapt-gst-helper/main.cpp:43
+#: utils/qapt-gst-helper/main.cpp:46
 msgctxt "@title"
 msgid "QApt Codec Searcher"
 msgstr "QApt – koodekinetsin"
 
-#: utils/qapt-gst-helper/main.cpp:47
+#: utils/qapt-gst-helper/main.cpp:50
 msgctxt "@info:credit"
 msgid "(C) 2011 Jonathan Thomas"
 msgstr "© 2011 Jonathan Thomas"
 
-#: utils/qapt-gst-helper/main.cpp:49
+#: utils/qapt-gst-helper/main.cpp:52
 msgctxt "@info:credit"
 msgid "Jonathan Thomas"
 msgstr "Jonathan Thomas"
 
-#: utils/qapt-gst-helper/main.cpp:52
+#: utils/qapt-gst-helper/main.cpp:55
 msgctxt "@info:credit"
 msgid "Harald Sitter"
 msgstr "Harald Sitter"
 
-#: utils/qapt-gst-helper/main.cpp:53
+#: utils/qapt-gst-helper/main.cpp:56
 msgctxt "@info:credit"
 msgid "Qt 5 port"
 msgstr "Qt 5 -sovitus"
 
-#: utils/qapt-gst-helper/main.cpp:61
+#: utils/qapt-gst-helper/main.cpp:64
 msgctxt "@info:shell"
 msgid "Attaches the window to an X app specified by winid"
 msgstr "Liittää ikkunan X-sovellukseen ikkunatunnisteen perusteella"
 
-#: utils/qapt-gst-helper/main.cpp:62
+#: utils/qapt-gst-helper/main.cpp:65
 msgctxt "@info:shell value name"
 msgid "winid"
 msgstr "ikkunatunniste"
 
-#: utils/qapt-gst-helper/main.cpp:66
+#: utils/qapt-gst-helper/main.cpp:69
 msgctxt "@info:shell"
 msgid "GStreamer install info"
 msgstr "GStreamer-asennustiedot"
@@ -92,8 +92,7 @@ msgctxt "@label"
 msgid ""
 "The package system could not be initialized, your configuration may be "
 "broken."
-msgstr ""
-"Pakettijärjestelmää ei voitu valmistella. Asetukset voivat olla virheellisiä."
+msgstr "Pakettijärjestelmää ei voitu valmistella. Asennus saattaa olla rikki."
 
 #: utils/qapt-gst-helper/PluginHelper.cpp:131
 #: utils/qapt-gst-helper/PluginHelper.cpp:246
@@ -161,8 +160,9 @@ msgid ""
 "must close all other package managers before you will be able to install or "
 "remove any packages."
 msgstr ""
-"Toinen sovellus vaikuttaa käyttävän paketinhallintaa nyt. Sulje kaikki muut "
-"paketinhallintaohjelmat ennen kuin yrität asentaa tai poistaa paketteja."
+"Toinen sovellus vaikuttaa käyttävän pakettienhallintaa juuri nyt. Sulje "
+"kaikki muut pakettienhallintaohjelmat ennen kuin yrität asentaa tai poistaa "
+"paketteja."
 
 #: utils/qapt-gst-helper/PluginHelper.cpp:258
 msgctxt "@title:window"
@@ -185,7 +185,7 @@ msgstr "Tallennustila vähissä"
 #: utils/qapt-gst-helper/PluginHelper.cpp:269
 msgctxt "@label"
 msgid "Could not download packages"
-msgstr "Paketteja ei voitu ladata"
+msgstr "Pakettien lataaminen epäonnistui"
 
 #: utils/qapt-gst-helper/PluginHelper.cpp:270
 msgctxt "@title:window"
@@ -206,8 +206,7 @@ msgstr "Toteutusvirhe"
 msgctxt "@label"
 msgid ""
 "This operation cannot continue since proper authorization was not provided"
-msgstr ""
-"Tätä toimintoa ei voida jatkaa, koska tarvittavaa tunnistautumista ei saatu."
+msgstr "Toimintoa ei voi jatkaa, koska tarvittavaa valtuutusta ei saatu"
 
 #: utils/qapt-gst-helper/PluginHelper.cpp:284
 msgctxt "@title:window"
@@ -255,8 +254,7 @@ msgid ""
 "The package \"%1\" has not been found among your software sources. "
 "Therefore, it cannot be installed. "
 msgstr ""
-"Pakettia ”%1” ei löytynyt ohjelmistolähteistäsi, joten sitä ei voida "
-"asentaa. "
+"Pakettia ”%1” ei löytynyt ohjelmalähteistäsi, joten sitä ei voida asentaa. "
 
 #: utils/qapt-gst-helper/PluginHelper.cpp:317
 msgctxt "@title:window"
@@ -272,7 +270,7 @@ msgstr "Tietovälineen vaihto tarpeen"
 #, kde-format
 msgctxt "@label"
 msgid "Please insert %1 into <filename>%2</filename>"
-msgstr "Anna %1 asemaan <filename>%2</filename>"
+msgstr "Laita %1 asemaan <filename>%2</filename>"
 
 #: utils/qapt-gst-helper/PluginHelper.cpp:341
 msgctxt "@title:window"
